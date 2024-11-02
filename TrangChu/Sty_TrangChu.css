@@ -91,3 +91,19 @@ section {
     display: flex;
     align-items: center;
 }
+.home-bg .home .noi_dung{
+    width: 50rem;
+    text-align: center;
+}
+.home-bg .home .noi_dung h3{
+    font-size: 6rem;
+    color: var(--black);
+    font-family: 'Merienda one', cursive;
+}
+.home-bg .home .noi_dung p{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--black);
+    line-height: 2;
+}
+
