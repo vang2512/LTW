@@ -106,4 +106,36 @@ section {
     color: var(--black);
     line-height: 2;
 }
-
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    border-radius: 5%;
+    object-fit: cover;
+}
+.btn:hover{
+    background-color: var(--black);
+}
+/*about*/
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+.about .image{
+    flex:1 1 40rem;
+}
+.about .image img{
+    width: 100%;
+    border-radius: 30%;
+    object-fit: cover;
+    border: 5px solid #BE9C79FF;
+}
+.about .noi_dung{
+    flex:1 1 32rem;
+}
