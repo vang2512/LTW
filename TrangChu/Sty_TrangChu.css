@@ -30,7 +30,7 @@ section {
     max-width: 1200px;
     margin: 0 auto;
 }
-
+/*Thanh dieu huong trang chu*/
 .header {
     position: sticky;
     top: 0;
@@ -74,4 +74,20 @@ section {
 }
 #menu-btn {
     display: none;
+}
+.header .flex .navbar .left a:hover,
+.header .flex .navbar .right a:hover {
+    background-color: #be9c79;
+    cursor: pointer;
+}
+/**/
+.home-bg{
+    background:linear-gradient(90deg, var(--white), transparent 70%), url("Images/home.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home-bg .home{
+    min-height: 70rem;
+    display: flex;
+    align-items: center;
 }
