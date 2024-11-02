@@ -139,3 +139,15 @@ section {
 .about .noi_dung{
     flex:1 1 32rem;
 }
+.about .noi_dung h3{
+    font-size: 4.5rem;
+    color:var(--black);
+    font-family: 'Merienda one', cursive;
+}
+.about .noi_dung p{
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
