@@ -16,6 +16,7 @@
     --border: 2rem solid var(--black);
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -36,6 +37,26 @@ section {
     right: 0;
     background-image: url("Images/header.jpg");
 }
+.header .flex .logo img {
+    height: 4.5rem;
+    margin-right: 2rem;
+    border-radius: 30%;
+    object-fit: cover;
+}
 
+.header .flex .navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.header .flex .navbar .left a,
+.header .flex .navbar .right a{
+    margin: 0 1.5rem;
+    font-size: 2rem;
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
 
 
