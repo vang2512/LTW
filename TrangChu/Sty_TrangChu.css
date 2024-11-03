@@ -36,9 +36,12 @@ section {
     top: 0;
     left: 0;
     right: 0;
+    background: #333;
     background-image: url("Images/header.jpg");
-
+    background-size: cover;
+    z-index: 1000;
 }
+
 .header .flex {
     display: flex;
     align-items: center;
@@ -80,6 +83,19 @@ section {
     background-color: #be9c79;
     cursor: pointer;
 }
+
+/* Carousel styling for horizontal layout */
+.carousel {
+    display: flex;
+
+    overflow-x: auto;
+
+    padding: 40px 200px;
+
+}
+
+/* Product card styling */
+
 /**/
 .home-bg{
     background:linear-gradient(90deg, var(--white), transparent 70%), url("Images/home.jpg") no-repeat;
