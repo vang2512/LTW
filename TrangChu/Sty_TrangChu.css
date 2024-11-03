@@ -110,7 +110,23 @@ section {
     margin-bottom: 8px;
     object-fit: cover;
 }
-
+.sp_moi h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+.label {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #FF6347;
+    color: #FFF;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
 /**/
 .home-bg{
     background:linear-gradient(90deg, var(--white), transparent 70%), url("Images/home.jpg") no-repeat;
