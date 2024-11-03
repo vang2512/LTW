@@ -87,14 +87,11 @@ section {
 /* Carousel styling for horizontal layout */
 .carousel {
     display: flex;
-
     overflow-x: auto;
-
     padding: 40px 200px;
 
 }
 
-/* Product card styling */
 
 /**/
 .home-bg{
