@@ -127,6 +127,28 @@ section {
     border-radius: 5px;
     text-transform: uppercase;
 }
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+.gia {
+    font-weight: 520;
+    color: var(--black);
+}
+.giohang {
+    background: #F3F3F3;
+    border: 1px solid #C0A47B;
+    color: #444;
+    padding: 5px 15px;
+    font-size: 0.85rem;
+    font-weight: 520;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
 /**/
 .home-bg{
     background:linear-gradient(90deg, var(--white), transparent 70%), url("Images/home.jpg") no-repeat;
