@@ -150,7 +150,7 @@ section {
     transition: background 0.3s, color 0.3s;
 }
 .sp_moi:hover {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 .giohang:hover{
     background: #C0A47B;
@@ -209,8 +209,15 @@ section {
     font-weight: bold;
     z-index: 1;
 }
-
-
+.container_bt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+.sp_banchay:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 /**/
 .home-bg{
     background:linear-gradient(90deg, var(--white), transparent 70%), url("Images/home.jpg") no-repeat;
@@ -248,9 +255,8 @@ section {
     border-radius: 5%;
     object-fit: cover;
 }
-.btn:hover{
-    background-color: var(--black);
-}
+.sp_banchay:hover{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);}
 /*about*/
 .about{
     display: flex;
