@@ -188,6 +188,28 @@ section {
     margin-bottom: 8px;
     object-fit: cover;
 }
+.sp_banchay h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+.label_bt {
+    position: absolute;
+    top: 39px;
+    left: -3px;
+    background-color: #FF6347;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 0.6rem;
+    padding: 3px 8px;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    font-weight: bold;
+    z-index: 1;
+}
+
 
 /**/
 .home-bg{
