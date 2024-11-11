@@ -336,4 +336,17 @@ section {
     display: block;
     border-radius: 8px;
 }
+.item_ttsk .nd {
+    text-align: center;
+    margin-top: 8px;
 
+}
+.carousel-nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 458%;
+    width: 100%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
