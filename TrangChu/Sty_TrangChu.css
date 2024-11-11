@@ -323,5 +323,17 @@ section {
     overflow-x: hidden;
     scroll-behavior: smooth;
     max-width: 1000%;
-
 }
+.item_ttsk {
+    flex: 0 0 33.33%;
+    scroll-snap-align: start;
+    position: relative;
+    padding: 5px;
+}
+.item_ttsk img {
+    width: 95%;
+    height: 650px;
+    display: block;
+    border-radius: 8px;
+}
+
