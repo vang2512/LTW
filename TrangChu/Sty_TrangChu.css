@@ -355,3 +355,18 @@ section {
 .carousel-button:focus {
     outline: none;
 }
+/**/
+footer {
+    background-image: url("Images/header.jpg");
+    color: #eee;
+    margin-top: 50px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 100px;
+
+}
