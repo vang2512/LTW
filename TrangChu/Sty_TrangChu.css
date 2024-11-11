@@ -308,3 +308,20 @@ section {
     color: var(--black);
     font-family: 'Merienda one', cursive;
 }
+/**/
+.carousel-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+
+}
+.tintuc_sk {
+    display: flex;
+    transition: transform 0.8s ease;
+    scroll-snap-type: x mandatory;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    max-width: 1000%;
+
+}
