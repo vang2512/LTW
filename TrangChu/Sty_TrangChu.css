@@ -76,9 +76,13 @@ section {
     display: none;
 }
 .header .flex .navbar .left a:hover,
-.header .flex .navbar .right a:hover {
+.header .flex .navbar .right a:not(.icon):hover {
     background-color: #be9c79;
     cursor: pointer;
+}
+.header .flex .navbar .right a .icon :hover  {
+    cursor: pointer;
+
 }
 
 /* san pham moi */
@@ -132,12 +136,12 @@ section {
 }
 .gia {
     font-weight: 520;
-    color: var(--black);
+    color: #FAF8F6;
 }
 .giohang {
-    background: #F3F3F3;
-    border: 1px solid #C0A47B;
-    color: #444;
+    background: #FAF8F6;
+    border: 1px solid #FAF8F6;
+    color: #FAF8F6;
     padding: 5px 15px;
     font-size: 0.85rem;
     font-weight: 520;
@@ -148,11 +152,16 @@ section {
 }
 .sp_moi:hover {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    .gia{
+        color: var(--black);
+    }
+    .giohang {
+        background: #C0A47B;
+        border: 1px solid #C0A47B;
+        color: #FFF;
+    }
 }
-.giohang:hover{
-    background: #C0A47B;
-    color: #FFF;
-}
+
 /*san pham ban chay*/
 .carousel_bt{
     display: grid;
@@ -213,7 +222,15 @@ section {
     margin-top: 8px;
 }
 .sp_banchay:hover{
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    .gia{
+        color: var(--black);
+    }
+    .giohang {
+        background: #C0A47B;
+        border: 1px solid #C0A47B;
+        color: #FFF;
+    }
 }
 /**/
 .home-bg{
