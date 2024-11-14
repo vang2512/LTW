@@ -110,3 +110,33 @@ section {
     border-radius: 5px;
 }
 /*Chi tiet SP*/
+.container {
+    display: flex;
+    border-radius: 8px;
+    width: 80vw;
+    max-width: 1200px;
+    margin-top: 60px;
+    margin-left: 150px;
+}
+
+.image-section {
+    position: relative;
+}
+
+.image-section img {
+    width: 550px;
+    height: 650px;
+    border: 2px solid #C0A47B;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+}
+.details-section h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.price {
+    font-size: 28px;
+    color: #c81717;
+    margin-bottom: 30px;
+}
