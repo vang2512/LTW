@@ -195,3 +195,23 @@ section {
     transition: background-color 0.3s;
 }
 /*San Pham Lien Quan*/
+.carousel-container {
+    width: 100%;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.carousel-container h1 {
+    color: #444;
+    font-size: 2rem;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+
+.carousel {
+    display: flex;
+    gap: 70px;
+    padding: 0 150px;
+}
+
+
