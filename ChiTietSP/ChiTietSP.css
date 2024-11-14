@@ -130,6 +130,11 @@ section {
     object-fit: cover;
     border-radius: 8px 0 0 8px;
 }
+.details-section {
+    padding: 40px;
+    background-color: #fff;
+    margin-left: 10px;
+}
 .details-section h1 {
     font-size: 32px;
     margin-bottom: 15px;
@@ -165,4 +170,27 @@ section {
 }
 .size-options{
     margin-top: 15px;
+}
+.description{
+    margin-top: 15px;
+    font-size: 18px;
+    color: #555555
+}
+
+.order-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.order-button button {
+    background-color: #C0A47B;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
 }
