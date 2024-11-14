@@ -140,3 +140,29 @@ section {
     color: #c81717;
     margin-bottom: 30px;
 }
+.size-selection,
+.topping-selection {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.size-selection,
+.topping-selection .tex{
+    margin-bottom: 30px;
+}
+
+.size-options button {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    color: #555555;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+.size-options button:hover {
+    color:#C0A47B;
+}
+.size-options{
+    margin-top: 15px;
+}
