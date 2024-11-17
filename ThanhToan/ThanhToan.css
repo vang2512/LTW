@@ -198,3 +198,27 @@ hr {
     margin: 5px 0;
     color: #333;
 }
+.info-detail {
+    color: #c81717;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-size: 15px;
+
+}
+.check_box{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.order-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #be9c79;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
