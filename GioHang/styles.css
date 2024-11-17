@@ -133,3 +133,51 @@ html, body {
     color: white;
     letter-spacing: 1px;
 }
+
+#shopping-cart .container .cart-checkout {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+#shopping-cart .container .cart-checkout .cart-header {
+    color: #007BFF;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#shopping-cart .container .cart-checkout .cart-information .parent {
+    overflow: hidden;
+}
+
+#shopping-cart .container .cart-checkout .cart-information .parent .left {
+    float: left;
+    margin-top: 10px;
+}
+
+#shopping-cart .container .cart-checkout .cart-information .parent .right {
+    float: right;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+#shopping-cart .container .cart-checkout .cart-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#shopping-cart .container .cart-checkout .cart-actions button {
+    width: 100%;
+    height: 38px;
+    background-color: #007BFF;
+    border: none;
+    margin-top: 10px;
+}
+
+#shopping-cart .container .cart-checkout .cart-actions button {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
