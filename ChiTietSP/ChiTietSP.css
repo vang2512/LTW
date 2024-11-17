@@ -126,7 +126,7 @@ section {
 .image-section img {
     width: 420px;
     height: 545px;
-    border: 2px solid #be9c79;
+    border: 4px solid #be9c79;
     object-fit: cover;
     border-radius: 8px 0 0 8px;
 }
@@ -179,9 +179,8 @@ section {
 
 .order-button {
     display: flex;
-    justify-content: center;
     margin-top: 20px;
-    width: 50px;
+    width: 750px;
 }
 
 .order-button button {
