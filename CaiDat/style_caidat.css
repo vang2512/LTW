@@ -206,4 +206,59 @@ body {
     color: #ffffff;
   }
   
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .filter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .filter label {
+    margin-right: 10px;
+  }
+  
+  .filter input[type="date"] {
+    margin-right: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .search-btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f5f5f5;
+  }
+  
+  .success {
+    color: green;
+  }
+  
+  .failure {
+    color: red;
+  }
   
