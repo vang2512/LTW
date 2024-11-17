@@ -126,7 +126,7 @@ section {
 
 .container {
     display: flex;
-    width: 60%;
+    width: 100%;
 }
 
 /* Sidebar Styles */
@@ -165,7 +165,7 @@ section {
 }
 
 .product-grid {
-    display: grid;
+    display: grid   ;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
