@@ -17,7 +17,6 @@
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
-
 html{
     font-size: 60%;
     overflow-x: hidden;
@@ -119,4 +118,19 @@ section {
     color: #be9c79;
 }
 /**/
-
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.checkout-form{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+.checkout-form {
+    width: 800px;
+    margin-right: 10px;
+}
