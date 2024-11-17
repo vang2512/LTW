@@ -9,44 +9,45 @@
     <div class="container">
         <div class="cart-information">
             <table>
-                <tr class="row-header">
-                    <th>
+                <tr class="row-header" style="width:100%">
+                    <th style="width:45%">
                         <span>SẢN PHẨM</span>
                     </th>
-                    <th>
+                    <th style="width:15%">
                         <span>GIÁ</span>
                     </th>
-                    <th>
+                    <th style="width:20%">
                         <span>SỐ LƯỢNG</span>
                     </th>
-                    <th>
-                        <span>TẠM TÍNH</span>
+                    <th style="width:20%">
+                        <span class="text">TẠM TÍNH</span>
                     </th>
                 </tr>
                 <tr class="row-item">
                     <td>
                         <div class="cart-item">
                             <button class="delete-btn">x</button>
-                            <img src="/LTW/GioHang/images/coffee/cappuccino.jpg" class="item-image" alt="Cappuccino"
+                            <img src="/LTW/GioHang/images/coffee/cappuccino.jpg" id="cappuccino-image"
+                                 class="item-image" alt="Cappuccino"
                                  title="Cappuccino">
                             <span class="item-name">Cappuccino</span>
                         </div>
                     </td>
                     <td>
                         <div class="cart-item">
-                            <span class="item-price">50,000đ</span>
+                            <span class="item-price">50,000₫</span>
                         </div>
                     </td>
                     <td>
-                        <div class="cart-item">
+                        <div class="cart-amount">
                             <button class="decrease-btn">-</button>
                             <input type="text" class="item-quantity" value="1" min="0">
                             <button class="increase-btn">+</button>
                         </div>
                     </td>
                     <td>
-                        <div class="cart-item">
-                            <span class="total-price">50,000đ</span>
+                        <div class="cart-total">
+                            <span class="total-price">50,000₫</span>
                         </div>
                     </td>
                 </tr>
@@ -61,26 +62,30 @@
                     </td>
                     <td>
                         <div class="cart-item">
-                            <span class="item-price">60,000đ</span>
+                            <span class="item-price">60,000₫</span>
                         </div>
                     </td>
                     <td>
-                        <div class="cart-item">
+                        <div class="cart-amount">
                             <button class="decrease-btn">-</button>
                             <input type="text" class="item-quantity" value="2" min="0">
                             <button class="increase-btn">+</button>
                         </div>
                     </td>
                     <td>
-                        <div class="cart-item">
-                            <span class="total-price">120,000đ</span>
+                        <div class="cart-total">
+                            <span class="total-price">120,000₫</span>
                         </div>
                     </td>
                 </tr>
             </table>
             <div class="cart-actions">
-                <button class="continue-btn">← Tiếp tục xem sản phẩm</button>
-                <button class="update-btn">Cập nhật giỏ hàng</button>
+                <button class="continue-btn">
+                    <span>← TIẾP TỤC XEM SẢN PHẨM</span>
+                </button>
+                <button class="update-btn">
+                    <span>CẬP NHẬT GIỎ HÀNG</span>
+                </button>
             </div>
         </div>
 
@@ -91,11 +96,11 @@
             <div class="cart-information">
                 <div>
                     <span>Tạm tính</span>
-                    <span class="total-price">170,000đ</span>
+                    <span class="total-price">170,000₫</span>
                 </div>
                 <div>
                     <span>Tổng</span>
-                    <span class="total-price">170,000đ</span>
+                    <span class="total-price">170,000₫</span>
                 </div>
             </div>
             <div class="cart-actions">
