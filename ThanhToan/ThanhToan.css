@@ -123,7 +123,7 @@ section {
     justify-content: center;
     margin-top: 60px;
 }
-.checkout-form{
+.checkout-form, .order-summary{
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
@@ -150,4 +150,18 @@ input[type="text"], input[type="email"], textarea {
 }
 textarea {
     resize: vertical;
+}
+.order-summary {
+    width: 500px;
+    border: 1px solid #e0a96d;
+}
+.order-item, .order-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.order-item img{
+    height: 45px;
+    width:38px;
 }
