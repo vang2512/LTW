@@ -264,7 +264,7 @@ section {
 }
 /**/
 .home-bg{
-    background:linear-gradient(90deg, var(--white), transparent 70%), url("Images/head.jpg") no-repeat;
+    background:linear-gradient(90deg, var(--white), transparent 70%), url("Images/home.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -359,55 +359,57 @@ section {
     text-align: center;
      margin-top: 20px;
 }
-.tintuc_sk {
-    display: flex;
-    transition: transform 0.8s ease;
-    scroll-snap-type: x mandatory;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    max-width: 1000%;
-    gap: 0;
-}
-.item_ttsk {
-    flex: 0 0 33.33%;
-    scroll-snap-align: start;
-    position: relative;
-    padding: 5px;
-}
-.item_ttsk img {
-    width: 95%;
-    height: 650px;
-    display: block;
-    border-radius: 8px;
-}
-.item_ttsk .nd {
-    text-align: center;
-    margin-top: 8px;
-}
-.carousel-nav {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 458%;
+.slider-container {
     width: 100%;
-    transform: translateY(-50%);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.tintuc_sk {
+    padding: 20px 10px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.tintuc_sk .item_ttsk {
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tintuc_sk .item_ttsk .tintuc{
+    width: 450px;
+    height: 600px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+.tintuc_sk .item_ttsk .nd_sk{
+    margin-top: 10px;
+    font-size: 2rem;
+}
+.swiper-button-next, .swiper-button-prev {
+    color: #FFFFFF !important;
+    background-color: #be9c79 !important;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
     opacity: 0;
 }
-.carousel-container:hover .carousel-nav{
+.slider-container:hover .swiper-button-next, .swiper-button-prev {
     opacity: 1;
 }
-.carousel-button {
-    background-color: #C0A47B;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    margin: 0 10px;
-    pointer-events: all;
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 2rem !important;
 }
-.carousel-button:focus {
-    outline: none;
+.swiper-pagination-bullet {
+    background-color: #be9c79 !important;
 }
 /**/
 footer {

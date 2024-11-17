@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="ThanhToan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header class="header">
+    <section class="flex">
+        <a href="#home" class="logo">
+            <img src="Images/logo%20.png" alt="">
+        </a>
+        <nav class="navbar">
+            <div class="left">
+                <a href="#home">Trang Chủ</a>
+                <a href="#about">About</a>
+                <!-- Menu with dropdown options -->
+                <div class="dropdown">
+                    <a href="#menu" class="mn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="#coffee">Coffee</a>
+                        <a href="#tea">Trà</a>
+                        <a href="#desserts">Bánh Ngọt</a>
+                        <a href="#snacks">Nước Ép</a>
+                    </div>
+                </div>
+                <a href="#datban">Đặt Bàn</a>
+                <a href="#contact">Tin Tức & Sự Kiện</a>
+            </div>
+            <div class="right">
+                <a href="#search" class="icon">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a href="#giohang" class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="#sign">Đăng Ký</a>
+                <a href="#login">Đăng Nhập</a>
+            </div>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+</header>
+
+
+<div class="container">
+    <div class="checkout-form">
+        <h2>THÔNG TIN THANH TOÁN</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Họ Tên *</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Số điện thoại *</label>
+                <input type="text" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Địa chỉ *</label>
+                <input type="text" id="address" required>
+            </div>
+        </form>
+        <h3 >THÔNG TIN BỔ SUNG</h3>
+        <div class="form-group">
+            <label for="notes">Ghi chú đơn hàng (tuỳ chọn)</label>
+            <textarea id="notes" placeholder="Ghi chú về đơn hàng, ví dụ: thời gian hay chỉ dẫn địa điểm giao hàng chi tiết hơn."></textarea>
+        </div>
+    </div>
+
+
+  </body>
+ </html>

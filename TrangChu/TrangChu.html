@@ -6,10 +6,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="Sty_TrangChu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
-
 <header class="header">
     <section class="flex">
         <a href="#home" class="logo">
@@ -29,7 +28,6 @@
                         <a href="#snacks">Nước Ép</a>
                     </div>
                 </div>
-
                 <a href="#datban">Đặt Bàn</a>
                 <a href="#contact">Tin Tức & Sự Kiện</a>
             </div>
@@ -40,7 +38,6 @@
                 <a href="#giohang" class="icon">
                     <i class="fas fa-shopping-cart"></i>
                 </a>
-
                 <a href="#sign">Đăng Ký</a>
                 <a href="#login">Đăng Nhập</a>
             </div>
@@ -234,34 +231,76 @@
 
 
 <div class="carousel-title" id="contact">Tin Tức & Sự Kiện</div>
-<div class="carousel-container">
-    <div class="tintuc_sk">
-        <div class="item_ttsk">
-            <img src="Images/campucio.jpg" alt="Ảnh 1">
-            <div class="nd"><h2>nd1</h2></div>
+<section class="tintuc_sk">
+    <div class="section-content">
+        <div class="slider-container swiper">
+            <div class="slider-wrapper">
+                <ul class="list swiper-wrapper">
+                    <li class="item_ttsk swiper-slide">
+                        <img src="Images/cam.jpg" alt="ảnh" class="tintuc">
+                        <i class="nd_sk">
+                            nd1
+                        </i>
+                    </li>
+                    <li class="item_ttsk swiper-slide">
+                        <img src="Images/tinavisu.jpg" alt="ảnh" class="tintuc">
+                        <i class="nd_sk">
+                            nd1
+                        </i>
+                    </li>
+                    <li class="item_ttsk swiper-slide">
+                        <img src="Images/campucio.jpg" alt="ảnh" class="tintuc">
+                        <i class="nd_sk">
+                            nd1
+                        </i>
+                    </li>
+                    <li class="item_ttsk swiper-slide">
+                        <img src="Images/cam.jpg" alt="ảnh" class="tintuc">
+                        <i class="nd_sk">
+                            nd1
+                        </i>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
         </div>
-        <div class="item_ttsk">
-            <img src="Images/cam.jpg" alt="Ảnh 2">
-            <div class="nd"><h2>nd2</h2></div>
-        </div>
-        <div class="item_ttsk">
-            <img src="Images/tra.jpg" alt="Ảnh 3">
-            <div class="nd"><h2>nd3</h2></div>
-        </div>
-        <div class="item_ttsk">
-            <img src="Images/campucio.jpg" alt="Ảnh 4">
-            <div class="nd"><h2>nd4</h2></div>
-        </div>
-        <div class="item_ttsk">
-            <img src="Images/cam.jpg" alt="Ảnh 5">
-            <div class="nd"><h2>nd5</h2></div>
-        </div>
+
     </div>
-    <div class="carousel-nav">
-        <button class="carousel-button" onclick="document.querySelector('.tintuc_sk').scrollBy({left: -300, behavior: 'smooth'})">&#10094;</button>
-        <button class="carousel-button" onclick="document.querySelector('.tintuc_sk').scrollBy({left: 300, behavior: 'smooth'})">&#10095;</button>
-    </div>
-</div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.slider-wrapper', {
+        loop: true,
+        spaceBetween: 50,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            640: {
+                slidesPerView: 2
+            },
+            1280: {
+                slidesPerView: 3
+            },
+
+        }
+    });
+
+</script>
 
 <footer>
     <div class="footer-container">
