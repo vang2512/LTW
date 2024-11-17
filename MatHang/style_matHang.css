@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda+One&family=Nunito:wght@200; 300;400;500;600&display=swap');
+*{
+    font-family: 'Nunito', sans-serif ;
+    margin:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+:root{
+    --main-color: #be9c79;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --border: 2rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+
+}
+section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*Thanh dieu huong trang chu*/
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    background-image: url("Images/header.jpg");
+    background-size: cover;
+    z-index: 1000;
+}
+
+.header .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1.5rem 1rem;
+}
+
+.header .flex .logo img {
+    height: 4.8rem;
+    margin-right: 2rem;
+    border-radius: 30%;
+    object-fit: cover;
+}
+
+.header .flex .navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.header .flex .navbar .left a,
+.header .flex .navbar .right a{
+    margin: 0 1rem;
+    font-size: 1.68rem;
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+.header .flex .navbar .left a:not(:last-child):not(.dropdown-content a)::after,
+.header .flex .navbar .right a:not(:last-child)::after {
+    content: "/";
+    color: #ccc;
+    margin-left: 10px;
+}
+#menu-btn {
+    display: none;
+}
+.header .flex .navbar .left a:hover,
+.header .flex .navbar .right a:not(.icon):hover {
+    color: #d6b38e;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-image: url("Images/header.jpg");
+    width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.53s ease, transform 0.53s ease;
+    pointer-events: none;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown-content a {
+    color: var(--white);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #be9c79;
+}
+
+
+/* css trang mat hang*/
+/* styles.css */
+
+
+.container {
+    display: flex;
+    width: 60%;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #f8f8f8;
+    width: 20%;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    color: #ff9900;
+}
+
+/* Main Content Styles */
+.products {
+    width: 80%;
+    padding: 20px;
+}
+
+.products h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #ff9900;
+    font-weight: bold;
+}
