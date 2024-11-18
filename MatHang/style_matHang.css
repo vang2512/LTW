@@ -132,7 +132,7 @@ section {
 /* Sidebar Styles */
 .sidebar {
     background-color: #f8f8f8;
-    width: 20%;
+    width: 40%;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -152,6 +152,8 @@ section {
 .sidebar li:hover {
     color: #ff9900;
 }
+
+
 
 /* Main Content Styles */
 .products {
