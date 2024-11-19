@@ -147,13 +147,15 @@ section {
     height: 100%;
     width: 20%;
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    
     position: sticky;
-    top: 76px;
+    top: 60px;
     left: 0;
-    z-index: 900;
+    z-index: 700;
     transition: top 1s ease;  
     margin-left: 30px;
+    border-right: 2px solid #be9c79;
+    margin-top: 30px;
 }
 
 .sidebar ul {
@@ -162,10 +164,13 @@ section {
 }
 
 .sidebar li {
-    margin: 15px 0;
+
+    margin: 13px 0;
     font-size: 13px;
     color: #333;
     cursor: pointer;
+    line-height: 1.4;
+    margin-left: 17px;
     
 }
 
@@ -186,12 +191,15 @@ section {
     font-size: 24px;
     margin-bottom: 20px;
     margin-top: 20px;
+    margin-left: 40px;
 }
 
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    margin-right: 80px;
+    margin-left: 40px;
 }
 
 .product-card {
@@ -203,8 +211,8 @@ section {
 }
 
 .product-card img {
-    max-width: 250px;
-    max-height: 300px;
+    max-width: 220px;
+    max-height: 285px;
 
 
 }
