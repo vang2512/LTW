@@ -1,34 +1,39 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda+One&family=Nunito:wght@200; 300;400;500;600&display=swap');
-*{
-    font-family: 'Nunito', sans-serif ;
-    margin:0;
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
     box-sizing: border-box;
-    outline: none; border: none;
+    outline: none;
+    border: none;
     text-decoration: none;
     text-transform: capitalize;
 
 }
-:root{
+
+:root {
     --main-color: #be9c79;
     --black: #333;
     --white: #fff;
     --light-color: #666;
     --border: 2rem solid var(--black);
-    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
 
-html{
+html {
     font-size: 60%;
     overflow-x: hidden;
     scroll-padding-top: 6rem;
 
 }
+
 section {
     padding: 3rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /*Thanh dieu huong trang chu*/
 .header {
     position: sticky;
@@ -62,32 +67,38 @@ section {
     width: 100%;
     justify-content: space-between;
 }
+
 .header .flex .navbar .left a,
-.header .flex .navbar .right a{
+.header .flex .navbar .right a {
     margin: 0 1rem;
     font-size: 1.68rem;
     color: var(--white);
     text-decoration: none;
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
+
 .header .flex .navbar .left a:not(:last-child):not(.dropdown-content a)::after,
 .header .flex .navbar .right a:not(:last-child)::after {
     content: "/";
     color: #ccc;
     margin-left: 10px;
 }
+
 #menu-btn {
     display: none;
 }
+
 .header .flex .navbar .left a:hover,
 .header .flex .navbar .right a:not(.icon):hover {
     color: #d6b38e;
     cursor: pointer;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
+
 .dropdown-content {
     display: block;
     position: absolute;
@@ -130,11 +141,17 @@ section {
 }
 
 /* Sidebar Styles */
-.sidebar {  
+.sidebar {
     background-color: #f8f8f8;
+    height: 100%;
     width: 23%;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 76px;
+    left: 0;
+    z-index: 900;
+    transition: top 1s ease;  
 }
 
 .sidebar ul {
@@ -168,7 +185,7 @@ section {
 }
 
 .product-grid {
-    display: grid   ;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
@@ -182,7 +199,7 @@ section {
 }
 
 .product-card img {
-   max-width: 250px;
+    max-width: 250px;
     max-height: 300px;
 
 
