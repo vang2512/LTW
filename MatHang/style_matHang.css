@@ -142,9 +142,10 @@ section {
 
 /* Sidebar Styles */
 .sidebar {
-    background-color: #f8f8f8;
+
+    background-color: white;
     height: 100%;
-    width: 23%;
+    width: 20%;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -152,6 +153,7 @@ section {
     left: 0;
     z-index: 900;
     transition: top 1s ease;  
+    margin-left: 30px;
 }
 
 .sidebar ul {
@@ -161,14 +163,16 @@ section {
 
 .sidebar li {
     margin: 15px 0;
-    font-size: 16px;
+    font-size: 13px;
     color: #333;
     cursor: pointer;
+    
 }
 
 .sidebar li:hover {
     color: #ff9900;
 }
+
 
 
 
@@ -216,3 +220,74 @@ section {
     color: #ff9900;
     font-weight: bold;
 }
+    
+/* Css cho phần footer*/
+
+footer {
+    background-image: url("Images/header.jpg");
+    color: #eee;
+    margin-top: 50px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 100px;
+}
+.footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 150px;
+}
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-left: 38px;
+    color: #fff;
+}
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+
+}
+.footer-section ul li a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 14px;
+}
+.contact-info {
+    font-size: 14px;
+    color: #eee;
+    margin-left: 40px;
+}
+.contact-info a {
+    color: #eee;
+    text-decoration: none;
+}
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+
+}
+.social-media-icons a{
+    width: 20px;
+    height: 50px;
+    color:#fff
+}
+.footer-bottom {
+    border-top: 1px solid #555;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+}
+
