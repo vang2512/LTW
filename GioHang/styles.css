@@ -181,3 +181,49 @@ html, body {
     font-weight: bold;
     letter-spacing: 2px;
 }
+
+#footer .container {
+    background-color: #182344;
+    color: white;
+}
+
+#footer .container .footer-mid {
+    padding: 40px 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#footer .container .footer-mid .text {
+    font-size: 20px;
+    font-weight: thin;
+    margin-bottom: 18px;
+}
+
+#footer .container .footer-mid .left .function ul,
+#footer .container .footer-mid .mid .function ul {
+    list-style-type: none;
+}
+
+#footer .container .footer-mid .left .function ul li,
+#footer .container .footer-mid .mid .function ul li {
+    margin-bottom: 10px;
+}
+
+#footer .container .footer-mid .right .contact-information .contact-item {
+    margin-bottom: 10px;
+}
+
+#footer .container .footer-mid .right .contact-information .contact-item i {
+    margin-right: 4px;
+}
+
+#footer .container .footer-bottom {
+    border-top: solid 1px #A7815C;
+    font-size: 10px;
+    color: #999;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
