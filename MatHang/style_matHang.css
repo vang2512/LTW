@@ -164,6 +164,7 @@ section {
 .products h1 {
     font-size: 24px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .product-grid {
