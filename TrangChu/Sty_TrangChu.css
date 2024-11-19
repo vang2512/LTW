@@ -340,10 +340,85 @@ section {
     transform: scale(1.1);
 }
 /**/
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: -50px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+.space {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 80px;
+}
+
+.image_space_1, .image_space_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-container {
+    position: relative;
+    width: 800px;  /* Size of each image in the first row */
+    height: 400px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.image_space_2 .image-container {
+    width: 1600px;
+    height: 500px;
+}
+
+.image_space_2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(169, 169, 169, 0.6); /* Light gray overlay */
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.image-container .overlay-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.image-container:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+
+/**/
 .carousel-title {
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: -25px;
     color: #333;
     text-align: center;
      margin-top: 20px;
