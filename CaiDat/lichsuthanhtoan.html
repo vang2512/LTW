@@ -1,113 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-    <title>Profile Information</title>
-    <link rel="stylesheet" href="style_caidat.css">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <title>Profile Information</title>
+  <link rel="stylesheet" href="style_caidat.css">
 </head>
+
 <body>
-    
+
   <header class="header">
     <section class="flex">
-        <a href="#home" class="logo">
-            <img src="Images/logo .png" alt="">
-        </a>
-        <nav class="navbar">
-            <div class="left">
-                <a href="#home">Trang Chủ</a>
-                <a href="#about">About</a>
-                <!-- Menu with dropdown options -->
-                <div class="dropdown">
-                    <a href="#menu" class="mn">Menu</a>
-                    <div class="dropdown-content">
-                        <a href="#coffee">Coffee</a>
-                        <a href="#tea">Trà</a>
-                        <a href="#desserts">Bánh Ngọt</a>
-                        <a href="#snacks">Nước Ép</a>
-                    </div>
-                </div>
-                <a href="#datban">Đặt Bàn</a>
-                <a href="#contact">Tin Tức & Sự Kiện</a>
+      <a href="#home" class="logo">
+        <img src="Images/logo .png" alt="">
+      </a>
+      <nav class="navbar">
+        <div class="left">
+          <a href="#home">Trang Chủ</a>
+          <a href="#about">About</a>
+          <!-- Menu with dropdown options -->
+          <div class="dropdown">
+            <a href="#menu" class="mn">Menu</a>
+            <div class="dropdown-content">
+              <a href="#coffee">Coffee</a>
+              <a href="#tea">Trà</a>
+              <a href="#desserts">Bánh Ngọt</a>
+              <a href="#snacks">Nước Ép</a>
             </div>
-            <div class="right">
-                <a href="#search" class="icon">
-                    <i class="fas fa-search"></i>
-                </a>
-                <a href="#giohang" class="icon">
-                    <i class="fas fa-shopping-cart"></i>
-                </a>
-                <a href="#sign">Đăng Ký</a>
-                <a href="#login">Đăng Nhập</a>
-            </div>
-        </nav>
-        <div id="menu-btn" class="fas fa-bars"></div>
+          </div>
+          <a href="#datban">Đặt Bàn</a>
+          <a href="#contact">Tin Tức & Sự Kiện</a>
+        </div>
+        <div class="right">
+          <a href="#search" class="icon">
+            <i class="fas fa-search"></i>
+          </a>
+          <a href="#giohang" class="icon">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+          <a href="#sign">Đăng Ký</a>
+          <a href="#login">Đăng Nhập</a>
+        </div>
+      </nav>
+      <div id="menu-btn" class="fas fa-bars"></div>
     </section>
-</header>
+  </header>
 
-    <div class="container">
-        <aside class="sidebar">
-            <button class="sidebar-btn ">Thông tin cá nhân</button>
-            <button class="sidebar-btn ">Đổi mật khẩu</button>
-           
-            <button class="sidebar-btn active ">Lịch sử thanh toán</button>
- 
-        </aside>
-        <main class="main-content">
-            <div class="filter">
-              <label for="from-date">From</label>
-              <input type="date" id="from-date" value="2024-01-01">
-              <label for="to-date">To</label>
-              <input type="date" id="to-date" value="2024-12-31">
-              <button class="search-btn">🔍</button>
-            </div>
-            <table>
-              <thead>
-                <tr>
-                  <th>Ngày mua hàng</th>
-                  <th>Loại </th>
-                  <th>Mô tả</th>
-                  <th>Số lượng</th>
-                  <th>Giá tiền</th>
-                  <th>Tiến trình thành toán</th>
-                 
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>20/11/2024</td>
-                  <td>Coffe</td>
-                  <td>ít đường</td>
-                  <td>01</td>
-                  <td> 100000đ</td>
-                  <td class="failure">Chưa thanh toán</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>01-11-2024</td>
-                  <td>Trà sữa</td>
-                  <td>Full topping</td>
-                  <td>02</td>
-                  <td> 100000đ</td>
-                  <td class="success">Đã thanh toán</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>23-12-2023</td>
-                  <td>Tiramisu</td>
-                  <td>Nguyên một cái</td>
-                  <td>01</td>
-                  <td> 100000đ</td>
-                  <td class="success">Đã thanh toán</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </main>
-    </div>
+  <div class="container">
+    <aside class="sidebar">
+      <button class="sidebar-btn ">Thông tin cá nhân</button>
+      <button class="sidebar-btn ">Đổi mật khẩu</button>
+
+      <button class="sidebar-btn active ">Lịch sử thanh toán</button>
+
+    </aside>
+    <main class="main-content">
+      <div class="filter">
+        <label for="from-date">From</label>
+        <input type="date" id="from-date" value="2024-01-01">
+        <label for="to-date">To</label>
+        <input type="date" id="to-date" value="2024-12-31">
+        <button class="search-btn">🔍</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Ngày mua hàng</th>
+            <th>Loại </th>
+            <th>Mô tả</th>
+            <th>Số lượng</th>
+            <th>Giá tiền</th>
+            <th>Tiến trình thành toán</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>20/11/2024</td>
+            <td>Coffe</td>
+            <td>ít đường</td>
+            <td>01</td>
+            <td> 100000đ</td>
+            <td class="failure">Chưa thanh toán</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>01-11-2024</td>
+            <td>Trà sữa</td>
+            <td>Full topping</td>
+            <td>02</td>
+            <td> 100000đ</td>
+            <td class="success">Đã thanh toán</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>23-12-2023</td>
+            <td>Tiramisu</td>
+            <td>Nguyên một cái</td>
+            <td>01</td>
+            <td> 100000đ</td>
+            <td class="success">Đã thanh toán</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
 </body>
+
 </html>

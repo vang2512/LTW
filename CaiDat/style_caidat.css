@@ -1,37 +1,39 @@
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Merienda+One&family=Nunito:wght@200; 300;400;500;600&display=swap');
-*{
-    font-family: 'Nunito', sans-serif ;
-    margin:0;
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
     box-sizing: border-box;
-    outline: none; border: none;
+    outline: none;
+    border: none;
     text-decoration: none;
     text-transform: capitalize;
 
 }
-:root{
+
+:root {
     --main-color: #be9c79;
     --black: #333;
     --white: #fff;
     --light-color: #666;
     --border: 2rem solid var(--black);
-    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
 
-html{
+html {
     font-size: 60%;
     overflow-x: hidden;
     scroll-padding-top: 6rem;
 
 }
+
 section {
     padding: 3rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 /*Thanh dieu huong trang chu*/
 .header {
     position: sticky;
@@ -65,32 +67,38 @@ section {
     width: 100%;
     justify-content: space-between;
 }
+
 .header .flex .navbar .left a,
-.header .flex .navbar .right a{
+.header .flex .navbar .right a {
     margin: 0 1rem;
     font-size: 1.68rem;
     color: var(--white);
     text-decoration: none;
     transition: color 0.3s ease, text-decoration 0.3s ease;
 }
+
 .header .flex .navbar .left a:not(:last-child):not(.dropdown-content a)::after,
 .header .flex .navbar .right a:not(:last-child)::after {
     content: "/";
     color: #ccc;
     margin-left: 10px;
 }
+
 #menu-btn {
     display: none;
 }
+
 .header .flex .navbar .left a:hover,
 .header .flex .navbar .right a:not(.icon):hover {
     color: #d6b38e;
     cursor: pointer;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
+
 .dropdown-content {
     display: block;
     position: absolute;
@@ -131,16 +139,16 @@ section {
 
 
 .sidebar {
-   
+
     background-color: #f4f6f9;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     gap: 10px;
-   
+
     height: 100vh;
- 
+
 }
 
 .sidebar-btn {
@@ -172,14 +180,15 @@ section {
     margin-left: 180px;
 }
 
-form{
-    margin-left: 80px;  
+form {
+    margin-left: 80px;
 }
+
 form label {
     display: block;
     margin: 15px 0 5px;
     font-weight: bold;
-    
+
 }
 
 form input,
@@ -189,7 +198,7 @@ form textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    
+
 }
 
 form textarea {
@@ -209,7 +218,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-    
+
 }
 
 .update {
@@ -231,16 +240,23 @@ button {
 
 
 .change-password-container {
-    position: absolute; /* Đặt vị trí tuyệt đối */
-    top: 50%; /* Căn giữa theo chiều dọc */
-    left: 60%; /* Căn giữa theo chiều ngang */
-    transform: translate(-50%, -50%); /* Dịch chuyển để phần tử nằm chính giữa */
+    position: absolute;
+    /* Đặt vị trí tuyệt đối */
+    top: 50%;
+    /* Căn giữa theo chiều dọc */
+    left: 60%;
+    /* Căn giữa theo chiều ngang */
+    transform: translate(-50%, -50%);
+    /* Dịch chuyển để phần tử nằm chính giữa */
     padding: 20px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 400px; /* Đặt chiều rộng cố định nếu cần */
-    max-width: 90%; /* Đảm bảo không vượt quá kích thước màn hình */
+    width: 400px;
+    /* Đặt chiều rộng cố định nếu cần */
+    max-width: 90%;
+    /* Đảm bảo không vượt quá kích thước màn hình */
+
 }
 
 
@@ -250,8 +266,14 @@ button {
     margin-bottom: 20px;
 }
 
+.form-change-password {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .form-group {
     margin-bottom: 15px;
+
 }
 
 .form-group label {
@@ -301,98 +323,95 @@ body {
     margin: 10;
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
     width: 100%;
-  }
-  
-  .sidebar {    
-  
+}
+
+.sidebar {
+
     padding: 20px;
     width: 250px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .sidebar ul {
+}
+
+.sidebar ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .sidebar ul li {
+}
+
+.sidebar ul li {
     padding: 15px 10px;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
     margin-bottom: 10px;
     transition: background-color 0.3s;
-  }
-  
-  .sidebar ul li.active,
-  .sidebar ul li:hover {
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
     background-color: #003754;
     color: #ffffff;
-  }
-  
-  .main-content {
+}
+
+.main-content {
     flex: 1;
     padding: 20px;
     background-color: #ffffff;
-    
-  }
-  
-  .filter {
+
+}
+
+.filter {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-  }
-  
-  .filter label {
+}
+
+.filter label {
     margin-right: 10px;
-  }
-  
-  .filter input[type="date"] {
+}
+
+.filter input[type="date"] {
     margin-right: 15px;
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 3px;
-  }
-  
-  .search-btn {
+}
+
+.search-btn {
     padding: 5px 10px;
     border: none;
     background-color: transparent;
     cursor: pointer;
     font-size: 18px;
     margin-left: auto;
-  }
-  
-  table {
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
-    margin-right: 50px; 
-  }
-  
-  table th,
-  table td {
+    margin-right: 50px;
+}
+
+table th,
+table td {
     text-align: left;
     padding: 10px;
     border-bottom: 1px solid #ddd;
-  }
-  
-  table th {
-    background-color: #f5f5f5;
-  }
-  
-  .success {
-    color: green;
-  }
-  
-  .failure {
-    color: red;
-  }
- 
+}
 
-  
+table th {
+    background-color: #f5f5f5;
+}
+
+.success {
+    color: green;
+}
+
+.failure {
+    color: red;
+}
