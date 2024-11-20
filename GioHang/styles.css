@@ -49,6 +49,10 @@ html, body {
     display: block;
 }
 
+#header .container .navbar .navbar-left ul li a:hover {
+    color: orange;
+}
+
 #header .container .navbar .navbar-left .dropdown i {
     font-size: 12px;
 }
@@ -93,6 +97,14 @@ html, body {
 #header .container .navbar .navbar-right ul li a {
     color: white;
     text-decoration: none;
+}
+
+#header .container .navbar .navbar-right ul li a:hover {
+    color: orange;
+}
+
+#header .container .navbar .navbar-right ul li a i {
+    font-size: 18px;
 }
 
 #shopping-cart .container {
