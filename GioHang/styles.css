@@ -108,12 +108,14 @@ html, body {
 }
 
 #shopping-cart .container {
-    max-width: 800px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#shopping-cart .container .cart-information {
+    float: left;
 }
 
 #shopping-cart .container .cart-information table {
@@ -237,6 +239,9 @@ html, body {
 #shopping-cart .container .cart-checkout {
     margin-top: 20px;
     padding: 20px;
+    float: right;
+    display: flex;
+    flex-direction: column;
 }
 
 #shopping-cart .container .cart-checkout .cart-header {
