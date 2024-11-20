@@ -3,7 +3,8 @@
     padding: 0;
 }
 
-html, body {
+html,
+body {
     font-family: "Google Sans", roboto, "Noto Sans Mynamar UI", sans-serif, Tahoma;
 }
 
@@ -107,30 +108,39 @@ html, body {
     font-size: 18px;
 }
 
+#shopping-cart {
+    min-height: 425px;
+}
+
 #shopping-cart .container {
-    margin: 50px auto;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
     background-color: #fff;
-    overflow: hidden;
 }
 
 #shopping-cart .container .cart-information {
-    float: left;
+    width: 55%;
+}
+
+#shopping-cart .container .cart-checkout {
+    width: 35%;
 }
 
 #shopping-cart .container .cart-information table {
-    border-collapse: separate;
-    border-spacing: 20px;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 #shopping-cart .container .cart-information .row-header {
     color: #007BFF;
-    font-size: 24px;
+    font-size: 15px;
 }
 
 #shopping-cart .container .cart-information .row-header span {
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 #shopping-cart .container .cart-information .row-header .text {
@@ -138,10 +148,15 @@ html, body {
     justify-content: right;
 }
 
+#shopping-cart .container .cart-information .row-item td {
+    border-top: solid 2px #ECECEC;
+}
+
 #shopping-cart .container .cart-information .row-item .cart-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #shopping-cart .container .cart-information .row-item .cart-item .delete-btn {
@@ -157,6 +172,7 @@ html, body {
     align-items: center;
     justify-content: center;
     transition: background-color 0.3s ease;
+    margin-right: 20px;
 }
 
 #shopping-cart .container .cart-information .row-item .cart-item .delete-btn:hover {
@@ -166,6 +182,7 @@ html, body {
 #shopping-cart .container .cart-information .row-item .cart-item img {
     width: 50px;
     height: 50px;
+    margin-right: 20px;
 }
 
 #shopping-cart .container .cart-information .row-item .cart-item #cappuccino-image {
@@ -192,6 +209,7 @@ html, body {
 }
 
 #shopping-cart .container .cart-information .row-item .cart-amount input {
+    text-align: center;
     width: 30px;
     height: 27px;
 }
@@ -205,8 +223,10 @@ html, body {
 #shopping-cart .container .cart-information .cart-actions {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     flex-direction: row;
+    padding-top: 20px;
+    border-top: solid 2px #ECECEC ;
 }
 
 #shopping-cart .container .cart-information .cart-actions .continue-btn {
@@ -224,7 +244,7 @@ html, body {
 }
 
 #shopping-cart .container .cart-information .cart-actions .update-btn {
-    width: 180px;
+    width: 190px;
     height: 38px;
     background-color: #007BFF;
     border: none;
@@ -237,9 +257,6 @@ html, body {
 }
 
 #shopping-cart .container .cart-checkout {
-    margin-top: 20px;
-    padding: 20px;
-    float: right;
     display: flex;
     flex-direction: column;
 }
@@ -273,15 +290,15 @@ html, body {
     justify-content: center;
 }
 
-#shopping-cart .container .cart-checkout .cart-actions button {
-    width: 100%;
+#shopping-cart .container .cart-checkout .cart-actions .checkout-btn {
+    width: 400px;
     height: 38px;
     background-color: #007BFF;
     border: none;
     margin-top: 10px;
 }
 
-#shopping-cart .container .cart-checkout .cart-actions button {
+#shopping-cart .container .cart-checkout .cart-actions .checkout-btn span {
     color: white;
     font-weight: bold;
     letter-spacing: 2px;
@@ -301,7 +318,6 @@ html, body {
 
 #footer .container .footer-mid .text {
     font-size: 20px;
-    font-weight: thin;
     margin-bottom: 18px;
 }
 
