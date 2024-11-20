@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Google Sans", roboto, "Noto Sans Mynamar UI", sans-serif, Tahoma;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sidebar */
+#sidebar {
+    background-color: #0D1A35;
+    width: 285px;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar .container .logo-name-coffee {
+    background-color: #182344;
+    width: 100%;
+    height: 87px;
+    display: flex;
+    padding-left: 20px;
+    padding-top: 16px;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+#sidebar .container .logo-name-coffee .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+#sidebar .container .logo-name-coffee .name {
+    padding-top: 16px;
+}
+
+#sidebar .container .logo-name-coffee .name span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#sidebar .container .feature {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#sidebar .container .feature ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar .container .feature ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#sidebar .container .feature ul li a:hover {
+    background-color: #575757;
+}
+
+#sidebar .container .feature .menu-item .menu-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+#sidebar .container .feature .menu-item .menu-title .text {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+#sidebar .container .feature .menu-item .sub-menu {
+    display: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#sidebar .container .feature .menu-item.open .sub-menu {
+    display: block;
+}
+
+#sidebar .container .feature .menu-item .sub-menu .sub-item:hover {
+    background-color: #444;
+    padding-left: 30px;
+}
