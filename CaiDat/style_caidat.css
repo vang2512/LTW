@@ -129,16 +129,17 @@ section {
     height: 100%;
 }
 
+
 .sidebar {
-    width: 20%;
+   
     background-color: #f4f6f9;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 100%;
-    z-index: 1000;
+   
+    height: 100vh;
  
 }
 
@@ -165,15 +166,20 @@ section {
 }
 
 .main-content-profile {
-    width: 80%;
+    width: 50%;
     padding: 30px;
     background-color: #ffffff;
+    margin-left: 180px;
 }
 
+form{
+    margin-left: 80px;  
+}
 form label {
     display: block;
     margin: 15px 0 5px;
     font-weight: bold;
+    
 }
 
 form input,
@@ -183,6 +189,7 @@ form textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    
 }
 
 form textarea {
@@ -193,6 +200,7 @@ form textarea {
 .buttons {
     display: flex;
     gap: 10px;
+    margin-left: 110px;
 }
 
 button {
@@ -215,6 +223,7 @@ button {
     font-size: 12px;
     color: #777;
 }
+
 
 
 /* Css trang thaydoimatkhau */
@@ -331,6 +340,7 @@ body {
     flex: 1;
     padding: 20px;
     background-color: #ffffff;
+    
   }
   
   .filter {
@@ -362,6 +372,7 @@ body {
   table {
     width: 100%;
     border-collapse: collapse;
+    margin-right: 50px; 
   }
   
   table th,
@@ -382,4 +393,6 @@ body {
   .failure {
     color: red;
   }
+ 
+
   
