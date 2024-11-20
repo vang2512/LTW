@@ -200,6 +200,7 @@ section {
     gap: 20px;
     margin-right: 80px;
     margin-left: 40px;
+    
 }
 
 .product-card {
@@ -208,12 +209,13 @@ section {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 .product-card img {
     max-width: 220px;
     max-height: 285px;
-
+    border-radius: 10px;
 
 }
 
