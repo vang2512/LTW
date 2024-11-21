@@ -20,8 +20,9 @@ body {
 }
 
 .logo img {
-    width: 150px; /* Logo size remains the same */
-    margin-bottom: 30px; /* Increased margin below the logo */
+    margin-top: -30px;
+    width: 200px; /* Logo size remains the same */
+    margin-bottom: 5px; /* Increased margin below the logo */
 }
 
 .login-form h2 {
@@ -30,15 +31,13 @@ body {
     margin-bottom: 25px; /* Increased space below the heading */
 }
 
-/* style.css */
 
 .login-form input {
-    width: 100%;
+    width: 80%;
     padding: 15px;
     margin: 15px 0 5px 0; /* Reduced bottom margin for input fields */
-    border: none;
-    border-radius: 5px;
     font-size: 15px;
+   
 }
 
 .form-links {
@@ -52,7 +51,7 @@ body {
 .form-links a {
     color: #949494;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .form-links a:hover {
