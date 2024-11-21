@@ -150,6 +150,7 @@ input[type="text"], input[type="email"], textarea {
 }
 textarea {
     resize: vertical;
+    height: 120px;
 }
 .order-summary {
     width: 500px;
@@ -238,6 +239,10 @@ hr {
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    cursor: pointer;
+}
+.order-btn.active {
+    background-color: #dab993;
     cursor: pointer;
 }
 

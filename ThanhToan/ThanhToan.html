@@ -106,7 +106,6 @@
             <p><i class="fas fa-users"></i> Số người: <span class="info-detail">4</span></p>
             <p><i class="fas fa-leaf"></i> Không gian: <span class="info-detail">Ngoài trời</span></p>
         </div>
-
         <div class="form-group">
             <div class="check_box">
                 <input type="checkbox" id="terms" required>
@@ -118,6 +117,27 @@
         <p class="hotline">Hotline 24/7: 088 66 77 119</p>
     </div>
 </div>
+
+<script>
+    const formFields = document.querySelectorAll(".checkout-form input");
+    const orderButton = document.querySelector(".order-btn");
+
+    function checkFormCompletion() {
+        let allFieldsFilled = true;
+
+        formFields.forEach(field => {
+            if (!field.value.trim()) {
+                allFieldsFilled = false;
+            }
+        });
+        orderButton.disabled = !allFieldsFilled;
+        orderButton.classList.toggle('active', allFieldsFilled);
+    }
+    formFields.forEach(field => {
+        field.addEventListener('input', checkFormCompletion);
+    });
+    checkFormCompletion();
+</script>
 
 <footer>
     <div class="footer-container">
