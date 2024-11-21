@@ -19,3 +19,44 @@ body {
     height: 450px;
 }
 
+.logo img {
+    width: 100px; /* Logo size remains the same */
+    margin-bottom: 30px; /* Increased margin below the logo */
+}
+
+.login-form h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 25px; /* Increased space below the heading */
+}
+
+/* style.css */
+
+.login-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0 5px 0; /* Reduced bottom margin for input fields */
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+
+
+
+.login-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #be9c79;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.login-form button:hover {
+    color: #3d3d3d;
+}
