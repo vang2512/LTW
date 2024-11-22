@@ -17,7 +17,6 @@
     --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
 }
 
-
 html{
     font-size: 60%;
     overflow-x: hidden;
@@ -101,7 +100,9 @@ section {
     transition: opacity 0.53s ease, transform 0.53s ease;
     pointer-events: none;
 }
-
+.dropdown-content .datban{
+    width: 200px;
+}
 .dropdown:hover .dropdown-content {
     opacity: 1;
     transform: translateY(0);
@@ -119,4 +120,214 @@ section {
     color: #be9c79;
 }
 /**/
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.checkout-form, .order-summary{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+.checkout-form {
+    width: 800px;
+    margin-right: 10px;
+}
+.form-group {
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+.order-summary {
+    width: 500px;
+    border: 1px solid #e0a96d;
+}
 
+.order-summary p {
+    margin: 10px 0;
+}
+.do_Uong{
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.order-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.tong{
+    color: #c81717;
+    font-weight: bold;
+}
+.order-item, .order-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.order-item img{
+    height: 45px;
+    width:38px;
+}
+.order-item .ten_mon{
+    margin-left: -70px;
+}
+.order-item .sl{
+    margin-right: -5px;
+}
+.order-header .sluong{
+    margin-right: -135px;
+}
+hr {
+    border: 1px solid #ddd;
+}
+.reservation-info {
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.reservation-info p {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reservation-info p {
+    margin: 5px 0;
+    color: #333;
+}
+.info-detail {
+    color: #c81717;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-size: 15px;
+
+}
+.check_box{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.order-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #be9c79;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.order-btn.active {
+    background-color: #dab993;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+h3{
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 35px;
+}
+/*Footer*/
+footer {
+    background-image: url("Images/header.jpg");
+    color: #eee;
+    margin-top: 50px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 100px;
+}
+.footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 150px;
+}
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    margin-left: 38px;
+    color: #fff;
+}
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+
+}
+.footer-section ul li a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 14px;
+}
+.contact-info {
+    font-size: 14px;
+    color: #eee;
+    margin-left: 40px;
+}
+.contact-info a {
+    color: #eee;
+    text-decoration: none;
+}
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+
+}
+.social-media-icons a{
+    width: 20px;
+    height: 50px;
+    color:#fff
+}
+.footer-bottom {
+    border-top: 1px solid #555;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+}

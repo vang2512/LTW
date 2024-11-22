@@ -28,7 +28,12 @@
                         <a href="#snacks">Nước Ép</a>
                     </div>
                 </div>
-                <a href="#datban">Đặt Bàn</a>
+                <div class="dropdown">
+                    <a href="#datban">Đặt Bàn</a>
+                    <div class="dropdown-content">
+                        <a href="#coffee" class="datban">Lịch Sử Đặt Bàn</a>
+                    </div>
+                </div>
                 <a href="#contact">Tin Tức & Sự Kiện</a>
             </div>
             <div class="right">
@@ -69,7 +74,7 @@
 
     <div class="sp_moi">
         <div class="label">new</div>
-        <h3>Bánh tiramisu</h3>
+        <h3>Bánh Tiramisu</h3>
         <img src="Images/tinavisu.jpg" alt="Sản phẩm 2">
         <div class="container">
             <div class="gia">60,000 VND</div>
@@ -79,7 +84,7 @@
 
     <div class="sp_moi">
         <div class="label">new</div>
-        <h3>trà chanh dây</h3>
+        <h3>Trà Chanh Dây</h3>
         <img src="Images/tra.jpg" alt="Sản phẩm 3">
         <div class="container">
             <div class="gia">45,000 VND</div>
@@ -89,8 +94,8 @@
 
     <div class="sp_moi">
         <div class="label">new</div>
-        <h3>Nước ép ổi</h3>
-        <img src="Images/ep.jpg" alt="Sản phẩm 4">
+        <h3>Latte</h3>
+        <img src="Images/ep.jpg" alt="Sản phẩm 5">
         <div class="container">
             <div class="gia">55,000 VND</div>
             <div class="giohang">thêm giỏ hàng</div>
@@ -110,7 +115,6 @@
                 <div class="giohang">thêm giỏ hàng</div>
             </div>
         </div>
-
         <div class="sp_banchay">
             <div class ="label_bt">best seller</div>
             <h3>Bánh tiramisu</h3>
@@ -120,7 +124,6 @@
                 <div class="giohang">thêm giỏ hàng</div>
             </div>
         </div>
-
         <div class="sp_banchay">
             <h3>trà chanh dây</h3>
             <img src="Images/cam.jpg" alt="Sản phẩm 3">
@@ -129,7 +132,6 @@
                 <div class="giohang">thêm giỏ hàng</div>
             </div>
         </div>
-
         <div class="sp_banchay">
             <h3>Nước ép ổi</h3>
             <img src="Images/cam.jpg" alt="Sản phẩm 4">
@@ -138,7 +140,6 @@
                 <div class="giohang">thêm giỏ hàng</div>
             </div>
         </div>
-
         <div class="sp_banchay">
             <h3>Bánh ngọt</h3>
             <img src="Images/cam.jpg" alt="Sản phẩm 5">
@@ -147,7 +148,6 @@
                 <div class="giohang">thêm giỏ hàng</div>
             </div>
         </div>
-
         <div class="sp_banchay">
             <h3>Trà sữa</h3>
             <img src="Images/cam.jpg" alt="Sản phẩm 6">
@@ -156,7 +156,6 @@
                 <div class="giohang">thêm giỏ hàng</div>
             </div>
         </div>
-
         <div class="sp_banchay">
             <h3>Café sữa đá</h3>
             <img src="Images/cam.jpg" alt="Sản phẩm 7">
@@ -165,7 +164,6 @@
                 <div class="giohang">thêm giỏ hàng</div>
             </div>
         </div>
-
         <div class="sp_banchay">
             <h3>Bánh Mỳ</h3>
             <img src="Images/cam.jpg" alt="Sản phẩm 8">
@@ -176,9 +174,6 @@
         </div>
     </div>
 </div>
-
-
-
 
 <section class="about" id="about" >
     <div class="image">
@@ -229,6 +224,33 @@
     </div>
 </section>
 
+<div class="title">Không Gian Quán</div>
+<div class="space">
+    <div class="image_space_1">
+        <div class="image-container">
+            <img src="Images/ngoai.jpg" class="sp_1">
+            <div class="overlay">
+                <span class="overlay-text">Ngoài Trời</span>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="Images/trongnha.jpg" class="sp_2">
+            <div class="overlay">
+                <span class="overlay-text">Trong Quán</span>
+            </div>
+        </div>
+    </div>
+    <div class="image_space_2">
+        <div class="image-container">
+            <img src="Images/phongrieng.png" class="sp_3">
+            <div class="overlay">
+                <span class="overlay-text">Phòng Riêng</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <div class="carousel-title" id="contact">Tin Tức & Sự Kiện</div>
 <section class="tintuc_sk">
@@ -264,18 +286,15 @@
                 <div class="swiper-pagination"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
-
             </div>
-
         </div>
-
     </div>
 </section>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.slider-wrapper', {
         loop: true,
-        spaceBetween: 50,
+        spaceBetween: 100,
         slidesPerView: 3,
         pagination: {
             el: '.swiper-pagination',
