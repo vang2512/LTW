@@ -1,3 +1,14 @@
+:root {
+    --color-primary: #6C9BCF;
+    --color-white: #FFF;
+    --color-info-dark: #7D8DA1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-background: #F6F6F9;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
 /* Reset CSS */
 * {
     margin: 0;
