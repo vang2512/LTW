@@ -100,7 +100,9 @@ section {
     transition: opacity 0.53s ease, transform 0.53s ease;
     pointer-events: none;
 }
-
+.dropdown-content .datban{
+    width: 200px;
+}
 .dropdown:hover .dropdown-content {
     opacity: 1;
     transform: translateY(0);

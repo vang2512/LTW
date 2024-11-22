@@ -28,7 +28,12 @@
                         <a href="#snacks">Nước Ép</a>
                     </div>
                 </div>
+                <div class="dropdown">
                 <a href="#datban">Đặt Bàn</a>
+                    <div class="dropdown-content">
+                        <a href="#coffee" class="datban">Lịch Sử Đặt Bàn</a>
+                    </div>
+                </div>
                 <a href="#contact">Tin Tức & Sự Kiện</a>
             </div>
             <div class="right">
@@ -57,11 +62,11 @@
             </div>
             <div class="form-group">
                 <label for="phone">Số điện thoại *</label>
-                <input type="text" id="phone" required>
+                <input type="text" id="phone" pattern="[0-9]{10}" required title="Vui lòng nhập số điện thoại hợp lệ (10 chữ số)">
             </div>
             <div class="form-group">
                 <label for="email">Email *</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" title="Vui lòng nhập email hợp lệ (ví dụ: example@domain.com)">
             </div>
             <div class="form-group">
                 <label for="address">Địa chỉ *</label>
