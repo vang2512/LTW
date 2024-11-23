@@ -115,7 +115,7 @@ body {
    
 }
 
-.form-links {
+.form-links-sign-up {
     display: flex;
     justify-content: space-between;
     margin-top: 5px; /* Reduced space above the links */
@@ -123,17 +123,16 @@ body {
     font-size: 13px;
 }
 
-.form-links a {
+.form-links-sign-up a {
     color: #949494;
     text-decoration: none;
     font-size: 15px;
-    margin-top: 10px;
     margin-left: 100px;
 }
 
-.form-links a:hover {
+.form-links-sign-up a:hover {
     text-decoration: underline;
-    color: #e1ad6e;
+    color: #9a6422;
 }
 
 
