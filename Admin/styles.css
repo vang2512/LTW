@@ -9,6 +9,10 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
+.dark-mode-variables {
+    --color-dark-variant: #A3BDCC;
+}
+
 /* Reset CSS */
 * {
     margin: 0;
@@ -43,6 +47,11 @@ img {
     object-fit: cover;
 }
 
+h1 {
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
 h2 {
     font-weight: 600;
     font-size: 1.4rem;
@@ -53,9 +62,16 @@ h3 {
     font-size: 0.87rem;
 }
 
+p {
+    color: var(--color-dark-variant);
+}
+
 .container {
+    display: grid;
     width: 96%;
     margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 12rem auto;
 }
 
 aside {
