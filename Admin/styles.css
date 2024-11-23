@@ -40,6 +40,7 @@ a {
 img {
     display: block;
     width: 100%;
+    object-fit: cover;
 }
 
 h2 {
@@ -50,4 +51,35 @@ h2 {
 h3 {
     font-weight: 500;
     font-size: 0.87rem;
+}
+
+.container {
+    width: 96%;
+    margin: 0 auto;
+}
+
+aside {
+    height: 100vh;
+}
+
+aside .toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.4rem;
+}
+
+aside .toggle .logo {
+    display: flex;
+    gap: 0.5rem;
+}
+
+aside .toggle .logo img {
+    width: 2rem;
+    height: 2rem;
+}
+
+aside .toggle .close {
+    padding-right: 1rem;
+    display: none;
 }
