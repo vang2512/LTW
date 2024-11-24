@@ -301,3 +301,13 @@ footer {
     color: #999;
 }
 
+
+
+
+.filter-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    padding-right: 40px;
+}
+
