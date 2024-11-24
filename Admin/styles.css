@@ -1,5 +1,6 @@
 :root {
     --color-primary: #6C9BCF;
+    --color-danger: #FF0060;
     --color-success: #1B9C85;
     --color-white: #FFF;
     --color-info-dark: #7D8DA1;
@@ -215,6 +216,18 @@ main .analyse svg circle {
 
 main .analyse .sales svg circle {
     stroke: var(--color-success);
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
+main .analyse .visits svg circle {
+    stroke: var(--color-danger);
+    stroke-dashoffset: -30;
+    stroke-dasharray: 200;
+}
+
+main .analyse .searches svg circle {
+    stroke: var(--color-primary);
     stroke-dashoffset: -30;
     stroke-dasharray: 200;
 }
