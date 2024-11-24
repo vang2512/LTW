@@ -34,3 +34,14 @@ document.addEventListener('DOMContentLoaded', function () {
         sortedProducts.forEach(product => productGrid.appendChild(product));
     });
 });
+
+        // Hàm lọc sản phẩm theo giá
+        const filterByPrice = (range) => {
+            if (range === '30-40') {
+                return productCards.filter(card => {
+                    const price = parseInt(card.dataset.price);
+                    return price >= 30000 && price <= 40000;
+                });
+            }
+            return productCards;
+        };
