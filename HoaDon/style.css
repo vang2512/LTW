@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.receipt {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.receipt h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.receipt h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.receipt p {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.info {
+    margin: 15px 0;
+    font-size: 14px;
+}
+
+.info p {
+    margin: 2px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.total {
+    text-align: right;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.thank-you {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.time {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #555;
+}
