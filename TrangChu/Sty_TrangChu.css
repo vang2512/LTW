@@ -50,7 +50,7 @@ section {
 }
 
 .header .flex .logo img {
-    height: 7.8rem;
+    height: 4.8rem;
     margin-right: 2rem;
     border-radius: 30%;
     object-fit: cover;
@@ -81,7 +81,7 @@ section {
 }
 .header .flex .navbar .left a:hover,
 .header .flex .navbar .right a:not(.icon):hover {
-  color: #d6b38e;
+    color: #d6b38e;
     cursor: pointer;
 }
 .dropdown {
@@ -121,7 +121,28 @@ section {
 .dropdown-content a:hover {
     color: #be9c79;
 }
-
+#search-input {
+    display: none;
+    width: 0;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    transition: width 1s ease, opacity 1s ease;
+    opacity: 0;
+}
+#search-icon.active #search-input {
+    display: inline-block;
+    width: 200px;
+    margin-left: 10px;
+    padding: 0.5rem;
+    opacity: 1;
+}
+#search-icon.active i {
+    margin-left: -40px;
+    transition: margin-left 100s ease;
+}
 
 /* san pham moi */
 .carousel {
@@ -272,7 +293,7 @@ section {
 
 /**/
 .home-bg{
-    background: url("Images/coffe-flip.jpg") ;
+    background: url("Images/wallpaper3.png") ;
     background-size: cover;
     background-position: center;
 }
@@ -339,22 +360,70 @@ section {
     font-size: 1.5rem;
 }
 /*menu*/
-.menu .box-container{
-    padding: 3rem 0;
-    line-height: 2;
-    color: var(--light-color);
-    font-size: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-    gap:1.5rem;
-    align-items:flex-start;
+.menu {
+    text-align: center;
+    padding: 3rem 1.5rem;
 }
-.menu .box-container img {
+
+.menu .box-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 2rem;
+}
+
+.menu .box {
+    width: 300px;
+    height: 350px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: #555;
+}
+
+.menu .box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu .box img.ic {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 1rem;
     transition: transform 0.8s ease;
 }
-.menu .box-container img:hover{
+
+.menu .box img:not(.ic) {
+    width: 100px; 
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    transition: transform 0.8s ease;
+}
+
+.menu .box img:hover {
     transform: scale(1.1);
 }
+
+.menu .box h3 {
+    font-size: 1.8rem;
+    color: #8b5e34;
+    margin-bottom: 1rem;
+}
+
+.menu .box p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+}
+
 /*Không gian quán*/
 .title {
     font-size: 3rem;
@@ -435,7 +504,7 @@ section {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: -25px;
-    color: #333;
+    color: #444;
     text-align: center;
      margin-top: 20px;
 }
@@ -468,9 +537,16 @@ section {
     align-items: center;
 }
 .tintuc_sk .item_ttsk .nd_sk{
-    margin-top: 10px;
-    font-size: 2rem;
+    margin-top: -20px;
+    font-size: 1.5rem;
+    color: #555;
+    text-align: left;
+    width: 400px;
 }
+.tintuc_sk .item_ttsk .nd_sk, .tintuc_sk .item_ttsk .tintuc{
+   cursor: pointer;
+}
+
 .swiper-button-next, .swiper-button-prev {
     color: #FFFFFF !important;
     background-color: rgba(67, 61, 61, 0.15) !important;
