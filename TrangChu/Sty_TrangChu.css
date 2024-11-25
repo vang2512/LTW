@@ -101,6 +101,9 @@ section {
     transition: opacity 0.53s ease, transform 0.53s ease;
     pointer-events: none;
 }
+.dropdown-content .datban{
+    width: 200px;
+}
 
 .dropdown:hover .dropdown-content {
     opacity: 1;
@@ -123,8 +126,7 @@ section {
 /* san pham moi */
 .carousel {
     display: flex;
-    overflow-x: auto;
-    padding: 40px 5px;
+    padding: 40px 100px;
 }
 .sp_moi{
     position: relative;
@@ -134,7 +136,6 @@ section {
     width: 280px;
     padding: 10px;
     text-align: center;
-
     transition: transform 0.3s ease;
     margin: auto;
 }
@@ -191,59 +192,55 @@ section {
     color: #fff;
     background: #C0A47B;
 }
-
 /*san pham ban chay*/
-.carousel_bt{
+.carousel_bt {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 20px 200px;
+    padding: 40px 100px;
+    justify-content: center;
 }
 .best-sellers h2 {
     text-align: center;
     font-size: 2rem;
     color: #444;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin: 5px 0;
 }
 .sp_banchay {
     position: relative;
     background: #FAF8F6;
     border: 1px solid #E0E0E0;
     border-radius: 10px;
-    width: 220px;
-    padding: 15px;
+    width: 100%;
+    max-width: 280px;
+    padding: 10px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: auto;
 }
 .sp_banchay img {
     width: 100%;
-    height: 220px;
+    height: 300px;
     border-radius: 10px;
     margin-bottom: 8px;
     object-fit: cover;
 }
 .sp_banchay h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 8px;
     font-weight: 600;
     color: #444;
 }
 .label_bt {
     position: absolute;
-    top: 39px;
-    left: -3px;
-    background-color: #FF6347;
-    border-radius: 4px;
-    color: #FFFFFF;
-    font-size: 0.6rem;
+    top: 8px;
+    left: 8px;
+    background: #FF6347;
+    color: #FFF;
+    font-size: 0.7rem;
     padding: 3px 8px;
+    border-radius: 5px;
     text-transform: uppercase;
-    transform: rotate(-45deg);
-    transform-origin: top left;
-    font-weight: bold;
-    z-index: 1;
 }
 .container_bt {
     display: flex;
@@ -251,20 +248,31 @@ section {
     align-items: center;
     margin-top: 8px;
 }
-.sp_banchay:hover{
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-    .gia{
-        color: var(--black);
-    }
-    .giohang {
-        background: #C0A47B;
-        border: 1px solid #C0A47B;
-        color: #FFF;
-    }
+.container_bt .gia {
+    font-size: 1rem;
+    color: #333;
 }
+.container_bt .giohang {
+    padding: 5px 10px;
+    background-color: #F4F4F4;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.sp_banchay:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+.giohang:hover {
+    background: #C0A47B;
+    border-color: #C0A47B;
+    color: #FFF;
+}
+
 /**/
 .home-bg{
-    background: url("Images/wallpaper3.png") no-repeat;
+    background:linear-gradient(90deg, var(--white), transparent 70%), url("Images/home.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -299,8 +307,6 @@ section {
     border-radius: 5%;
     object-fit: cover;
 }
-.sp_banchay:hover{
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);}
 /*about*/
 .about{
     margin-top: 20px;
@@ -333,7 +339,6 @@ section {
     font-size: 1.5rem;
 }
 /*menu*/
-
 .menu .box-container{
     padding: 3rem 0;
     line-height: 2;
@@ -345,29 +350,104 @@ section {
     align-items:flex-start;
 }
 .menu .box-container img {
-    transition: transform 0.8s ease; /* Thời gian và hiệu ứng mượt */
+    transition: transform 0.8s ease;
 }
 .menu .box-container img:hover{
     transform: scale(1.1);
 }
-/**/
+/*Không gian quán*/
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: -50px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+.space {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 80px;
+}
+
+.image_space_1, .image_space_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.image_space_2 .image-container {
+    width: 1600px;
+    height: 500px;
+}
+
+.image_space_2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(169, 169, 169, 0.6);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.image-container .overlay-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+
+/*Tin tức & Sự kiện*/
 .carousel-title {
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: -25px;
     color: #333;
     text-align: center;
      margin-top: 20px;
 }
 .slider-container {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1380px;
     margin: 0 auto;
 }
 
 .tintuc_sk {
     padding: 20px 10px;
-    max-width: 1600px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 
@@ -385,6 +465,7 @@ section {
     object-fit: cover;
     margin-bottom: 50px;
     border-radius: 5px;
+    align-items: center;
 }
 .tintuc_sk .item_ttsk .nd_sk{
     margin-top: 10px;
@@ -392,7 +473,7 @@ section {
 }
 .swiper-button-next, .swiper-button-prev {
     color: #FFFFFF !important;
-    background-color: #be9c79 !important;
+    background-color: rgba(67, 61, 61, 0.15) !important;
     width: 20px;
     height: 20px;
     display: flex;
@@ -402,12 +483,16 @@ section {
     transition: all 0.3s ease;
     opacity: 0;
 }
-.slider-container:hover .swiper-button-next, .swiper-button-prev {
+
+.slider-container:hover .swiper-button-next,
+.slider-container:hover .swiper-button-prev {
     opacity: 1;
 }
+
 .swiper-button-next::after, .swiper-button-prev::after {
     font-size: 2rem !important;
 }
+
 .swiper-pagination-bullet {
     background-color: #be9c79 !important;
 }

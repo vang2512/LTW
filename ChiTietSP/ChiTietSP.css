@@ -187,7 +187,12 @@ section {
     width: 550px;
     color: #555555
 }
-
+.voucher-description{
+    background: #f1e1b3;
+    width: 445px;
+    color: white;
+    font-size: 18px;
+}
 .order-button {
     display: flex;
     margin-top: 20px;
