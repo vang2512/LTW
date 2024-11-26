@@ -2,6 +2,7 @@
     --color-primary: #6C9BCF;
     --color-danger: #FF0060;
     --color-success: #1B9C85;
+    --color-warning: #F7D060;
     --color-white: #FFF;
     --color-info-dark: #7D8DA1;
     --color-dark: #363949;
@@ -43,6 +44,8 @@ body {
     font-size: 0.88rem;
     user-select: none;
     overflow-x: hidden;
+    color: var(--color-dark);
+    background-color: var(--color-background);
 }
 
 a {
@@ -84,6 +87,22 @@ b {
 
 .text-muted {
     color: var(--color-info-dark);
+}
+
+.primary {
+    color: var(--color-primary);
+}
+
+.danger {
+    color: var(--color-danger);
+}
+
+.success {
+    color: var(--color-success);
+}
+
+.warning {
+    color: var(--color-warning);
 }
 
 .container {
