@@ -1,0 +1,23 @@
+
+  body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #f9f9f9;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  max-width: 1000px;
+  background: #fff;
+  border: 2px solid #020101;
+  padding: 20px;
+  justify-content: space-between; /* Space between the image and form */
+  gap: 20px; /* Equal space between image and form */
+}
+
