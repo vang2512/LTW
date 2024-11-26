@@ -178,6 +178,12 @@ aside .sidebar a:last-child {
     width: 100%;
 }
 
+aside .sidebar a:last-child {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+}
+
 aside .sidebar a.active {
     width: 100%;
     color: var(--color-primary);
@@ -230,6 +236,10 @@ main .analyse>div {
     box-shadow: var(--box-shadow);
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+main .analyse>div:hover {
+    box-shadow: none;
 }
 
 main .analyse>div .status {
@@ -309,6 +319,10 @@ main .new-users .user-list {
     transition: all 0.3s ease;
 }
 
+main .new-users .user-list:hover {
+    box-shadow: none;
+}
+
 main .new-users .user-list .user {
     display: flex;
     flex-direction: column;
@@ -341,10 +355,18 @@ main .recent-orders table {
     transition: all 0.3s ease;
 }
 
+main .recent-orders table:hover {
+    box-shadow: none;
+}
+
 main table tbody td {
     height: 2.8rem;
     border-bottom: 1px solid var(--color-light);
     color: var(--color-dark-variant);
+}
+
+main table tbody tr:last-child td {
+    border: none;
 }
 
 main .recent-orders a {
@@ -388,6 +410,12 @@ main .recent-orders a {
     justify-content: center;
 }
 
+.right-section .dark-mode span.active {
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
 .right-section .nav .profile {
     display: flex;
     gap: 2rem;
@@ -412,6 +440,10 @@ main .recent-orders a {
     box-shadow: var(--box-shadow);
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+.right-section .user-profile:hover {
+    box-shadow: none;
 }
 
 .right-section .user-profile img {
@@ -456,6 +488,10 @@ main .recent-orders a {
     transition: all 0.3s ease;
 }
 
+.right-section .reminders .notification:hover {
+    box-shadow: none;
+}
+
 .right-section .reminders .notification .content {
     display: flex;
     justify-content: space-between;
@@ -484,6 +520,11 @@ main .recent-orders a {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.right-section .reminders .add-reminder:hover {
+    background-color: var(--color-primary);
+    color: white;
 }
 
 .right-section .reminders .add-reminder div {
