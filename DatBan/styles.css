@@ -21,7 +21,11 @@
   gap: 20px; /* Equal space between image and form */
 }
 
-
+.image img {
+  height: 500px;
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 20px;
+}
 
 .form-section {
   width: 60%; /* Adjust the form width */
@@ -56,5 +60,20 @@ input, select {
   border: 2px solid #020101;
 }
 
+button {
+  background-color: #2196f3;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0.5; /* Initially disabled */
+  pointer-events: none; /* Initially disabled */
+}
 
+button:hover {
+  background-color: #1976d2;
+}
+
+button.enabled {
+  opacity: 1; /* Enabled state */
+  pointer-events: auto;
+}
 
