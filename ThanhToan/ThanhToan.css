@@ -139,6 +139,11 @@ section {
 .form-group {
     margin-bottom: 15px;
     font-size: 15px;
+
+}
+.form-group :focus{
+    border: 1px solid #020101;
+
 }
 label {
     display: block;
@@ -152,7 +157,7 @@ input[type="text"], input[type="email"], textarea {
 }
 textarea {
     resize: vertical;
-    height: 120px;
+    height: 200px;
 }
 .order-summary {
     width: 500px;
