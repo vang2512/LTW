@@ -207,10 +207,19 @@ aside .sidebar a:hover span {
 
 .content .content-section {
     width: 100%;
+    display: grid;
+    gap: 1.8rem;
+    grid-template-columns: auto 23rem;
 }
 
 main {
     margin-top: 1.4rem;
+}
+
+main .analyse {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
 }
 
 main .analyse>div {
@@ -219,6 +228,8 @@ main .analyse>div {
     border-radius: var(--card-border-radius);
     margin-top: 1rem;
     box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 main .analyse>div .status {
@@ -294,6 +305,8 @@ main .new-users .user-list {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 main .new-users .user-list .user {
@@ -325,6 +338,7 @@ main .recent-orders table {
     text-align: center;
     box-shadow: var(--box-shadow);
     border-radius: var(--card-border-radius);
+    transition: all 0.3s ease;
 }
 
 main table tbody td {
@@ -361,6 +375,7 @@ main .recent-orders a {
     align-items: center;
     height: 1.6rem;
     width: 4.2rem;
+    cursor: pointer;
     border-radius: var(--border-radius-1);
 }
 
@@ -395,6 +410,8 @@ main .recent-orders a {
     padding: var(--card-padding);
     border-radius: var(--card-border-radius);
     box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .right-section .user-profile img {
@@ -435,6 +452,8 @@ main .recent-orders a {
     padding: 1.4rem var(--card-padding);
     border-radius: var(--border-radius-2);
     box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .right-section .reminders .notification .content {
@@ -464,6 +483,7 @@ main .recent-orders a {
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .right-section .reminders .add-reminder div {
