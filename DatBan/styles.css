@@ -21,3 +21,40 @@
   gap: 20px; /* Equal space between image and form */
 }
 
+
+
+.form-section {
+  width: 60%; /* Adjust the form width */
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-size: 16px;
+  color: #130909;
+}
+
+input, select, button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input, select {
+  border: 2px solid #020101;
+}
+
+
+
