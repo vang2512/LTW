@@ -1,20 +1,11 @@
 
 
 
-
-@media (max-width: 768px) {
-  .grid {
-      flex-direction: column;
-      align-items: center;
-  }
-  .item {
-      width: 90%; /* Giảm kích thước item khi trên màn hình nhỏ */
-  }
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html, body {
+  height: 60%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Ẩn thanh cuộn */
 }
 
 body {
@@ -33,7 +24,8 @@ body {
 }
 
 h1 {
-    margin-bottom: 20px;
+  margin-top: -10px;
+    margin-bottom: 10px;
     color: #8b5e34;
     font-size: 2.5em;
 }
@@ -58,9 +50,9 @@ h1 {
     border: 2px solid #BE9C79FF;
 }
 .item img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
+  max-height: 50vh; /* Chỉ chiếm tối đa 50% chiều cao màn hình */
+  width: auto; /* Đảm bảo tỷ lệ hình ảnh không bị biến dạng */
+  object-fit: cover; /* Cắt ảnh nếu cần để vừa khung */
     transition: transform 0.3s ease;
 
 }
@@ -88,6 +80,12 @@ h1 {
     font-size: 1em;
     line-height: 1.4;
 }
+.deposit {
+    font-weight: bold;
+    color: #8b5e34;
+    margin-top: 10px;
+}
+
 
 
 
