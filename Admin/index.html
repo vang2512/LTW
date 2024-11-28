@@ -26,17 +26,17 @@
         </div>
 
         <div class="sidebar">
-            <a href="#">
+            <a href="#" data-target="dashboardContent">
                 <span>
                     <i class="bi bi-columns-gap"></i>
                 </span>
                 <h3>Trang chủ</h3>
             </a>
-            <a href="#">
+            <a href="#" data-target="analyticsContent" class="active">
                 <span class="material-symbols-outlined">query_stats</span>
                 <h3>Phân tích</h3>
             </a>
-            <a href="#">
+            <a href="#" data-target="settingsContent">
                 <span class="material-symbols-outlined">settings</span>
                 <h3>Cài đặt</h3>
             </a>
@@ -71,7 +71,15 @@
             </div>
         </div>
         <!-- End Of Nav -->
-        <div class="content-section">
+
+        <!-- Dashboard Content -->
+        <div id="dashboardContent" class="content-section">
+            <h1>Dashboard Content</h1>
+        </div>
+        <!-- End Of Dashboard Content -->
+
+        <!-- Analytics Content -->
+        <div id="analyticsContent" class="content-section">
             <!-- Main Content -->
             <main>
                 <h1>Analytics</h1>
@@ -179,77 +187,84 @@
             <!-- End Of Main -->
 
             <!-- Right Section -->
-            <div class="right-section"
-            <!-- User Profile -->
-            <div class="user-profile">
-                <div class="logo">
-                    <img src="images/logo.png" alt="logo">
-                    <h2>Coffee 3Talents</h2>
-                    <p>The coffee house</p>
+            <div class="right-section">
+                <!-- User Profile -->
+                <div class="user-profile">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="logo">
+                        <h2>Coffee 3Talents</h2>
+                        <p>The coffee house</p>
+                    </div>
                 </div>
-            </div>
-            <!-- End Of User Profile -->
+                <!-- End Of User Profile -->
 
-            <!-- Reminders -->
-            <div class="reminders">
-                <div class="header">
-                    <h2>Reminders</h2>
-                    <span>
-                             <i class="bi bi-bell"></i>
+                <!-- Reminders -->
+                <div class="reminders">
+                    <div class="header">
+                        <h2>Reminders</h2>
+                        <span>
+                        <i class="bi bi-bell"></i>
+                    </span>
+                    </div>
+
+                    <div class="notification">
+                        <div class="icon">
+                        <span>
+                            <i class="bi bi-volume-up-fill"></i>
                         </span>
-                </div>
-
-                <div class="notification">
-                    <div class="icon">
-                            <span>
-                                <i class="bi bi-volume-up-fill"></i>
-                            </span>
-                    </div>
-                    <div class="content">
-                        <div class="information">
-                            <h3>Workshop</h3>
-                            <small class="text-muted">
-                                08:00 AM - 12:00 PM
-                            </small>
                         </div>
-                        <span>
-                                <i class="bi bi-three-dots-vertical"></i>
-                            </span>
-                    </div>
-                </div>
-
-                <div class="notification deactive">
-                    <div class="icon">
+                        <div class="content">
+                            <div class="information">
+                                <h3>Workshop</h3>
+                                <small class="text-muted">
+                                    08:00 AM - 12:00 PM
+                                </small>
+                            </div>
                             <span>
-                                <i class="bi bi-pencil-fill"></i>
-                            </span>
-                    </div>
-                    <div class="content">
-                        <div class="info">
-                            <h3>Workshop</h3>
-                            <small class="text-muted">
-                                08:00 AM - 12:00 PM
-                            </small>
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </span>
                         </div>
-                        <span>
-                                <i class="bi bi-three-dots-vertical"></i>
-                            </span>
                     </div>
-                </div>
 
-                <div class="notification add-reminder">
-                    <div>
+                    <div class="notification deactive">
+                        <div class="icon">
+                        <span>
+                            <i class="bi bi-pencil-fill"></i>
+                        </span>
+                        </div>
+                        <div class="content">
+                            <div class="info">
+                                <h3>Workshop</h3>
+                                <small class="text-muted">
+                                    08:00 AM - 12:00 PM
+                                </small>
+                            </div>
                             <span>
-                                <i class="bi bi-plus-lg"></i>
-                            </span>
-                        <h3>Add Reminder</h3>
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </span>
+                        </div>
+                    </div>
+
+                    <div class="notification add-reminder">
+                        <div>
+                        <span>
+                            <i class="bi bi-plus-lg"></i>
+                        </span>
+                            <h3>Add Reminder</h3>
+                        </div>
                     </div>
                 </div>
+                <!-- End Of Reminders -->
             </div>
-            <!-- End Of Reminders -->
         </div>
+        <!-- End Of Analytics Content -->
+
+        <!-- Settings Content -->
+        <div id="settingsContent" class="content-section">
+            <h1>Settings Content</h1>
+        </div>
+        <!-- End Of Settings Content -->
     </div>
-</div>
 </div>
 
 <script src="orders.js"></script>
