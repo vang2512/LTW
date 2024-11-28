@@ -211,6 +211,55 @@ aside .sidebar a:hover span {
     margin-left: 0.6rem;
 }
 
+.content .nav {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.content .nav button {
+    display: none;
+}
+
+.content .dark-mode {
+    background-color: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+.content .dark-mode span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .dark-mode span.active {
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
+.content .nav .profile {
+    display: flex;
+    gap: 2rem;
+    text-align: right;
+}
+
+.content .nav .profile .profile-photo {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 .content .content-section {
     width: 100%;
     display: grid;
@@ -378,55 +427,6 @@ main .recent-orders a {
 
 .right-section {
     margin-top: 1.4rem;
-}
-
-.right-section .nav {
-    display: flex;
-    justify-content: end;
-    gap: 2rem;
-}
-
-.right-section .nav button {
-    display: none;
-}
-
-.right-section .dark-mode {
-    background-color: var(--color-light);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 1.6rem;
-    width: 4.2rem;
-    cursor: pointer;
-    border-radius: var(--border-radius-1);
-}
-
-.right-section .dark-mode span {
-    font-size: 1.2rem;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.right-section .dark-mode span.active {
-    background-color: var(--color-primary);
-    color: white;
-    border-radius: var(--border-radius-1);
-}
-
-.right-section .nav .profile {
-    display: flex;
-    gap: 2rem;
-    text-align: right;
-}
-
-.right-section .nav .profile .profile-photo {
-    width: 2.8rem;
-    height: 2.8rem;
-    border-radius: 50%;
-    overflow: hidden;
 }
 
 .right-section .user-profile {
