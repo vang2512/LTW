@@ -211,10 +211,16 @@ aside .sidebar a:hover span {
     margin-left: 0.6rem;
 }
 
+.content {
+    display: grid;
+    grid-template-rows: 3rem auto;
+}
+
 .content .nav {
     display: flex;
     justify-content: end;
     gap: 2rem;
+    padding-top: 1.4rem;
 }
 
 .content .nav button {
@@ -230,6 +236,7 @@ aside .sidebar a:hover span {
     width: 4.2rem;
     cursor: pointer;
     border-radius: var(--border-radius-1);
+    margin-top: 7px;
 }
 
 .content .dark-mode span {
@@ -249,8 +256,13 @@ aside .sidebar a:hover span {
 
 .content .nav .profile {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     text-align: right;
+    padding-left: 30px;
+}
+
+.content .nav .profile .information {
+    margin-top: 7px;
 }
 
 .content .nav .profile .profile-photo {
