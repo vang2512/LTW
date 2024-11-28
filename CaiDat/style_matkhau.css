@@ -34,20 +34,22 @@ html {
 
 section {
     padding: 3rem 2rem;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 /*Thanh dieu huong trang chu*/
 .header {
+    margin-top: -14px;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
+
     background: #333;
     background-image: url("Images/header.jpg");
     background-size: cover;
-    z-index: 1000;
+    
 }
 
 .header .flex {
@@ -152,9 +154,8 @@ section {
     display: flex;
     flex-direction: column;
     gap: 10px;
-
-    height: 100vh;
-
+    height: calc(100vh - 60px); /* Trừ đi chiều cao của header */
+    overflow-y: auto; /* Đảm bảo có cuộn nếu nội dung vượt quá chiều cao */
 }
 
 .sidebar-btn {
@@ -179,12 +180,6 @@ section {
     border: none;
 }
 
-.main-content-profile {
-    width: 50%;
-    padding: 30px;
-    background-color: #ffffff;
-    margin-left: 180px;
-}
 
 form {
     margin-left: 80px;
@@ -242,6 +237,7 @@ button {
 
 
 .change-password-container {
+    margin-top: 50px;
     position: absolute;
     /* Đặt vị trí tuyệt đối */
     top: 50%;
@@ -253,10 +249,10 @@ button {
     padding: 20px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow:  3px 6px 6px rgba(0, 0, 0, 0.1);
     width: 400px;
     /* Đặt chiều rộng cố định nếu cần */
-    max-width: 90%;
+    max-width: 100%;
     /* Đảm bảo không vượt quá kích thước màn hình */
 
 }

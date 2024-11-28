@@ -11,7 +11,6 @@
 
 }
 
-
 :root {
     --main-color: #be9c79;
     --black: #333;
@@ -41,16 +40,11 @@ section {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
-    margin: 0;
-    padding: 0;
     background: #333;
     background-image: url("Images/header.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    z-index: 1000;
 }
-
 
 .header .flex {
     display: flex;
@@ -117,18 +111,6 @@ section {
     transform: translateY(10px);
     transition: opacity 0.53s ease, transform 0.53s ease;
     pointer-events: none;
-
-    animation: fadeIn 0.5s ease-in-out;
-}
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .dropdown:hover .dropdown-content {
@@ -252,21 +234,6 @@ button {
     color: #777;
 }
 
-.form-change-password {
-    padding: 0 20px;
-}
-
-.form-group label {
-    color: var(--black); /* Dùng biến màu */
-}
-
-.form-group input {
-    transition: border-color 0.3s ease;
-}
-
-.form-group input:focus {
-    border-color: var(--main-color);
-}
 
 
 form input,
