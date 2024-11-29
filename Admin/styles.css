@@ -285,7 +285,14 @@ aside .sidebar a:hover span {
     overflow: hidden;
 }
 
-.content #analyticsContent {
+.content #usersContent.active {
+    width: 100%;
+    display: grid;
+    gap: 1.8rem;
+    grid-template-rows: 12rem auto;
+}
+
+.content #analyticsContent.active {
     width: 100%;
     display: grid;
     gap: 1.8rem;
@@ -294,6 +301,31 @@ aside .sidebar a:hover span {
 
 main {
     margin-top: 1.4rem;
+}
+
+main #users-table {
+    margin-top: 1.3rem;
+}
+
+main #users-table table {
+    background-color: var(--color-white);
+    width: 100%;
+    padding: var(--card-padding);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
+    transition: all 0.3s ease;
+}
+
+main #recent-orders table:hover {
+    box-shadow: none;
+}
+
+main #users-table a {
+    text-align: center;
+    display: block;
+    margin: 1rem auto;
+    color: var(--color-primary);
 }
 
 main .analyse {
