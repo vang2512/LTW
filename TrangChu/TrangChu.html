@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
 <body>
-<!-- Menu with dropdown options -->
+<!-- Header-->
 <header class="header">
     <section class="flex">
         <a href="#home" class="logo">
@@ -43,13 +43,8 @@
                 <a href="#search" class="icon" id="search-icon">
                     <i class="fas fa-search"></i>
                     <input type="text" id="search-input" placeholder="Search...">
+                    <span id="clear-btn">&times;</span>
                 </a>
-                <script>
-                    document.getElementById('search-icon').addEventListener('click', function() {
-                        this.classList.toggle('active');
-                    });
-
-                </script>
                 <a href="#giohang" class="icon">
                     <i class="fas fa-shopping-cart"></i>
                 </a>
@@ -60,7 +55,7 @@
         <div id="menu-btn" class="fas fa-bars"></div>
     </section>
 </header>
-<!-- Menu with dropdown options -->
+<!-- Home-->
 <div class="home-bg">
     <section class="home" id="home">
         <div class="noi_dung">
@@ -71,7 +66,7 @@
         </div>
     </section>
 </div>
-<!-- Menu with dropdown options -->
+<!-- New Product-->
 <div class="carousel">
     <div class="sp_moi">
         <div class="label">new</div>
@@ -110,7 +105,7 @@
         </div>
     </div>
 </div>
-<!-- Menu with dropdown options -->
+<!--Bestseller Product-->
 <div class="best-sellers">
     <h2>Sản phẩm bán chạy</h2>
     <div class="carousel_bt">
@@ -182,7 +177,7 @@
         </div>
     </div>
 </div>
-<!-- Menu with dropdown options -->
+<!--Product Category-->
 <section class="about" id="about" >
     <div class="image">
         <img src="Images/food.jpg" alt="">
@@ -231,7 +226,7 @@
         </div>
     </div>
 </section>
-<!-- Menu with dropdown options -->
+<!--Space Shop-->
 <div class="title">Không Gian Quán</div>
 <div class="space">
     <div class="image_space_1">
@@ -257,44 +252,38 @@
         </div>
     </div>
 </div>
-<!-- Menu with dropdown options -->
+<!--Event News-->
 <div class="carousel-title" id="contact">Tin Tức & Sự Kiện</div>
 <section class="tintuc_sk">
     <div class="section-content">
         <div class="slider-container swiper">
             <div class="slider-wrapper">
                 <ul class="list swiper-wrapper">
-                    <!-- Mục 1: Thương hiệu cafe ra quốc tế -->
                     <li class="item_ttsk swiper-slide">
                         <img src="Images/tintuc_2.jpg" alt="ảnh" class="tintuc">
                         <p class="nd_sk">
                             Thương hiệu cafe của chúng tôi chính thức ra mắt trên thị trường quốc tế, đánh dấu bước phát triển mới trong hành trình vươn tầm thế giới.
                         </p>
                     </li>
-                    <!-- Mục 2: Dịp Giáng sinh tặng đá -->
                     <li class="item_ttsk swiper-slide">
                         <img src="Images/tintuc_4.jpg" alt="ảnh" class="tintuc">
                         <p class="nd_sk">
-                            Mùa Giáng sinh rộn ràng: Khi mua 5 gói cafe bất kỳ, nhận ngay một viên đá thiết kế độc quyền để trang trí Giáng sinh.
+                            Mùa Giáng sinh rộn ràng: khi tổng hóa đơn trên 120K, nhận ngay một ly đá thiết kế độc quyền để trang trí Giáng sinh.
                         </p>
                     </li>
-                    <!-- Mục 3: Dịp Tết - quà tặng hấp dẫn -->
                     <li class="item_ttsk swiper-slide">
                         <img src="Images/tintuc_!.jpg" alt="ảnh" class="tintuc">
                         <p class="nd_sk">
-                            Chào đón Tết: Từ ngày 1/1 đến 15/2, mua một bộ sản phẩm cafe cao cấp sẽ được tặng một hộp quà Tết đặc biệt.
+                            Chào đón Tết: Từ ngày 29/1 đến 1/2, mua một loại Cafe ngẫu nhiên sẽ được tặng một ly nước theo yêu cầu.
                         </p>
                     </li>
-                    <!-- Mục 4: Giáng sinh mua 2 ly -->
                     <li class="item_ttsk swiper-slide">
                         <img src="Images/tintuc_3.jpg" alt="ảnh" class="tintuc">
                         <p class="nd_sk">
-                            Cùng bạn bè đón Giáng sinh: Khi mua 2 ly latte bất kỳ, nhận ngay một phiếu giảm giá 50% cho lần tiếp theo.
-                        </p>
+                            Cùng bạn bè đón Giáng Sinh: chỉ cần có Một bánh Mochi trà xanh trong giỏ hàng, bạn sẽ được giảm 30% trên tổng hóa đơn!</p>
                     </li>
-                    <!-- Mục 5: Nội dung khác -->
                     <li class="item_ttsk swiper-slide">
-                        <img src="Images/tintuc_55.jpg" alt="ảnh" class="tintuc">
+                        <img src="Images/tintuc_5.jpg" alt="ảnh" class="tintuc">
                         <p class="nd_sk">
                             Trải nghiệm vị cafe mới lạ với dòng sản phẩm giới hạn, chỉ có tại cửa hàng trong tháng 12.
                         </p>
@@ -307,38 +296,9 @@
         </div>
     </div>
 </section>
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.slider-wrapper', {
-        loop: true,
-        spaceBetween: 100,
-        slidesPerView: 3,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-            0: {
-                slidesPerView: 1
-            },
-            640: {
-                slidesPerView: 2
-            },
-            1280: {
-                slidesPerView: 3
-            },
-
-        }
-    });
-
-</script>
-
+<script src="TrangChu.js"></script>
+<!--Footer-->
 <footer>
     <div class="footer-container">
         <div class="footer-section">
