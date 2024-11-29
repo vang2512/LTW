@@ -98,7 +98,7 @@ section {
     border-radius: 10px;
     opacity: 0;
     transform: translateY(10px);
-    transition: opacity 0.53s ease, transform 0.53s ease;
+    transition: opacity 0.55s ease, transform 0.55s ease;
     pointer-events: none;
 }
 .dropdown-content .datban{
@@ -122,26 +122,35 @@ section {
     color: #be9c79;
 }
 #search-input {
-    display: none;
     width: 0;
     padding: 0.5rem;
-    border: none;
     border-radius: 5px;
     background-color: #fff;
     color: #333;
-    transition: width 1s ease, opacity 1s ease;
-    opacity: 0;
+    transition: width 0.5s ease, opacity 0.5s ease;
+    opacity: 0; position: relative;
+    top: -3px;
 }
 #search-icon.active #search-input {
-    display: inline-block;
     width: 200px;
     margin-left: 10px;
     padding: 0.5rem;
     opacity: 1;
+    top: -3px;
 }
-#search-icon.active i {
-    margin-left: -40px;
-    transition: margin-left 100s ease;
+#clear-btn {
+    position: absolute;
+    right: 305px;
+    top: 48%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(19, 19, 19, 0.75);
+    display: none;
+}
+
+#search-icon.active #clear-btn {
+    display: block;
 }
 
 /* san pham moi */
@@ -290,7 +299,6 @@ section {
     border-color: #C0A47B;
     color: #FFF;
 }
-
 /**/
 .home-bg{
     background: url("Images/wallpaper3.png") ;
