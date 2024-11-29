@@ -411,15 +411,15 @@ main .new-users .user-list .user img {
     border-radius: 50%;
 }
 
-main .recent-orders {
+main #recent-orders {
     margin-top: 1.3rem;
 }
 
-main .recent-orders h2 {
+main #recent-orders h2 {
     margin-bottom: 0.8rem;
 }
 
-main .recent-orders table {
+main #recent-orders table {
     background-color: var(--color-white);
     width: 100%;
     padding: var(--card-padding);
@@ -429,7 +429,7 @@ main .recent-orders table {
     transition: all 0.3s ease;
 }
 
-main .recent-orders table:hover {
+main #recent-orders table:hover {
     box-shadow: none;
 }
 
@@ -443,7 +443,7 @@ main table tbody tr:last-child td {
     border: none;
 }
 
-main .recent-orders a {
+main #recent-orders a {
     text-align: center;
     display: block;
     margin: 1rem auto;

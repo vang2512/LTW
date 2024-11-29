@@ -35,29 +35,44 @@ document.addEventListener('DOMContentLoaded', function () {
     setTimeout(() => {
         defaultSection.classList.add('active');
     }, 10);
-});
 
-users.forEach(user => {
-    const tr = document.createElement('tr');
-    const trContent = `
-            <td>${user.id}</td>
-            <td>${user.name}</td>
-            <td>${user.email}</td>
-            <td>${user.phone}</td>
-    `;
-    tr.innerHTML = trContent;
-    document.querySelector('.users-table table tbody').appendChild(tr);
-});
+    // Hiển thị bảng khách hàng trang quản lí người dùng
+    const recentOrders = document.getElementById('recent-orders').getElementsByTagName('tbody')[0];
 
-Orders.forEach(order => {
-    const tr = document.createElement('tr');
-    const trContent = `
-        <td>${order.productName}</td>
-        <td>${order.productNumber}</td>
-        <td>${order.paymentStatus}</td>
-        <td class="${order.status === 'Declined' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
-        <td class="primary">Details</td>
-    `;
-    tr.innerHTML = trContent;
-    document.querySelector('.recent-orders table tbody').appendChild(tr);
+    function handleRecentOrdersEvent(event) {
+        Orders.forEach(order => {
+            const tr = document.createElement('tr');
+            const trContent = `
+                <td>${order.productName}</td>
+                <td>${order.productNumber}</td>
+                <td>${order.paymentStatus}</td>
+                <td class="${order.status === 'Declined' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
+                <td class="primary">Details</td>
+            `;
+            tr.innerHTML = trContent;
+            recentOrders.appendChild(tr);
+        });
+    }
+
+    handleRecentOrdersEvent();
+
+    // Hiển thị bảng nội dung trang phân tích
+    const usersTable = document.getElementById('users-table').getElementsByTagName('tbody')[0];
+
+    function handleUsersTableEvent(event) {
+        users.forEach(user => {
+            const tr = document.createElement('tr');
+            const trContent = `
+                <td>${user.id}</td>
+                <td>${user.name}</td>
+                <td>${user.email}</td>
+                <td>${user.phone}</td>
+            `;
+            tr.innerHTML = trContent;
+            usersTable.appendChild(tr);
+        });
+    }
+
+    handleUsersTableEvent();
+
 });
