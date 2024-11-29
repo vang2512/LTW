@@ -1,0 +1,92 @@
+
+
+
+html, body {
+  height: 60%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Ẩn thanh cuộn */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4ece2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+  margin-top: -10px;
+    margin-bottom: 10px;
+    color: #8b5e34;
+    font-size: 2.5em;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    
+}
+
+.item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    border: 2px solid #BE9C79FF;
+}
+.item img {
+  max-height: 50vh; /* Chỉ chiếm tối đa 50% chiều cao màn hình */
+  width: auto; /* Đảm bảo tỷ lệ hình ảnh không bị biến dạng */
+  object-fit: cover; /* Cắt ảnh nếu cần để vừa khung */
+    transition: transform 0.3s ease;
+
+}
+
+.item:hover img {
+    transform: scale(1.05);
+}
+.item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-color: #6a4c32;
+}
+.item h2 {
+    font-size: 1.5em;
+    color: #6a4c32;
+    margin: 10px 0;
+    margin-top: 10px;
+    
+}
+
+
+.item p {
+  padding: 0 20px 20px;
+  color: #444;
+    font-size: 1em;
+    line-height: 1.4;
+}
+.deposit {
+    font-weight: bold;
+    color: #8b5e34;
+    margin-top: 10px;
+}
+
+
+
+
+

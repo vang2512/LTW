@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda+One&family=Nunito:wght@200; 300;400;500;600&display=swap');
 *{
-    font-family: 'Nunito', sans-serif ;
+    font-family: 'Yanone', sans-serif ;
     margin:0;
     box-sizing: border-box;
     outline: none; border: none;
@@ -35,8 +35,8 @@ section {
     top: 0;
     left: 0;
     right: 0;
-    background: #333;
-    background-image: url("Images/header.jpg");
+    background: #233040;
+    
     background-size: cover;
     z-index: 1000;
 }
@@ -119,7 +119,7 @@ section {
 }
 
 .dropdown-content a:hover {
-    color: #be9c79;
+    color: #757575;
 }
 #search-input {
     display: none;

@@ -1,0 +1,190 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.login-container {
+    background-image: url("Images/header.jpg");
+    padding: 50px 40px; /* Increased padding to make form taller */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+    height: 350px;
+}
+
+.logo img {
+    margin-top: -75px;
+    width: 200px; /* Logo size remains the same */
+    margin-bottom: -10px; /* Increased margin below the logo */
+}
+
+.login-form h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 25px; /* Increased space below the heading */
+}
+
+
+.login-form input {
+    width: 80%;
+    padding: 15px;
+    margin: 15px 0 5px 0; /* Reduced bottom margin for input fields */
+    font-size: 15px;
+   
+}
+
+.form-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px; /* Reduced space above the links */
+    text-align: center;
+    font-size: 13px;
+}
+
+.form-links a {
+    color: #949494;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+    color: #3d3d3d;
+}
+
+
+
+
+.login-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #be9c79;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.login-form button:hover {
+    color: #3d3d3d;
+}
+
+
+
+
+/*Sign Up Style Css*/
+
+
+.signUp-container {
+    background-image: url("Images/header.jpg");
+    padding: 50px 40px; /* Increased padding to make form taller */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 300px;
+    height: 420px;
+}
+
+.logo img {
+    margin-top: -60px;
+    width: 100px; /* Logo size remains the same */
+    margin-bottom: -10px; /* Increased margin below the logo */
+}
+
+.signUp-form h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 25px; /* Increased space below the heading */
+}
+
+
+.signUp-form input {
+    width: 80%;
+    padding: 10px;
+    margin: 15px 0 5px 0; /* Reduced bottom margin for input fields */
+    font-size: 15px;
+   
+}
+
+.form-links-sign-up {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px; /* Reduced space above the links */
+    text-align: center;
+    font-size: 13px;
+}
+
+.form-links-sign-up a {
+    color: #949494;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 100px;
+}
+
+.form-links-sign-up a:hover {
+    text-decoration: underline;
+    color: #9a6422;
+}
+
+
+
+
+.signUp-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #be9c79;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.signUp-form button:hover {
+    color: #3d3d3d;
+}
+
+
+#submitButton.enabled {
+    background-color: #9a6422;
+    cursor: pointer;
+}
+
+/* css trang forgot password*/
+.form-links a {
+    color: #949494;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+    color: #3d3d3d;
+}
+.login-form  .button-FP {
+    width: 100%;
+    display: block;
+    padding: 15px;
+    background-color: #be9c79;
+    border: none;
+    text-decoration:none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 60px;
+}
+.login-form  .button-FP:hover {
+    color: #3d3d3d;
+}

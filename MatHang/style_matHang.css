@@ -3,7 +3,7 @@
 * {
     font-family: 'Nunito', sans-serif;
     margin: 0;
-    box-sizing: border-box;
+        box-sizing: border-box;
     outline: none;
     border: none;
     text-decoration: none;
@@ -204,12 +204,14 @@ section {
 }
 
 .product-card {
+    position: relative; /* Để sử dụng vị trí tuyệt đối cho nút bên trong */
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
     margin-bottom: 30px;
+    overflow: hidden; /* Đảm bảo không vượt ra ngoài khung */
 }
 
 .product-card img {
@@ -231,6 +233,33 @@ section {
     font-weight: bold;
 }
     
+
+/* Icon giỏ hàng */
+.cart-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+     
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cart-icon:hover {
+    background-color: #d6b38e;
+    transform: scale(1.1);
+}
+
+.cart-icon .material-icons {
+    font-size: 30px;
+    color: #fff;
+}
+
 /* Css cho phần footer*/
 
 footer {
@@ -299,5 +328,29 @@ footer {
     font-size: 12px;
     text-align: center;
     color: #999;
+}
+
+
+
+
+.filter-bar {
+    display: flex;
+    justify-content: flex-end;
+    
+    margin-bottom: 0px;
+    padding-right: 90px;
+}
+
+.filter-dropdown {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.filter-dropdown:hover {
+    border-color: var(--main-color);
 }
 
