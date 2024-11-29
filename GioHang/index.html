@@ -1,10 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header>
+    <section id="header">
+        <div class="container">
+            <div class="logo-name-coffee">
+                <a>
+                    <img src="/LTW/GioHang/images/header/logo.png">
+                </a>
+            </div>
+            <div class="navbar">
+                <nav class="navbar-left">
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="drop-btn">Sản phẩm
+                                <i class="bi bi-caret-down-fill"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="#">Coffee</a>
+                                <a href="#">Trà</a>
+                                <a href="#">Bánh ngọt</a>
+                                <a href="#">Nước ép</a>
+                            </div>
+                        </li>
+                        <li><a href="#">Đặt bàn</a></li>
+                        <li><a href="#">Tin tức và sự kiện</a></li>
+                    </ul>
+                </nav>
+                <nav class="navbar-right">
+                    <ul>
+                        <li><a href="#"><i class="bi bi-search"></i></a></li>
+                        <li><a href="#"><i class="bi bi-cart4"></i></a></li>
+                        <li><a href="#">Đăng Ký</a></li>
+                        <li><a href="#">Đăng Nhập</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+</header>
 
+<main>
+    <section id="shopping-cart">
+        <div class="container">
+            <div class="cart-information">
+                <table>
+                    <tr class="row-header" style="width:100%">
+                        <th style="width:45%">
+                            <span>SẢN PHẨM</span>
+                        </th>
+                        <th style="width:15%">
+                            <span>GIÁ</span>
+                        </th>
+                        <th style="width:20%">
+                            <span>SỐ LƯỢNG</span>
+                        </th>
+                        <th style="width:20%">
+                            <span class="text">TẠM TÍNH</span>
+                        </th>
+                    </tr>
+                    <tr class="row-item">
+                        <td>
+                            <div class="cart-item">
+                                <button class="delete-btn">x</button>
+                                <img src="/LTW/GioHang/images/coffee/cappuccino.jpg" id="cappuccino-image"
+                                     class="item-image" alt="Cappuccino"
+                                     title="Cappuccino">
+                                <span class="item-name">Cappuccino</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cart-item">
+                                <span class="item-price">50,000₫</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cart-amount">
+                                <button class="decrease-btn">-</button>
+                                <input type="text" class="item-quantity" value="1" min="0">
+                                <button class="increase-btn">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cart-total">
+                                <span class="total-price">50,000₫</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="row-item">
+                        <td>
+                            <div class="cart-item">
+                                <button class="delete-btn">x</button>
+                                <img src="/LTW/GioHang/images/food/tiramisu.jpg" class="item-image" alt="Tiramisu Cake"
+                                     title="Tiramisu Cake">
+                                <span class="item-name">Tiramisu Cake</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cart-item">
+                                <span class="item-price">60,000₫</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cart-amount">
+                                <button class="decrease-btn">-</button>
+                                <input type="text" class="item-quantity" value="2" min="0">
+                                <button class="increase-btn">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cart-total">
+                                <span class="total-price">120,000₫</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="cart-actions">
+                    <button class="continue-btn">
+                        <span>← TIẾP TỤC XEM SẢN PHẨM</span>
+                    </button>
+                    <button class="update-btn">
+                        <span>CẬP NHẬT GIỎ HÀNG</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="cart-checkout">
+                <div class="cart-header">
+                    <span>CỘNG GIỎ HÀNG</span>
+                </div>
+                <div class="cart-information">
+                    <div class="parent">
+                        <div class="left">
+                            <span>Tạm tính</span>
+                        </div>
+                        <div class="right">
+                            <span class="total-price">170,000₫</span>
+                        </div>
+                    </div>
+                    <div class="parent">
+                        <div class="left">
+                            <span>Tổng</span>
+                        </div>
+                        <div class="right">
+                            <span class="total-price">170,000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-actions">
+                    <button class="checkout-btn">
+                        <span>TIẾN HÀNH THANH TOÁN</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <section id="footer">
+        <div class="container">
+            <div class="footer-mid">
+                <div class="left">
+                    <div class="text">
+                        <span>GIỚI THIỆU</span>
+                    </div>
+                    <div class="function">
+                        <ul>
+                            <li><a>Về Chúng Tôi</a></li>
+                            <li><a>Sản Phẩm</a></li>
+                            <li><a>Khuyến Mãi</a></li>
+                            <li><a>Chuyện Cà Phê</a></li>
+                            <li><a>Cửa Hàng</a></li>
+                            <li><a>Tuyển Dụng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mid">
+                    <div class="text">
+                        <span>ĐIỀU KHOẢN</span>
+                    </div>
+                    <div class="function">
+                        <ul>
+                            <li><a>Điều Khoản Sử Dụng</a></li>
+                            <li><a>Chính Sách Bảo Mật Thông Tin</a></li>
+                            <li><a>Hướng Dẫn Xuất Hóa Đơn GTGT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="text">
+                        <span>LIÊN HỆ</span>
+                    </div>
+                    <div class="contact-information">
+                        <div id="location" class="contact-item">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>Địa chỉ: 67 Đinh Bộ Lĩnh, P.26, Q.Bình Thạnh, TP.Hồ Chí Minh</span>
+                        </div>
+                        <div id="phone-number" class="contact-item">
+                            <i class="bi bi-telephone-fill"></i>
+                            <span>Điện thoại: 1800 6936</span>
+                        </div>
+                        <div id="email" class="contact-item">
+                            <i class="bi bi-envelope-fill"></i>
+                            <span>Email: hi@coffee3talents.vn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN<br>
+                Mã số DN: 0627849892 do Sở Kế hoạch và Đầu tư TP.HCM cấp ngày 15/06/2012. Người đại diện: TRẦN VĂN
+                AN<br>
+                Địa chỉ: 86-88 Cao Thắng, Phường 04, Quận 3, TP Hồ Chí Minh &nbsp; | &nbsp;
+                Điện thoại: (028) 7024 8089 &nbsp;<br>
+                © 2012-2021 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN mọi quyền bảo lưu
+            </div>
+        </div>
+    </section>
+</footer>
 </body>
 </html>

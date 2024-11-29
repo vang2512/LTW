@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Google Sans", roboto, "Noto Sans Mynamar UI", sans-serif, Tahoma;
+}
+
+#header .container {
+    height: 68px;
+    background-color: #182344;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header .container .logo-name-coffee img {
+    height: 45px;
+    margin-right: 32px;
+    margin-bottom: 8px;
+}
+
+#header .container .navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#header .container .navbar .navbar-left {
+    margin-right: 250px;
+}
+
+#header .container .navbar .navbar-left ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#header .container .navbar .navbar-left ul li {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#header .container .navbar .navbar-left ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+#header .container .navbar .navbar-left ul li a:hover {
+    color: orange;
+}
+
+#header .container .navbar .navbar-left .dropdown i {
+    font-size: 12px;
+}
+
+#header .container .navbar .navbar-left .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#header .container .navbar .navbar-left .dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: solid 1px rgb(85, 85, 85);
+}
+
+#header .container .navbar .navbar-left .dropdown .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+#header .container .navbar .navbar-left .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#header .container .navbar .navbar-right ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#header .container .navbar .navbar-right ul li {
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+#header .container .navbar .navbar-right ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#header .container .navbar .navbar-right ul li a:hover {
+    color: orange;
+}
+
+#header .container .navbar .navbar-right ul li a i {
+    font-size: 18px;
+}
+
+#shopping-cart {
+    min-height: 425px;
+}
+
+#shopping-cart .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    background-color: #fff;
+}
+
+#shopping-cart .container .cart-information {
+    width: 55%;
+}
+
+#shopping-cart .container .cart-checkout {
+    width: 35%;
+}
+
+#shopping-cart .container .cart-information table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#shopping-cart .container .cart-information .row-header {
+    color: #007BFF;
+    font-size: 15px;
+}
+
+#shopping-cart .container .cart-information .row-header span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#shopping-cart .container .cart-information .row-header .text {
+    display: flex;
+    justify-content: right;
+}
+
+#shopping-cart .container .cart-information .row-item td {
+    border-top: solid 2px #ECECEC;
+}
+
+#shopping-cart .container .cart-information .row-item .cart-item {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#shopping-cart .container .cart-information .row-item .cart-item .delete-btn {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 9px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+}
+
+#shopping-cart .container .cart-information .row-item .cart-item .delete-btn:hover {
+    background-color: #45a049;
+}
+
+#shopping-cart .container .cart-information .row-item .cart-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+#shopping-cart .container .cart-information .row-item .cart-item #cappuccino-image {
+    width: 40px;
+    height: 50px;
+}
+
+#shopping-cart .container .cart-information .row-item .cart-item .item-name {
+    font-size: 15px;
+}
+
+#shopping-cart .container .cart-information .row-item .cart-item .item-price {
+    font-size: 15px;
+}
+
+#shopping-cart .container .cart-information .row-item .cart-amount {
+    display: flex;
+    align-items: center;
+}
+
+#shopping-cart .container .cart-information .row-item .cart-amount button {
+    width: 20px;
+    height: 30px;
+}
+
+#shopping-cart .container .cart-information .row-item .cart-amount input {
+    text-align: center;
+    width: 30px;
+    height: 27px;
+}
+
+#shopping-cart .container .cart-information .row-item .cart-total .total-price {
+    font-size: 15px;
+    display: flex;
+    justify-content: right;
+}
+
+#shopping-cart .container .cart-information .cart-actions {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    padding-top: 20px;
+    border-top: solid 2px #ECECEC ;
+}
+
+#shopping-cart .container .cart-information .cart-actions .continue-btn {
+    width: 240px;
+    height: 38px;
+    background-color: white;
+    border: solid 3px #007BFF;
+    margin-right: 15px;
+}
+
+#shopping-cart .container .cart-information .cart-actions .continue-btn span {
+    font-weight: bold;
+    color: #007BFF;
+    letter-spacing: 1px;
+}
+
+#shopping-cart .container .cart-information .cart-actions .update-btn {
+    width: 190px;
+    height: 38px;
+    background-color: #007BFF;
+    border: none;
+}
+
+#shopping-cart .container .cart-information .cart-actions .update-btn span {
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+#shopping-cart .container .cart-checkout {
+    display: flex;
+    flex-direction: column;
+}
+
+#shopping-cart .container .cart-checkout .cart-header,
+#shopping-cart .container .cart-checkout .cart-information,
+#shopping-cart .container .cart-checkout .cart-actions {
+    width: 100%;
+}
+
+
+#shopping-cart .container .cart-checkout .cart-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #ECECEC;
+}
+
+#shopping-cart .container .cart-checkout .cart-header span {
+    color: #007BFF;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#shopping-cart .container .cart-checkout .cart-information .parent {
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #ECECEC;
+}
+
+#shopping-cart .container .cart-checkout .cart-information .parent .left {
+    float: left;
+    margin-top: 10px;
+}
+
+#shopping-cart .container .cart-checkout .cart-information .parent .right {
+    float: right;
+    margin-top: 10px;
+}
+
+#shopping-cart .container .cart-checkout .cart-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#shopping-cart .container .cart-checkout .cart-actions .checkout-btn {
+    width: 100%;
+    height: 38px;
+    background-color: #007BFF;
+    border: none;
+    margin-top: 10px;
+}
+
+#shopping-cart .container .cart-checkout .cart-actions .checkout-btn span {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#footer .container {
+    background-color: #182344;
+    color: white;
+}
+
+#footer .container .footer-mid {
+    padding: 40px 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#footer .container .footer-mid .text {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+#footer .container .footer-mid .left .function ul,
+#footer .container .footer-mid .mid .function ul {
+    list-style-type: none;
+}
+
+#footer .container .footer-mid .left .function ul li,
+#footer .container .footer-mid .mid .function ul li {
+    margin-bottom: 10px;
+}
+
+#footer .container .footer-mid .right .contact-information .contact-item {
+    margin-bottom: 10px;
+}
+
+#footer .container .footer-mid .right .contact-information .contact-item i {
+    margin-right: 4px;
+}
+
+#footer .container .footer-bottom {
+    border-top: solid 1px #A7815C;
+    font-size: 10px;
+    color: #999;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
