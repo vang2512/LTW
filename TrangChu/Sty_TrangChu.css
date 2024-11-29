@@ -81,7 +81,7 @@ section {
 }
 .header .flex .navbar .left a:hover,
 .header .flex .navbar .right a:not(.icon):hover {
-  color: #757575;
+    color: #d6b38e;
     cursor: pointer;
 }
 .dropdown {
@@ -272,7 +272,7 @@ section {
 
 /**/
 .home-bg{
-    background:linear-gradient(90deg, var(--white), transparent 70%), url("Images/home.jpg") no-repeat;
+    background: url("Images/wallpaper3.png") ;
     background-size: cover;
     background-position: center;
 }
