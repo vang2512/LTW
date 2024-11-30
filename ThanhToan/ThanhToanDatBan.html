@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+  <link rel="stylesheet" href="ThanhToanDatBan.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- Header-->
+<header class="header">
+  <section class="flex">
+    <a href="#home" class="logo">
+      <img src="Images/lg.png" alt="">
+    </a>
+    <nav class="navbar">
+      <div class="left">
+        <a href="#home">Trang Chủ</a>
+        <a href="#about">About</a>
+        <!-- Menu with dropdown options -->
+        <div class="dropdown">
+          <a href="#menu" class="mn">Menu</a>
+          <div class="dropdown-content">
+            <a href="#coffee">Coffee</a>
+            <a href="#tea">Trà</a>
+            <a href="#desserts">Bánh Ngọt</a>
+            <a href="#snacks">Nước Ép</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="#datban">Đặt Bàn</a>
+          <div class="dropdown-content">
+            <a href="#coffee" class="datban">Lịch Sử Đặt Bàn</a>
+          </div>
+        </div>
+        <a href="#contact">Tin Tức & Sự Kiện</a>
+      </div>
+      <div class="right">
+        <a href="#search" class="icon" id="search-icon">
+          <i class="fas fa-search"></i>
+          <input type="text" id="search-input" placeholder="Search...">
+          <span id="clear-btn">&times;</span>
+        </a>
+        <a href="#giohang" class="icon">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <a href="#sign">Đăng Ký</a>
+        <a href="#login">Đăng Nhập</a>
+      </div>
+    </nav>
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </section>
+</header>
+<!--Payment Information-->
+<div class="container">
+  <div class="checkout-form">
+    <h2>THÔNG TIN THANH TOÁN</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Họ Tên *</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Số điện thoại *</label>
+        <input type="text" id="phone" pattern="[0-9]{10}" required title="Vui lòng nhập số điện thoại hợp lệ (10 chữ số)">
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" title="Vui lòng nhập email hợp lệ (ví dụ: example@domain.com)">
+      </div>
+    </form>
+    <h3 >THÔNG TIN BỔ SUNG</h3>
+    <div class="form-group">
+      <label for="notes">Ghi chú đơn hàng (tuỳ chọn)</label>
+      <textarea id="notes" placeholder="Ghi chú về đơn hàng, ví dụ: thời gian hay chỉ dẫn địa điểm giao hàng chi tiết hơn."></textarea>
+    </div>
+  </div>
+  <!--Order Information-->
+  <div class="order-summary">
+    <h2>ĐƠN HÀNG CỦA BẠN</h2>
+    <div class="reservation-info">
+      <p><strong>Thông Tin Đặt Bàn:</strong></p>
+      <p><i class="fas fa-leaf"></i> Không gian: <span class="info-detail">Ngoài trời</span></p>
+      <p><i class="fas fa-table"></i> Loại bàn: <span class="info-detail">Bàn 2 người</span></p>
+      <p><i class="fas fa-users"></i> Số lượng: <span class="info-detail">2</span></p>
+      <p><i class="fas fa-clock"></i> Thời gian nhận: <span class="info-detail">8:30 PM</span></p>
+      <p><i class="fas fa-money-bill-wave"></i> Tiền cọc: <span class="info-detail">200₫</span></p>
+    </div>
+    <div class="form-group">
+      <div class="check_box">
+        <input type="checkbox" id="terms" required>
+        <label for="terms">Tôi đã đọc và đồng ý với điều khoản và điều kiện của website *</label>
+      </div>
+    </div>
+    <button type="submit" class="order-btn">ĐẶT HÀNG</button>
+    <p class="privacy-note">Coffee 3Talents xin cam kết không chia sẻ thông tin của Quý khách hàng cho một bên thứ ba bất kỳ nào.</p>
+    <p class="hotline">Hotline 24/7: 088 66 77 119</p>
+  </div>
+</div>
+<script src="ThanhToan.js"></script>
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>Giới thiệu</h4>
+      <ul>
+        <li><a href="#">Về Chúng Tôi</a></li>
+        <li><a href="#">Sản phẩm</a></li>
+        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="#">Chuyện cà phê</a></li>
+        <li><a href="#">Cửa Hàng</a></li>
+        <li><a href="#">Tuyển dụng</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Điều khoản</h4>
+      <ul>
+        <li><a href="#">Điều khoản sử dụng</a></li>
+        <li><a href="#">Chính sách bảo mật thông tin</a></li>
+        <li><a href="#">Hướng dẫn xuất hóa đơn GTGT</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Liên hệ</h4>
+      <p class="contact-info">
+        Đặt hàng: <a href="tel:18006936">1800 6936</a><br>
+        Địa chỉ: 67 Đinh Bộ Lĩnh, P.26, Q.Bình Thạnh, TP.Hồ Chí Minh
+      </p>
+      <div class="social-media-icons">
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN<br>
+    Mã số DN: 0312867172 do Sở Kế hoạch và Đầu tư TP. HCM cấp ngày 23/07/2014.<br>
+    Người đại diện: NGÔ NGUYỄN KHA<br>
+    Địa chỉ: 86-88 Cao Thắng, Phường 04, Quận 3, TP Hồ Chí Minh &nbsp; | &nbsp;
+    Điện thoại: (028) 7107 8079 &nbsp; | &nbsp; Email: <a href="mailto:hi@coffee3talents.vn">hi@coffee3talents.vn</a><br>
+    © 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN. Mọi quyền bảo lưu.
+  </div>
+</footer>
+</body>
+</html>
