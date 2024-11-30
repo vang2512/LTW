@@ -120,10 +120,13 @@ aside {
 }
 
 aside .toggle {
+    background-color: var(--color-primary-1);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 1.4rem;
+    justify-content: start;
+    padding-left: 1.6rem;
+    padding-top: 1.7rem;
+    padding-bottom: 1.8rem;
 }
 
 aside .toggle .logo {
@@ -131,9 +134,15 @@ aside .toggle .logo {
     gap: 0.5rem;
 }
 
+aside .toggle .logo h2 {
+    padding-top: 9px;
+    color: var(--color-white);
+}
+
 aside .toggle .logo img {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding-bottom: 3px;
 }
 
 aside .toggle .close {
@@ -144,12 +153,9 @@ aside .toggle .close {
 aside .sidebar {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-white);
-    box-shadow: var(--box-shadow);
-    border-radius: 15px;
-    height: 88vh;
+    background-color: var(--color-primary-2);
+    height: 91.3vh;
     position: relative;
-    top: 1.5rem;
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -161,23 +167,22 @@ aside .sidebar:hover {
 aside .sidebar a {
     display: flex;
     align-items: center;
-    color: var(--color-info-dark);
     height: 3.7rem;
-    gap: 1rem;
+    gap: 1.2rem;
     position: relative;
     margin-left: 2rem;
     transition: all 0.3s ease;
 }
 
 aside .sidebar a span {
-    font-size: 1.6rem;
+    color: var(--color-info-dark);
+    font-size: 1.5rem;
     transition: all 0.3s ease;
 }
 
-aside .sidebar a:last-child {
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
+aside .sidebar a h3 {
+    color: var(--color-white);
+    font-size: 17px;
 }
 
 aside .sidebar a:last-child {
