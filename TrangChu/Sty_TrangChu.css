@@ -35,8 +35,7 @@ section {
     top: 0;
     left: 0;
     right: 0;
-    background: #233040;
-    
+    background-image: url("Images/header.jpg");
     background-size: cover;
     z-index: 1000;
 }

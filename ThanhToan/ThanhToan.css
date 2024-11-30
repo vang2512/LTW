@@ -196,7 +196,9 @@ textarea {
     width: 500px;
     border: 1px solid #e0a96d;
 }
-
+.order-summary h2{
+    text-align: center;
+}
 .order-summary p {
     margin: 10px 0;
 }
@@ -241,25 +243,32 @@ hr {
 }
 .reservation-info {
     background-color: #f7f7f7;
-    padding: 10px;
+    padding: 12px;
     margin-top: 10px;
     border-radius: 5px;
-    font-size: 14px;
-}
-.reservation-info p {
-    font-size: 16px;
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .reservation-info p {
-    margin: 5px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center; /* Căn giữa icon và text theo chiều dọc */
+    justify-content: space-between; /* Đẩy thông tin qua hai bên */
+    width: 100%; /* Chiếm toàn bộ chiều rộng của container */
+    max-width: 400px; /* Giới hạn chiều rộng để không bị quá dài */
+    gap: 10px;
+    margin: 0; /* Xóa khoảng cách mặc định */
     color: #333;
 }
+
 .info-detail {
     color: #c81717;
     font-weight: bold;
+    margin-left: auto;
+    text-align: right;
+    margin-right: -35px;
 }
 
 .form-group {
@@ -300,6 +309,9 @@ h3{
     font-size: 18px;
     margin-bottom: 15px;
     margin-top: 35px;
+}
+.fas{
+    opacity: 0.7;
 }
 /*Footer*/
 footer {
