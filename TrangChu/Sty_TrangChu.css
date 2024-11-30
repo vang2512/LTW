@@ -77,6 +77,9 @@ section {
 }
 #menu-btn {
     display: none;
+    font-size: 1.68rem;
+    color: var(--white);
+    cursor: pointer;
 }
 .header .flex .navbar .left a:hover,
 .header .flex .navbar .right a:not(.icon):hover {
@@ -215,6 +218,7 @@ section {
 }
 .sp_moi:hover {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 
 }
 .giohang:hover{
@@ -292,6 +296,7 @@ section {
 }
 .sp_banchay:hover {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    cursor:pointer;
 }
 .giohang:hover {
     background: #C0A47B;
@@ -647,4 +652,6 @@ footer {
     text-align: center;
     color: #999;
 }
+
+
 
