@@ -202,45 +202,6 @@ textarea {
 .order-summary p {
     margin: 10px 0;
 }
-.do_Uong{
-    background-color: #f7f7f7;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 5px;
-    font-size: 14px;
-}
-.order-header{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-.tong{
-    color: #c81717;
-    font-weight: bold;
-}
-.order-item, .order-total {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-.order-item img{
-    height: 45px;
-    width:38px;
-}
-.order-item .ten_mon{
-    margin-left: -70px;
-}
-.order-item .sl{
-    margin-right: -5px;
-}
-.order-header .sluong{
-    margin-right: -135px;
-}
-hr {
-    border: 1px solid #ddd;
-}
 .reservation-info {
     background-color: #f7f7f7;
     padding: 12px;
@@ -250,19 +211,17 @@ hr {
     flex-direction: column;
     gap: 15px;
 }
-
 .reservation-info p {
     font-size: 14px;
     display: flex;
-    align-items: center; /* Căn giữa icon và text theo chiều dọc */
-    justify-content: space-between; /* Đẩy thông tin qua hai bên */
-    width: 100%; /* Chiếm toàn bộ chiều rộng của container */
-    max-width: 400px; /* Giới hạn chiều rộng để không bị quá dài */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
     gap: 10px;
-    margin: 0; /* Xóa khoảng cách mặc định */
+    margin: 0;
     color: #333;
 }
-
 .info-detail {
     color: #c81717;
     font-weight: bold;

@@ -36,7 +36,6 @@ h1 {
     justify-content: space-between;
     
 }
-
 .item {
     background-color: #fff;
     border-radius: 8px;
@@ -64,6 +63,8 @@ h1 {
   transform: scale(1.03);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   border-color: #6a4c32;
+    cursor: pointer;
+
 }
 .item h2 {
     font-size: 1.5em;
