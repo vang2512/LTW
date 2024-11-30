@@ -109,10 +109,10 @@ b {
 
 .container {
     display: grid;
-    width: 96%;
-    margin: 0 auto;
+    width: 100%;
+    padding-right: 1.8rem;
     gap: 1.8rem;
-    grid-template-columns: 12rem auto;
+    grid-template-columns: 20rem auto;
 }
 
 aside {
