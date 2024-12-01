@@ -66,6 +66,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Hiển thị bảng khách hàng trang quản lí người dùng
     const usersTable = document.getElementById('users-table').getElementsByTagName('tbody')[0];
+    const modal = document.getElementById('user-form-modal');
+    const addUserBtn = document.getElementById('add-user-btn');
+    const closeBtn = document.getElementsByClassName('close-btn')[0];
 
     function handleUsersTableEvent(event) {
         usersTable.innerHTML = '';
@@ -96,4 +99,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
     handleUsersTableEvent();
 
+    // Hiển thị modal khi nhấp vào nút "Thêm người dùng"
+    addUserBtn.addEventListener('click', function () {
+        modal.style.display = 'block';
+    });
+    // Đóng modal khi nhấp vào nút "X"
+    closeBtn.addEventListener('click', function () {
+        modal.style.display = 'none';
+    });
+    // Đóng modal khi nhấp ra ngoài modal
+    window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+    // Xử lý sự kiện submit form
+    const userForm = document.getElementById('user-form');
+    userForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        // Xử lý dữ liệu form ở đây
+        modal.style.display = 'none';
+    });
 });
