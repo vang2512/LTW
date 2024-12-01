@@ -308,31 +308,90 @@ aside .sidebar a:hover span {
 
 main {
     margin-top: 1.4rem;
+    padding-left: 1.8rem;
 }
 
-main #users-table {
-    margin-top: 1.3rem;
+main .users {
+    margin-top: 2.1rem;
+    padding-right: 1.8rem;
+}
+
+main .users .top-users-table {
+    background-color: var(--color-primary-2);
+    overflow: hidden;
+    padding: 14px 20px;
+}
+
+main .users .top-users-table .user-text {
+    color: var(--color-white);
+    float: left;
+    margin-top: 7px;
+}
+
+main .users .top-users-table .user-btn {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.3rem;
+}
+
+main .users .top-users-table .user-btn #delete-user-btn {
+    padding: 10px 13px;
+    background-color: var(--color-danger);
+}
+
+main .users .top-users-table .user-btn #add-user-btn {
+    padding: 10px 13px;
+    background-color: var(--color-success);
+}
+
+main .users .top-users-table .user-btn a {
+    color: var(--color-white);
+    font-size: 13px;
 }
 
 main #users-table table {
     background-color: var(--color-white);
     width: 100%;
-    padding: var(--card-padding);
-    text-align: center;
-    box-shadow: var(--box-shadow);
-    border-radius: var(--card-border-radius);
+    text-align: left;
+    padding: 8px 15px;
     transition: all 0.3s ease;
+    border-collapse: collapse;
 }
 
-main #recent-orders table:hover {
+main #users-table table:hover {
     box-shadow: none;
 }
 
-main #users-table a {
-    text-align: center;
-    display: block;
-    margin: 1rem auto;
-    color: var(--color-primary);
+main #users-table table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+main #users-table table tbody tr:nth-child(even) button {
+    background-color: #fff;
+}
+
+main #users-table table tbody tr:nth-child(odd) {
+    background-color: #eee;
+    border-top: solid 1px var(--color-light);
+    border-bottom: solid 1px var(--color-light);
+}
+
+main #users-table table tr td,
+main #users-table table tr th {
+    border: none;
+    padding: 20px 27px;
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+main #users-table table tr td {
+    font-size: 16px;
+}
+
+main #users-table table tr button {
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 main .analyse {
