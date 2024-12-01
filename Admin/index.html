@@ -129,21 +129,39 @@
             <!-- End Of Main Content -->
 
             <!-- Add New User -->
-            <form>
-                <h2>Thêm người dùng mới</h2>
-                <span class="close-btn">&times;</span>
-                <label for="id">ID</label>
-                <input type="text" id="id" placeholder="Nhập mã người dùng">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Nhập tên người dùng">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Nhập email người dùng">
-                <label for="address">Address</label>
-                <input type="text" id="address" placeholder="Nhập địa chỉ người dùng">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" placeholder="Nhập số điện thoại người dùng">
-                <button type="submit">Lưu</button>
-            </form>
+            <div id="user-form-modal" class="'modal">
+                <div class="modal-content">
+                    <form id="user-form" novalidate>
+                        <div class="header-form">
+                            <h2>Thêm người dùng mới</h2>
+                            <span class="close-btn">&times;</span>
+                        </div>
+                        <div class="form-control">
+                            <label for="id">ID</label>
+                            <input type="text" id="id" placeholder="Nhập mã người dùng">
+                        </div>
+                        <div class="form-control">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Nhập tên người dùng">
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Nhập email người dùng" autocomplete="off">
+                        </div>
+                        <div class="form-control">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" placeholder="Nhập địa chỉ người dùng"
+                                   autocomplete="off">
+                        </div>
+                        <div class="form-control">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="Nhập số điện thoại người dùng"
+                                   autocomplete="off">
+                        </div>
+                        <button type="submit">Lưu</button>
+                    </form>
+                </div>
+            </div>
             <!--End Of Add New User -->
         </div>
         <!-- End Of Users Content -->
