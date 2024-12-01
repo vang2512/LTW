@@ -416,6 +416,7 @@ main #users-table table tr button {
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s;
 }
 
 #user-form-modal .modal-content form {
@@ -440,6 +441,13 @@ main #users-table table tr button {
     margin-left: 50px;
 }
 
+#user-form-modal .modal-content form .header-form .close-btn:hover,
+#user-form-modal .modal-content form .header-form .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #user-form-modal .modal-content .form-control {
     position: relative;
     margin-bottom: 15px;
@@ -454,7 +462,6 @@ main #users-table table tr button {
 #user-form-modal .modal-content .form-control input {
     width: 100%;
     padding: 10px;
-    padding-right: 40px;
     border: 2px solid #DDD;
     border-radius: 10px;
     outline: none;
@@ -465,12 +472,26 @@ main #users-table table tr button {
     border: none;
     padding: 10px;
     margin-top: 20px;
-    background-color: #77b7cd;
-    color: #fff;
+    background-color: #007BFF;
+    color: var(--color-white);
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
     transition: all 0.3s ease;
+}
+
+#user-form-modal .modal-content button:hover {
+    background-color: var(--color-primary-2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 main .analyse {
