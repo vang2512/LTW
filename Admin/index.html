@@ -88,41 +88,43 @@
         <div id="usersContent" class="content-section">
             <!-- Main Content -->
             <main>
-                <div class="top-users-table">
-                    <div class="user-text">
-                        <h1>Quản lí người dùng</h1>
-                    </div>
-                    <div class="user-btn">
-                        <div class="delete-user-btn">
-                            <a href="#">
-                                <i class="bi bi-dash-circle-fill"></i>
-                                <span>Xóa</span>
-                            </a>
+                <div class="users">
+                    <div class="top-users-table">
+                        <div class="user-text">
+                            <h2>Quản lí người dùng</h2>
                         </div>
-                        <div class="add-user-btn">
-                            <a href="#">
-                                <i class="bi bi-plus-circle-fill"></i>
-                                <span>Thêm người dùng mới</span>
-                            </a>
+                        <div class="user-btn">
+                            <div id="delete-user-btn">
+                                <a href="#">
+                                    <i class="bi bi-dash-circle-fill"></i>
+                                    <span>Xóa</span>
+                                </a>
+                            </div>
+                            <div id="add-user-btn">
+                                <a href="#">
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                    <span>Thêm người dùng mới</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    <!-- Users Table -->
+                    <div id="users-table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Tên</th>
+                                <th>Email</th>
+                                <th>Địa chỉ</th>
+                                <th>Số điện thoại</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <!-- End Of Users Table -->
                 </div>
-                <!-- Users Table -->
-                <div id="users-table">
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Tên</th>
-                            <th>Email</th>
-                            <th>Số điện thoại</th>
-                            <th></th>
-                        </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                </div>
-                <!-- End Of Users Table -->
             </main>
             <!-- End Of Main Content -->
         </div>
