@@ -18,7 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const activeSection = document.getElementById(contentId);
 
-            if (JSON.stringify(contentId) === JSON.stringify('analyticsContent')) {
+            if (JSON.stringify(contentId) === JSON.stringify('usersContent')) {
+                activeSection.style.display = 'grid';
+            } else if (JSON.stringify(contentId) === JSON.stringify('analyticsContent')) {
                 activeSection.style.display = 'grid';
             } else {
                 activeSection.style.display = 'flex';
@@ -36,7 +38,10 @@ document.addEventListener('DOMContentLoaded', function () {
         defaultSection.classList.add('active');
     }, 10);
 
-    // Hiển thị bảng khách hàng trang quản lí người dùng
+    /* ------------------------------------------------------------------- */
+    /* ---------------- Trang phân tích ----------------*/
+
+    // Hiển thị bảng nội dung trang phân tích
     const recentOrders = document.getElementById('recent-orders').getElementsByTagName('tbody')[0];
 
     function handleRecentOrdersEvent(event) {
@@ -56,17 +61,33 @@ document.addEventListener('DOMContentLoaded', function () {
 
     handleRecentOrdersEvent();
 
-    // Hiển thị bảng nội dung trang phân tích
+    /* ------------------------------------------------------------------- */
+    /* ---------------- Trang quản lí người dùng ----------------*/
+
+    // Hiển thị bảng khách hàng trang quản lí người dùng
     const usersTable = document.getElementById('users-table').getElementsByTagName('tbody')[0];
 
     function handleUsersTableEvent(event) {
+        usersTable.innerHTML = '';
         users.forEach(user => {
             const tr = document.createElement('tr');
             const trContent = `
-                <td>${user.id}</td>
                 <td>${user.name}</td>
                 <td>${user.email}</td>
+                <td>${user.address}</td>
                 <td>${user.phone}</td>
+                <td>
+                    <button>
+                        <span class="success">
+                            <i class="bi bi-pencil-fill"></i>
+                        </sapn>
+                    </button>
+                    <button>
+                        <span class="danger">
+                            <i class="bi bi-trash-fill"></i>
+                        </sapn>
+                    </button>
+                </td>
             `;
             tr.innerHTML = trContent;
             usersTable.appendChild(tr);
