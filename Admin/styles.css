@@ -394,6 +394,85 @@ main #users-table table tr button {
     margin-right: 10px;
 }
 
+#user-form-modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#user-form-modal .modal-content {
+    display: flex;
+    gap: 20px;
+    margin: 5% auto;
+    background-color: var(--color-white);
+    width: 100%;
+    max-width: 460px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#user-form-modal .modal-content form {
+    width: 100%;
+}
+
+#user-form-modal .modal-content form .header-form {
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#user-form-modal .modal-content form .header-form h2 {
+    font-size: 23px;
+}
+
+#user-form-modal .modal-content form .header-form .close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+#user-form-modal .modal-content .form-control {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#user-form-modal .modal-content .form-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+#user-form-modal .modal-content .form-control input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    border: 2px solid #DDD;
+    border-radius: 10px;
+    outline: none;
+}
+
+#user-form-modal .modal-content button {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #77b7cd;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
 main .analyse {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
