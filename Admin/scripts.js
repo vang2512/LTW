@@ -99,6 +99,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     handleUsersTableEvent();
 
+    // Hàm xóa người dùng
+    window.deleteUser = function (number) {
+        const index = users.findIndex(user => user.number === number);
+        if (index !== -1) {
+            users.splice(index, 1);
+            handleUsersTableEvent();
+        }
+    };
+
     // Hiển thị modal khi nhấp vào nút "Thêm người dùng"
     addUserBtn.addEventListener('click', function () {
         modal.style.display = 'block';
