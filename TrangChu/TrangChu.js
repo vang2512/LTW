@@ -1,5 +1,5 @@
 
-<!--JS Header-->
+/*JS Header */
 const searchIcon = document.getElementById('search-icon');
 const searchInput = document.getElementById('search-input');
 const clearBtn = document.getElementById('clear-btn');
@@ -18,7 +18,7 @@ clearBtn.addEventListener('click', function (event) {
     searchInput.value = '';
 });
 
-<!--JS Event News-->
+/*JS Event News*/
 const swiper = new Swiper('.slider-wrapper', {
     loop: true,
     spaceBetween: 100,
