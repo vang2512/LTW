@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             <i class="bi bi-pencil-fill"></i>
                         </sapn>
                     </button>
-                    <button>
+                    <button onclick="deleteUser(${user.number})">
                         <span class="danger">
                             <i class="bi bi-trash-fill"></i>
                         </sapn>
@@ -127,6 +127,16 @@ document.addEventListener('DOMContentLoaded', function () {
     userForm.addEventListener('submit', function (event) {
         event.preventDefault();
         // Xử lý dữ liệu form ở đây
+        const newUser = {
+            number: users.length + 1,
+            id: document.getElementById('id').value,
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            address: document.getElementById('address').value,
+            phone: document.getElementById('phone').value
+        }
+        users.push(newUser);
+        handleUsersTableEvent();
         modal.style.display = 'none';
     });
 });
