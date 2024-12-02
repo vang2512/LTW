@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (JSON.stringify(contentId) === JSON.stringify('usersContent')) {
                 activeSection.style.display = 'grid';
+            } else if (JSON.stringify(contentId) === JSON.stringify('productsContent')) {
+                activeSection.style.display = 'grid';
             } else if (JSON.stringify(contentId) === JSON.stringify('ordersContent')) {
                 activeSection.style.display = 'grid';
             } else if (JSON.stringify(contentId) === JSON.stringify('analyticsContent')) {
@@ -179,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     handleProductsTableEvent();
 
-    // Hàm xóa người dùng
+    // Hàm xóa sản phẩm
     window.deleteProduct = function (number) {
         const index = products.findIndex(product => product.number === number);
         if (index !== -1) {
