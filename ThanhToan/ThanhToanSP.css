@@ -99,7 +99,7 @@ hr {
 .order-btn {
     width: 100%;
     padding: 10px;
-    background-color: #be9c79;
+    background-color: #dab993;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -107,10 +107,9 @@ hr {
     cursor: pointer;
 }
 .order-btn.active {
-    background-color: #dab993;
+    background-color: #be9c79;
     cursor: pointer;
 }
-
 input[type="checkbox"] {
     margin-right: 5px;
 }

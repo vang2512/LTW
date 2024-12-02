@@ -69,9 +69,8 @@
     line-height: 1.4;
 }
 .voucher-description{
-    background: #f1e1b3;
     width: 445px;
-    color: white;
+    color: #c51010;
     font-size: 18px;
 }
 .order-button {
@@ -81,7 +80,7 @@
 }
 
 .order-button button {
-    background-color: #be9c79;
+    background-color: #dab993;
     color: #fff;
     padding: 20px;
     font-size: 20px;
@@ -90,6 +89,10 @@
     cursor: pointer;
     transition: background-color 0.3s;
 }
+.order-button button:hover{
+    background-color: #be9c79;
+}
+
     /*San Pham Lien Quan*/
 .carousel-container {
     width: 100%;
