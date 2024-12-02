@@ -299,6 +299,13 @@ aside .sidebar a:hover span {
     grid-template-rows: 12rem auto;
 }
 
+.content #ordersContent.active {
+    width: 100%;
+    display: grid;
+    gap: 1.8rem;
+    grid-template-rows: 12rem auto;
+}
+
 .content #analyticsContent.active {
     width: 100%;
     display: grid;
@@ -492,6 +499,64 @@ main #users-table table tr button {
     to {
         opacity: 1;
     }
+}
+
+main .orders {
+    margin-top: 2.1rem;
+    padding-right: 1.8rem;
+}
+
+main .orders .top-orders-table {
+    background-color: var(--color-primary-2);
+    overflow: hidden;
+    padding: 16px 20px;
+}
+
+main .orders .top-orders-table .order-text {
+    color: var(--color-white);
+    float: left;
+    margin-top: 7px;
+}
+
+main .orders .top-orders-table .order-function {
+    float: right;
+}
+
+main .orders .top-orders-table .order-function .order-search input {
+    width: 300px;
+    padding: 10px 13px;
+    border-radius: 50px;
+}
+
+main #orders-table table {
+    background-color: var(--color-white);
+    width: 100%;
+    text-align: left;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    border-collapse: collapse;
+}
+
+main #orders-table table:hover {
+    box-shadow: none;
+}
+
+main #orders-table table tr td,
+main #orders-table table tr th {
+    border: none;
+    padding: 20px 27px;
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+main #orders-table table tr td {
+    font-size: 16px;
+}
+
+main #orders-table table tr button {
+    font-size: 20px;
+    margin-right: 10px;
+    background: none;
 }
 
 main .analyse {
