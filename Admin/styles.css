@@ -237,17 +237,43 @@ aside .sidebar a:hover span {
     box-shadow: var(--box-shadow);
     height: 84px;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
     padding-right: 1.8rem;
+    padding-left: 1.8rem;
 }
 
-.content .nav button {
-    display: none;
+.content .nav .search {
+    background: #eee;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
 }
 
-.content .dark-mode {
+.content .nav .search button {
+    font-size: 20px;
+    border: none;
+    background: transparent;
+}
+
+.content .nav .search input {
+    padding: 4px 6px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+}
+
+.content .nav .search i {
+    cursor: pointer;
+}
+
+.content .nav .dark-mode {
     background-color: var(--color-light);
     display: flex;
     justify-content: space-between;
@@ -258,7 +284,7 @@ aside .sidebar a:hover span {
     border-radius: var(--border-radius-1);
 }
 
-.content .dark-mode span {
+.content .nav .dark-mode span {
     font-size: 1.2rem;
     width: 50%;
     height: 100%;
@@ -267,7 +293,7 @@ aside .sidebar a:hover span {
     justify-content: center;
 }
 
-.content .dark-mode span.active {
+.content .nav .dark-mode span.active {
     background-color: var(--color-primary);
     color: white;
     border-radius: var(--border-radius-1);
@@ -275,13 +301,30 @@ aside .sidebar a:hover span {
 
 .content .nav .profile {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 1rem;
     text-align: right;
-    padding-left: 30px;
+}
+
+.content .nav .profile .icon-btns i {
+    font-size: 15px;
+    background: #1976D2;
+    padding: 8px;
+    margin-left: 7px;
+    color: var(--color-white);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.content .nav .function-btn .icon-btns i:hover {
+    background: #0D47A1;
 }
 
 .content .nav .profile .information {
-    margin-top: 10px;
+    margin-top: 7px;
+    margin-left: 12px;
     font-size: 14px;
 }
 
