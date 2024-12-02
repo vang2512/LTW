@@ -168,6 +168,7 @@ section {
     cursor: pointer;
     color: #333;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 .sidebar-btn:hover {
@@ -214,10 +215,7 @@ form textarea {
 }
 
 button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  
     font-weight: bold;
 
 }
