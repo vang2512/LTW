@@ -123,8 +123,8 @@ aside .toggle {
     align-items: center;
     justify-content: start;
     padding-left: 1.6rem;
-    padding-top: 1.7rem;
-    padding-bottom: 1.8rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 aside .toggle .logo {
@@ -133,13 +133,13 @@ aside .toggle .logo {
 }
 
 aside .toggle .logo h2 {
-    padding-top: 9px;
+    padding-top: 25px;
     color: var(--color-white);
 }
 
 aside .toggle .logo img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 5rem;
+    height: 5rem;
     padding-bottom: 3px;
 }
 
