@@ -139,4 +139,40 @@ document.addEventListener('DOMContentLoaded', function () {
         handleUsersTableEvent();
         modal.style.display = 'none';
     });
+
+    /* ------------------------------------------------------------------- */
+    /* ---------------- Trang quản lí đơn hàng ----------------*/
+
+    // Hiển thị dữ liệu đơn hàng từ data.js
+    const ordersTable = document.getElementById('orders-table').getElementsByTagName('tbody')[0];
+    orders.forEach(order => {
+        const row = ordersTable.insertRow();
+        row.innerHTML = `
+            <td rowspan="${order.products.length}">${order.id}</td>
+            <td rowspan="${order.products.length}">${order.customerName}</td>
+            <td>${order.products[0].name}</td>
+            <td>${order.products[0].quantity}</td>
+            <td rowspan="${order.products.length}">${order.price}</td>
+            <td rowspan="${order.products.length}">${order.status}</td>
+            <td rowspan="${order.products.length}">
+                <button onclick="editUser(${order.number})">
+                    <span class="success">
+                        <i class="bi bi-pencil-fill"></i>
+                    </sapn>
+                </button>
+                <button onclick="deleteUser(${order.number})">
+                    <span class="danger">
+                        <i class="bi bi-trash-fill"></i>
+                    </sapn>
+                </button>
+            </td>
+        `;
+        for (let i = 1; i < order.products.length; i++) {
+            const productRow = ordersTable.insertRow();
+            productRow.innerHTML = `
+                <td>${order.products[i].name}</td>
+                <td>${order.products[i].quantity}</td>
+            `;
+        }
+    });
 });
