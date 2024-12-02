@@ -13,18 +13,23 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #ffffff;
+   
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 .signUp-container {
     background-image: url("Images/header.jpg");
     padding: 50px 40px;
     border-radius: 10px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+ 
     text-align: center;
     width: 300px;
     height: 420px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 .logo img {
     margin-top: -60px;
@@ -75,7 +80,7 @@ body {
 }
 /* Thêm hiệu ứng cho nút đăng nhập và nút tạo tài khoản */
 .login-form button:hover, .signUp-form button:hover, .login-form .button-FP:hover {
-    background-color: #8f755b; /* Tối màu khi hover */
+    background-color: #ac8b6b; /* Tối màu khi hover */
     transform: scale(1.05); /* Phóng to nhẹ */
     transition: all 0.3s ease; /* Thêm hiệu ứng mượt mà */
 }
@@ -83,3 +88,11 @@ body {
 .login-form input:hover, .signUp-form input:hover {
     border: 0,5px solid #be9c79; /* Viền sáng lên khi hover */
 }
+/* Thêm hiệu ứng hover cho liên kết */
+.form-links a:hover, .form-links-sign-up a:hover {
+    color: #3d3d3d;
+    text-decoration: underline;
+    transform: scale(1.06); /* Tăng kích thước nhẹ */
+    transition: transform 0.3s ease;
+}
+
