@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (JSON.stringify(contentId) === JSON.stringify('usersContent')) {
                 activeSection.style.display = 'grid';
+            } else if (JSON.stringify(contentId) === JSON.stringify('ordersContent')) {
+                activeSection.style.display = 'grid';
             } else if (JSON.stringify(contentId) === JSON.stringify('analyticsContent')) {
                 activeSection.style.display = 'grid';
             } else {
