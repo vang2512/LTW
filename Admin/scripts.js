@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 activeSection.style.display = 'grid';
             } else if (JSON.stringify(contentId) === JSON.stringify('productsContent')) {
                 activeSection.style.display = 'grid';
+            } else if (JSON.stringify(contentId) === JSON.stringify('desksContent')) {
+                activeSection.style.display = 'grid';
             } else if (JSON.stringify(contentId) === JSON.stringify('ordersContent')) {
                 activeSection.style.display = 'grid';
             } else if (JSON.stringify(contentId) === JSON.stringify('analyticsContent')) {
@@ -187,6 +189,52 @@ document.addEventListener('DOMContentLoaded', function () {
         if (index !== -1) {
             products.splice(index, 1);
             handleProductsTableEvent();
+        }
+    };
+
+    /* ------------------------------------------------------------------- */
+    /* ---------------- Trang quản lí bàn ----------------*/
+
+    // Hiển thị danh sách bàn
+    function handleDesksTableEvent() {
+        const desksTable = document.getElementById('desks-table').getElementsByTagName('tbody')[0];
+        desksTable.innerHTML = '';
+        desks.forEach(desk => {
+            const row = desksTable.insertRow();
+            row.innerHTML = `
+                <td>${desk.type}</td>
+                <td>${desk.space}</td>
+                <td>${desk.amount}</td>
+                <td>${desk.price}</td>
+                <td>
+                    <button onclick="editDesk(${desk.number})">
+                        <span class="success">
+                            <i class="bi bi-pencil-fill"></i>
+                        </sapn>
+                    </button>
+                    <button onclick="deleteDesk(${desk.number})">
+                        <span class="danger">
+                            <i class="bi bi-trash-fill"></i>
+                        </sapn>
+                    </button>
+                    <button onclick="infoDesk(${desk.number})">
+                        <span class="primary">
+                            <i class="bi bi-info-circle-fill"></i>
+                        </sapn>
+                    </button>
+                </td>
+            `;
+        });
+    }
+
+    handleDesksTableEvent();
+
+    // Hàm xóa bàn
+    window.deleteDesk = function (number) {
+        const index = desks.findIndex(desk => desk.number === number);
+        if (index !== -1) {
+            desks.splice(index, 1);
+            handleDesksTableEvent();
         }
     };
 
