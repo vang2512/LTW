@@ -175,11 +175,26 @@
         <!-- Orders Content -->
         <div id="ordersContent" class="content-section">
             <main>
-                <h2>Quản lí đơn hàng</h2>
-                <input type="text" id="search" placeholder="Tìm kiếm đơn hàng...">
-                <button id="add-order-btn">Thêm đơn hàng</button>
-                <table>
-                    <thead>
+                <div class="orders">
+                    <div class="top-orders-table">
+                        <div class="order-text">
+                            <h2>Quản lí đơn hàng</h2>
+                        </div>
+                        <div class="order-function">
+                            <div class="order-search">
+                                <input type="text" id="search" placeholder="Tìm kiếm đơn hàng...">
+                            </div>
+                            <div id="add-order-btn">
+                                <a href="#">
+                                    <i class="bi bi-cart-plus-fill"></i>
+                                    <span>Thêm đơn hàng</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Orders Table-->
+                    <table id="orders-table">
+                        <thead>
                         <tr>
                             <th>ID</th>
                             <th>Tên khách hàng</th>
@@ -189,9 +204,11 @@
                             <th>Trạng thái</th>
                             <th></th>
                         </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <!-- End Of Orders Table -->
+                </div>
             </main>
         </div>
         <!-- End OF Orders Content -->
