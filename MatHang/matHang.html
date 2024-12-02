@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Your Page Title Here</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style_matHang.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -12,42 +11,10 @@
 </head>
 
 <body>
-    <header class="header">
-        <section class="flex">
-            <a href="#home" class="logo">
-                <img src="Images/3talents logo.png" alt="">
-            </a>
-            <nav class="navbar">
-                <div class="left">
-                    <a href="#home">Trang Chủ</a>
-                    <a href="#about">About</a>
-                    <!-- Menu with dropdown options -->
-                    <div class="dropdown">
-                        <a href="#menu" class="mn">Menu</a>
-                        <div class="dropdown-content">
-                            <a href="#coffee">Coffee</a>
-                            <a href="#tea">Trà</a>
-                            <a href="#desserts">Bánh Ngọt</a>
-                            <a href="#snacks">Nước Ép</a>
-                        </div>
-                    </div>
-                    <a href="#datban">Đặt Bàn</a>
-                    <a href="#contact">Tin Tức & Sự Kiện</a>
-                </div>
-                <div class="right">
-                    <a href="#search" class="icon">
-                        <i class="fas fa-search"></i>
-                    </a>
-                    <a href="#giohang" class="icon">
-                        <i class="fas fa-shopping-cart"></i>
-                    </a>
-                    <a href="#sign">Đăng Ký</a>
-                    <a href="#login">Đăng Nhập</a>
-                </div>
-            </nav>
-            <div id="menu-btn" class="fas fa-bars"></div>
-        </section>
-    </header>
+<!-- Header -->
+<div data-include="../Header_Footer/header.html"></div>
+<script src="head_footer.js" defer></script>
+
     <div class="container">
         <!-- Sidebar -->
          
@@ -547,50 +514,8 @@
                 </div>
             </div>
         </main>
-
-
     </div>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h4>Giới thiệu</h4>
-                <ul>
-                    <li><a href="#">Về Chúng Tôi</a></li>
-                    <li><a href="#">Sản phẩm</a></li>
-                    <li><a href="#">Khuyến mãi</a></li>
-                    <li><a href="#">Chuyện cà phê</a></li>
-                    <li><a href="#">Cửa Hàng</a></li>
-                    <li><a href="#">Tuyển dụng</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Điều khoản</h4>
-                <ul>
-                    <li><a href="#">Điều khoản sử dụng</a></li>
-                    <li><a href="#">Chính sách bảo mật thông tin</a></li>
-                    <li><a href="#">Hướng dẫn xuất hóa đơn GTGT</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Liên hệ</h4>
-                <p class="contact-info">
-                    Đặt hàng: <a href="tel:18006936">1800 6936</a><br>
-                    Địa chỉ: 67 Đinh Bộ Lĩnh, P.26, Q.Bình Thạnh, TP.Hồ Chí Minh
-                </p>
-                <div class="social-media-icons">
-                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN<br>
-            Mã số DN: 0312867172 do Sở Kế hoạch và Đầu tư TP. HCM cấp ngày 23/07/2014.<br>
-            Người đại diện: NGÔ NGUYỄN KHA<br>
-            Địa chỉ: 86-88 Cao Thắng, Phường 04, Quận 3, TP Hồ Chí Minh &nbsp; | &nbsp;
-            Điện thoại: (028) 7107 8079 &nbsp; | &nbsp; Email: <a
-                href="mailto:hi@coffee3talents.vn">hi@coffee3talents.vn</a><br>
-            © 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN. Mọi quyền bảo lưu.
-        </div>
-    </footer>
+<script src="script.js"></script>
+<!-- Footer -->
+<div data-include="../Header_Footer/footer.html"></div>
 </body>
