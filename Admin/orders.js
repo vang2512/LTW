@@ -23,7 +23,7 @@ const orders = [
     {
         number: 1,
         id: 'HD01',
-        nameCustomer: 'Nguyễn Văn A',
+        customerName: 'Nguyễn Văn A',
         products: [
             { name: 'Cappuccino', quantity: 2 },
             { name: 'Tiramisu ', quantity: 1}
@@ -34,7 +34,7 @@ const orders = [
     {
         number: 2,
         id: 'HD02',
-        nameCustomer: 'Phan Thị Thanh',
+        customerName: 'Phan Thị Thanh',
         products: [
             { name: 'Cappuccino', quantity: 2 },
             { name: 'Bàn nhỏ 2 người', quantity: 1 }
@@ -43,9 +43,9 @@ const orders = [
         status: 'Đang xử lí'
     },
     {
-        number: 2,
-        id: 'HD02',
-        nameCustomer: 'Phan Thị Thanh',
+        number: 3,
+        id: 'HD03',
+        customerName: 'Lê Hà Vinh',
         products: [
             { name: 'Bàn trung 4 người', quantity: 1 }
         ],
