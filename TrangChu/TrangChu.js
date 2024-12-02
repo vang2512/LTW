@@ -1,24 +1,4 @@
 
-/*JS Header */
-const searchIcon = document.getElementById('search-icon');
-const searchInput = document.getElementById('search-input');
-const clearBtn = document.getElementById('clear-btn');
-
-searchIcon.addEventListener('click', function (event) {
-    this.classList.toggle('active'); // Thêm hoặc gỡ lớp active
-    if (!this.classList.contains('active')) {
-        searchInput.value = '';
-    }
-});
-searchInput.addEventListener('click', function (event) {
-    event.stopPropagation();
-});
-clearBtn.addEventListener('click', function (event) {
-    searchIcon.classList.remove('active');
-    searchInput.value = '';
-});
-
-/*JS Event News*/
 const swiper = new Swiper('.slider-wrapper', {
     loop: true,
     spaceBetween: 100,
@@ -45,3 +25,31 @@ const swiper = new Swiper('.slider-wrapper', {
 
     }
 });
+<!--JS Header & Footer-->
+document.addEventListener('DOMContentLoaded', () => {
+    const cache = new Map();
+    async function loadContent() {
+        const elements = document.querySelectorAll('[data-include]');
+        for (const el of elements) {
+            const file = el.getAttribute('data-include');
+            if (file) {
+                if (cache.has(file)) {
+                    el.innerHTML = cache.get(file);
+                } else {
+                    const response = await fetch(file);
+                    if (response.ok) {
+                        const text = await response.text();
+                        cache.set(file, text);
+                        el.innerHTML = text;
+                    } else {
+                        el.innerHTML = "Không thể tải nội dung.";
+                    }
+                }
+            }
+        }
+    }
+    loadContent();
+});
+
+
+

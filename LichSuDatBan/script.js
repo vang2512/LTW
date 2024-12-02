@@ -1,29 +1,4 @@
 
-<!--JS Payment-->
-const formFields = document.querySelectorAll(".checkout-form input, .check_box input");
-const orderButton = document.querySelector(".order-btn");
-const termsCheckbox = document.getElementById("terms");
-
-function checkFormCompletion() {
-    let allFieldsFilled = true;
-    formFields.forEach(field => {
-        if (field.type !== "checkbox" && !field.value.trim()) {
-            allFieldsFilled = false;
-        }
-    });
-    if (!termsCheckbox.checked) {
-        allFieldsFilled = false;
-    }
-    orderButton.disabled = !allFieldsFilled;
-    orderButton.classList.toggle('active', allFieldsFilled);
-}
-
-formFields.forEach(field => {
-    field.addEventListener('input', checkFormCompletion);
-});
-termsCheckbox.addEventListener('change', checkFormCompletion);
-checkFormCompletion();
-
 <!--JS Header & Footer-->
 document.addEventListener('DOMContentLoaded', () => {
     const cache = new Map();
@@ -51,4 +26,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
+        
