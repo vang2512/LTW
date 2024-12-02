@@ -57,8 +57,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 <td>${order.productName}</td>
                 <td>${order.productNumber}</td>
                 <td>${order.paymentStatus}</td>
-                <td class="${order.status === 'Declined' ? 'danger' : order.status === 'Pending' ? 'warning' : 'primary'}">${order.status}</td>
-                <td class="primary">Details</td>
+                <td class="${order.status === 'Đã thanh toán'  ? 'success' : 'warning'}">${order.status}</td>
+                <td class="primary">Chi tiết</td>
             `;
             tr.innerHTML = trContent;
             recentOrders.appendChild(tr);

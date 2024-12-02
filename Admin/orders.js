@@ -2,20 +2,20 @@ const Orders = [
     {
         productName: 'Cappuccino',
         productNumber: 'Coffee#01',
-        paymentStatus: 'Transfer',
-        status: 'Pending'
+        paymentStatus: 'Chuyển khoản',
+        status: 'Đã thanh toán'
     },
     {
         productName: 'Tiramisu',
-        productNumber: 'Food#01',
-        paymentStatus: 'Cash',
-        status: 'Paid'
+        productNumber: 'Cake#01',
+        paymentStatus: 'Tiền mặt',
+        status: 'Đang xử lí'
     },
     {
         productName: 'Espresso',
-        productNumber: 'Coffee#-3',
-        paymentStatus: 'Transfer',
-        status: 'Deposit'
+        productNumber: 'Coffee#03',
+        paymentStatus: 'Chuyển khoản',
+        status: 'Đã thanh toán'
     },
 ]
 
