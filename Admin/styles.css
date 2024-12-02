@@ -770,7 +770,7 @@ main #orders-table table:hover {
 
 main #orders-table table tr td,
 main #orders-table table tr th {
-    border: none;
+    border: 1px solid #ddd;
     padding: 20px 27px;
     font-size: 17px;
     vertical-align: middle;
@@ -942,6 +942,7 @@ main #recent-orders a {
 
 .right-section {
     margin-top: 1.4rem;
+    padding-right: 1.8rem;
 }
 
 .right-section .user-profile {
