@@ -1,5 +1,7 @@
 :root {
     --color-primary: #6C9BCF;
+    --color-primary-1: #182344;
+    --color-primary-2: #0D1A35;
     --color-danger: #FF0060;
     --color-success: #1B9C85;
     --color-warning: #F7D060;
@@ -107,10 +109,8 @@ b {
 
 .container {
     display: grid;
-    width: 96%;
-    margin: 0 auto;
-    gap: 1.8rem;
-    grid-template-columns: 12rem auto;
+    width: 99%;
+    grid-template-columns: 20rem auto;
 }
 
 aside {
@@ -118,10 +118,13 @@ aside {
 }
 
 aside .toggle {
+    background-color: var(--color-primary-1);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 1.4rem;
+    justify-content: start;
+    padding-left: 1.6rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 aside .toggle .logo {
@@ -129,9 +132,15 @@ aside .toggle .logo {
     gap: 0.5rem;
 }
 
+aside .toggle .logo h2 {
+    padding-top: 25px;
+    color: var(--color-white);
+}
+
 aside .toggle .logo img {
-    width: 2rem;
-    height: 2rem;
+    width: 5rem;
+    height: 5rem;
+    padding-bottom: 3px;
 }
 
 aside .toggle .close {
@@ -142,12 +151,9 @@ aside .toggle .close {
 aside .sidebar {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-white);
-    box-shadow: var(--box-shadow);
-    border-radius: 15px;
-    height: 88vh;
+    background-color: var(--color-primary-2);
+    height: 91.3vh;
     position: relative;
-    top: 1.5rem;
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -159,23 +165,22 @@ aside .sidebar:hover {
 aside .sidebar a {
     display: flex;
     align-items: center;
-    color: var(--color-info-dark);
     height: 3.7rem;
-    gap: 1rem;
+    gap: 1.2rem;
     position: relative;
     margin-left: 2rem;
     transition: all 0.3s ease;
 }
 
 aside .sidebar a span {
-    font-size: 1.6rem;
+    color: var(--color-info-dark);
+    font-size: 1.5rem;
     transition: all 0.3s ease;
 }
 
-aside .sidebar a:last-child {
-    position: absolute;
-    bottom: 2rem;
-    width: 100%;
+aside .sidebar a h3 {
+    color: var(--color-white);
+    font-size: 17px;
 }
 
 aside .sidebar a:last-child {
@@ -212,8 +217,6 @@ aside .sidebar a:hover span {
 }
 
 .content {
-    display: grid;
-    grid-template-rows: 3rem auto;
     flex: 1;
     transition: transform 0.5s ease-in-out;
 }
@@ -230,17 +233,47 @@ aside .sidebar a:hover span {
 }
 
 .content .nav {
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow);
+    height: 84px;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
     gap: 2rem;
-    padding-top: 1.4rem;
+    padding-right: 1.8rem;
+    padding-left: 1.8rem;
 }
 
-.content .nav button {
-    display: none;
+.content .nav .search {
+    background: #eee;
+    display: flex;
+    align-items: center;
+    width: 400px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2), 0 24px 20px -24px rgba(71, 82, 107, 0.1);
 }
 
-.content .dark-mode {
+.content .nav .search button {
+    font-size: 20px;
+    border: none;
+    background: transparent;
+}
+
+.content .nav .search input {
+    padding: 4px 6px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+}
+
+.content .nav .search i {
+    cursor: pointer;
+}
+
+.content .nav .dark-mode {
     background-color: var(--color-light);
     display: flex;
     justify-content: space-between;
@@ -249,10 +282,9 @@ aside .sidebar a:hover span {
     width: 4.2rem;
     cursor: pointer;
     border-radius: var(--border-radius-1);
-    margin-top: 7px;
 }
 
-.content .dark-mode span {
+.content .nav .dark-mode span {
     font-size: 1.2rem;
     width: 50%;
     height: 100%;
@@ -261,7 +293,7 @@ aside .sidebar a:hover span {
     justify-content: center;
 }
 
-.content .dark-mode span.active {
+.content .nav .dark-mode span.active {
     background-color: var(--color-primary);
     color: white;
     border-radius: var(--border-radius-1);
@@ -269,23 +301,69 @@ aside .sidebar a:hover span {
 
 .content .nav .profile {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 1rem;
     text-align: right;
-    padding-left: 30px;
+}
+
+.content .nav .profile .icon-btns i {
+    font-size: 15px;
+    background: #1976D2;
+    padding: 8px;
+    margin-left: 7px;
+    color: var(--color-white);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.content .nav .function-btn .icon-btns i:hover {
+    background: #0D47A1;
 }
 
 .content .nav .profile .information {
     margin-top: 7px;
+    margin-left: 12px;
+    font-size: 14px;
 }
 
 .content .nav .profile .profile-photo {
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 3.6rem;
+    height: 3.4rem;
     border-radius: 50%;
     overflow: hidden;
 }
 
-.content #analyticsContent {
+.content #usersContent.active {
+    width: 100%;
+    display: grid;
+    gap: 1.8rem;
+    grid-template-rows: 12rem auto;
+}
+
+.content #productsContent.active {
+    width: 100%;
+    display: grid;
+    gap: 1.8rem;
+    grid-template-rows: 12rem auto;
+}
+
+.content #desksContent.active {
+    width: 100%;
+    display: grid;
+    gap: 1.8rem;
+    grid-template-rows: 12rem auto;
+}
+
+.content #ordersContent.active {
+    width: 100%;
+    display: grid;
+    gap: 1.8rem;
+    grid-template-rows: 12rem auto;
+}
+
+.content #analyticsContent.active {
     width: 100%;
     display: grid;
     gap: 1.8rem;
@@ -294,6 +372,418 @@ aside .sidebar a:hover span {
 
 main {
     margin-top: 1.4rem;
+    padding-left: 1.8rem;
+}
+
+main .users {
+    margin-top: 2.1rem;
+    padding-right: 1.8rem;
+}
+
+main .users .top-users-table {
+    background-color: var(--color-primary-2);
+    overflow: hidden;
+    padding: 14px 20px;
+}
+
+main .users .top-users-table .user-text {
+    color: var(--color-white);
+    float: left;
+    margin-top: 7px;
+}
+
+main .users .top-users-table .user-btn {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.3rem;
+}
+
+main .users .top-users-table .user-btn #delete-user-btn {
+    padding: 10px 13px;
+    background-color: var(--color-danger);
+}
+
+main .users .top-users-table .user-btn #add-user-btn {
+    padding: 10px 13px;
+    background-color: var(--color-success);
+}
+
+main .users .top-users-table .user-btn a {
+    color: var(--color-white);
+    font-size: 13px;
+}
+
+main #users-table table {
+    background-color: var(--color-white);
+    width: 100%;
+    text-align: left;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    border-collapse: collapse;
+}
+
+main #users-table table:hover {
+    box-shadow: none;
+}
+
+main #users-table table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+main #users-table table tbody tr:nth-child(even) button {
+    background-color: #fff;
+}
+
+main #users-table table tbody tr:nth-child(odd) {
+    background-color: #eee;
+    border-top: solid 1px var(--color-light);
+    border-bottom: solid 1px var(--color-light);
+}
+
+main #users-table table tr td,
+main #users-table table tr th {
+    border: none;
+    padding: 20px 27px;
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+main #users-table table tr td {
+    font-size: 16px;
+}
+
+main #users-table table tr button {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+#user-form-modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#user-form-modal .modal-content {
+    display: flex;
+    gap: 20px;
+    margin: 5% auto;
+    background-color: var(--color-white);
+    width: 100%;
+    max-width: 460px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s;
+}
+
+#user-form-modal .modal-content form {
+    width: 100%;
+}
+
+#user-form-modal .modal-content form .header-form {
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#user-form-modal .modal-content form .header-form h2 {
+    font-size: 23px;
+}
+
+#user-form-modal .modal-content form .header-form .close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+#user-form-modal .modal-content form .header-form .close-btn:hover,
+#user-form-modal .modal-content form .header-form .close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#user-form-modal .modal-content .form-control {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#user-form-modal .modal-content .form-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+#user-form-modal .modal-content .form-control input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #DDD;
+    border-radius: 10px;
+    outline: none;
+}
+
+#user-form-modal .modal-content button {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: var(--color-white);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+#user-form-modal .modal-content button:hover {
+    background-color: var(--color-primary-2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+main .products {
+    margin-top: 2.1rem;
+    padding-right: 2.5rem;
+}
+
+main .products .top-products-table {
+    background-color: var(--color-primary-2);
+    overflow: hidden;
+    padding: 14px 20px;
+}
+
+main .products .top-products-table .product-text {
+    color: var(--color-white);
+    float: left;
+    margin-top: 7px;
+}
+
+main .products .top-products-table .product-btn {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.3rem;
+}
+
+main .products .top-products-table .product-btn .product-search input {
+    width: 400px;
+    padding: 10px 13px;
+    margin-right: 30px;
+    border-radius: 50px;
+}
+
+main .products .top-products-table .product-btn #add-product-btn {
+    padding: 10px 13px;
+    background-color: var(--color-success);
+}
+
+main .products .top-products-table .product-btn a {
+    color: var(--color-white);
+    font-size: 13px;
+}
+
+main #products-table table {
+    background-color: var(--color-white);
+    width: 100%;
+    text-align: left;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    border-collapse: collapse;
+}
+
+main #products-table table:hover {
+    box-shadow: none;
+}
+
+main #products-table table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+main #products-table table tbody tr:nth-child(even) button {
+    background-color: #fff;
+}
+
+main #products-table table tbody tr:nth-child(odd) {
+    background-color: #eee;
+    border-top: solid 1px var(--color-light);
+    border-bottom: solid 1px var(--color-light);
+}
+
+main #products-table table tr td,
+main #products-table table tr th {
+    border: none;
+    padding: 20px 27px;
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+main #products-table table tr td {
+    font-size: 16px;
+}
+
+main #products-table table tr button {
+    font-size: 21px;
+    margin-right: 15px;
+}
+
+main .desks {
+    margin-top: 2.1rem;
+    padding-right: 2.5rem;
+}
+
+main .desks .top-desks-table {
+    background-color: var(--color-primary-2);
+    overflow: hidden;
+    padding: 14px 20px;
+}
+
+main .desks .top-desks-table .desk-text {
+    color: var(--color-white);
+    float: left;
+    margin-top: 7px;
+}
+
+main .desks .top-desks-table .desk-btn {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.3rem;
+}
+
+main .desks .top-desks-table .desk-btn .desk-search input {
+    width: 400px;
+    padding: 10px 13px;
+    margin-right: 30px;
+    border-radius: 50px;
+}
+
+main .desks .top-desks-table .desk-btn #add-desk-btn {
+    padding: 10px 13px;
+    background-color: var(--color-success);
+}
+
+main .desks .top-desks-table .desk-btn a {
+    color: var(--color-white);
+    font-size: 13px;
+}
+
+main #desks-table table {
+    background-color: var(--color-white);
+    width: 100%;
+    text-align: left;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    border-collapse: collapse;
+}
+
+main #desks-table table:hover {
+    box-shadow: none;
+}
+
+main #desks-table table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+main #desks-table table tbody tr:nth-child(even) button {
+    background-color: #fff;
+}
+
+main #desks-table table tbody tr:nth-child(odd) {
+    background-color: #eee;
+    border-top: solid 1px var(--color-light);
+    border-bottom: solid 1px var(--color-light);
+}
+
+main #desks-table table tr td,
+main #desks-table table tr th {
+    border: none;
+    padding: 20px 27px;
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+main #desks-table table tr td {
+    font-size: 16px;
+}
+
+main #desks-table table tr button {
+    font-size: 21px;
+    margin-right: 15px;
+}
+
+main .orders {
+    margin-top: 2.1rem;
+    padding-right: 1.8rem;
+}
+
+main .orders .top-orders-table {
+    background-color: var(--color-primary-2);
+    overflow: hidden;
+    padding: 16px 20px;
+}
+
+main .orders .top-orders-table .order-text {
+    color: var(--color-white);
+    float: left;
+    margin-top: 7px;
+}
+
+main .orders .top-orders-table .order-function {
+    float: right;
+}
+
+main .orders .top-orders-table .order-function .order-search input {
+    width: 300px;
+    padding: 10px 13px;
+    border-radius: 50px;
+}
+
+main #orders-table table {
+    background-color: var(--color-white);
+    width: 100%;
+    text-align: left;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    border-collapse: collapse;
+}
+
+main #orders-table table:hover {
+    box-shadow: none;
+}
+
+main #orders-table table tr td,
+main #orders-table table tr th {
+    border: 1px solid #ddd;
+    padding: 20px 27px;
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+main #orders-table table tr td {
+    font-size: 16px;
+}
+
+main #orders-table table tr button {
+    font-size: 20px;
+    margin-right: 10px;
+    background: none;
 }
 
 main .analyse {
@@ -452,6 +942,7 @@ main #recent-orders a {
 
 .right-section {
     margin-top: 1.4rem;
+    padding-right: 1.8rem;
 }
 
 .right-section .user-profile {

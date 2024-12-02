@@ -17,7 +17,7 @@
     <aside>
         <div class="toggle">
             <div class="logo">
-                <img src="images/logo.png" alt="logo">
+                <img src="images/header/logo.png" alt="logo">
                 <h2>Coffee 3Talents</h2>
             </div>
             <div class="close" id="close-btn">
@@ -26,7 +26,7 @@
         </div>
 
         <div class="sidebar">
-            <a href="#" data-target="dashboardContent">
+            <a href="#" data-target="analyticsContent" class="active">
                 <span>
                     <i class="bi bi-columns-gap"></i>
                 </span>
@@ -38,9 +38,23 @@
                 </span>
                 <h3>Quản lí người dùng</h3>
             </a>
-            <a href="#" data-target="analyticsContent" class="active">
-                <span class="material-symbols-outlined">query_stats</span>
-                <h3>Phân tích</h3>
+            <a href="#" data-target="productsContent">
+                    <span class="material-symbols-outlined">
+                        local_cafe
+                    </span>
+                <h3>Quản lí sản phẩm</h3>
+            </a>
+            <a href="#" data-target="desksContent">
+                    <span class="material-symbols-outlined">
+                        table_bar
+                    </span>
+                <h3>Quản lí bàn</h3>
+            </a>
+            <a href="#" data-target="ordersContent">
+                    <span>
+                        <i class="bi bi-basket2"></i>
+                    </span>
+                <h3>Quản lí đơn hàng</h3>
             </a>
             <a href="#" data-target="settingsContent">
                 <span class="material-symbols-outlined">settings</span>
@@ -53,23 +67,29 @@
     <div class="content">
         <!-- Navbar -->
         <div class="nav">
-            <button id="menu-btn">
-                <span>
-                    <i class="bi bi-list"></i>
-                </span>
-            </button>
+            <div class="search">
+                <button>
+                    <i class="bi bi-search"></i>
+                </button>
+                <input type="text" placeholder="Tìm kiếm">
+                <i class="bi bi-sliders"></i>
+            </div>
             <div class="dark-mode">
+                    <span>
+                        <i class="bi bi-sun-fill"></i>
+                    </span>
                 <span>
-                    <i class="bi bi-sun-fill"></i>
-                </span>
-                <span>
-                    <i class="bi bi-moon-fill"></i>
-                </span>
+                        <i class="bi bi-moon-fill"></i>
+                    </span>
             </div>
             <div class="profile">
+                <div class="icon-btns">
+                    <i class="bi bi-bell"></i>
+                    <i class="bi bi-chat-dots"></i>
+                </div>
                 <div class="information">
-                    <p>Hey, <b>Anh Tu</b></p>
-                    <small class="text-muted">Admin</small>
+                    <p>Chào, <b>Anh Tú</b></p>
+                    <small class="text-muted">Quản trị viên</small>
                 </div>
                 <div class="profile-photo">
                     <img src="images/managers/admin-1.jpg" alt="Anh Tú">
@@ -86,40 +106,216 @@
 
         <!-- Users Content -->
         <div id="usersContent" class="content-section">
+            <!-- Main Content -->
             <main>
-                <!-- Users Table -->
-                <div id="users-table">
-                    <h1>Quản lí người dùng</h1>
-                    <table>
-                        <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Tên</th>
-                            <th>Email</th>
-                            <th>Số điện thoại</th>
-                            <th></th>
-                        </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                    <button id="add-user-btn">Thêm người dùng</button>
+                <div class="users">
+                    <div class="top-users-table">
+                        <div class="user-text">
+                            <h2>Quản lí người dùng</h2>
+                        </div>
+                        <div class="user-btn">
+                            <div id="delete-user-btn">
+                                <a href="#">
+                                    <i class="bi bi-dash-circle-fill"></i>
+                                    <span>Xóa</span>
+                                </a>
+                            </div>
+                            <div id="add-user-btn">
+                                <a href="#">
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                    <span>Thêm người dùng mới</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Users Table -->
+                    <div id="users-table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Tên</th>
+                                <th>Email</th>
+                                <th>Địa chỉ</th>
+                                <th>Số điện thoại</th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <!-- End Of Users Table -->
                 </div>
-                <!-- End Of Users Table -->
             </main>
+            <!-- End Of Main Content -->
+
+            <!-- Add New User -->
+            <div id="user-form-modal" class="modal">
+                <div class="modal-content">
+                    <form id="user-form" novalidate>
+                        <div class="header-form">
+                            <h2>Thêm người dùng mới</h2>
+                            <span class="close-btn">&times;</span>
+                        </div>
+                        <div class="form-control">
+                            <label for="id">ID</label>
+                            <input type="text" id="id" placeholder="Nhập mã người dùng">
+                        </div>
+                        <div class="form-control">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Nhập tên người dùng">
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Nhập email người dùng" autocomplete="off">
+                        </div>
+                        <div class="form-control">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" placeholder="Nhập địa chỉ người dùng"
+                                   autocomplete="off">
+                        </div>
+                        <div class="form-control">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="Nhập số điện thoại người dùng"
+                                   autocomplete="off">
+                        </div>
+                        <button type="submit">Lưu</button>
+                    </form>
+                </div>
+            </div>
+            <!--End Of Add New User -->
         </div>
         <!-- End Of Users Content -->
+
+        <!-- Products Content -->
+        <div id="productsContent" class="content-section">
+            <main>
+                <div class="products">
+                    <div class="top-products-table">
+                        <div class="product-text">
+                            <h2>Quản lí sản phẩm</h2>
+                        </div>
+                        <div class="product-btn">
+                            <div class="product-search">
+                                <input type="text" id="searchProduct" placeholder="Tìm kiếm sản phẩm...">
+                            </div>
+                            <div id="add-product-btn">
+                                <a href="#">
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                    <span>Thêm sản phẩm mới</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Products Table-->
+                    <div id="products-table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Loại sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Hành động</th>
+                            </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <!-- End Of Products Table -->
+                </div>
+            </main>
+        </div>
+        <!-- End Of Products Content -->
+
+        <!-- Desks Content -->
+        <div id="desksContent" class="content-section">
+            <main>
+                <div class="desks">
+                    <div class="top-desks-table">
+                        <div class="desk-text">
+                            <h2>Quản lí bàn</h2>
+                        </div>
+                        <div class="desk-btn">
+                            <div class="desk-search">
+                                <input type="text" id="searchDesk" placeholder="Tìm kiếm bàn...">
+                            </div>
+                            <div id="add-desk-btn">
+                                <a href="#">
+                                    <i class="bi bi-plus-circle-fill"></i>
+                                    <span>Thêm bàn mới</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Desks Table-->
+                    <div id="desks-table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Loại sản phẩm</th>
+                                <th>Không gian</th>
+                                <th>Số lượng</th>
+                                <th>Giá đặt cọc</th>
+                                <th>Hành động</th>
+                            </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <!-- End Of Desks Table -->
+                </div>
+            </main>
+        </div>
+        <!-- End Of Desks Content -->
+
+        <!-- Orders Content -->
+        <div id="ordersContent" class="content-section">
+            <main>
+                <div class="orders">
+                    <div class="top-orders-table">
+                        <div class="order-text">
+                            <h2>Quản lí đơn hàng</h2>
+                        </div>
+                        <div class="order-function">
+                            <div class="order-search">
+                                <input type="text" id="searchOrder" placeholder="Tìm kiếm đơn hàng...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Orders Table-->
+                    <div id="orders-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Tên khách hàng</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Số lượng</th>
+                                    <th>Giá</th>
+                                    <th>Trạng thái</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <!-- End Of Orders Table -->
+                </div>
+            </main>
+        </div>
+        <!-- End OF Orders Content -->
 
         <!-- Analytics Content -->
         <div id="analyticsContent" class="content-section">
             <!-- Main Content -->
             <main>
-                <h1>Analytics</h1>
+                <h1>Phân tích</h1>
                 <!-- Analyses -->
                 <div class="analyse">
                     <div class="sales">
                         <div class="status">
                             <div class="info">
-                                <h3>Total Sales</h3>
+                                <h3>Tổng danh số</h3>
                                 <h1>$65,024</h1>
                             </div>
                             <div class="progress">
@@ -135,7 +331,7 @@
                     <div class="visits">
                         <div class="status">
                             <div class="info">
-                                <h3>Site Visit</h3>
+                                <h3>Số lần ghé thăm</h3>
                                 <h1>24,981</h1>
                             </div>
                             <div class="progress">
@@ -151,7 +347,7 @@
                     <div class="searches">
                         <div class="status">
                             <div class="info">
-                                <h3>Searches</h3>
+                                <h3>Số lượt tìm kiếm</h3>
                                 <h1>14,147</h1>
                             </div>
                             <div class="progress">
@@ -169,27 +365,27 @@
 
                 <!-- New Users Section -->
                 <div class="new-users">
-                    <h2>New Users</h2>
+                    <h2>Khách hàng mới</h2>
                     <div class="user-list">
                         <div class="user">
                             <img src="images/users/son-tung-mtp.webp" alt="Sơn Tùng M-TP">
                             <h2>Sơn Tùng M-TP</h2>
-                            <p>54 Min Ago</p>
+                            <p>54 phút trước</p>
                         </div>
                         <div class="user">
                             <img src="images/users/bruno-mars.jpg" alt="Bruno Mars">
                             <h2>Bruno Mars</h2>
-                            <p>3 Hours Ago</p>
+                            <p>3 tiếng trước</p>
                         </div>
                         <div class="user">
                             <img src="images/users/chris-grey.jpg" alt="Chris Grey">
                             <h2>Chris Grey</h2>
-                            <p>6 Hours Ago</p>
+                            <p>6 tiếng trước</p>
                         </div>
                         <div class="user">
                             <img src="images/users/plus.jpg" alt="More Users">
-                            <h2>More</h2>
-                            <p>New User</p>
+                            <h2>Thêm</h2>
+                            <p>Khách hàng mới</p>
                         </div>
                     </div>
                 </div>
@@ -197,15 +393,14 @@
 
                 <!-- Recent Orders Table -->
                 <div id="recent-orders">
-                    <h2>Recent Orders</h2>
+                    <h2>Đơn hàng gần đây</h2>
                     <table>
                         <thead>
                         <tr>
-                            <th>Course Name</th>
-                            <th>Course Number</th>
-                            <th>Payment</th>
-                            <th>Status</th>
-                            <th>Course Name</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Mã sản phẩm</th>
+                            <th>Phương thức thanh toán</th>
+                            <th>Trạng thái</th>
                             <th></th>
                         </tr>
                         </thead>
@@ -222,7 +417,7 @@
                 <!-- User Profile -->
                 <div class="user-profile">
                     <div class="logo">
-                        <img src="images/logo.png" alt="logo">
+                        <img src="images/header/logo.png" alt="logo">
                         <h2>Coffee 3Talents</h2>
                         <p>The coffee house</p>
                     </div>
@@ -232,17 +427,17 @@
                 <!-- Reminders -->
                 <div class="reminders">
                     <div class="header">
-                        <h2>Reminders</h2>
+                        <h2>Lời nhắc nhở</h2>
                         <span>
-                        <i class="bi bi-bell"></i>
-                    </span>
+                            <i class="bi bi-bell"></i>
+                        </span>
                     </div>
 
                     <div class="notification">
                         <div class="icon">
-                        <span>
-                            <i class="bi bi-volume-up-fill"></i>
-                        </span>
+                            <span>
+                                <i class="bi bi-volume-up-fill"></i>
+                            </span>
                         </div>
                         <div class="content">
                             <div class="information">
@@ -252,16 +447,16 @@
                                 </small>
                             </div>
                             <span>
-                            <i class="bi bi-three-dots-vertical"></i>
-                        </span>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </span>
                         </div>
                     </div>
 
                     <div class="notification deactive">
                         <div class="icon">
-                        <span>
-                            <i class="bi bi-pencil-fill"></i>
-                        </span>
+                            <span>
+                                <i class="bi bi-pencil-fill"></i>
+                            </span>
                         </div>
                         <div class="content">
                             <div class="info">
@@ -271,17 +466,17 @@
                                 </small>
                             </div>
                             <span>
-                            <i class="bi bi-three-dots-vertical"></i>
-                        </span>
+                                <i class="bi bi-three-dots-vertical"></i>
+                            </span>
                         </div>
                     </div>
 
                     <div class="notification add-reminder">
                         <div>
-                        <span>
-                            <i class="bi bi-plus-lg"></i>
-                        </span>
-                            <h3>Add Reminder</h3>
+                            <span>
+                                <i class="bi bi-plus-lg"></i>
+                            </span>
+                            <h3>Thêm nhắc nhở</h3>
                         </div>
                     </div>
                 </div>
@@ -299,6 +494,8 @@
 </div>
 
 <script src="users.js"></script>
+<script src="products.js"></script>
+<script src="desks.js"></script>
 <script src="orders.js"></script>
 <script src="scripts.js"></script>
 </body>
