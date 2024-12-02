@@ -76,15 +76,12 @@
     text-decoration: none;
     transition: color 0.3s ease, text-decoration 0.3s ease;
   }
-  .header .flex .navbar .left a:not(:last-child)::after,
-.header .flex .navbar .right a:not(:last-child):not(.user-avatar):not(.dropdown-content a)::after {
-  content: "/";
-  color: #ccc;
-  margin-left: 10px;
-}
-
-
-
+  .header .flex .navbar .left a:not(:last-child):not(.dropdown-content a)::after,
+  .header .flex .navbar .right a:not(:last-child)::after {
+    content: "/";
+    color: #ccc;
+    margin-left: 10px;
+  }
   #menu-btn {
     display: none;
     font-size: 1.68rem;
@@ -96,11 +93,6 @@
     color: #d6b38e;
     cursor: pointer;
   }
-  .right {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem; /* Khoảng cách giữa các nút */
-}
   .dropdown {
     position: relative;
     display: inline-block;
@@ -109,7 +101,7 @@
     display: block;
     position: absolute;
     background-image: url("Images/header.jpg");
-    width: 200px;
+    width: 160px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 10px;
@@ -124,15 +116,9 @@
 
   .dropdown:hover .dropdown-content {
     opacity: 1;
-    transform: translateY(0) translateX(-40%) ;
+    transform: translateY(0);
     pointer-events: auto;
   }
-
-  .user-avatar:hover + .dropdown-content {
-  opacity: 1;
-  transform: translateY(0) translateX(-40%);
-  pointer-events: auto;
-}
 
   .dropdown-content a {
     color: var(--white);
@@ -174,33 +160,6 @@
   #search-icon.active #clear-btn {
     display: block;
   }
-
-  /* Avatar Styles */
-
-  .user-avatar::after {
-  content: none;
-}
-
-.user-avatar img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 2px solid var(--main-color);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.user-avatar img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-
-
-
-
-
-
 </style>
 <body>
 <!-- Header-->
@@ -211,11 +170,11 @@
     </a>
     <nav class="navbar">
       <div class="left">
-        <a href="../TrangChu/TrangChu.html">Trang Chủ</a>
+        <a href="#home">Trang Chủ</a>
         <a href="#about">About</a>
         <!-- Menu with dropdown options -->
         <div class="dropdown">
-          <a href="../MatHang/matHang.html" class="mn">Menu</a>
+          <a href="#menu" class="mn">Menu</a>
           <div class="dropdown-content">
             <a href="../MatHang/matHang.html">Coffee</a>
             <a href="../MatHang/matHang.html">Trà</a>
@@ -226,7 +185,7 @@
         <div class="dropdown">
           <a href="../KhongGian/KhongGian.html">Đặt Bàn</a>
           <div class="dropdown-content">
-            <a href="../LichSuDatBan/lichsudatban.html" class="datban">Lịch Sử Đặt Bàn</a>
+            <a href="#coffee" class="datban">Lịch Sử Đặt Bàn</a>
           </div>
         </div>
         <a href="#contact">Tin Tức & Sự Kiện</a>
@@ -240,18 +199,9 @@
         <a href="#giohang" class="icon">
           <i class="fas fa-shopping-cart"></i>
         </a>
-        <div class="dropdown">
-          <a href="#" class="icon user-avatar">
-            <img src="Images/avatar_male.png" alt="User Avatar">
-      
-          </a>
-          <div class="dropdown-content user-menu">
-            <a href="../CaiDat/thongtincanhan.html">Thông tin cá nhân</a>
-            <a href="../CaiDat/lichsuthanhtoan.html">Lịch sử mua hàng</a>
-            <a href="../CaiDat/thaydoimatkhau.html">Thay đổi mật khẩu</a>
-            <a href="../Login/login.html">Đăng Xuất</a>
-          </div>
-        </div>
+        <a href="#sign">Đăng Ký</a>
+        <a href="#login">Đăng Nhập</a>
+      </div>
     </nav>
     <div id="menu-btn" class="fas fa-bars"></div>
   </section>

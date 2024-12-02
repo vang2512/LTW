@@ -1,5 +1,4 @@
 
-<!--JS Event News-->
 const swiper = new Swiper('.slider-wrapper', {
     loop: true,
     spaceBetween: 100,

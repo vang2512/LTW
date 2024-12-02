@@ -162,6 +162,8 @@ section {
     cursor: pointer;
     color: #333;
     transition: background-color 0.3s;
+    width: 100%;
+   
 }
 
 .sidebar-btn:hover {
