@@ -143,6 +143,52 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     /* ------------------------------------------------------------------- */
+    /* ---------------- Trang quản lí sản phẩm ----------------*/
+
+    // Hiển thị danh sách sản phẩm
+    function handleProductsTableEvent() {
+        const productsTable = document.getElementById('products-table').getElementsByTagName('tbody')[0];
+        productsTable.innerHTML = '';
+        products.forEach(product => {
+            const row = productsTable.insertRow();
+            row.innerHTML = `
+                <td>${product.id}</td>
+                <td>${product.name}</td>
+                <td>${product.type}</td>
+                <td>${product.price}</td>
+                <td>
+                    <button onclick="editProduct(${product.number})">
+                        <span class="success">
+                            <i class="bi bi-pencil-fill"></i>
+                        </sapn>
+                    </button>
+                    <button onclick="deleteProduct(${product.number})">
+                        <span class="danger">
+                            <i class="bi bi-trash-fill"></i>
+                        </sapn>
+                    </button>
+                    <button onclick="infoProduct(${product.number})">
+                        <span class="primary">
+                            <i class="bi bi-info-circle-fill"></i>
+                        </sapn>
+                    </button>
+                </td>
+            `;
+        });
+    }
+
+    handleProductsTableEvent();
+
+    // Hàm xóa người dùng
+    window.deleteProduct = function (number) {
+        const index = products.findIndex(product => product.number === number);
+        if (index !== -1) {
+            products.splice(index, 1);
+            handleProductsTableEvent();
+        }
+    };
+
+    /* ------------------------------------------------------------------- */
     /* ---------------- Trang quản lí đơn hàng ----------------*/
 
     // Hiển thị dữ liệu đơn hàng từ data.js
