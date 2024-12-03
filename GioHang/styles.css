@@ -208,4 +208,6 @@
     font-weight: bold;
     letter-spacing: 2px;
 }
-
+.checkout-btn:hover {
+    cursor: pointer;
+}
