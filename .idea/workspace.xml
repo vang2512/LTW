@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="LTW:war" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LTW.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/desks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/images/header/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/images/managers/admin-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/images/users/bruno-mars.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/images/users/chris-grey.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/images/users/plus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/images/users/son-tung-mtp.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/orders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/products.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/scripts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Admin/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/Images/cam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/Images/campucio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/Images/ep.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/Images/food.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/Images/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/Images/home.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/Images/icon1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/Images/icon3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/Images/icon4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/Images/lg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/Images/logo .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/Images/solo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/Images/tinavisu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/Images/tra.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/lichsuthanhtoan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/style_canhan.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/style_matkhau.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/style_thanhtoan.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/thaydoimatkhau.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CaiDat/thongtincanhan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/ChiTietSP.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/ChiTietSP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/avatar_male.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/bacxiu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/cafe_sua_muoi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/cafe_đen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/caffeephinnong.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/cam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/campucio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/ep.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/food.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/home.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/icon1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/icon3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/icon4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/lg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/logo .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/solo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/tinavisu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/Images/tra.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/head_footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChiTietSP/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatBan/DatBan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatBan/Images/DatBan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatBan/Images/avatar_male.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatBan/Images/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatBan/Images/lg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatBan/Images/ngoai.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatBan/Images/phongrieng.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatBan/Images/trongnha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatBan/head_footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatBan/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatBan/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GioHang/Images/avatar_male.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GioHang/Images/coffee/cappuccino.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GioHang/Images/food/tiramisu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GioHang/Images/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GioHang/Images/header/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GioHang/Images/lg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GioHang/head_footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GioHang/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GioHang/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GioHang/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Header_Footer/Images/avatar_male.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Header_Footer/Images/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Header_Footer/Images/lg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Header_Footer/Images/user.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Header_Footer/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Header_Footer/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Header_Footer/header_chuaDangNhap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HoaDon/HoaDon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HoaDon/HoaDon_Sp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HoaDon/HoaDon_datban.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HoaDon/Images/3talents logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HoaDon/style_hoadon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HoaDon/style_hoadon_datban.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HoaDon/style_hoadon_sanpham.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhongGian/Images/DatBan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhongGian/Images/avatar_male.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhongGian/Images/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhongGian/Images/lg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhongGian/Images/ngoai.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhongGian/Images/phongrieng.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhongGian/Images/trongnha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhongGian/KhongGian.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhongGian/KhongGian.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhongGian/head_footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/KhongGian/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LichSuDatBan/Images/avatar_male.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LichSuDatBan/Images/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LichSuDatBan/Images/lg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LichSuDatBan/head_footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LichSuDatBan/lichsudatban.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LichSuDatBan/lichsudatban.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LichSuDatBan/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/Images/3talents logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/Images/lg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/SignUp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/announce.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/forgot_password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/style_annouce.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/style_forget_password.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/style_login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login/style_signUp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/3talents logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/AffogatoCoffee.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/Cofee Caramel Macchiato.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/Coffee Americano.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/Coffee marble latte.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/Cold Brew.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/CortadoCoffe.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/Croissant-pho-mai.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/Croissant-salt-eggs.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/Espresso.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/Frappuccino-dâu-tây.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/Mocha-Frappuccino.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/Oolong.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/avatar_male.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/avocadosmoothie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/bacxiu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/banhmiphomaibotoi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/banhmique.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/cafe_sua_muoi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/cafe_đen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/caffeephinnong.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/cam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/capuchino.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/carrotjuice.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/coldbrewkimquat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/coldbrewque.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/coldbrewsuatuoi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/coldbrewtruyenthong.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/dưahau.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/ep.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/food.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/grape_juice.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/green_grape.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/h1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/head.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/home.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/icon1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/icon3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/icon4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/kiwibanana.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/latte.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/lg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/logo .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/lungoCoffee.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/milodambanhflan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/mocha machiato.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/mochichocolate.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/mochidautaycheese.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/mochitraxanh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/mousseChocolate.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/mousseTiramisu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/nuocchanhday.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/socola-da-xay.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/solo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/strawberry.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/suatuoivietquattranchau.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/tiramisu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/tra.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/tradao.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/tradaocamsa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/trasuadautay.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/trasuaphomai.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/trasuasocola.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/trasuathaixanh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/trasuatranchau.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/Images/travai.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/head_footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/matHang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatHang/style_matHang.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Subject/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThanhToan/Images/avatar_male.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThanhToan/Images/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThanhToan/Images/lg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThanhToan/Images/logo .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThanhToan/Images/tra.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThanhToan/ThanhToan.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThanhToan/ThanhToan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThanhToan/ThanhToan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThanhToan/ThanhToanDatBan.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThanhToan/ThanhToanDatBan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThanhToan/ThanhToanSP.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThanhToan/ThanhToanSP.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ThanhToan/head_footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/BƠ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/TraDao.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/avatar_male.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/bacxiu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/banhmiphomaibotoi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/cafe_đen.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/campucio.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/coffe-flip.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/ep.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/food.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/h1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/head.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/header.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/home.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/icon1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/icon3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/icon4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/lg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/loggo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/logo .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/mochitraxanh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/ngoai.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/phongrieng.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/solo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/tinavisu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/tintuc_!.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/tintuc_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/tintuc_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/tintuc_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/tintuc_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/tra.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/traaapng.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/trasuadautay.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/trasuaphomai.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/trongnha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/wallpaper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/wallpaper2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Images/wallpaper3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/Sty_TrangChu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/TrangChu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/TrangChu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/TrangChu_ChuaDangNhap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrangChu/head_footer.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Jsp File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2rE5Bx2sxZMy1Xz4d1XSYOq1YPQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Tomcat Server.demo.executor": "Run",
+    "Tomcat Server.test.executor": "Run",
+    "git-widget-placeholder": "vang",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/LTW/LTW",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JShellLanguage"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LTW\LTW\src\main\webapp\LichSuDatBan\js" />
+      <recent name="D:\LTW\LTW\src\main\webapp\Ban\js" />
+      <recent name="D:\LTW\LTW\src\main\webapp\Images" />
+      <recent name="D:\LTW\LTW\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\LTW\LTW\src\main\webapp\LichSuDatBan\js" />
+      <recent name="D:\LTW\LTW\src\main\webapp\KhongGianQuan\jsp" />
+      <recent name="D:\LTW\LTW\src\main\webapp\DatBan\jsp" />
+      <recent name="D:\LTW\LTW\src\main\webapp\WEB-INF" />
+      <recent name="D:\LTW\LTW\src\main\webapp" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="demo" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="LTW:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/LTW_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="b25574e7-a4fa-4f9f-96c0-48a4f4b23bc2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57968" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="LTW:war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="" />
+      <created>1736111267282</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736111267282</updated>
+      <workItem from="1736111268638" duration="978000" />
+      <workItem from="1736112710246" duration="647000" />
+      <workItem from="1736113612294" duration="11000" />
+      <workItem from="1736113629705" duration="203000" />
+      <workItem from="1736113953457" duration="92000" />
+      <workItem from="1736114331954" duration="156000" />
+      <workItem from="1736114597192" duration="23000" />
+      <workItem from="1736114671596" duration="122000" />
+      <workItem from="1736115056025" duration="989000" />
+      <workItem from="1736131743947" duration="525000" />
+      <workItem from="1736132460376" duration="3473000" />
+      <workItem from="1736181734812" duration="7564000" />
+      <workItem from="1736200857842" duration="7167000" />
+      <workItem from="1736208946681" duration="659000" />
+      <workItem from="1736216588578" duration="1587000" />
+      <workItem from="1736229275477" duration="3591000" />
+      <workItem from="1736267610283" duration="5461000" />
+      <workItem from="1736275308598" duration="24000" />
+      <workItem from="1736275769814" duration="13000" />
+      <workItem from="1736275790287" duration="2400000" />
+      <workItem from="1736278278924" duration="140000" />
+      <workItem from="1736281869937" duration="7378000" />
+      <workItem from="1736290598441" duration="2900000" />
+      <workItem from="1736295121551" duration="8000" />
+      <workItem from="1736296847696" duration="10000" />
+      <workItem from="1736297393586" duration="735000" />
+      <workItem from="1736302670531" duration="1511000" />
+      <workItem from="1736315517739" duration="5671000" />
+      <workItem from="1736354284096" duration="350000" />
+      <workItem from="1736357380028" duration="15719000" />
+      <workItem from="1736377973312" duration="353000" />
+      <workItem from="1736378815990" duration="214000" />
+      <workItem from="1736387826724" duration="632000" />
+      <workItem from="1736388594177" duration="31000" />
+      <workItem from="1736388641310" duration="123000" />
+      <workItem from="1736389303433" duration="354000" />
+      <workItem from="1736389943979" duration="40000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

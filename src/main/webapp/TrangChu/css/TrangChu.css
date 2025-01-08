@@ -1,0 +1,438 @@
+
+/* san pham moi */
+.carousel {
+    display: flex;
+    padding: 40px 100px;
+}
+.sp_moi{
+    position: relative;
+    background: #FAF8F6;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    width: 280px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin: auto;
+}
+.sp_moi img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    object-fit: cover;
+}
+.sp_moi h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+.label {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #FF6347;
+    color: #FFF;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+.gia{
+    color: var(--black);
+    font-size: 1.2rem;
+}
+.giohang {
+    color: var(--black);
+    background-color: #F4F4F4;
+    border: 1px solid #E0E0E0;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    font-weight: 520;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+.sp_moi:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+}
+.giohang:hover{
+    color: #fff;
+    background: #C0A47B;
+}
+/*san pham ban chay*/
+.carousel_bt {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 40px 100px;
+    justify-content: center;
+}
+.best-sellers h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #444;
+    margin: 5px 0;
+}
+.sp_banchay {
+    position: relative;
+    background: #FAF8F6;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 280px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: auto;
+}
+.sp_banchay img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    object-fit: cover;
+}
+.sp_banchay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #444;
+}
+.label_bt {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #FF6347;
+    color: #FFF;
+    font-size: 0.7rem;
+    padding: 3px 8px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.container_bt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+.container_bt .gia {
+    font-size: 1.2rem;
+    color: #333;
+}
+.container_bt .giohang {
+    padding: 5px 10px;
+    background-color: #F4F4F4;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s, color 0.3s;
+}
+.sp_banchay:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    cursor:pointer;
+}
+.giohang:hover {
+    background: #C0A47B;
+    border-color: #C0A47B;
+    color: #FFF;
+}
+/**/
+.home-bg{
+    background: url("../../Images/wallpaper3.png") ;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.home-bg .home{
+    min-height: 70rem;
+    display: flex;
+    align-items: center;
+    margin-top: 75px;
+}
+.home-bg .home .noi_dung{
+    width: 50rem;
+    text-align: center;
+}
+.home-bg .home .noi_dung h3{
+    font-size: 6rem;
+    color: var(--black);
+    font-family: 'Merienda one', cursive;
+}
+.home-bg .home .noi_dung p{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--black);
+    line-height: 2;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--main-color);
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    border-radius: 5%;
+    object-fit: cover;
+}
+/*about*/
+.about{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+.about .image{
+    flex:1 1 40rem;
+}
+.about .image img{
+    width: 100%;
+    border-radius: 30%;
+    object-fit: cover;
+    border: 5px solid #BE9C79FF;
+}
+.about .noi_dung{
+    flex:1 1 32rem;
+}
+.about .noi_dung h3{
+    font-size: 4.5rem;
+    color:var(--black);
+    font-family: 'Merienda one', cursive;
+}
+.about .noi_dung p{
+    padding: 1rem 0;
+    line-height: 2;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+/*menu*/
+.menu {
+    text-align: center;
+    padding: 3rem 1.5rem;
+}
+
+.menu .box-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 2rem;
+}
+
+.menu .box {
+    width: 300px;
+    height: 350px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: #555;
+}
+
+.menu .box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu .box img.ic {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    transition: transform 0.8s ease;
+}
+
+.menu .box img:not(.ic) {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    transition: transform 0.8s ease;
+}
+
+.menu .box img:hover {
+    transform: scale(1.1);
+}
+
+.menu .box h3 {
+    font-size: 1.8rem;
+    color: #8b5e34;
+    margin-bottom: 1rem;
+}
+
+.menu .box p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+}
+
+/*Không gian quán*/
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: -50px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+.space {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 80px;
+}
+
+.image_space_1, .image_space_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.image_space_2 .image-container {
+    width: 1600px;
+    height: 500px;
+}
+
+.image_space_2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(169, 169, 169, 0.6);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.image-container .overlay-text {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+
+/*Tin tức & Sự kiện*/
+.carousel-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: -25px;
+    color: #444;
+    text-align: center;
+    margin-top: 20px;
+}
+.slider-container {
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.tintuc_sk {
+    padding: 20px 10px;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.tintuc_sk .item_ttsk {
+    display: flex;
+    padding: 35px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tintuc_sk .item_ttsk .tintuc{
+    width: 450px;
+    height: 600px;
+    object-fit: cover;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    align-items: center;
+}
+.tintuc_sk .item_ttsk .nd_sk{
+    margin-top: -20px;
+    font-size: 1.5rem;
+    color: #555;
+    text-align: left;
+    width: 400px;
+}
+.tintuc_sk .item_ttsk .nd_sk, .tintuc_sk .item_ttsk .tintuc{
+    cursor: pointer;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: #FFFFFF !important;
+    background-color: rgba(67, 61, 61, 0.15) !important;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.slider-container:hover .swiper-button-next,
+.slider-container:hover .swiper-button-prev {
+    opacity: 1;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 2rem !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: #be9c79 !important;
+}
+
+
+
+
