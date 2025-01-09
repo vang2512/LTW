@@ -49,6 +49,13 @@ public class DatBanController extends HttpServlet {
             }
             // Thông báo đặt bàn thành công
             message = "Đặt bàn thành công!";
+            request.setAttribute("datBan", datBan);
+            ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
+            scheduler.schedule(() -> {
+                datBanDao.updateTrangThaiDatBan(datBan.getId(), "Đã xác nhận");
+                System.out.println("Trạng thái đơn đặt bàn ID " + datBan.getId() + " đã được cập nhật thành 'Đã xác nhận'.");
+                scheduler.shutdown();
+            }, 2, TimeUnit.MINUTES);
         } else {
             message = "Không đủ bàn cho số lượng yêu cầu.";
         }

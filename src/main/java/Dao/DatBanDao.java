@@ -82,7 +82,14 @@ public class DatBanDao {
                                 System.out.println("Không có đơn đặt bàn nào cần cập nhật với ID " + id);
                             }
                         }
+                    } else {
+                        String message = !("Đang chờ".equals(trangThaiHienTai))
+                                ? "Trạng thái không phải 'Đang chờ', không thể cập nhật."
+                                : "Thời gian đặt chưa đủ 2 phút, không thể cập nhật.";
+                        System.out.println(message);
                     }
+                } else {
+                    System.out.println("Không tìm thấy đơn đặt bàn với ID " + id);
                 }
             }
         } catch (SQLException e) {
