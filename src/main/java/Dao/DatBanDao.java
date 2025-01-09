@@ -98,13 +98,14 @@ public class DatBanDao {
         }
     }
     public void updateBanAfterCheckout() {
-        String selectSql = "SELECT * FROM datban WHERE trangThai = 'Đã xác nhận' AND gioTra < ?";
+        String selectSql = "SELECT * FROM datban WHERE trangThai = 'Đã xác nhận' AND gioTra < ? AND ngayDat <= ?";
         String updateSql = "UPDATE tables SET trangThai = 'Còn Trống' WHERE id IN (SELECT banId FROM chitietdatban WHERE datBanId = ?)";
-
         try (Connection conn = DbConnection.getConnection()) {
             Timestamp now = new Timestamp(System.currentTimeMillis());
+            Timestamp today = new Timestamp(System.currentTimeMillis());
             try (PreparedStatement selectStmt = conn.prepareStatement(selectSql)) {
                 selectStmt.setTimestamp(1, now);
+                selectStmt.setTimestamp(2, today);
                 try (ResultSet rs = selectStmt.executeQuery()) {
                     while (rs.next()) {
                         int datBanId = rs.getInt("id");
@@ -120,5 +121,6 @@ public class DatBanDao {
             e.printStackTrace();
         }
     }
+
 
 }

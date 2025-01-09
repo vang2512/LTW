@@ -57,3 +57,19 @@ document.addEventListener('DOMContentLoaded', () => {
     exitButton.classList.add('enabled');
     exitButton.disabled = false;
 });
+//Lấy giờ và ngày đặt cho hiện tại
+document.addEventListener('DOMContentLoaded', function() {
+    var currentDate = new Date();
+
+    // Cập nhật trường Ngày đặt
+    var dayInput = document.getElementById('ngayDat');
+    var currentDateString = currentDate.toISOString().split('T')[0];
+    dayInput.setAttribute('min', currentDateString);
+    dayInput.value = currentDateString;
+
+    // Cập nhật trường Giờ đặt
+    var timeInput = document.getElementById('gioDat');
+    var currentTimeString = currentDate.toTimeString().split(' ')[0].substring(0, 5);
+    timeInput.setAttribute('min', currentTimeString);
+    timeInput.value = currentTimeString;  // Thiết lập giá trị mặc định là giờ hiện tại
+});

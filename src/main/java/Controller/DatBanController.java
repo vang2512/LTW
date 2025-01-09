@@ -63,6 +63,7 @@ public class DatBanController extends HttpServlet {
         } else {
             message = "Không đủ bàn cho số lượng yêu cầu.";
         }
+        // Truyền dữ liệu cho JSP
         request.setAttribute("success", success);
         request.setAttribute("message", message);
         // Chuyển hướng đến trang kết quả đặt bàn
