@@ -21,5 +21,18 @@ public class BanDao {
         }
         return bans;
     }
+    // Cập nhật trạng thái của bàn
+    public void updateBanTrangThai(int banId, String trangThai) {
+        String sql = "UPDATE tables SET trangThai = ? WHERE id = ?";
+
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, trangThai);
+            stmt.setInt(2, banId);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
 }
