@@ -36,4 +36,29 @@ public class DatBanDao {
         }
         return gioDat;
     }
+    public List<DatBan> getAllDatBan() {
+        List<DatBan> datBans = new ArrayList<>();
+        String sql = "SELECT * FROM datban";
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql);
+             ResultSet rs = stmt.executeQuery()) {
+            while (rs.next()) {
+                Timestamp timestamp = rs.getTimestamp("thoiGianDat");
+                LocalDateTime thoiGianDat = timestamp != null ? timestamp.toLocalDateTime() : null;
+                DatBan datBan = new DatBan(
+                        rs.getInt("id"),
+                        rs.getInt("soLuong"),
+                        rs.getString("ngayDat"),
+                        rs.getString("gioDat"),
+                        rs.getString("khongGian"),
+                        rs.getString("trangThai"),
+                        thoiGianDat
+                );
+                datBans.add(datBan);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return datBans;
+    }
 }

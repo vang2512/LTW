@@ -10,15 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DatBanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DatBanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/DatBan/css/DatBan.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/DatBan/js/DatBan.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/DatBan/js/Header_Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/DatBan/jsp/DatBan.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/DatBan/jsp/DatBanResult.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Header_Footer/jsp/Header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Header_Footer/jsp/Header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/TrangChu/jsp/TrangChu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/TrangChu/jsp/TrangChu.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -253,7 +244,7 @@
       <workItem from="1736402602460" duration="1255000" />
       <workItem from="1736406752492" duration="596000" />
       <workItem from="1736407463835" duration="24000" />
-      <workItem from="1736441298037" duration="3373000" />
+      <workItem from="1736441298037" duration="3686000" />
     </task>
     <servers />
   </component>

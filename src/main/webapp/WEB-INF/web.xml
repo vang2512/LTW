@@ -14,5 +14,4 @@
     <servlet-name>DatBanController</servlet-name>
     <url-pattern>/DatBanServlet</url-pattern>
   </servlet-mapping>
-
 </web-app>
