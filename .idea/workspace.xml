@@ -61,7 +61,7 @@
     "Tomcat Server.test.executor": "Run",
     "git-widget-placeholder": "vang",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/LTW/LTW/src/main/webapp",
+    "last_opened_file_path": "D:/LTW/LTW/src/main/java/Dao",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -82,10 +82,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\LTW\LTW\src\main\java\Dao" />
+      <recent name="D:\LTW\LTW\src\main\java\Controller" />
+      <recent name="D:\LTW\LTW\src\main\java\Model" />
+      <recent name="D:\LTW\LTW\src\main\webapp" />
       <recent name="D:\LTW\LTW\src\main\webapp\LichSuDatBan\js" />
-      <recent name="D:\LTW\LTW\src\main\webapp\Ban\js" />
-      <recent name="D:\LTW\LTW\src\main\webapp\Images" />
-      <recent name="D:\LTW\LTW\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\LTW\LTW\src\main\webapp\LichSuDatBan\js" />
@@ -240,7 +241,7 @@
       <workItem from="1736389993503" duration="452000" />
       <workItem from="1736390496168" duration="25000" />
       <workItem from="1736402404355" duration="50000" />
-      <workItem from="1736402602460" duration="628000" />
+      <workItem from="1736402602460" duration="1255000" />
     </task>
     <servers />
   </component>
