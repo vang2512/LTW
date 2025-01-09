@@ -1,0 +1,153 @@
+.container {
+    margin-top: 140px;
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    background: #fff;
+    border: 2px solid #020101;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+
+.image img {
+    height: 500px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.form-section {
+    width: 60%;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: #130909;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input, select {
+    border: 2px solid #020101;
+}
+
+button {
+    background-color: #be9c79;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.5;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+button.enabled {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Căn giữa popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+    width: 300px;
+}
+
+/* Nhóm radio buttons */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.radio-group label {
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Thêm lớp mờ cho nền */
+.overlay {
+    display: none; /* Ẩn mặc định */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen mờ */
+    z-index: 1000; /* Đảm bảo nằm trên nền */
+}
+
+/* Hiển thị popup và lớp overlay */
+.popup.active,
+.overlay.active {
+    display: block;
+}
+
+/* Loading overlay */
+.loading-overlay {
+    display: none; /* Ẩn mặc định */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1100; /* Trên tất cả các thành phần khác */
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Loading spinner */
+.loading-spinner {
+    border: 5px solid rgba(255, 255, 255, 0.3); /* Viền nhạt */
+    border-top: 5px solid #fff; /* Phần viền quay */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+/* Animation cho spinner */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
