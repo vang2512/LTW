@@ -14,4 +14,12 @@
     <servlet-name>DatBanController</servlet-name>
     <url-pattern>/DatBanServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>LichSuDatBanController</servlet-name>
+    <servlet-class>Controller.LichSuDatBanController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LichSuDatBanController</servlet-name>
+    <url-pattern>/lichsu</url-pattern>
+  </servlet-mapping>
 </web-app>

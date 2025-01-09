@@ -9,7 +9,7 @@
 </head>
 <body>
 <!-- Header -->
-<div data-include="Header_Footer/jsp/Header.jsp"></div>
+<jsp:include page="/Header_Footer/jsp/Header.jsp" />
 <script src="LichSuDatBan/js/Header_Footer.js" defer></script>
 <!-- History -->
   <div class="booking-history">
@@ -47,6 +47,6 @@
 
 <script src="LichSuDatBan/js/LichSuDatBan.js"></script>
 <!-- Footer -->
-<div data-include="Header_Footer/jsp/Footer.jsp"></div>
+<jsp:include page="/Header_Footer/jsp/Footer.jsp" />
 </body>
 </html>
