@@ -70,4 +70,11 @@ public class DatBanController extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("DatBan/jsp/DatBanResult.jsp");
         dispatcher.forward(request, response);
     }
+    @Override
+    public void init() throws ServletException {
+        ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
+        scheduler.scheduleAtFixedRate(() -> {
+            datBanDao.updateBanAfterCheckout();
+        }, 0, 1, TimeUnit.MINUTES);
+    }
 }
