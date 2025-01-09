@@ -4,16 +4,8 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
   <welcome-file-list>
-    <welcome-file>DatBan/jsp/DatBan.jsp</welcome-file>
+    <welcome-file>TrangChu/jsp/TrangChu.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
-    <servlet-name>MatHangController</servlet-name>
-    <servlet-class>Controller.MatHangController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>MatHangController</servlet-name>
-    <url-pattern>/danh-sach-san-pham</url-pattern>
-  </servlet-mapping>
   <servlet>
     <servlet-name>DatBanController</servlet-name>
     <servlet-class>Controller.DatBanController</servlet-class>
@@ -22,12 +14,5 @@
     <servlet-name>DatBanController</servlet-name>
     <url-pattern>/DatBanServlet</url-pattern>
   </servlet-mapping>
-  <servlet>
-    <servlet-name>LichSuDatBanController</servlet-name>
-    <servlet-class>Controller.LichSuDatBanController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>LichSuDatBanController</servlet-name>
-    <url-pattern>/lichsu</url-pattern>
-  </servlet-mapping>
+
 </web-app>

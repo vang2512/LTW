@@ -8,9 +8,9 @@
 </head>
 <body>
 <!-- Header -->
-<div data-include="Header_Footer/jsp/Header.jsp"></div>
-<script src="${pageContext.request.contextPath}/MatHang/js/Header_Footer.js" defer></script>
-
+<!-- Header -->
+<jsp:include page="/Header_Footer/jsp/Header.jsp" />
+<script src="${pageContext.request.contextPath}/DatBan/js/Header_Footer.js" defer></script>
 <!-- Container -->
 <div class="container">
     <div class="image">
@@ -18,13 +18,14 @@
     </div>
     <div class="form-section">
         <h2>Thông tin đặt bàn</h2>
-        <form id="booking-form" method="post" action="DatBanServlet">
+        <form id="booking-form" method="post" action="${pageContext.request.contextPath}/DatBanServlet">
             <label for="khongGian">Không gian:</label>
             <select id="khongGian" name="khongGian">
                 <option value="Ngoài Trời">Ngoài Trời</option>
                 <option value="Trong Quán">Trong Quán</option>
                 <option value="Phòng Riêng">Phòng Riêng</option>
             </select>
+
             <label for="soLuong">Số lượng:</label>
             <input type="number" id="soLuong" name="soLuong" min="1" required>
 
@@ -57,15 +58,14 @@
             <button id="continue-button" type="button" disabled>Tiếp tục</button>
         </div>
     </div>
-
+    <div id="message-box" class="message-box"></div>
     <!-- Loading Overlay -->
     <div id="loading-overlay" class="loading-overlay">
         <div class="loading-spinner"></div>
     </div>
 </div>
-
 <!-- Footer -->
 <script src="${pageContext.request.contextPath}/DatBan/js/DatBan.js"></script>
-<div data-include="Header_Footer/jsp/Footer.jsp"></div>
+<jsp:include page="/Header_Footer/jsp/Footer.jsp" />
 </body>
 </html>

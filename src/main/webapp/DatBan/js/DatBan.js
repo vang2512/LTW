@@ -7,23 +7,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const exitButton = document.getElementById('exit-button');
     const continueButton = document.getElementById('continue-button');
     const inputs = Array.from(form.querySelectorAll('input, select'));
-    const loadingOverlay = document.getElementById('loading-overlay'); // Lấy overlay loading
-
-    let isFormValid = false; // Cờ kiểm tra trạng thái form
-
-    // Kiểm tra form đã nhập đủ thông tin chưa
+    const loadingOverlay = document.getElementById('loading-overlay');
+    let isFormValid = false;
     const checkFormValidity = () => {
         isFormValid = inputs.every(input => input.value.trim() !== '');
         submitButton.classList.toggle('enabled', isFormValid);
         submitButton.disabled = !isFormValid;
     };
-
-    // Lắng nghe sự kiện thay đổi của form
     inputs.forEach(input => {
         input.addEventListener('input', checkFormValidity);
     });
 
-    // Hiển thị popup và overlay khi nhấn "Tiếp tục"
     submitButton.addEventListener('click', (event) => {
         event.preventDefault(); // Dừng việc gửi form trực tiếp
         if (isFormValid) {
@@ -31,46 +25,35 @@ document.addEventListener('DOMContentLoaded', () => {
             overlay.classList.add('active'); // Hiển thị lớp phủ
         }
     });
-
-    // Kích hoạt nút "Tiếp tục" trong popup khi chọn radio
     radioGroup.forEach(radio => {
         radio.addEventListener('change', () => {
             continueButton.disabled = false;
             continueButton.classList.add('enabled');
         });
     });
-
-    // Đóng popup và overlay khi nhấn "Thoát"
     exitButton.addEventListener('click', () => {
         confirmationPopup.classList.remove('active');
         overlay.classList.remove('active'); // Ẩn lớp phủ
     });
-
-    // Xử lý logic khi nhấn "Tiếp tục" trong popup
     continueButton.addEventListener('click', () => {
         const selectedOption = document.querySelector('input[name="orderChoice"]:checked');
         if (selectedOption) {
-            // Ẩn popup và overlay khi bắt đầu quá trình loading
             confirmationPopup.classList.remove('active');
             overlay.classList.remove('active');
-
-            // Hiển thị overlay loading
             loadingOverlay.style.display = 'flex';
-
-            // Giả lập quá trình xử lý trong 3 giây
             setTimeout(() => {
-                loadingOverlay.style.display = 'none'; // Ẩn loading
-
-                // Thực hiện kiểm tra đặt bàn
+                loadingOverlay.style.display = 'none';
                 if (selectedOption.value === 'noOrder') {
-                    alert('Bạn đã chọn không muốn order!'); // Thông báo muốn đặt bàn
+                    alert('Bạn đã chọn đặt bàn!');
+                    form.submit();
                 } else {
-                    alert('Bạn đã chọn muốn order!'); // Thông báo không đặt bàn
+                    alert('Bạn đã chọn không muốn đặt bàn!');
                 }
-                form.submit(); // Gửi form
-            }, 2000); // Đợi 3 giây
+            }, 3000);
         } else {
             alert('Vui lòng chọn một tùy chọn trước khi tiếp tục.');
         }
     });
+    exitButton.classList.add('enabled');
+    exitButton.disabled = false;
 });

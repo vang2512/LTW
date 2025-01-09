@@ -239,7 +239,7 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="../KhongGian/KhongGian.html">Đặt Bàn</a>
+                    <a href="DatBan/jsp/DatBan.jsp">Đặt Bàn</a>
                     <div class="dropdown-content">
                         <a href="LichSuDatBan/jsp/LichSuDatBan.jsp" class="datban">Lịch Sử Đặt Bàn</a>
                     </div>

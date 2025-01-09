@@ -13,8 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
 <!-- Header -->
-<div data-include="Header_Footer/jsp/Header.jsp"></div>
-<script src="${pageContext.request.contextPath}/MatHang/js/Header_Footer.js" defer></script>
+<jsp:include page="/Header_Footer/jsp/Header.jsp" />
+<script src="${pageContext.request.contextPath}/DatBan/js/Header_Footer.js" defer></script>
 <!-- Home-->
 <div class="home-bg">
     <section class="home" id="home">
@@ -263,6 +263,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="${pageContext.request.contextPath}/TrangChu/js/TrangChu.js"></script>
 <!-- Footer -->
-<div data-include="Header_Footer/jsp/Footer.jsp"></div>
+<jsp:include page="/Header_Footer/jsp/Footer.jsp" />
 </body>
 </html>
