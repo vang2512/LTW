@@ -7,14 +7,6 @@
     <welcome-file>DatBan/jsp/DatBan.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-    <servlet-name>MatHangController</servlet-name>
-    <servlet-class>Controller.MatHangController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>MatHangController</servlet-name>
-    <url-pattern>/danh-sach-san-pham</url-pattern>
-  </servlet-mapping>
-  <servlet>
     <servlet-name>DatBanController</servlet-name>
     <servlet-class>Controller.DatBanController</servlet-class>
   </servlet>

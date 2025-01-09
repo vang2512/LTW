@@ -226,7 +226,7 @@
         </a>
         <nav class="navbar">
             <div class="left">
-                <a href="../TrangChu/TrangChu.html">Trang Chủ</a>
+                <a href="${pageContext.request.contextPath}/TrangChu/jsp/TrangChu.jsp">Trang Chủ</a>
                 <a href="#about">About</a>
                 <!-- Menu with dropdown options -->
                 <div class="dropdown">
@@ -239,9 +239,9 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="../KhongGian/KhongGian.html">Đặt Bàn</a>
+                    <a href="${pageContext.request.contextPath}/DatBan/jsp/DatBan.jsp">Đặt Bàn</a>
                     <div class="dropdown-content">
-                        <a href="LichSuDatBan/jsp/LichSuDatBan.jsp" class="datban">Lịch Sử Đặt Bàn</a>
+                        <a href="${pageContext.request.contextPath}/lichsu" class="datban">Lịch Sử Đặt Bàn</a>
                     </div>
                 </div>
                 <a href="#contact">Tin Tức & Sự Kiện</a>
