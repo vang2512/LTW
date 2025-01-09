@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/GioHang.css">
+</head>
+<body>
+<div data-include="../Header_Footer/header.html"></div>
+<script src="head_footer.js" defer></script>
+<main>
+    <section id="shopping-cart">
+        <div class="container">
+            <div class="cart-information">
+                <table>
+                    <tr class="row-header" style="width:100%">
+                        <th style="width:45%">
+                            <span>SẢN PHẨM</span>
+                        </th>
+                        <th style="width:15%">
+                            <span>GIÁ</span>
+                        </th>
+                        <th style="width:20%">
+                            <span>SỐ LƯỢNG</span>
+                        </th>
+                        <th style="width:20%">
+                            <span class="text">TẠM TÍNH</span>
+                        </th>
+                    </tr>
+                    <tr class="row-item">
+                        <td>
+                            <div class="cart-item">
+                                <button class="delete-btn">x</button>
+                                <img src="/LTW/GioHang/Images/coffee/cappuccino.jpg" id="cappuccino-image"
+                                     class="item-image" alt="Cappuccino"
+                                     title="Cappuccino">
+                                <span class="item-name">Cappuccino</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cart-item">
+                                <span class="item-price">50,000₫</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cart-amount">
+                                <button class="decrease-btn">-</button>
+                                <input type="text" class="item-quantity" value="1" min="0">
+                                <button class="increase-btn">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cart-total">
+                                <span class="total-price">50,000₫</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="row-item">
+                        <td>
+                            <div class="cart-item">
+                                <button class="delete-btn">x</button>
+                                <img src="/LTW/GioHang/Images/food/tiramisu.jpg" class="item-image" alt="Tiramisu Cake"
+                                     title="Tiramisu Cake">
+                                <span class="item-name">Tiramisu Cake</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cart-item">
+                                <span class="item-price">60,000₫</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cart-amount">
+                                <button class="decrease-btn">-</button>
+                                <input type="text" class="item-quantity" value="2" min="0">
+                                <button class="increase-btn">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cart-total">
+                                <span class="total-price">120,000₫</span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="cart-actions">
+                    <button class="continue-btn">
+                        <span>← TIẾP TỤC XEM SẢN PHẨM</span>
+                    </button>
+                    <button class="update-btn">
+                        <span>CẬP NHẬT GIỎ HÀNG</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="cart-checkout">
+                <div class="cart-header">
+                    <span>CỘNG GIỎ HÀNG</span>
+                </div>
+                <div class="cart-information">
+                    <div class="parent">
+                        <div class="left">
+                            <span>Tạm tính</span>
+                        </div>
+                        <div class="right">
+                            <span class="total-price">170,000₫</span>
+                        </div>
+                    </div>
+                    <div class="parent">
+                        <div class="left">
+                            <span>Tổng</span>
+                        </div>
+                        <div class="right">
+                            <span class="total-price">170,000₫</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-actions">
+                    <a href="ThanhToanSP.html">
+                    <button class="checkout-btn">
+                        <span>TIẾN HÀNH THANH TOÁN</span>
+                    </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<div data-include="../Header_Footer/footer.html"></div>
+<script src="../js/GioHang.js"></script>
+</body>
+</html>

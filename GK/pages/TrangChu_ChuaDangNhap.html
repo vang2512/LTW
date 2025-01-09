@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Page Title Here</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Merienda+One&family=Nunito:wght@200; 300;400;500;600&display=swap');
+    *{
+        font-family: 'Yanone', sans-serif ;
+        margin:0;
+        box-sizing: border-box;
+        outline: none; border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+    :root{
+        --main-color: #be9c79;
+        --black: #333;
+        --white: #fff;
+        --light-color: #666;
+        --border: 2rem solid var(--black);
+        --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    }
+    html{
+        font-size: 60%;
+        overflow-x: hidden;
+        scroll-padding-top: 6rem;
+    }
+    section {
+        padding: 3rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    /*Thanh dieu huong trang chu*/
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-image: url("../assets/images/header/header.jpg");
+        background-size: cover;
+        z-index: 1000;
+    }
+    .header .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 1.5rem 1rem;
+    }
+    .header .flex .logo img {
+        height: 4.8rem;
+        margin-right: 2rem;
+        border-radius: 30%;
+        object-fit: cover;
+    }
+    .header .flex .navbar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .header .flex .navbar .left a,
+    .header .flex .navbar .right a{
+        margin: 0 1rem;
+        font-size: 1.68rem;
+        color: var(--white);
+        text-decoration: none;
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+    .header .flex .navbar .left a:not(:last-child):not(.dropdown-content a)::after,
+    .header .flex .navbar .right a:not(:last-child)::after {
+        content: "/";
+        color: #ccc;
+        margin-left: 10px;
+    }
+    #menu-btn {
+        display: none;
+        font-size: 1.68rem;
+        color: var(--white);
+        cursor: pointer;
+    }
+    .header .flex .navbar .left a:hover,
+    .header .flex .navbar .right a:not(.icon):hover {
+        color: #d6b38e;
+        cursor: pointer;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content {
+        display: block;
+        position: absolute;
+        background-image: url("../assets/images/header/header.jpg");
+        width: 160px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 10px;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.55s ease, transform 0.55s ease;
+        pointer-events: none;
+    }
+    .dropdown-content .datban{
+        width: 200px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .dropdown-content a {
+        color: var(--white);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        color: #757575;
+    }
+    #search-input {
+        width: 0;
+        padding: 0.5rem;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #333;
+        transition: width 0.5s ease, opacity 0.5s ease;
+        opacity: 0; position: relative;
+        top: -3px;
+    }
+    #search-icon.active #search-input {
+        width: 200px;
+        margin-left: 10px;
+        padding: 0.5rem;
+        opacity: 1;
+        top: -3px;
+    }
+    #clear-btn {
+        position: absolute;
+        right: 305px;
+        top: 48%;
+        transform: translateY(-50%);
+        font-size: 2rem;
+        cursor: pointer;
+        color: rgba(19, 19, 19, 0.75);
+        display: none;
+    }
+    #search-icon.active #clear-btn {
+        display: block;
+    }
+
+    /* san pham moi */
+    .carousel {
+        display: flex;
+        padding: 40px 100px;
+    }
+    .sp_moi{
+        position: relative;
+        background: #FAF8F6;
+        border: 1px solid #E0E0E0;
+        border-radius: 10px;
+        width: 280px;
+        padding: 10px;
+        text-align: center;
+        transition: transform 0.3s ease;
+        margin: auto;
+    }
+    .sp_moi img {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        margin-bottom: 8px;
+        object-fit: cover;
+    }
+    .sp_moi h3 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #444;
+    }
+    .label {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        background: #FF6347;
+        color: #FFF;
+        font-size: 0.7rem;
+        padding: 3px 8px;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8px;
+    }
+    .gia{
+        color: var(--black);
+        font-size: 1.2rem;
+    }
+    .giohang {
+        color: var(--black);
+        background-color: #F4F4F4;
+        border: 1px solid #E0E0E0;
+        padding: 5px 15px;
+        font-size: 0.9rem;
+        font-weight: 520;
+        border-radius: 4px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background 0.3s, color 0.3s;
+    }
+    .sp_moi:hover {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+
+    }
+    .giohang:hover{
+        color: #fff;
+        background: #C0A47B;
+    }
+    /*san pham ban chay*/
+    .carousel_bt {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 40px 100px;
+        justify-content: center;
+    }
+    .best-sellers h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: #444;
+        margin: 5px 0;
+    }
+    .sp_banchay {
+        position: relative;
+        background: #FAF8F6;
+        border: 1px solid #E0E0E0;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 280px;
+        padding: 10px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin: auto;
+    }
+    .sp_banchay img {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        margin-bottom: 8px;
+        object-fit: cover;
+    }
+    .sp_banchay h3 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #444;
+    }
+    .label_bt {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        background: #FF6347;
+        color: #FFF;
+        font-size: 0.7rem;
+        padding: 3px 8px;
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+    .container_bt {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8px;
+    }
+    .container_bt .gia {
+        font-size: 1.2rem;
+        color: #333;
+    }
+    .container_bt .giohang {
+        padding: 5px 10px;
+        background-color: #F4F4F4;
+        border: 1px solid #E0E0E0;
+        border-radius: 4px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background 0.3s, color 0.3s;
+    }
+    .sp_banchay:hover {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        cursor:pointer;
+    }
+    .giohang:hover {
+        background: #C0A47B;
+        border-color: #C0A47B;
+        color: #FFF;
+    }
+    /**/
+    .home-bg{
+        background: url("../assets/images/wallpaper3.png") ;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+    }
+    .home-bg .home{
+        min-height: 70rem;
+        display: flex;
+        align-items: center;
+        margin-top: 75px;
+    }
+    .home-bg .home .noi_dung{
+        width: 50rem;
+        text-align: center;
+    }
+    .home-bg .home .noi_dung h3{
+        font-size: 6rem;
+        color: var(--black);
+        font-family: 'Merienda one', cursive;
+    }
+    .home-bg .home .noi_dung p{
+        padding: 1rem 0;
+        font-size: 1.6rem;
+        color: var(--black);
+        line-height: 2;
+    }
+    .btn{
+        display: inline-block;
+        margin-top: 1rem;
+        background-color: var(--main-color);
+        cursor: pointer;
+        color: var(--white);
+        font-size: 1.8rem;
+        padding: 1rem 3rem;
+        border-radius: 5%;
+        object-fit: cover;
+    }
+    /*about*/
+    .about{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8rem;
+    }
+    .about .image{
+        flex:1 1 40rem;
+    }
+    .about .image img{
+        width: 100%;
+        border-radius: 30%;
+        object-fit: cover;
+        border: 5px solid #BE9C79FF;
+    }
+    .about .noi_dung{
+        flex:1 1 32rem;
+    }
+    .about .noi_dung h3{
+        font-size: 4.5rem;
+        color:var(--black);
+        font-family: 'Merienda one', cursive;
+    }
+    .about .noi_dung p{
+        padding: 1rem 0;
+        line-height: 2;
+        color: var(--light-color);
+        font-size: 1.5rem;
+    }
+    /*menu*/
+    .menu {
+        text-align: center;
+        padding: 3rem 1.5rem;
+    }
+
+    .menu .box-container {
+        display: flex;
+        gap: 2rem;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding-top: 2rem;
+    }
+
+    .menu .box {
+        width: 300px;
+        height: 350px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        color: #555;
+    }
+
+    .menu .box:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .menu .box img.ic {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        transition: transform 0.8s ease;
+    }
+
+    .menu .box img:not(.ic) {
+        width: 100px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        transition: transform 0.8s ease;
+    }
+
+    .menu .box img:hover {
+        transform: scale(1.1);
+    }
+
+    .menu .box h3 {
+        font-size: 1.8rem;
+        color: #8b5e34;
+        margin-bottom: 1rem;
+    }
+
+    .menu .box p {
+        font-size: 1.4rem;
+        line-height: 1.6;
+        color: #555;
+        text-align: center;
+    }
+
+    /*Không gian quán*/
+    .title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: -50px;
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .space {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 80px;
+    }
+
+    .image_space_1, .image_space_2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .image-container {
+        position: relative;
+        width: 800px;
+        height: 400px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    .image_space_2 .image-container {
+        width: 1600px;
+        height: 500px;
+    }
+
+    .image_space_2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .image-container .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(169, 169, 169, 0.6);
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.3s ease;
+        border-radius: 10px;
+    }
+
+    .image-container .overlay-text {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .image-container:hover .overlay {
+        opacity: 1;
+    }
+
+
+    /*Tin tức & Sự kiện*/
+    .carousel-title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: -25px;
+        color: #444;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .slider-container {
+        width: 100%;
+        max-width: 1380px;
+        margin: 0 auto;
+    }
+
+    .tintuc_sk {
+        padding: 20px 10px;
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+
+    .tintuc_sk .item_ttsk {
+        display: flex;
+        padding: 35px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tintuc_sk .item_ttsk .tintuc{
+        width: 450px;
+        height: 600px;
+        object-fit: cover;
+        margin-bottom: 50px;
+        border-radius: 5px;
+        align-items: center;
+    }
+    .tintuc_sk .item_ttsk .nd_sk{
+        margin-top: -20px;
+        font-size: 1.5rem;
+        color: #555;
+        text-align: left;
+        width: 400px;
+    }
+    .tintuc_sk .item_ttsk .nd_sk, .tintuc_sk .item_ttsk .tintuc{
+        cursor: pointer;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        color: #FFFFFF !important;
+        background-color: rgba(67, 61, 61, 0.15) !important;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        opacity: 0;
+    }
+
+    .slider-container:hover .swiper-button-next,
+    .slider-container:hover .swiper-button-prev {
+        opacity: 1;
+    }
+
+    .swiper-button-next::after, .swiper-button-prev::after {
+        font-size: 2rem !important;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #be9c79 !important;
+    }
+    *{
+        font-family: 'Yanone', sans-serif ;
+        margin:0;
+        box-sizing: border-box;
+        outline: none; border: none;
+        text-decoration: none;
+        text-transform: capitalize;
+
+    }
+    :root{
+        --main-color: #be9c79;
+        --black: #333;
+        --white: #fff;
+        --light-color: #666;
+        --border: 2rem solid var(--black);
+        --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    }
+    html{
+        font-size: 60%;
+        overflow-x: hidden;
+        scroll-padding-top: 6rem;
+    }
+    section {
+        padding: 3rem 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    footer {
+        background-image: url("../assets/images/header/header.jpg");
+        color: #eee;
+        margin-top: 50px;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px 100px;
+    }
+    .footer-section {
+        margin: 10px;
+        flex: 1;
+        min-width: 150px;
+    }
+    .footer-section h4 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        margin-left: 38px;
+        color: #fff;
+    }
+    .footer-section ul {
+        list-style-type: none;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 5px;
+
+    }
+    .footer-section ul li a {
+        color: #eee;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .contact-info {
+        font-size: 14px;
+        color: #eee;
+        margin-left: 40px;
+    }
+    .contact-info a {
+        color: #eee;
+        text-decoration: none;
+    }
+    .social-media-icons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        margin-left: 40px;
+
+    }
+    .social-media-icons a{
+        width: 20px;
+        height: 50px;
+        color:#fff
+    }
+    .footer-bottom {
+        border-top: 1px solid #555;
+        margin-top: 20px;
+        padding-top: 10px;
+        font-size: 12px;
+        text-align: center;
+        color: #999;
+    }
+</style>
+<body>
+<!-- Header-->
+<header class="header">
+    <section class="flex">
+        <a href="#home" class="logo">
+            <img src="../assets/images/logo.png" alt="">
+        </a>
+        <nav class="navbar">
+            <div class="left">
+                <a href="">Trang Chủ</a>
+                <a href="#about">About</a>
+                <!-- Menu with dropdown options -->
+                <div class="dropdown">
+                    <a href="#menu" class="mn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="">Coffee</a>
+                        <a href="">Trà</a>
+                        <a href="">Bánh Ngọt</a>
+                        <a href="">Nước Ép</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="">Đặt Bàn</a>
+                    <div class="dropdown-content">
+                        <a href="" class="datban">Lịch Sử Đặt Bàn</a>
+                    </div>
+                </div>
+                <a href="#contact">Tin Tức & Sự Kiện</a>
+            </div>
+            <div class="right">
+                <a href="#search" class="icon" id="search-icon">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <span id="clear-btn">&times;</span>
+                </a>
+                <a href="#giohang" class="icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+                <a href="#sign">Đăng Ký</a>
+                <a href="#login">Đăng Nhập</a>
+            </div>
+        </nav>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </section>
+</header>
+<!-- Home-->
+<div class="home-bg">
+    <section class="home" id="home">
+        <div class="noi_dung">
+            <h3>Coffee 3Talents</h3>
+            <p>Hội tụ tài năng - Từ mỗi hạt cà phê đến từng tách cà phê,
+                chúng tôi mang đến những hương vị trọn vẹn và những trải nghiệm đáng nhớ.</p>
+            <a href="#about" class="btn">about us</a>
+        </div>
+    </section>
+</div>
+<!-- New Product-->
+<div class="carousel">
+    <div class="sp_moi">
+        <div class="label">new</div>
+        <h3>Cappuccino</h3>
+        <a href="">
+            <img src="../assets/images/menu/coffee/campucio.jpg" alt="Sản phẩm 1">
+        </a>
+        <div class="container">
+            <div class="gia">50,000 VND</div>
+            <a href="">
+                <div class="giohang">thêm giỏ hàng</div>
+            </a>
+        </div>
+    </div>
+    <div class="sp_moi">
+        <div class="label">new</div>
+        <h3>Bánh Tiramisu</h3>
+        <img src="../assets/images/menu/food/tinavisu.jpg" alt="Sản phẩm 2">
+        <div class="container">
+            <div class="gia">60,000 VND</div>
+            <div class="giohang">thêm giỏ hàng</div>
+        </div>
+    </div>
+    <div class="sp_moi">
+        <div class="label">new</div>
+        <h3>Trà Chanh Dây</h3>
+        <img src="../assets/images/menu/tea/tra.jpg" alt="Sản phẩm 3">
+        <div class="container">
+            <div class="gia">45,000 VND</div>
+            <div class="giohang">thêm giỏ hàng</div>
+        </div>
+    </div>
+    <div class="sp_moi">
+        <div class="label">new</div>
+        <h3>Nước Ép Ổi</h3>
+        <img src="../assets/images/menu/juice/ep.jpg" alt="Sản phẩm 5">
+        <div class="container">
+            <div class="gia">55,000 VND</div>
+            <div class="giohang">thêm giỏ hàng</div>
+        </div>
+    </div>
+</div>
+<!--Bestseller Product-->
+<div class="best-sellers">
+    <h2>Sản phẩm bán chạy</h2>
+    <div class="carousel_bt">
+        <div class="sp_banchay">
+            <div class="label_bt">best seller</div>
+            <h3>Bạc xỉu</h3>
+            <img src="../assets/images/menu/coffee/bacxiu.jpg" alt="Sản phẩm 1">
+            <div class="container_bt">
+                <div class="gia">45,000 VND</div>
+                <div class="giohang">thêm giỏ hàng</div>
+            </div>
+        </div>
+        <div class="sp_banchay">
+            <div class ="label_bt">best seller</div>
+            <h3>Nước Ép Bơ</h3>
+            <img src="../assets/images/menu/smoothie/BƠ.jpg" alt="Sản phẩm 2">
+            <div class="container_bt">
+                <div class="gia">55,000 VND</div>
+                <div class="giohang">thêm giỏ hàng</div>
+            </div>
+        </div>
+        <div class="sp_banchay">
+            <h3>Trà đào</h3>
+            <img src="../assets/images/menu/tea/TraDao.jpg" alt="Sản phẩm 3">
+            <div class="container_bt">
+                <div class="gia">30,000 VND</div>
+                <div class="giohang">thêm giỏ hàng</div>
+            </div>
+        </div>
+        <div class="sp_banchay">
+            <h3>Bánh Mỳ Bơ tỏi</h3>
+            <img src="../assets/images/menu/food/banhmiphomaibotoi.jpg" alt="Sản phẩm 4">
+            <div class="container_bt">
+                <div class="gia">40,000 VND</div>
+                <div class="giohang">thêm giỏ hàng</div>
+            </div>
+        </div>
+        <div class="sp_banchay">
+            <h3>Cafe Đen</h3>
+            <img src="../assets/images/menu/coffee/cafe_đen.jpg" alt="Sản phẩm 5">
+            <div class="container_bt">
+                <div class="gia">30,000 VND</div>
+                <div class="giohang">thêm giỏ hàng</div>
+            </div>
+        </div>
+        <div class="sp_banchay">
+            <h3>Trà sữa phô mai</h3>
+            <img src="../assets/images/menu/mik_tea/trasuaphomai.jpg" alt="Sản phẩm 6">
+            <div class="container_bt">
+                <div class="gia">60,000 VND</div>
+                <div class="giohang">thêm giỏ hàng</div>
+            </div>
+        </div>
+        <div class="sp_banchay">
+            <h3>Bánh MoChi Trà Xanh</h3>
+            <img src="../assets/images/menu/food/mochitraxanh.jpg" alt="Sản phẩm 7">
+            <div class="container_bt">
+                <div class="gia">60,000 VND</div>
+                <div class="giohang">thêm giỏ hàng</div>
+            </div>
+        </div>
+        <div class="sp_banchay">
+            <h3>Trà Sữa Dâu Tây</h3>
+            <img src="../assets/images/menu/mik_tea/trasuadautay.jpg" alt="Sản phẩm 8">
+            <div class="container_bt">
+                <div class="gia">55,000 VND</div>
+                <div class="giohang">thêm giỏ hàng</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Product Category-->
+<section class="about" id="about" >
+    <div class="image">
+        <img src="../assets/images/menu/food/food.jpg" alt="">
+    </div>
+    <div class="noi_dung">
+        <h3>A cup of coffee can complete your day</h3>
+        <p>Hãy đến với Coffee 3Talents, nơi mỗi tách cà phê không chỉ là thức uống mà còn là trải nghiệm.
+            Không gian ấm cúng và thân thiện sẽ biến mỗi khoảnh khắc của bạn thành những kỷ niệm đáng nhớ.
+            Một tách cà phê ở đây có thể hoàn thiện cả ngày của bạn!</p>
+        <a href="#menu" class="btn">our menu</a>
+    </div>
+</section>
+<section class="menu">
+    <div class="box-container">
+        <div class="box">
+            <img src="../assets/images/icon1.jpg" alt="" class="ic">
+            <h3>cafe</h3>
+            <p>
+                Cà phê không chỉ là thức uống mà là trải nghiệm. Với hương vị đa dạng, mỗi tách cà phê mang đến sự kết nối và cảm hứng.
+                Hãy để cà phê là phần không thể thiếu trong hành trình thưởng thức của bạn!
+            </p>
+        </div>
+        <div class="box">
+            <img src="../assets/images/icon4.jpg" alt="">
+            <h3>trà</h3>
+            <p>
+                Trà là thức uống mà còn là nghệ thuật. Từ trà xanh đến trà thảo mộc, mỗi tách trà mang lại cảm giác thư giãn và kết nối.
+                Hãy để trà đồng hành cùng bạn trong những khoảnh khắc yên bình của cuộc sống.
+            </p>
+        </div>
+        <div class="box">
+            <img src="../assets/images/icon3.jpg" alt="" class="ic">
+            <h3>Bánh Ngọt</h3>
+            <p>
+                Bánh không chỉ mang lại cho chúng ta những hương vị đa dạng thỏa mãn vị giác, mà còn cho ta thấy được vẻ đẹp sáng tạo dưới nhiều
+                thức khác nhau.
+            </p>
+        </div>
+        <div class="box">
+            <img src="../assets/images/icon4.jpg" alt="">
+            <h3>nước ép</h3>
+            <p>
+                Nước ép là thức uống từ trái cây hoặc rau củ tươi, giàu vitamin và dưỡng chất,
+                vừa giải khát vừa hỗ trợ sức khỏe, làm đẹp da và thanh lọc cơ thể.
+            </p>
+        </div>
+    </div>
+</section>
+<!--Space Shop-->
+<div class="title">Không Gian Quán</div>
+<div class="space">
+    <div class="image_space_1">
+        <div class="image-container">
+            <img src="../assets/images/location/ngoai.jpg" class="sp_1">
+            <div class="overlay">
+                <span class="overlay-text">Ngoài Trời</span>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="../assets/images/location/trongnha.jpg" class="sp_2">
+            <div class="overlay">
+                <span class="overlay-text">Trong Quán</span>
+            </div>
+        </div>
+    </div>
+    <div class="image_space_2">
+        <div class="image-container">
+            <img src="../assets/images/location/phongrieng.png" class="sp_3">
+            <div class="overlay">
+                <span class="overlay-text">Phòng Riêng</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Event News-->
+<div class="carousel-title" id="contact">Tin Tức & Sự Kiện</div>
+<section class="tintuc_sk">
+    <div class="section-content">
+        <div class="slider-container swiper">
+            <div class="slider-wrapper">
+                <ul class="list swiper-wrapper">
+                    <li class="item_ttsk swiper-slide">
+                        <img src="../assets/images/news/tintuc_2.jpg" alt="ảnh" class="tintuc">
+                        <p class="nd_sk">
+                            Thương hiệu cafe của chúng tôi chính thức ra mắt trên thị trường quốc tế, đánh dấu bước phát triển mới trong hành trình vươn tầm thế giới.
+                        </p>
+                    </li>
+                    <li class="item_ttsk swiper-slide">
+                        <img src="../assets/images/news/tintuc_4.jpg" alt="ảnh" class="tintuc">
+                        <p class="nd_sk">
+                            Mùa Giáng sinh rộn ràng: khi tổng hóa đơn trên 120K, nhận ngay một ly đá thiết kế độc quyền để trang trí Giáng sinh.
+                        </p>
+                    </li>
+                    <li class="item_ttsk swiper-slide">
+                        <img src="../assets/images/news/tintuc_!.jpg" alt="ảnh" class="tintuc">
+                        <p class="nd_sk">
+                            Chào đón Tết: Từ ngày 29/1 đến 1/2, mua một loại Cafe ngẫu nhiên sẽ được tặng một ly nước theo yêu cầu.
+                        </p>
+                    </li>
+                    <li class="item_ttsk swiper-slide">
+                        <img src="../assets/images/news/tintuc_3.jpg" alt="ảnh" class="tintuc">
+                        <p class="nd_sk">
+                            Cùng bạn bè đón Giáng Sinh: chỉ cần có Một bánh Mochi trà xanh trong giỏ hàng, bạn sẽ được giảm 30% trên tổng hóa đơn!</p>
+                    </li>
+                    <li class="item_ttsk swiper-slide">
+                        <img src="../assets/images/news/tintuc_5.jpg" alt="ảnh" class="tintuc">
+                        <p class="nd_sk">
+                            Trải nghiệm vị cafe mới lạ với dòng sản phẩm giới hạn, chỉ có tại cửa hàng trong tháng 12.
+                        </p>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="../js/TrangChu.js"></script>
+<!--Footer-->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Giới thiệu</h4>
+            <ul>
+                <li><a href="#">Về Chúng Tôi</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Khuyến mãi</a></li>
+                <li><a href="#">Chuyện cà phê</a></li>
+                <li><a href="#">Cửa Hàng</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Điều khoản</h4>
+            <ul>
+                <li><a href="#">Điều khoản sử dụng</a></li>
+                <li><a href="#">Chính sách bảo mật thông tin</a></li>
+                <li><a href="#">Hướng dẫn xuất hóa đơn GTGT</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Liên hệ</h4>
+            <p class="contact-info">
+                Đặt hàng: <a href="tel:18006936">1800 6936</a><br>
+                Địa chỉ: 67 Đinh Bộ Lĩnh, P.26, Q.Bình Thạnh, TP.Hồ Chí Minh
+            </p>
+            <div class="social-media-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN<br>
+        Mã số DN: 0312867172 do Sở Kế hoạch và Đầu tư TP. HCM cấp ngày 23/07/2014.<br>
+        Người đại diện: NGÔ NGUYỄN KHA<br>
+        Địa chỉ: 86-88 Cao Thắng, Phường 04, Quận 3, TP Hồ Chí Minh &nbsp; | &nbsp;
+        Điện thoại: (028) 7107 8079 &nbsp; | &nbsp; Email: <a href="mailto:hi@coffee3talents.vn">hi@coffee3talents.vn</a><br>
+        © 2014-2022 Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN. Mọi quyền bảo lưu.
+    </div>
+</footer>
+</body>
+</html>
