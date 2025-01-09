@@ -10,7 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/DatBanDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/DatBanDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/DatBan/jsp/DatBan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/DatBan/jsp/DatBan.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/LichSuDatBan/css/LichSuDatBan.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/LichSuDatBan/css/LichSuDatBan.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +246,7 @@
       <workItem from="1736402602460" duration="1255000" />
       <workItem from="1736406752492" duration="596000" />
       <workItem from="1736407463835" duration="24000" />
-      <workItem from="1736441298037" duration="6883000" />
+      <workItem from="1736441298037" duration="8224000" />
     </task>
     <servers />
   </component>

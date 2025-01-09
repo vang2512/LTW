@@ -138,4 +138,8 @@ button.enabled {
         transform: rotate(360deg);
     }
 }
-
+.container.image i{
+    font-size: 1.5rem;
+    border-left: 10px;
+    color: #be9c79;
+}

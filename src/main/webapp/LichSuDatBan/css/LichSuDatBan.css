@@ -1,47 +1,107 @@
-
-.booking-history {
-    margin-top: 150px;
+/* General Container */
+.container {
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
 }
-.booking-history h2{
+
+/* Header Section */
+.booking-history h2 {
     text-align: center;
     font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
 }
+/* Table Style */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
-    background-color: #fff;
-    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
 }
+
+/* Table Header Style */
 th, td {
-    padding: 15px;
+    padding: 20px;
     text-align: left;
     border-bottom: 1px solid #ddd;
+    font-size: 1.2rem;
 }
-td{
-    font-size: 1.5rem;
-}
+
+/* Header Styling */
 th {
-    background-color: lightskyblue;
+    background-color: #4CAF50;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
 }
+
+/* Row Styling */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Buttons Styling */
 button {
-    padding: 10px 15px;
+    padding: 10px 20px;
     margin: 5px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Edit Button */
+.edit-btn {
     background-color: #4CAF50;
     color: white;
-    border-radius: 5px;
-    font-size: 1.2rem;
 }
-button:hover {
+
+.edit-btn:hover {
     background-color: #45a049;
 }
+
+/* Cancel Button */
 .cancel-btn {
     background-color: #f44336;
+    color: white;
 }
+
 .cancel-btn:hover {
     background-color: #e53935;
+}
+
+/* Return Button */
+.return-btn {
+    background-color: #008CBA;
+    color: white;
+}
+
+.return-btn:hover {
+    background-color: #007B9E;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .booking-history h2 {
+        font-size: 2rem;
+    }
+
+    th, td {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
 }
