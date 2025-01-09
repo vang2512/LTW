@@ -7,15 +7,17 @@ public class DatBan {
     private int soLuong;
     private String ngayDat;
     private String gioDat;
+    private String gioTra;
     private String khongGian;
     private String trangThai;
     private LocalDateTime thoiGianDat;
 
     // Constructor bao gồm thời gian đặt
-    public DatBan(int soLuong, String ngayDat, String gioDat, String khongGian, String trangThai) {
+    public DatBan(int soLuong, String ngayDat, String gioDat,String gioTra, String khongGian, String trangThai) {
         this.soLuong = soLuong;
         this.ngayDat = ngayDat;
         this.gioDat = gioDat;
+        this.gioTra = gioTra;
         this.khongGian = khongGian;
         this.trangThai = trangThai;
         this.thoiGianDat = LocalDateTime.now();
@@ -59,6 +61,13 @@ public class DatBan {
 
     public void setGioDat(String gioDat) {
         this.gioDat = gioDat;
+    }
+    public String getGioTra() {
+        return gioTra;
+    }
+
+    public void setGioTra(String gioTra) {
+        this.gioTra = gioTra;
     }
 
     public String getKhongGian() {

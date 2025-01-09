@@ -22,6 +22,7 @@ public class DatBanController extends HttpServlet {
         String khongGian = request.getParameter("khongGian");
         String ngayDat = request.getParameter("ngayDat");
         String gioDat = request.getParameter("gioDat");
+        String gioTra = request.getParameter("gioTra");
 
         // Lấy danh sách bàn trống và ghép bàn
         List<Ban> availableBans = banDao.getAllBan();
@@ -40,7 +41,7 @@ public class DatBanController extends HttpServlet {
         String message;
         if (success) {
             // Lưu đơn đặt bàn mới vào cơ sở dữ liệu
-            DatBan datBan = new DatBan(soLuong, ngayDat, gioDat, khongGian, "Đang chờ");
+            DatBan datBan = new DatBan(soLuong, ngayDat, gioDat,gioTra, khongGian, "Đang chờ");
             datBanDao.saveDatBan(datBan);
             // Cập nhật trạng thái bàn và lưu chi tiết
             for (Ban ban : selectedBans) {

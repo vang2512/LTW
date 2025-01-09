@@ -11,15 +11,16 @@ import java.sql.Timestamp;
 public class DatBanDao {
     // Lưu đơn đặt bàn mới
     public void saveDatBan(DatBan datBan) {
-        String sql = "INSERT INTO DatBan (soLuong, ngayDat, gioDat, khongGian, trangThai, thoiGianDat) VALUES (?, ?, ?, ?, ?, ?)";
+        String sql = "INSERT INTO DatBan (soLuong, ngayDat, gioDat,gioTra, khongGian, trangThai, thoiGianDat) VALUES (?, ?, ?, ?, ?, ?, ?)";
         try (Connection conn = DbConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             stmt.setInt(1, datBan.getSoLuong());
             stmt.setDate(2, Date.valueOf(datBan.getNgayDat()));
             stmt.setTime(3, Time.valueOf(formatTime(datBan.getGioDat())));
-            stmt.setString(4, datBan.getKhongGian());
-            stmt.setString(5, datBan.getTrangThai());  // Đang chờ
-            stmt.setTimestamp(6, Timestamp.valueOf(datBan.getThoiGianDat()));  // Thời gian đặt
+            stmt.setTime(4, Time.valueOf(formatTime(datBan.getGioTra())));
+            stmt.setString(5, datBan.getKhongGian());
+            stmt.setString(6, datBan.getTrangThai());  // Đang chờ
+            stmt.setTimestamp(7, Timestamp.valueOf(datBan.getThoiGianDat()));  // Thời gian đặt
             stmt.executeUpdate();
             try (ResultSet rs = stmt.getGeneratedKeys()) {
                 if (rs.next()) {

@@ -33,8 +33,10 @@
             <label for="ngayDat">Ngày đặt:</label>
             <input type="date" id="ngayDat" name="ngayDat" required>
 
-            <label for="gioDat">Giờ:</label>
+            <label for="gioDat">Giờ đặt:</label>
             <input type="time" id="gioDat" name="gioDat" required>
+            <label for="gioTra">Giờ trả:</label>
+            <input type="time" id="gioTra" name="gioTra" required>
 
             <button id="submit-button" type="submit" disabled>Tiếp tục</button>
         </form>
