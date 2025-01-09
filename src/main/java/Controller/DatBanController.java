@@ -35,5 +35,33 @@ public class DatBanController extends HttpServlet {
                 if (remaining <= 0) break;
             }
         }
+
+        // Kiểm tra nếu đủ bàn
+        boolean success = remaining <= 0;
+        String message;
+        if (success) {
+            // Lưu đơn đặt bàn mới vào cơ sở dữ liệu
+            DatBan datBan = new DatBan(soLuong, ngayDat, gioDat, khongGian, "Đang chờ");
+            datBanDao.saveDatBan(datBan);
+
+            // Cập nhật trạng thái bàn và lưu chi tiết
+            for (Ban ban : selectedBans) {
+                banDao.updateBanTrangThai(ban.getId(), "Đặt");
+                chiTietDatBanDao.saveChiTietDatBan(datBan.getId(), ban.getId());
+            }
+
+            // Thông báo đặt bàn thành công
+            message = "Đặt bàn thành công!";
+        } else {
+            message = "Không đủ bàn cho số lượng yêu cầu.";
+        }
+
+        // Truyền dữ liệu cho JSP
+        request.setAttribute("success", success);
+        request.setAttribute("message", message);
+
+        // Chuyển hướng đến trang kết quả đặt bàn
+        RequestDispatcher dispatcher = request.getRequestDispatcher("DatBan/jsp/DatBanResult.jsp");
+        dispatcher.forward(request, response);
     }
 }
