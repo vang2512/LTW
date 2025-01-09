@@ -62,14 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 loadingOverlay.style.display = 'none'; // Ẩn loading
 
                 // Thực hiện kiểm tra đặt bàn
-                if (selectedOption.value === 'wantOrder') {
-                    alert('Bạn đã chọn đặt bàn!'); // Thông báo muốn đặt bàn
+                if (selectedOption.value === 'noOrder') {
+                    alert('Bạn đã chọn không muốn order!'); // Thông báo muốn đặt bàn
                 } else {
-                    alert('Bạn đã chọn không muốn đặt bàn!'); // Thông báo không đặt bàn
+                    alert('Bạn đã chọn muốn order!'); // Thông báo không đặt bàn
                 }
-
                 form.submit(); // Gửi form
-            }, 3000); // Đợi 3 giây
+            }, 2000); // Đợi 3 giây
         } else {
             alert('Vui lòng chọn một tùy chọn trước khi tiếp tục.');
         }

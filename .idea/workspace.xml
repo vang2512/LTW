@@ -10,7 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DatBanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DatBanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/DatBan/css/DatBan.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/DatBan/css/DatBan.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/DatBan/js/DatBan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/DatBan/js/DatBan.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/DatBan/jsp/DatBan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/DatBan/jsp/DatBan.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

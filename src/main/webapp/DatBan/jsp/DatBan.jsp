@@ -25,7 +25,6 @@
                 <option value="Trong Quán">Trong Quán</option>
                 <option value="Phòng Riêng">Phòng Riêng</option>
             </select>
-
             <label for="soLuong">Số lượng:</label>
             <input type="number" id="soLuong" name="soLuong" min="1" required>
 
