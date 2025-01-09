@@ -26,9 +26,24 @@
       </tr>
       </thead>
       <tbody>
+      <c:forEach var="datBan" items="${datBans}">
+        <tr>
+          <td>${datBan.ngayDat}</td>
+          <td>${datBan.gioDat}</td>
+          <td>${datBan.khongGian}</td>
+          <td>${datBan.soLuong}</td>
+          <td>${datBan.trangThai}</td>
+          <td>
+            <button class="edit-btn">Sửa</button>
+            <button class="cancel-btn">Hủy</button>
+            <button class="return">Trả</button>
+          </td>
+        </tr>
+      </c:forEach>
       </tbody>
     </table>
   </div>
+
 
 <script src="LichSuDatBan/js/LichSuDatBan.js"></script>
 <!-- Footer -->
