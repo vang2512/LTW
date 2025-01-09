@@ -5,8 +5,8 @@ import java.sql.*;
 import java.util.*;
 import java.sql.Date;
 import java.sql.Time;
-import java.time.LocalDateTime;   // Để sử dụng LocalDateTime
-import java.sql.Timestamp;        // Để sử dụng Timestamp
+import java.time.LocalDateTime;
+import java.sql.Timestamp;
 
 public class DatBanDao {
     // Lưu đơn đặt bàn mới
@@ -60,5 +60,33 @@ public class DatBanDao {
             e.printStackTrace();
         }
         return datBans;
+    }
+    public void updateTrangThaiDatBan(int id, String trangThai) {
+        String checkSql = "SELECT trangThai, thoiGianDat FROM datban WHERE id = ?";
+        String updateSql = "UPDATE datban SET trangThai = ? WHERE id = ?";
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement checkStmt = conn.prepareStatement(checkSql)) {
+            checkStmt.setInt(1, id);
+            try (ResultSet rs = checkStmt.executeQuery()) {
+                if (rs.next()) {
+                    String trangThaiHienTai = rs.getString("trangThai");
+                    Timestamp thoiGianDat = rs.getTimestamp("thoiGianDat");
+                    Timestamp now = new Timestamp(System.currentTimeMillis());
+                    if ("Đang chờ".equals(trangThaiHienTai) && thoiGianDat != null && now.getTime() - thoiGianDat.getTime() >= 2 * 60 * 1000) {
+                        try (PreparedStatement updateStmt = conn.prepareStatement(updateSql)) {
+                            updateStmt.setString(1, trangThai);
+                            updateStmt.setInt(2, id);
+                            if (updateStmt.executeUpdate() > 0) {
+                                System.out.println("Trạng thái đơn đặt bàn ID " + id + " đã được cập nhật thành '" + trangThai + "'.");
+                            } else {
+                                System.out.println("Không có đơn đặt bàn nào cần cập nhật với ID " + id);
+                            }
+                        }
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
     }
 }
