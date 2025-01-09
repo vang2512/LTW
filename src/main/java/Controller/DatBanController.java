@@ -15,6 +15,7 @@ public class DatBanController extends HttpServlet {
     private BanDao banDao = new BanDao();
     private DatBanDao datBanDao = new DatBanDao();
     private ChiTietDatBanDao chiTietDatBanDao = new ChiTietDatBanDao();
+
     // Xử lý yêu cầu POST từ form đặt bàn
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -41,7 +42,7 @@ public class DatBanController extends HttpServlet {
         String message;
         if (success) {
             // Lưu đơn đặt bàn mới vào cơ sở dữ liệu
-            DatBan datBan = new DatBan(soLuong, ngayDat, gioDat,gioTra, khongGian, "Đang chờ");
+            DatBan datBan = new DatBan(soLuong, ngayDat, gioDat, gioTra, khongGian, "Đang chờ");
             datBanDao.saveDatBan(datBan);
             // Cập nhật trạng thái bàn và lưu chi tiết
             for (Ban ban : selectedBans) {
@@ -51,6 +52,8 @@ public class DatBanController extends HttpServlet {
             // Thông báo đặt bàn thành công
             message = "Đặt bàn thành công!";
             request.setAttribute("datBan", datBan);
+
+            // Tạo lịch trình để cập nhật trạng thái "Đã xác nhận" sau 2 phút
             ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
             scheduler.schedule(() -> {
                 datBanDao.updateTrangThaiDatBan(datBan.getId(), "Đã xác nhận");
@@ -60,7 +63,6 @@ public class DatBanController extends HttpServlet {
         } else {
             message = "Không đủ bàn cho số lượng yêu cầu.";
         }
-        // Truyền dữ liệu cho JSP
         request.setAttribute("success", success);
         request.setAttribute("message", message);
         // Chuyển hướng đến trang kết quả đặt bàn

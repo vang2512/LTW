@@ -97,4 +97,28 @@ public class DatBanDao {
             e.printStackTrace();
         }
     }
+    public void updateBanAfterCheckout() {
+        String selectSql = "SELECT * FROM datban WHERE trangThai = 'Đã xác nhận' AND gioTra < ?";
+        String updateSql = "UPDATE tables SET trangThai = 'Còn Trống' WHERE id IN (SELECT banId FROM chitietdatban WHERE datBanId = ?)";
+
+        try (Connection conn = DbConnection.getConnection()) {
+            Timestamp now = new Timestamp(System.currentTimeMillis());
+            try (PreparedStatement selectStmt = conn.prepareStatement(selectSql)) {
+                selectStmt.setTimestamp(1, now);
+                try (ResultSet rs = selectStmt.executeQuery()) {
+                    while (rs.next()) {
+                        int datBanId = rs.getInt("id");
+                        try (PreparedStatement updateStmt = conn.prepareStatement(updateSql)) {
+                            updateStmt.setInt(1, datBanId);
+                            updateStmt.executeUpdate();
+                            System.out.println("Đã cập nhật trạng thái bàn sau khi hết giờ trả cho đơn đặt bàn ID: " + datBanId);
+                        }
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
