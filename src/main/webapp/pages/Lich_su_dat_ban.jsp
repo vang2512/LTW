@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/LichSuDatBan.css">
+  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/Lich_su_dat_ban.css">
   <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
   <title>Title</title>
   <link rel="stylesheet" href="lichsudatban.css">

@@ -14,7 +14,7 @@ public class LichSuDatBanController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<DatBan> datBans = datBan.getAllDatBan();
         request.setAttribute("datBans", datBans);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("LichSuDatBan/jsp/LichSuDatBan.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Lich_su_dat_ban.jsp");
         dispatcher.forward(request, response);
     }
 }

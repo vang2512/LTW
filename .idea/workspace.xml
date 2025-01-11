@@ -10,331 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/managers/admin-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/AffogatoCoffee.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/Cofee Caramel Macchiato.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/Coffee marble latte.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/CortadoCoffe.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/Espresso.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/coffe-flip.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/coldbrewkimquat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/coldbrewque.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/coldbrewtruyenthong.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/latte.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/lungoCoffee.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/food/Croissant-pho-mai.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/food/Croissant-salt-eggs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/food/banhmique.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/food/mochichocolate.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/food/mochidautaycheese.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/food/mousseChocolate.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/food/mousseTiramisu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/ice/Mocha-Frappuccino.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/ice/milodambanhflan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/ice/mocha machiato.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/ice/socola-da-xay.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/juice/Oolong.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/juice/carrotjuice.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/juice/dưahau.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/juice/grape_juice.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/juice/green_grape.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/juice/nuocchanhday.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/juice/strawberry.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/mik_tea/suatuoivietquattranchau.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/mik_tea/traaapng.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/mik_tea/trasuasocola.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/mik_tea/trasuatranchau.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/smoothie/Frappuccino-dâu-tây.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/smoothie/kiwibanana.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/tea/trasuathaixanh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/tea/travai.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/users/bruno-mars.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/users/chris-grey.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/users/plus.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/users/son-tung-mtp.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/wallpaper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/wallpaper2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Admin/desks.js" beforeDir="false" afterPath="$PROJECT_DIR$/GK/data/desks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Admin/images/header/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Admin/images/managers/admin-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/managers/admin-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Admin/images/users/bruno-mars.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/users/bruno-mars.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Admin/images/users/chris-grey.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/users/chris-grey.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Admin/images/users/plus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/users/plus.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Admin/images/users/son-tung-mtp.webp" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/users/son-tung-mtp.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/Admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Admin/orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/GK/data/orders.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Admin/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/GK/data/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Admin/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/GK/js/Admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Admin/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/Admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Admin/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/GK/data/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/Images/cam.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/juice/cam.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/Images/campucio.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/campucio.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/Images/ep.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/juice/ep.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/Images/food.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/food/food.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/Images/header.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/header/header.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/Images/home.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/home.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/Images/icon1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/icon1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/Images/icon3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/icon3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/Images/icon4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/icon4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/Images/lg.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/Images/logo .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/Images/solo.png" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/solo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/Images/tinavisu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/Images/tra.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/tea/tra.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/lichsuthanhtoan.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/lichsuthanhtoan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/style_canhan.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/style_canhan.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/style_matkhau.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/style_matkhau.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/style_thanhtoan.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/style_thanhtoan.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/thaydoimatkhau.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/thaydoimatkhau.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/CaiDat/thongtincanhan.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/thongtincanhan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/ChiTietSP.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/ChiTietSP.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/ChiTietSP.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/ChiTietSP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/avatar_male.png" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/users/avatar_male.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/bacxiu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/bacxiu.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/cafe_sua_muoi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/cafe_sua_muoi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/cafe_đen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/cafe_đen.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/caffeephinnong.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/caffeephinnong.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/cam.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/juice/cam.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/campucio.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/campucio.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/ep.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/juice/ep.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/food.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/food/food.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/header.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/header/header.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/home.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/home.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/icon1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/icon1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/icon3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/icon3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/icon4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/icon4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/logo .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/solo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/solo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/tinavisu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/Images/tra.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/tea/tra.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/head_footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/GK/js/components/head_footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ChiTietSP/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/GK/js/ChiTietSP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/DatBan/DatBan.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/DatBan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/DatBan/Images/DatBan.png" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/reservation/DatBan.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/DatBan/Images/avatar_male.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/users/avatar_male.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/DatBan/Images/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/DatBan/Images/lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/DatBan/Images/ngoai.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/location/ngoai.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/DatBan/Images/phongrieng.png" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/location/phongrieng.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/DatBan/Images/trongnha.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/location/trongnha.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/DatBan/head_footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/DatBan/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/GK/js/DatBan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/DatBan/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/DatBan.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/GioHang/Images/avatar_male.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/GioHang/Images/coffee/cappuccino.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/GioHang/Images/food/tiramisu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/food/tiramisu.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/GioHang/Images/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/GioHang/Images/header/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/GioHang/Images/lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/GioHang/head_footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/GioHang/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/GioHang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/GioHang/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/GK/js/GioHang.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/GioHang/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/GioHang.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Header_Footer/Images/avatar_male.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Header_Footer/Images/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Header_Footer/Images/lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Header_Footer/Images/user.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/users/user.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Header_Footer/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/components/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Header_Footer/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/components/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Header_Footer/header_chuaDangNhap.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/components/header_chuaDangNhap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/HoaDon/HoaDon.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/HoaDon.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/HoaDon/HoaDon_Sp.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/HoaDon_Sp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/HoaDon/HoaDon_datban.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/HoaDon_datban.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/HoaDon/Images/3talents logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/HoaDon/style_hoadon.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/style_hoadon.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/HoaDon/style_hoadon_datban.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/style_hoadon_datban.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/HoaDon/style_hoadon_sanpham.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/style_hoadon_sanpham.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/KhongGian/Images/DatBan.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/reservation/DatBan.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/KhongGian/Images/avatar_male.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/KhongGian/Images/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/KhongGian/Images/lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/KhongGian/Images/ngoai.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/location/ngoai.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/KhongGian/Images/phongrieng.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/location/phongrieng.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/KhongGian/Images/trongnha.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/location/trongnha.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/KhongGian/KhongGian.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/KhongGian.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/KhongGian/KhongGian.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/KhongGian.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/KhongGian/head_footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/KhongGian/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/GK/js/KhongGian.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/LichSuDatBan/Images/avatar_male.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/LichSuDatBan/Images/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/LichSuDatBan/Images/lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/LichSuDatBan/head_footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/LichSuDatBan/lichsudatban.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/lichsudatban.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/LichSuDatBan/lichsudatban.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/lichsudatban.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/LichSuDatBan/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/GK/js/LichSuDatBan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Login/Images/3talents logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Login/Images/lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Login/SignUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/SignUp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Login/announce.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/announce.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Login/forgot_password.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/forgot_password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Login/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/GK/js/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Login/style_annouce.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/style_annouce.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Login/style_forget_password.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/style_forget_password.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Login/style_login.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/style_login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Login/style_signUp.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/style_signUp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/3talents logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/AffogatoCoffee.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/AffogatoCoffee.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/Cofee Caramel Macchiato.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/Cofee Caramel Macchiato.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/Coffee Americano.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/Coffee Americano.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/Coffee marble latte.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/Coffee marble latte.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/Cold Brew.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/coldbrewsuatuoi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/CortadoCoffe.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/CortadoCoffe.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/Croissant-pho-mai.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/food/Croissant-pho-mai.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/Croissant-salt-eggs.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/food/Croissant-salt-eggs.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/Espresso.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/Espresso.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/Frappuccino-dâu-tây.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/smoothie/Frappuccino-dâu-tây.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/Mocha-Frappuccino.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/ice/Mocha-Frappuccino.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/Oolong.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/juice/Oolong.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/avatar_male.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/avocadosmoothie.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/smoothie/avocadosmoothie.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/bacxiu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/bacxiu.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/banhmiphomaibotoi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/food/banhmiphomaibotoi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/banhmique.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/food/banhmique.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/cafe_sua_muoi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/cafe_sua_muoi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/cafe_đen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/Coffee Americano.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/caffeephinnong.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/caffeephinnong.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/cam.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/capuchino.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/carrotjuice.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/juice/carrotjuice.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/coldbrewkimquat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/coldbrewkimquat.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/coldbrewque.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/coldbrewque.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/coldbrewsuatuoi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/coldbrewsuatuoi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/coldbrewtruyenthong.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/coldbrewtruyenthong.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/dưahau.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/juice/dưahau.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/ep.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/food.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/grape_juice.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/juice/grape_juice.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/green_grape.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/juice/green_grape.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/h1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/h1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/head.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/head.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/home.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/icon1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/icon3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/icon4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/kiwibanana.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/smoothie/kiwibanana.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/latte.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/latte.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/logo .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/lungoCoffee.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/lungoCoffee.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/milodambanhflan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/ice/milodambanhflan.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/mocha machiato.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/ice/mocha machiato.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/mochichocolate.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/food/mochichocolate.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/mochidautaycheese.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/food/mochidautaycheese.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/mochitraxanh.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/food/mochitraxanh.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/mousseChocolate.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/food/mousseChocolate.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/mousseTiramisu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/food/mousseTiramisu.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/nuocchanhday.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/juice/nuocchanhday.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/socola-da-xay.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/ice/socola-da-xay.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/solo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/strawberry.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/juice/strawberry.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/suatuoivietquattranchau.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/mik_tea/suatuoivietquattranchau.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/tiramisu.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/food/tiramisu.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/tra.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/tradao.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/tradaocamsa.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/tea/tradaocamsa.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/trasuadautay.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/mik_tea/trasuadautay.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/trasuaphomai.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/mik_tea/trasuaphomai.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/trasuasocola.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/mik_tea/trasuasocola.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/trasuathaixanh.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/tea/trasuathaixanh.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/trasuatranchau.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/mik_tea/trasuatranchau.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/Images/travai.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/tea/travai.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/head_footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/matHang.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/matHang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/GK/js/MatHang.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/MatHang/style_matHang.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/style_matHang.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/Subject/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ThanhToan/Images/avatar_male.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ThanhToan/Images/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ThanhToan/Images/lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ThanhToan/Images/logo .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ThanhToan/Images/tra.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ThanhToan/ThanhToan.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/ThanhToan.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ThanhToan/ThanhToan.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/ThanhToan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ThanhToan/ThanhToan.js" beforeDir="false" afterPath="$PROJECT_DIR$/GK/js/ThanhToan.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ThanhToan/ThanhToanDatBan.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/ThanhToanDatBan.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ThanhToan/ThanhToanDatBan.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/ThanhToanDatBan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ThanhToan/ThanhToanSP.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/ThanhToanSP.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ThanhToan/ThanhToanSP.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/ThanhToanSP.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/ThanhToan/head_footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/BƠ.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/smoothie/avocadosmoothie.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/TraDao.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/tea/tradaocamsa.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/avatar_male.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/bacxiu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/banhmiphomaibotoi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/food/banhmiphomaibotoi.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/cafe_đen.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/coffee/cafe_đen.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/campucio.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/coffe-flip.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/coffee/coffe-flip.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/ep.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/food.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/h1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/h1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/head.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/head.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/home.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/icon1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/icon3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/icon4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/loggo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/logo .png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/mochitraxanh.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/food/mochitraxanh.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/ngoai.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/phongrieng.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/solo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/tinavisu.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/tintuc_!.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/news/tintuc_!.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/tintuc_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/news/tintuc_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/tintuc_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/news/tintuc_3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/tintuc_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/news/tintuc_4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/tintuc_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/news/tintuc_5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/tra.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/traaapng.png" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/menu/mik_tea/traaapng.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/trasuadautay.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/mik_tea/trasuadautay.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/trasuaphomai.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/menu/mik_tea/trasuaphomai.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/trongnha.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/wallpaper.png" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/wallpaper.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/wallpaper2.png" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/wallpaper2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Images/wallpaper3.png" beforeDir="false" afterPath="$PROJECT_DIR$/GK/assets/images/wallpaper3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/Sty_TrangChu.css" beforeDir="false" afterPath="$PROJECT_DIR$/GK/css/Sty_TrangChu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/TrangChu.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/TrangChu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/TrangChu.js" beforeDir="false" afterPath="$PROJECT_DIR$/GK/js/TrangChu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/TrangChu_ChuaDangNhap.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/pages/TrangChu_ChuaDangNhap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/TrangChu/head_footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/DatBan/css/DatBan.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Dat_ban.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/DatBan/js/DatBan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/Dat_ban.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/DatBan/js/Header_Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/components/Header_Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/DatBan/jsp/DatBan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/Dat_ban.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/DatBan/jsp/DatBanResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/Dat_ban_result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Header_Footer/jsp/Footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/components/Footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Header_Footer/jsp/Header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/components/Header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/DatBan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/avatar_male.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/food.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/header.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/icon1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/icon3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/icon4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/lg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/ngoai.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/phongrieng.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/tintuc_!.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/news/tintuc_!.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/tintuc_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/news/tintuc_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/tintuc_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/news/tintuc_3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/tintuc_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/news/tintuc_4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/tintuc_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/news/tintuc_5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/trongnha.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/user.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/users/user.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/Images/wallpaper3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/images/wallpaper3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/LichSuDatBan/css/LichSuDatBan.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Lich_su_dat_ban.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/LichSuDatBan/js/Header_Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/LichSuDatBan/js/LichSuDatBan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/Lich_su_dat_ban.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/LichSuDatBan/jsp/LichSuDatBan.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/Lich_su_dat_ban.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/TrangChu/css/TrangChu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Trang_chu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/TrangChu/js/TrangChu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/Trang_chu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/TrangChu/jsp/TrangChu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/Trang_chu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DatBanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DatBanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LichSuDatBanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LichSuDatBanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/ChiTietDatBanDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/ChiTietDatBanDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/DbConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/ChiTietDatBan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ChiTietDatBan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/components/Header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/components/Header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Dat_ban.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/Dat_ban.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Dat_ban_result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/Dat_ban_result.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Lich_su_dat_ban.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/Lich_su_dat_ban.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Trang_chu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/Trang_chu.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -385,7 +72,7 @@
     &quot;Tomcat Server.test.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;vang&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/LTW/LTW/src/main/webapp&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/LTW/LTW&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -421,8 +108,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="test" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.34" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="START_JAVASCRIPT_DEBUGGER" value="true" />
+    <configuration name="test" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="test" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="LTW:war">
@@ -432,7 +118,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="b25574e7-a4fa-4f9f-96c0-48a4f4b23bc2" />
+        <option name="BASE_DIRECTORY_NAME" value="39bbf790-6f71-4b96-8e06-e945234b018a" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -440,7 +126,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="57968" />
+        <option name="DEBUG_PORT" value="51967" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -659,6 +345,9 @@
       <workItem from="1736441298037" duration="8432000" />
       <workItem from="1736452465760" duration="4903000" />
       <workItem from="1736445939722" duration="148000" />
+      <workItem from="1736526895018" duration="853000" />
+      <workItem from="1736545042498" duration="1601000" />
+      <workItem from="1736624628922" duration="2651000" />
     </task>
     <servers />
   </component>
