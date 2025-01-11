@@ -15,7 +15,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/Dao/DatBanDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/DatBanDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Model/DatBan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/DatBan.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Lich_su_dat_ban.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Lich_su_dat_ban.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/Lich_su_dat_ban.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/Lich_su_dat_ban.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Lich_su_dat_ban.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/Lich_su_dat_ban.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -342,7 +341,7 @@
       <workItem from="1736445939722" duration="148000" />
       <workItem from="1736526895018" duration="853000" />
       <workItem from="1736545042498" duration="1601000" />
-      <workItem from="1736624628922" duration="9114000" />
+      <workItem from="1736624628922" duration="9498000" />
     </task>
     <servers />
   </component>
