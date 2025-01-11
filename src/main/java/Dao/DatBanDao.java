@@ -121,6 +121,32 @@ public class DatBanDao {
             e.printStackTrace();
         }
     }
-
+    // Cập nhật thông tin đơn đặt bàn
+    public void updateDatBan(DatBan datBan) {
+        String sql = "UPDATE datban SET soLuong = ?, ngayDat = ?, gioDat = ?, gioTra = ?, khongGian = ? WHERE id = ?";
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setInt(1, datBan.getSoLuong());
+            stmt.setString(2, datBan.getNgayDat());
+            stmt.setString(3, datBan.getGioDat());
+            stmt.setString(4, datBan.getGioTra());
+            stmt.setString(5, datBan.getKhongGian());
+            stmt.setInt(6, datBan.getId());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    // Xóa đơn đặt bàn
+    public void deleteDatBan(int id) {
+        String sql = "DELETE FROM datban WHERE id = ?";
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setInt(1, id);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

@@ -36,7 +36,6 @@
           <td>
             <button class="edit-btn">Sửa</button>
             <button class="cancel-btn">Hủy</button>
-            <button class="return">Trả</button>
           </td>
         </tr>
       </c:forEach>

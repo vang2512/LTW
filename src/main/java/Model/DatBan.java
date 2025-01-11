@@ -22,6 +22,17 @@ public class DatBan {
         this.trangThai = trangThai;
         this.thoiGianDat = LocalDateTime.now();
     }
+    // Constructor bao gồm thời gian đặt
+    public DatBan(int id,int soLuong, String ngayDat, String gioDat,String gioTra, String khongGian, String trangThai) {
+        this.id = id;
+        this.soLuong = soLuong;
+        this.ngayDat = ngayDat;
+        this.gioDat = gioDat;
+        this.gioTra = gioTra;
+        this.khongGian = khongGian;
+        this.trangThai = trangThai;
+        this.thoiGianDat = LocalDateTime.now();
+    }
     public DatBan(int id, int soLuong, String ngayDat, String gioDat, String khongGian, String trangThai, LocalDateTime thoiGianDat) {
         this.id = id;
         this.soLuong = soLuong;
@@ -85,7 +96,6 @@ public class DatBan {
     public void setTrangThai(String trangThai) {
         this.trangThai = trangThai;
     }
-
     public LocalDateTime getThoiGianDat() {
         return thoiGianDat;
     }
