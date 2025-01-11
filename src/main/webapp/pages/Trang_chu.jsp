@@ -261,7 +261,7 @@
     </div>
 </section>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/TrangChu.js"></script>
+<script src="${pageContext.request.contextPath}/js/Trang_chu.js"></script>
 <!-- Footer -->
 <jsp:include page="/components/Footer.jsp" />
 </body>

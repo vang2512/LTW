@@ -35,7 +35,7 @@
     margin: 0 auto;
   }
   footer {
-    background-image: url("${pageContext.request.contextPath}/Images/header.jpg");
+    background-image: url("${pageContext.request.contextPath}/assets/images/header/header.jpg");
     color: #eee;
     margin-top: 50px;
     padding: 20px;

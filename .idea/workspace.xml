@@ -9,7 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="" />
+    <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/components/Footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/components/Footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/Dat_ban.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/Dat_ban.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Lich_su_dat_ban.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/Lich_su_dat_ban.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Trang_chu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/Trang_chu.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -334,7 +340,7 @@
       <workItem from="1736445939722" duration="148000" />
       <workItem from="1736526895018" duration="853000" />
       <workItem from="1736545042498" duration="1601000" />
-      <workItem from="1736624628922" duration="10107000" />
+      <workItem from="1736624628922" duration="10772000" />
     </task>
     <servers />
   </component>

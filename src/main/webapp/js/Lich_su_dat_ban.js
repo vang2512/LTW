@@ -25,7 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
     loadContent();
 });
 function showEditForm(id, soLuong, ngayDat, gioDat, gioTra, khongGian) {
-    document.getElementById('edit-form').style.display = 'block';
+    const form = document.getElementById('edit-form');
+    const overlay = document.getElementById('overlay');
+    form.classList.add('show');
+    overlay.style.display = 'block';
     document.getElementById('edit-id').value = id;
     document.getElementById('edit-soLuong').value = soLuong;
     document.getElementById('edit-ngayDat').value = ngayDat;
@@ -34,7 +37,11 @@ function showEditForm(id, soLuong, ngayDat, gioDat, gioTra, khongGian) {
     document.getElementById('edit-khongGian').value = khongGian;
 }
 function hideEditForm() {
-    document.getElementById('edit-form').style.display = 'none';
+    const form = document.getElementById('edit-form');
+    const overlay = document.getElementById('overlay');
+    form.classList.remove('show');
+    overlay.style.display = 'none';
 }
+
 
 
