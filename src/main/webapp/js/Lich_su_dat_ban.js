@@ -24,5 +24,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     loadContent();
 });
+function showEditForm(id, soLuong, ngayDat, gioDat, gioTra, khongGian) {
+    document.getElementById('edit-form').style.display = 'block';
+    document.getElementById('edit-id').value = id;
+    document.getElementById('edit-soLuong').value = soLuong;
+    document.getElementById('edit-ngayDat').value = ngayDat;
+    document.getElementById('edit-gioDat').value = gioDat;
+    document.getElementById('edit-gioTra').value = gioTra;
+    document.getElementById('edit-khongGian').value = khongGian;
+}
+function hideEditForm() {
+    document.getElementById('edit-form').style.display = 'none';
+}
 
 
