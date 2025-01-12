@@ -9,8 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="tạo model sản pham">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="lấy thông tin sản phẩm từ csdl">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/Mat_hang.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
     "Tomcat Server.test.executor": "Run",
     "git-widget-placeholder": "sanpham",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/web/LTW",
+    "last_opened_file_path": "C:/Users/phamh/IdeaProjects/LTW/src/main/webapp/pages",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -87,11 +87,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\phamh\IdeaProjects\LTW\src\main\webapp\pages" />
       <recent name="S:\LT\Web Programming\Thuc_hanh\Subject\LTW\src\main" />
       <recent name="S:\LT\Web Programming\Thuc_hanh\Subject\LTW" />
       <recent name="D:\LTW\LTW\src\main\webapp" />
       <recent name="D:\LTW\LTW\src\main\webapp\DatBan\jsp" />
-      <recent name="D:\LTW\LTW\src\main\java\Controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\LTW\LTW\src\main\webapp\LichSuDatBan\js" />
@@ -375,7 +375,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736694269429</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="lấy thông tin sản phẩm từ csdl">
+      <option name="closed" value="true" />
+      <created>1736694714549</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736694714549</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,6 +391,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tạo model sản pham" />
-    <option name="LAST_COMMIT_MESSAGE" value="tạo model sản pham" />
+    <MESSAGE value="lấy thông tin sản phẩm từ csdl" />
+    <option name="LAST_COMMIT_MESSAGE" value="lấy thông tin sản phẩm từ csdl" />
   </component>
 </project>
