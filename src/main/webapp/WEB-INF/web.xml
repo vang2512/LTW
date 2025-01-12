@@ -22,4 +22,23 @@
     <servlet-name>LichSuDatBanController</servlet-name>
     <url-pattern>/lichsu</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>SanPhamController</servlet-name>
+    <servlet-class>Controller.SanPhamController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SanPhamController</servlet-name>
+    <url-pattern>/sanpham</url-pattern>
+  </servlet-mapping>
+  <!-- Định nghĩa servlet -->
+  <servlet>
+    <servlet-name>ChiTietSanPhamController</servlet-name>
+    <servlet-class>Controller.ChiTietSanPhamController</servlet-class>
+  </servlet>
+
+  <!-- Mapping servlet -->
+  <servlet-mapping>
+    <servlet-name>ChiTietSanPhamController</servlet-name>
+    <url-pattern>/ChiTietSanPhamController</url-pattern>
+  </servlet-mapping>
 </web-app>
