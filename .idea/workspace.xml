@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="tạo mặt hàng jsp">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Chi_tiet_san_pham.jsp" beforeDir="false" />
-    </list>
+    <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="tạo mặt hàng jsp" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +64,7 @@
     "Tomcat Server.test.executor": "Run",
     "git-widget-placeholder": "sanpham",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/phamh/IdeaProjects/LTW/src/main/webapp/pages",
+    "last_opened_file_path": "C:/Users/phamh/IdeaProjects/LTW/src/main/webapp/js",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -87,11 +85,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\phamh\IdeaProjects\LTW\src\main\webapp\js" />
       <recent name="C:\Users\phamh\IdeaProjects\LTW\src\main\webapp\pages" />
       <recent name="S:\LT\Web Programming\Thuc_hanh\Subject\LTW\src\main" />
       <recent name="S:\LT\Web Programming\Thuc_hanh\Subject\LTW" />
       <recent name="D:\LTW\LTW\src\main\webapp" />
-      <recent name="D:\LTW\LTW\src\main\webapp\DatBan\jsp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\LTW\LTW\src\main\webapp\LichSuDatBan\js" />
