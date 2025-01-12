@@ -64,7 +64,7 @@
     "Tomcat Server.test.executor": "Run",
     "git-widget-placeholder": "sanpham",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/phamh/IdeaProjects/LTW/src/main/webapp/js",
+    "last_opened_file_path": "C:/Users/phamh/IdeaProjects/LTW/src/main/webapp/css",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -85,11 +85,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\phamh\IdeaProjects\LTW\src\main\webapp\css" />
       <recent name="C:\Users\phamh\IdeaProjects\LTW\src\main\webapp\js" />
       <recent name="C:\Users\phamh\IdeaProjects\LTW\src\main\webapp\pages" />
       <recent name="S:\LT\Web Programming\Thuc_hanh\Subject\LTW\src\main" />
       <recent name="S:\LT\Web Programming\Thuc_hanh\Subject\LTW" />
-      <recent name="D:\LTW\LTW\src\main\webapp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\LTW\LTW\src\main\webapp\LichSuDatBan\js" />
@@ -99,9 +99,9 @@
       <recent name="D:\LTW\LTW\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Controller" />
       <recent name="Dao" />
       <recent name="Model" />
-      <recent name="Controller" />
     </key>
   </component>
   <component name="RunDashboard">

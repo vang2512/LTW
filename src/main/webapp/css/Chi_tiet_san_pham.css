@@ -1,0 +1,95 @@
+
+/*Chi tiet SP*/
+.container {
+    display: flex;
+    border-radius: 8px;
+    width: 80vw;
+    max-width: 1200px;
+    margin-top: 120px;
+    margin-left: 150px;
+}
+
+.image-section {
+    position: relative;
+}
+
+.image-section img {
+    width: 420px;
+    height: 545px;
+    border: 2px solid #c1a88e;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+}
+.details-section {
+    padding: 40px;
+    background-color: #fff;
+    margin-left: 10px;
+}
+.details-section h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.price {
+    font-size: 28px;
+    color: #c81717;
+    margin-bottom: 30px;
+}
+.size-selection,
+.topping-selection {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.size-selection,
+.topping-selection .tex{
+    margin-bottom: 30px;
+}
+
+.size-options button {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    color: #555555;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+.size-options button:hover {
+    color:#be9c79;
+}
+.size-options{
+    margin-top: 15px;
+}
+.description{
+    margin-top: 15px;
+    font-size: 16px;
+    width: 600px;
+    color: #555555;
+    line-height: 1.4;
+}
+.voucher-description{
+    width: 445px;
+    color: #c51010;
+    font-size: 18px;
+}
+.order-button {
+    display: flex;
+    margin-top: 20px;
+    width: 750px;
+}
+
+.order-button button {
+    background-color: #dab993;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.order-button button:hover{
+    background-color: #be9c79;
+}
+
