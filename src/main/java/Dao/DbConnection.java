@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class DbConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/tablecoffee";
+    private static final String URL = "jdbc:mysql://localhost:3306/tablecoffees";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "";
 

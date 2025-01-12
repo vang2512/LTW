@@ -3,12 +3,10 @@ package Model;
 public class Ban {
     private int id;
     private int soLuong;
-    private String trangThai;
     private String khongGian;
-    public Ban(int id, int soLuong, String trangThai, String khongGian) {
+    public Ban(int id, int soLuong, String khongGian) {
         this.id = id;
         this.soLuong = soLuong;
-        this.trangThai = trangThai;
         this.khongGian = khongGian;
     }
     // Getter và Setter
@@ -26,14 +24,6 @@ public class Ban {
 
     public void setSoLuong(int soLuong) {
         this.soLuong = soLuong;
-    }
-
-    public String getTrangThai() {
-        return trangThai;
-    }
-
-    public void setTrangThai(String trangThai) {
-        this.trangThai = trangThai;
     }
 
     public String getKhongGian() {

@@ -54,11 +54,9 @@ button {
     border-radius: 5px;
     font-size: 1rem;
 }
-
 button:hover {
     opacity: 0.9;
 }
-
 /* Edit Button */
 .edit-btn {
     background-color: #4CAF50;
@@ -105,3 +103,84 @@ button:hover {
         padding: 8px 15px;
     }
 }
+/* Overlay: Làm mờ nền */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Làm mờ nền */
+    z-index: 1000;
+    display: none; /* Lúc đầu ẩn overlay */
+}
+.edit-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 90%;
+    max-width: 500px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border: 1px solid #ddd;
+}
+
+/* Hiển thị form khi thêm class show */
+.edit-form.show {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05); /* Hiệu ứng phóng to nhẹ khi form xuất hiện */
+}
+.edit-form input, .edit-form select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+.edit-form input:focus, .edit-form select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+.edit-form button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #b8a791;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+.edit-form button:hover {
+    background-color: #be9c79;
+}
+.edit-form button[type="button"] {
+    background-color: #f44336;
+}
+.edit-form button[type="button"]:hover {
+    background-color: #e53935;
+}
+/* Thông báo */
+.message-box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+

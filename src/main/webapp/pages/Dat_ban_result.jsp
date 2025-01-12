@@ -14,6 +14,6 @@
 <p style="color: <%= success ? "green" : "red" %>;">
     <%= message %>
 </p>
-<a href="DatBan/jsp/DatBan.jsp">Quay lại trang đặt bàn</a>
+<a href="pages/Dat_ban.jsp">Quay lại trang đặt bàn</a>
 </body>
 </html>

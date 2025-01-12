@@ -51,7 +51,7 @@
         top: 0;
         left: 0;
         right: 0;
-        background-image: url("${pageContext.request.contextPath}/Images/header.jpg");
+        background-image: url("${pageContext.request.contextPath}/assets/images/header/header.jpg");
         background-size: cover;
         z-index: 1000;
     }
@@ -222,15 +222,15 @@
 <header class="header">
     <section class="flex">
         <a href="#home" class="logo">
-            <img src="${pageContext.request.contextPath}/Images/lg.png" alt="">
+            <img src="${pageContext.request.contextPath}/assets/images/users/logo.png" alt="">
         </a>
         <nav class="navbar">
             <div class="left">
-                <a href="${pageContext.request.contextPath}/TrangChu/jsp/TrangChu.jsp">Trang Chủ</a>
+                <a href="${pageContext.request.contextPath}/pages/Trang_chu.jsp">Trang Chủ</a>
                 <a href="#about">About</a>
                 <!-- Menu with dropdown options -->
                 <div class="dropdown">
-                    <a href="../MatHang/matHang.html" class="mn">Menu</a>
+                    <a href="${pageContext.request.contextPath}/sanpham" class="mn">Menu</a>
                     <div class="dropdown-content">
                         <a href="../MatHang/matHang.html">Coffee</a>
                         <a href="../MatHang/matHang.html">Trà</a>
@@ -239,7 +239,7 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="${pageContext.request.contextPath}/pages/DatBan.jsp">Đặt Bàn</a>
+                    <a href="${pageContext.request.contextPath}/pages/Dat_ban.jsp">Đặt Bàn</a>
                     <div class="dropdown-content">
                         <a href="${pageContext.request.contextPath}/lichsu" class="datban">Lịch Sử Đặt Bàn</a>
                     </div>

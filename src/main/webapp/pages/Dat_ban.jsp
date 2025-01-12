@@ -8,13 +8,12 @@
 </head>
 <body>
 <!-- Header -->
-<!-- Header -->
 <jsp:include page="/components/Header.jsp" />
 <script src="${pageContext.request.contextPath}/js/components/Header_Footer.js" defer></script>
 <!-- Container -->
 <div class="container">
     <div class="image">
-        <img src="${pageContext.request.contextPath}/Images/DatBan.png" alt="Hình minh họa bàn ăn">
+        <img src="${pageContext.request.contextPath}/assets/images/reservation/DatBan.png" alt="Hình minh họa bàn ăn">
         <i>Chú ý: Chỉ được phép sửa và hủy thông tin đặt bàn trong 30' kể từ khi đặt</i>
     </div>
     <div class="form-section">
