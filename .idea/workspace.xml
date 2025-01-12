@@ -9,8 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="lấy thông tin sản phẩm từ csdl">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/Mat_hang.jsp" afterDir="false" />
+    <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="tạo mặt hàng jsp">
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Chi_tiet_san_pham.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -383,7 +383,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736694714549</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tạo mặt hàng jsp">
+      <option name="closed" value="true" />
+      <created>1736695031998</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736695031998</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,6 +400,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tạo model sản pham" />
     <MESSAGE value="lấy thông tin sản phẩm từ csdl" />
-    <option name="LAST_COMMIT_MESSAGE" value="lấy thông tin sản phẩm từ csdl" />
+    <MESSAGE value="tạo mặt hàng jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="tạo mặt hàng jsp" />
   </component>
 </project>

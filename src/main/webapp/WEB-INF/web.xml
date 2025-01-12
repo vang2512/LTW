@@ -22,4 +22,5 @@
     <servlet-name>LichSuDatBanController</servlet-name>
     <url-pattern>/lichsu</url-pattern>
   </servlet-mapping>
+
 </web-app>
