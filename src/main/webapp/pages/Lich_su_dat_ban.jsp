@@ -68,8 +68,9 @@
     <input type="time" id="edit-gioTra" name="gioTra" required />
     <label for="edit-khongGian">Không gian:</label>
     <select id="edit-khongGian" name="khongGian" required>
-      <option value="Trong nhà">Trong nhà</option>
-      <option value="Ngoài trời">Ngoài trời</option>
+      <option value="Trong nhà">Trong Nhà</option>
+      <option value="Ngoài trời">Ngoài Trời</option>
+      <option value="Phòng Riêng">Phòng Riêng</option>
     </select>
     <button type="submit">Cập nhật</button>
     <button type="button" onclick="hideEditForm()">Hủy</button>

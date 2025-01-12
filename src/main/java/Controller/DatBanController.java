@@ -25,13 +25,15 @@ public class DatBanController extends HttpServlet {
         String gioDat = request.getParameter("gioDat");
         String gioTra = request.getParameter("gioTra");
 
-        // Lấy danh sách bàn trống và ghép bàn
+        // Lấy danh sách tất cả các bàn
         List<Ban> availableBans = banDao.getAllBan();
         List<Ban> selectedBans = new ArrayList<>();
         int remaining = soLuong;
 
+        // Kiểm tra bàn còn trống và ghép bàn
         for (Ban ban : availableBans) {
-            if (ban.getTrangThai().equals("Còn Trống") && ban.getSoLuong() <= remaining && ban.getKhongGian().equals(khongGian)) {
+            boolean isBooked = datBanDao.isBanBooked(ban.getId(), ngayDat, gioDat, gioTra);
+            if (!isBooked && ban.getSoLuong() <= remaining && ban.getKhongGian().equals(khongGian)) {
                 selectedBans.add(ban);
                 remaining -= ban.getSoLuong();
                 if (remaining <= 0) break;
@@ -44,9 +46,8 @@ public class DatBanController extends HttpServlet {
             // Lưu đơn đặt bàn mới vào cơ sở dữ liệu
             DatBan datBan = new DatBan(soLuong, ngayDat, gioDat, gioTra, khongGian, "Đang chờ");
             datBanDao.saveDatBan(datBan);
-            // Cập nhật trạng thái bàn và lưu chi tiết
+            // Lưu chi tiết đặt bàn
             for (Ban ban : selectedBans) {
-                banDao.updateBanTrangThai(ban.getId(), "Đặt");
                 chiTietDatBanDao.saveChiTietDatBan(datBan.getId(), ban.getId());
             }
             // Thông báo đặt bàn thành công
@@ -69,12 +70,5 @@ public class DatBanController extends HttpServlet {
         // Chuyển hướng đến trang kết quả đặt bàn
         RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Dat_ban_result.jsp");
         dispatcher.forward(request, response);
-    }
-    @Override
-    public void init() throws ServletException {
-        ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
-        scheduler.scheduleAtFixedRate(() -> {
-            datBanDao.updateBanAfterCheckout();
-        }, 0, 1, TimeUnit.MINUTES);
     }
 }

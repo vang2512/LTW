@@ -51,6 +51,7 @@ public class DatBanDao {
                         rs.getInt("soLuong"),
                         rs.getString("ngayDat"),
                         rs.getString("gioDat"),
+                        rs.getString("gioTra"),
                         rs.getString("khongGian"),
                         rs.getString("trangThai"),
                         thoiGianDat
@@ -97,30 +98,6 @@ public class DatBanDao {
             e.printStackTrace();
         }
     }
-    public void updateBanAfterCheckout() {
-        String selectSql = "SELECT * FROM datban WHERE trangThai = 'Đã xác nhận' AND gioTra < ? AND ngayDat <= ?";
-        String updateSql = "UPDATE tables SET trangThai = 'Còn Trống' WHERE id IN (SELECT banId FROM chitietdatban WHERE datBanId = ?)";
-        try (Connection conn = DbConnection.getConnection()) {
-            Timestamp now = new Timestamp(System.currentTimeMillis());
-            Timestamp today = new Timestamp(System.currentTimeMillis());
-            try (PreparedStatement selectStmt = conn.prepareStatement(selectSql)) {
-                selectStmt.setTimestamp(1, now);
-                selectStmt.setTimestamp(2, today);
-                try (ResultSet rs = selectStmt.executeQuery()) {
-                    while (rs.next()) {
-                        int datBanId = rs.getInt("id");
-                        try (PreparedStatement updateStmt = conn.prepareStatement(updateSql)) {
-                            updateStmt.setInt(1, datBanId);
-                            updateStmt.executeUpdate();
-                            System.out.println("Đã cập nhật trạng thái bàn sau khi hết giờ trả cho đơn đặt bàn ID: " + datBanId);
-                        }
-                    }
-                }
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
     // Cập nhật thông tin đơn đặt bàn
     public void updateDatBan(DatBan datBan) {
         String sql = "UPDATE datban SET soLuong = ?, ngayDat = ?, gioDat = ?, gioTra = ?, khongGian = ? WHERE id = ?";
@@ -148,5 +125,24 @@ public class DatBanDao {
             e.printStackTrace();
         }
     }
+    // Kiểm tra bàn đã được đặt chưa vào ngày và giờ yêu cầu
+    public boolean isBanBooked(int banId, String ngayDat, String gioDat, String gioTra) {
+        String sql = "SELECT * FROM datban d JOIN chitietdatban ctdb ON d.id = ctdb.datBanId " +
+                "WHERE ctdb.banId = ? AND d.ngayDat = ? AND (d.gioDat <= ? AND d.gioTra >= ?)";
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setInt(1, banId);
+            stmt.setString(2, ngayDat);
+            stmt.setString(3, gioDat);
+            stmt.setString(4, gioTra);
+            try (ResultSet rs = stmt.executeQuery()) {
+                return rs.next(); // Nếu có kết quả, bàn đã được đặt
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false; // Nếu không có kết quả, bàn chưa được đặt
+    }
+
 
 }

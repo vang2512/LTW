@@ -33,11 +33,12 @@ public class DatBan {
         this.trangThai = trangThai;
         this.thoiGianDat = LocalDateTime.now();
     }
-    public DatBan(int id, int soLuong, String ngayDat, String gioDat, String khongGian, String trangThai, LocalDateTime thoiGianDat) {
+    public DatBan(int id, int soLuong, String ngayDat, String gioDat,String gioTra, String khongGian, String trangThai, LocalDateTime thoiGianDat) {
         this.id = id;
         this.soLuong = soLuong;
         this.ngayDat = ngayDat;
         this.gioDat = gioDat;
+        this.gioTra= gioTra;
         this.khongGian = khongGian;
         this.trangThai = trangThai;
         this.thoiGianDat = thoiGianDat;
