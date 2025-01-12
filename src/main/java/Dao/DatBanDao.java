@@ -99,32 +99,40 @@ public class DatBanDao {
         }
     }
     // Cập nhật thông tin đơn đặt bàn
-    public void updateDatBan(DatBan datBan) {
+    public boolean updateDatBan(DatBan datBan) {
         String sql = "UPDATE datban SET soLuong = ?, ngayDat = ?, gioDat = ?, gioTra = ?, khongGian = ? WHERE id = ?";
         try (Connection conn = DbConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
+
             stmt.setInt(1, datBan.getSoLuong());
             stmt.setString(2, datBan.getNgayDat());
             stmt.setString(3, datBan.getGioDat());
             stmt.setString(4, datBan.getGioTra());
             stmt.setString(5, datBan.getKhongGian());
             stmt.setInt(6, datBan.getId());
-            stmt.executeUpdate();
+
+            int rowsUpdated = stmt.executeUpdate();
+            return rowsUpdated > 0;
         } catch (SQLException e) {
             e.printStackTrace();
+            return false;
         }
     }
     // Xóa đơn đặt bàn
-    public void deleteDatBan(int id) {
+    public boolean deleteDatBan(int id) {
         String sql = "DELETE FROM datban WHERE id = ?";
         try (Connection conn = DbConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
+
             stmt.setInt(1, id);
-            stmt.executeUpdate();
+            int rowsDeleted = stmt.executeUpdate();
+            return rowsDeleted > 0;
         } catch (SQLException e) {
             e.printStackTrace();
+            return false;
         }
     }
+
     // Kiểm tra bàn đã được đặt chưa vào ngày và giờ yêu cầu
     public boolean isBanBooked(int banId, String ngayDat, String gioDat, String gioTra) {
         String sql = "SELECT * FROM datban d JOIN chitietdatban ctdb ON d.id = ctdb.datBanId " +
@@ -143,6 +151,24 @@ public class DatBanDao {
         }
         return false; // Nếu không có kết quả, bàn chưa được đặt
     }
-
-
+    // Kiểm tra xem có bàn trống phù hợp với số lượng và thời gian yêu cầu
+    public boolean isBanAvailableForBooking(int soLuong, String ngayDat, String gioDat, String gioTra, String khongGian) {
+        String sql = "SELECT * FROM ban WHERE soLuong >= ? AND khongGian = ? AND ban.id NOT IN (" +
+                "SELECT ctdb.banId FROM chitietdatban ctdb JOIN datban d ON ctdb.datBanId = d.id " +
+                "WHERE d.ngayDat = ? AND d.gioDat <= ? AND d.gioTra >= ?)";
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setInt(1, soLuong);
+            stmt.setString(2, khongGian);
+            stmt.setString(3, ngayDat);
+            stmt.setString(4, gioDat);
+            stmt.setString(5, gioTra);
+            try (ResultSet rs = stmt.executeQuery()) {
+                return rs.next();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
 }

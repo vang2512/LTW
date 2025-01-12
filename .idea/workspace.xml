@@ -11,13 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DatBanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DatBanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/BanDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/BanDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LichSuDatBanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LichSuDatBanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Dao/DatBanDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/DatBanDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Ban.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Ban.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/DatBan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/DatBan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Lich_su_dat_ban.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Lich_su_dat_ban.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Lich_su_dat_ban.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/Lich_su_dat_ban.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,7 +346,7 @@
       <workItem from="1736664524923" duration="2874000" />
       <workItem from="1736699773602" duration="4219000" />
       <workItem from="1736704917050" duration="4238000" />
-      <workItem from="1736709245347" duration="7984000" />
+      <workItem from="1736709245347" duration="10275000" />
     </task>
     <servers />
   </component>
