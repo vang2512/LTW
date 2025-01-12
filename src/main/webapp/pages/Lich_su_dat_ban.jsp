@@ -54,7 +54,7 @@
 <!-- Biểu mẫu chỉnh sửa -->
 <div id="overlay" class="overlay"></div>
 <div id="edit-form" class="edit-form">
-  <h3>Chỉnh sửa thông tin đặt bànnnnn</h3>
+  <h3>Chỉnh sửa thông tin đặt bàn</h3>
   <form action="${pageContext.request.contextPath}/lichsu" method="post">
     <input type="hidden" name="action" value="edit" />
     <input type="hidden" id="edit-id" name="id" />

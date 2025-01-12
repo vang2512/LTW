@@ -151,7 +151,7 @@
 }
 /**/
 .home-bg{
-    background: url("../../Images/wallpaper3.png") ;
+    background: url("/assets/images/wallpaper3.png");
     background-size: cover;
     background-position: center;
     height: 100%;

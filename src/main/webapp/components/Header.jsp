@@ -230,7 +230,7 @@
                 <a href="#about">About</a>
                 <!-- Menu with dropdown options -->
                 <div class="dropdown">
-                    <a href="../MatHang/matHang.html" class="mn">Menu</a>
+                    <a href="${pageContext.request.contextPath}/sanpham" class="mn">Menu</a>
                     <div class="dropdown-content">
                         <a href="../MatHang/matHang.html">Coffee</a>
                         <a href="../MatHang/matHang.html">Trà</a>

@@ -44,7 +44,7 @@
     <div class="sp_moi">
         <div class="label">new</div>
         <h3>Bánh Tiramisu</h3>
-        <img src="Images/tinavisu.jpg" alt="Sản phẩm 2">
+        <img src="" alt="Sản phẩm 2">
         <div class="container">
             <div class="gia">60,000 VND</div>
             <div class="giohang">thêm giỏ hàng</div>
@@ -144,7 +144,7 @@
 <!--Product Category-->
 <section class="about" id="about" >
     <div class="image">
-        <img src="${pageContext.request.contextPath}/Images/food.jpg" alt="">
+        <img src="${pageContext.request.contextPath}/assets/images/menu/food/food.jpg" alt="">
     </div>
     <div class="noi_dung">
         <h3>A cup of coffee can complete your day</h3>
@@ -157,7 +157,7 @@
 <section class="menu">
     <div class="box-container">
         <div class="box">
-            <img src="${pageContext.request.contextPath}/Images/icon1.jpg" alt="" class="ic">
+            <img src="${pageContext.request.contextPath}/assets/images/icon1.jpg" alt="" class="ic">
             <h3>cafe</h3>
             <p>
                 Cà phê không chỉ là thức uống mà là trải nghiệm. Với hương vị đa dạng, mỗi tách cà phê mang đến sự kết nối và cảm hứng.
@@ -165,7 +165,7 @@
             </p>
         </div>
         <div class="box">
-            <img src="${pageContext.request.contextPath}/Images/icon4.jpg" alt="">
+            <img src="${pageContext.request.contextPath}/assets/images/icon4.jpg" alt="">
             <h3>trà</h3>
             <p>
                 Trà là thức uống mà còn là nghệ thuật. Từ trà xanh đến trà thảo mộc, mỗi tách trà mang lại cảm giác thư giãn và kết nối.
@@ -173,7 +173,7 @@
             </p>
         </div>
         <div class="box">
-            <img src="${pageContext.request.contextPath}/Images/icon3.jpg" alt="" class="ic">
+            <img src="${pageContext.request.contextPath}/assets/images/icon3.jpg" alt="" class="ic">
             <h3>Bánh Ngọt</h3>
             <p>
                 Bánh không chỉ mang lại cho chúng ta những hương vị đa dạng thỏa mãn vị giác, mà còn cho ta thấy được vẻ đẹp sáng tạo dưới nhiều
@@ -181,7 +181,7 @@
             </p>
         </div>
         <div class="box">
-            <img src="${pageContext.request.contextPath}/Images/icon4.jpg" alt="">
+            <img src="${pageContext.request.contextPath}/assets/images/icon4.jpg" alt="">
             <h3>nước ép</h3>
             <p>
                 Nước ép là thức uống từ trái cây hoặc rau củ tươi, giàu vitamin và dưỡng chất,
@@ -195,13 +195,13 @@
 <div class="space">
     <div class="image_space_1">
         <div class="image-container">
-            <img src="Images/ngoai.jpg" class="sp_1">
+            <img src="assets/images/location/ngoai.jpg" class="sp_1">
             <div class="overlay">
                 <span class="overlay-text">Ngoài Trời</span>
             </div>
         </div>
         <div class="image-container">
-            <img src="Images/trongnha.jpg" class="sp_2">
+            <img src="assets/images/location/trongnha.jpg" class="sp_2">
             <div class="overlay">
                 <span class="overlay-text">Trong Quán</span>
             </div>
@@ -209,7 +209,7 @@
     </div>
     <div class="image_space_2">
         <div class="image-container">
-            <img src="Images/phongrieng.png" class="sp_3">
+            <img src="assets/images/location/phongrieng.png" class="sp_3">
             <div class="overlay">
                 <span class="overlay-text">Phòng Riêng</span>
             </div>
@@ -224,30 +224,30 @@
             <div class="slider-wrapper">
                 <ul class="list swiper-wrapper">
                     <li class="item_ttsk swiper-slide">
-                        <img src="${pageContext.request.contextPath}/Images/tintuc_2.jpg" alt="ảnh" class="tintuc">
+                        <img src="${pageContext.request.contextPath}/assets/images/news/tintuc_2.jpg" alt="ảnh" class="tintuc">
                         <p class="nd_sk">
                             Thương hiệu cafe của chúng tôi chính thức ra mắt trên thị trường quốc tế, đánh dấu bước phát triển mới trong hành trình vươn tầm thế giới.
                         </p>
                     </li>
                     <li class="item_ttsk swiper-slide">
-                        <img src="Images/tintuc_4.jpg" alt="ảnh" class="tintuc">
+                        <img src="assets/images/news/tintuc_4.jpg" alt="ảnh" class="tintuc">
                         <p class="nd_sk">
                             Mùa Giáng sinh rộn ràng: khi tổng hóa đơn trên 120K, nhận ngay một ly đá thiết kế độc quyền để trang trí Giáng sinh.
                         </p>
                     </li>
                     <li class="item_ttsk swiper-slide">
-                        <img src="Images/tintuc_!.jpg" alt="ảnh" class="tintuc">
+                        <img src="assets/images/news/tintuc_!.jpg" alt="ảnh" class="tintuc">
                         <p class="nd_sk">
                             Chào đón Tết: Từ ngày 29/1 đến 1/2, mua một loại Cafe ngẫu nhiên sẽ được tặng một ly nước theo yêu cầu.
                         </p>
                     </li>
                     <li class="item_ttsk swiper-slide">
-                        <img src="Images/tintuc_3.jpg" alt="ảnh" class="tintuc">
+                        <img src="assets/images/news/tintuc_3.jpg" alt="ảnh" class="tintuc">
                         <p class="nd_sk">
                             Cùng bạn bè đón Giáng Sinh: chỉ cần có Một bánh Mochi trà xanh trong giỏ hàng, bạn sẽ được giảm 30% trên tổng hóa đơn!</p>
                     </li>
                     <li class="item_ttsk swiper-slide">
-                        <img src="Images/tintuc_5.jpg" alt="ảnh" class="tintuc">
+                        <img src="assets/images/news/tintuc_5.jpg" alt="ảnh" class="tintuc">
                         <p class="nd_sk">
                             Trải nghiệm vị cafe mới lạ với dòng sản phẩm giới hạn, chỉ có tại cửa hàng trong tháng 12.
                         </p>
