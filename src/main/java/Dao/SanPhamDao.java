@@ -32,4 +32,27 @@ public class SanPhamDao {
         return sanPhams;
     }
 
+    public SanPham getSanPhamById(int id) {
+        SanPham sanPham = null;
+        String sql = "SELECT * FROM sanpham WHERE id = ?";
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setInt(1, id);
+            try (ResultSet rs = stmt.executeQuery()) {
+                if (rs.next()) {
+                    sanPham = new SanPham();
+                    sanPham.setId(rs.getInt("id"));
+                    sanPham.setTenSanPham(rs.getString("tenSanPham"));
+                    sanPham.setGia(rs.getFloat("gia"));
+                    sanPham.setMoTa(rs.getString("moTa"));
+                    sanPham.setHinhAnh(rs.getString("hinhAnh"));
+                    sanPham.setLoaiHangId(rs.getInt("loaiHangId"));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return sanPham;
+    }
+
 }
