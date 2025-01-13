@@ -9,12 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LichSuDatBanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LichSuDatBanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Lich_su_dat_ban.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Lich_su_dat_ban.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Lich_su_dat_ban.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/Lich_su_dat_ban.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -352,6 +347,7 @@
       <workItem from="1736744277138" duration="513000" />
       <workItem from="1736749044464" duration="599000" />
       <workItem from="1736750908166" duration="9000" />
+      <workItem from="1736785317324" duration="385000" />
     </task>
     <servers />
   </component>
