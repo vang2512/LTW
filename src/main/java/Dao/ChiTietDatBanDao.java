@@ -17,5 +17,16 @@ public class ChiTietDatBanDao {
             e.printStackTrace();
         }
     }
+    public void deleteChiTietByDatBanId(int datBanId) {
+        String sql = "DELETE FROM chitietdatban WHERE datBanId = ?";
+
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setInt(1, datBanId);
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

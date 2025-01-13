@@ -151,24 +151,4 @@ public class DatBanDao {
         }
         return false; // Nếu không có kết quả, bàn chưa được đặt
     }
-    // Kiểm tra xem có bàn trống phù hợp với số lượng và thời gian yêu cầu
-    public boolean isBanAvailableForBooking(int soLuong, String ngayDat, String gioDat, String gioTra, String khongGian) {
-        String sql = "SELECT * FROM ban WHERE soLuong >= ? AND khongGian = ? AND ban.id NOT IN (" +
-                "SELECT ctdb.banId FROM chitietdatban ctdb JOIN datban d ON ctdb.datBanId = d.id " +
-                "WHERE d.ngayDat = ? AND d.gioDat <= ? AND d.gioTra >= ?)";
-        try (Connection conn = DbConnection.getConnection();
-             PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setInt(1, soLuong);
-            stmt.setString(2, khongGian);
-            stmt.setString(3, ngayDat);
-            stmt.setString(4, gioDat);
-            stmt.setString(5, gioTra);
-            try (ResultSet rs = stmt.executeQuery()) {
-                return rs.next();
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return false;
-    }
 }
