@@ -15,6 +15,12 @@
 <!-- History -->
 <div class="booking-history">
   <h2>Lịch Sử Đặt Bàn</h2>
+  <!-- Hiển thị thông báo -->
+  <c:if test="${not empty message}">
+    <div class="message-box">
+      <p>${message}</p>
+    </div>
+  </c:if>
   <table>
     <thead>
     <tr>
@@ -27,6 +33,7 @@
     </tr>
     </thead>
     <tbody>
+
     <c:forEach var="datBan" items="${datBans}">
       <tr>
         <td>${datBan.ngayDat}</td>

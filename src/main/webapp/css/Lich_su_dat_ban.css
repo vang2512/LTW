@@ -173,4 +173,14 @@ button:hover {
 .edit-form button[type="button"]:hover {
     background-color: #e53935;
 }
+/* Thông báo */
+.message-box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+}
 
