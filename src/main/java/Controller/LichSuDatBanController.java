@@ -34,12 +34,10 @@ public class LichSuDatBanController extends HttpServlet {
                 String ngayDat = request.getParameter("ngayDat");
                 String gioDat = request.getParameter("gioDat");
                 String gioTra = request.getParameter("gioTra");
-
                 // Lấy danh sách tất cả các bàn
                 List<Ban> availableBans = banDao.getAllBan();
                 List<Ban> selectedBans = new ArrayList<>();
                 int remaining = soLuong;
-
                 // Kiểm tra bàn còn trống và ghép bàn
                 for (Ban ban : availableBans) {
                     boolean isBooked = datBanDao.isBanBooked(ban.getId(), ngayDat, gioDat, gioTra);
@@ -49,7 +47,6 @@ public class LichSuDatBanController extends HttpServlet {
                         if (remaining <= 0) break;
                     }
                 }
-
                 // Kiểm tra nếu đủ bàn
                 boolean success = remaining <= 0;
                 String message;
@@ -59,13 +56,10 @@ public class LichSuDatBanController extends HttpServlet {
                     boolean isUpdated = datBanDao.updateDatBan(datBan);
                     if (isUpdated) {
                         // Xóa các bàn chi tiết cũ liên quan đến datBanId
-
-
-                        // Lưu chi tiết đặt bàn mới
+                        chiTietDao.deleteChiTietByDatBanId(id);
                         for (Ban ban : selectedBans) {
                             chiTietDao.saveChiTietDatBan(datBan.getId(), ban.getId());
                         }
-
                         message = "Cập nhật đơn đặt bàn và các bàn chi tiết thành công!";
                         request.setAttribute("datBan", datBan);
                     } else {
@@ -94,7 +88,6 @@ public class LichSuDatBanController extends HttpServlet {
                 request.setAttribute("message", "Đã xảy ra lỗi khi xóa đơn đặt bàn: " + e.getMessage());
             }
         }
-
         doGet(request, response);
     }
 
