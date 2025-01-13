@@ -13,7 +13,6 @@ public class LichSuDatBanController extends HttpServlet {
     private DatBanDao datBanDao = new DatBanDao(); // Sử dụng đúng tên biến cho DatBanDao
     private BanDao banDao = new BanDao();
     private ChiTietDatBanDao chiTietDao = new ChiTietDatBanDao();
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<DatBan> datBans = datBanDao.getAllDatBan();
@@ -24,7 +23,6 @@ public class LichSuDatBanController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
-
         if ("edit".equals(action)) {
             // Xử lý sửa
             try {
@@ -68,17 +66,14 @@ public class LichSuDatBanController extends HttpServlet {
                 } else {
                     message = "Không đủ bàn trống để ghép!";
                 }
-
                 request.setAttribute("message", message);
             } catch (Exception e) {
                 request.setAttribute("message", "Đã xảy ra lỗi khi cập nhật đơn đặt bàn: " + e.getMessage());
             }
-
         } else if ("delete".equals(action)) {
             try {
                 int id = Integer.parseInt(request.getParameter("id"));
                 boolean isDeleted = datBanDao.deleteDatBan(id);
-
                 if (isDeleted) {
                     request.setAttribute("message", "Xóa đơn đặt bàn thành công.");
                 } else {
@@ -90,7 +85,4 @@ public class LichSuDatBanController extends HttpServlet {
         }
         doGet(request, response);
     }
-
-
-
 }

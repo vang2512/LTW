@@ -24,6 +24,7 @@
   <table>
     <thead>
     <tr>
+      <th>STT</th>
       <th>Ngày Đặt</th>
       <th>Giờ Đặt</th>
       <th>Không Gian</th>
@@ -33,9 +34,10 @@
     </tr>
     </thead>
     <tbody>
-
-    <c:forEach var="datBan" items="${datBans}">
+    <c:forEach var="datBan" items="${datBans}" varStatus="status">
       <tr>
+        <!-- Cột STT -->
+        <td>${status.index + 1}</td>
         <td>${datBan.ngayDat}</td>
         <td>${datBan.gioDat}</td>
         <td>${datBan.khongGian}</td>
@@ -44,7 +46,8 @@
         <td>
           <c:if test="${datBan.trangThai == 'Đang chờ'}">
             <!-- Nút sửa -->
-            <button type="button" class="edit-btn" onclick="showEditForm(${datBan.id}, '${datBan.soLuong}', '${datBan.ngayDat}', '${datBan.gioDat}', '${datBan.gioTra}', '${datBan.khongGian}')">Sửa</button>
+            <button type="button" class="edit-btn"
+                    onclick="showEditForm(${datBan.id}, '${datBan.soLuong}', '${datBan.ngayDat}', '${datBan.gioDat}', '${datBan.gioTra}', '${datBan.khongGian}')">Sửa</button>
             <!-- Nút xóa -->
             <form action="${pageContext.request.contextPath}/lichsu" method="post" style="display:inline;">
               <input type="hidden" name="action" value="delete" />
