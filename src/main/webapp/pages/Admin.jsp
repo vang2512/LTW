@@ -619,6 +619,24 @@
             productModal.style.display = 'none'; // Ẩn modal nếu click ra ngoài
         }
     });
+    // Lắng nghe sự kiện khi nhấn vào nút thêm bàn
+    const addDeskBtn = document.getElementById('add-desk-btn');
+    const deskModal = document.getElementById('desk-form-modal');
+    const closeDeskBtn = document.querySelector('.close-product');
+    addDeskBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        deskModal.style.display = 'block';
+    });
+    closeDeskBtn.addEventListener('click', function () {
+        deskModal.style.display = 'none';
+    });
+
+    // Đóng modal khi người dùng click ra ngoài modal
+    window.addEventListener('click', function (e) {
+        if (e.target === deskModal) {
+            deskModal.style.display = 'none';
+        }
+    });
 </script>
 </body>
 </html>
