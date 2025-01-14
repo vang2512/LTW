@@ -520,5 +520,23 @@
 </div>
 
 <script src="${pageContext.request.contextPath}/js/Admin.js"></script>
+<script>
+    //
+    const addUserBtn = document.getElementById('add-user-btn');
+    const modal = document.getElementById('user-form-modal');
+    const closeBtn = document.querySelector('.close-btn');
+    addUserBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        modal.style.display = 'block';
+    });
+    closeBtn.addEventListener('click', function () {
+        modal.style.display = 'none';
+    });
+    window.addEventListener('click', function (e) {
+        if (e.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+</script>
 </body>
 </html>
