@@ -38,7 +38,7 @@
                 <span>
                    <i class="bi bi-person-square"></i>
                 </span>
-                <h3>Quản lí người dùng</h3>
+                <h3>Quản lí khách hàng</h3>
             </a>
             <a href="#" data-target="productsContent">
                     <span class="material-symbols-outlined">
@@ -113,7 +113,7 @@
                 <div class="users">
                     <div class="top-users-table">
                         <div class="user-text">
-                            <h2>Quản lí người dùng</h2>
+                            <h2>Quản lí khách hàng</h2>
                         </div>
                         <div class="user-btn">
                             <div id="delete-user-btn">
@@ -125,7 +125,7 @@
                             <div id="add-user-btn">
                                 <a href="#">
                                     <i class="bi bi-plus-circle-fill"></i>
-                                    <span>Thêm người dùng mới</span>
+                                    <span>Thêm khách hàng mới</span>
                                 </a>
                             </div>
                         </div>
@@ -135,14 +135,42 @@
                         <table>
                             <thead>
                             <tr>
+                                <th>STT</th>
                                 <th>Tên</th>
-                                <th>Email</th>
                                 <th>Địa chỉ</th>
                                 <th>Số điện thoại</th>
+                                <th>Email</th>
+                                <th>Ngày đăng kí</th>
                                 <th></th>
                             </tr>
                             </thead>
-                            <tbody></tbody>
+                            <tbody>
+                            <c:forEach var="user" items="${users}" varStatus="status">
+                                <tr>
+                                    <!-- Cột STT -->
+                                    <td>${status.index + 1}</td>
+                                    <td>${user.hoten}</td>
+                                    <td>${user.diachi}</td>
+                                    <td>${user.sodt}</td>
+                                    <td>${user.email}</td>
+                                    <td>${user.ngaydk}</td>
+                                    <td>
+                                        <!-- Nút sửa -->
+                                        <button type="button" class="edit-btn"
+                                                onclick="showEditForm(${user.id}, '${user.hoten}', '${user.diachi}', '${user.sodt}', '${user.email}', '${user.ngaydk}')">
+                                            Sửa
+                                        </button>
+                                        <!-- Nút xóa -->
+                                        <form action="${pageContext.request.contextPath}/users" method="post"
+                                              style="display:inline;">
+                                            <input type="hidden" name="action" value="delete"/>
+                                            <input type="hidden" name="id" value="${user.id}"/>
+                                            <button type="submit" class="cancel-btn">Xóa</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </c:forEach>
+                            </tbody>
                         </table>
                     </div>
                     <!-- End Of Users Table -->
@@ -153,32 +181,28 @@
             <!-- Add New User -->
             <div id="user-form-modal" class="modal">
                 <div class="modal-content">
-                    <form id="user-form" novalidate>
+                    <form id="user-form" action="${pageContext.request.contextPath}/users" method="POST" novalidate>
                         <div class="header-form">
-                            <h2>Thêm người dùng mới</h2>
+                            <h2>Thêm khách hàng mới</h2>
                             <span class="close-btn">&times;</span>
                         </div>
                         <div class="form-control">
-                            <label for="id">ID</label>
-                            <input type="text" id="id" placeholder="Nhập mã người dùng">
-                        </div>
-                        <div class="form-control">
                             <label for="name">Name</label>
-                            <input type="text" id="name" placeholder="Nhập tên người dùng">
-                        </div>
-                        <div class="form-control">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Nhập email người dùng" autocomplete="off">
+                            <input type="text" id="name" placeholder="Nhập tên khách hàng">
                         </div>
                         <div class="form-control">
                             <label for="address">Address</label>
-                            <input type="text" id="address" placeholder="Nhập địa chỉ người dùng"
+                            <input type="text" id="address" placeholder="Nhập địa chỉ khách hàng"
                                    autocomplete="off">
                         </div>
                         <div class="form-control">
                             <label for="phone">Phone</label>
-                            <input type="tel" id="phone" placeholder="Nhập số điện thoại người dùng"
+                            <input type="tel" id="phone" placeholder="Nhập số điện thoại khách hàng"
                                    autocomplete="off">
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Nhập email khách hàng" autocomplete="off">
                         </div>
                         <button type="submit">Lưu</button>
                     </form>
@@ -288,15 +312,15 @@
                     <div id="orders-table">
                         <table>
                             <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Tên khách hàng</th>
-                                    <th>Tên sản phẩm</th>
-                                    <th>Số lượng</th>
-                                    <th>Giá</th>
-                                    <th>Trạng thái</th>
-                                    <th></th>
-                                </tr>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tên khách hàng</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Giá</th>
+                                <th>Trạng thái</th>
+                                <th></th>
+                            </tr>
                             </thead>
                             <tbody></tbody>
                         </table>
