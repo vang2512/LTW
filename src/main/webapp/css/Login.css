@@ -84,8 +84,6 @@ body {
 }
 
 
-
-
 /* Thêm hiệu ứng cho nút đăng nhập và nút tạo tài khoản */
 .login-form button:hover,
 .signUp-form button:hover,
@@ -101,7 +99,6 @@ body {
 .login-form input:hover,
 .signUp-form input:hover {
     border: 0, 8px solid #be9c79;
-    /* Viền sáng lên khi hover */
 }
 
 /* Thêm hiệu ứng hover cho liên kết */
@@ -112,4 +109,11 @@ body {
     transform: scale(1.06);
     /* Tăng kích thước nhẹ */
     transition: transform 0.3s ease;
+}
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
 }

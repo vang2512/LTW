@@ -40,8 +40,17 @@
   <servlet-mapping>
     <servlet-name>ChiTietSanPhamController</servlet-name>
     <url-pattern>/ChiTietSanPhamController</url-pattern>
-  </servlet-mapping>
 
+
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UserController</servlet-name>
+    <servlet-class>Controller.UserController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserController</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
 
 
 
