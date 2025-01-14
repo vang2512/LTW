@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="tạo mặt hàng jsp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +22,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="Class" />
         <option value="JavaScript File" />
         <option value="Jsp File" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -376,7 +377,7 @@
       <workItem from="1736441298037" duration="8432000" />
       <workItem from="1736452465760" duration="4903000" />
       <workItem from="1736445939722" duration="148000" />
-      <workItem from="1736759041268" duration="5502000" />
+      <workItem from="1736759041268" duration="7261000" />
     </task>
     <task id="LOCAL-00001" summary="tạo model sản pham">
       <option name="closed" value="true" />
