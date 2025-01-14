@@ -966,6 +966,64 @@ main #orders-table table tr button {
     background: none;
 }
 
+main .reservations {
+    margin-top: 2.1rem;
+    padding-right: 1.8rem;
+}
+
+main .reservations .top-reservations-table {
+    background-color: var(--color-primary-2);
+    overflow: hidden;
+    padding: 16px 20px;
+}
+
+main .reservations .top-reservations-table .reservation-text {
+    color: var(--color-white);
+    float: left;
+    margin-top: 7px;
+}
+
+main .reservations .top-reservations-table .reservation-function {
+    float: right;
+}
+
+main .reservations .top-reservations-table .reservation-function .reservation-search input {
+    width: 300px;
+    padding: 10px 13px;
+    border-radius: 50px;
+}
+
+main #reservations-table table {
+    background-color: var(--color-white);
+    width: 100%;
+    text-align: left;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+    border-collapse: collapse;
+}
+
+main #reservations-table table:hover {
+    box-shadow: none;
+}
+
+main #reservations-table table tr td,
+main #reservations-table table tr th {
+    border: 1px solid #ddd;
+    padding: 20px 27px;
+    font-size: 17px;
+    vertical-align: middle;
+}
+
+main #reservations-table table tr td {
+    font-size: 16px;
+}
+
+main #reservations-table table tr button {
+    font-size: 20px;
+    margin-right: 10px;
+    background: none;
+}
+
 main .analyse {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
