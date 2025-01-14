@@ -326,6 +326,31 @@
                     <!-- End Of Desks Table -->
                 </div>
             </main>
+            <!-- Form thêm bàn -->
+            <div id="desk-form-modal" class="modal">
+                <div class="modal-content">
+                    <form id="desk-form" action="${pageContext.request.contextPath}/users" method="POST" novalidate>
+                        <input type="hidden" name="action" value="addDesk">
+                        <div class="header-form">
+                            <h2>Thêm bàn mới</h2>
+                            <span class="close-product">&times;</span>
+                        </div>
+                        <div class="form-control">
+                            <label for="tenBan">Tên Bàn</label>
+                            <input type="text" id="tenBan" name="tenBan" placeholder="Nhập tên bàn">
+                        </div>
+                        <div class="form-control">
+                            <label for="soLuong">Số Lượng</label>
+                            <input type="text" id="soLuong" name="soLuong" placeholder="Nhập số lượng">
+                        </div>
+                        <div class="form-control">
+                            <label for="khongGian">Không Gian</label>
+                            <input type="text" id="khongGian" name="khongGian" placeholder="Nhập không gian">
+                        </div>
+                        <button type="submit">Lưu</button>
+                    </form>
+                </div>
+            </div>
         </div>
         <!-- End Of Desks Content -->
 
