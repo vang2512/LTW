@@ -89,325 +89,60 @@
         </div>
       </c:forEach>
     </div>
-    <h1>Cold Brew</h1>
-    <div class="product-grid">
-      <div class="product-card" data-price="8000000" data-popular="2">
-        <img src="assets/images/menu/coffee/bacxiu.jpg" alt="Cold Brew">
-        <h2>Cold Brew</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
+    <h1>Nước Ép</h1>
+    <div class="product-grid" data-price="35000" data-popular="2">
+      <c:forEach var="sanPham" items="${nuocEpList}">
+        <div class="product-card">
+          <a href="ChiTietSanPhamController?id=${sanPham.id}">
+            <img src="${sanPham.hinhAnh}" alt="${sanPham.hinhAnh}">
+          </a>
+          <h2>${sanPham.tenSanPham}</h2>
+          <p>${sanPham.gia}đ</p>
+          <a href="../GioHang/index.html">
+            <div class="cart-icon">
+              <span class="fas fa-shopping-cart"></span>
+            </div>
+          </a>
         </div>
-      </div>
-      <div class="product-card" data-price="8000000" data-popular="2">
-        <img src="Images/coldbrewkimquat.jpg" alt="Ccoldbrewkimquat">
-        <h2>Cold Brew Kim Quất</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="8000000" data-popular="2">
-        <img src="Images/coldbrewtruyenthong.jpg" alt="coldbrewtruyenthong">
-        <h2>Cold Brew Truyền thống</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="8000000" data-popular="2">
-        <img src="Images/coldbrewque.jpg" alt="coldbrewque">
-        <h2>Cold Brew Quế</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
+      </c:forEach>
     </div>
-    <h1>Trái Cây Xay</h1>
-    <div class="product-grid">
-      <div class="product-card" data-price="800000" data-popular="4">
-        <img src="Images/dưahau.jpg" alt="dưahau">
-        <h2>Nước dưa hấu</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
+    <h1>Trà</h1>
+    <div class="product-grid" data-price="35000" data-popular="2">
+      <c:forEach var="sanPham" items="${traList}">
+        <div class="product-card">
+          <a href="ChiTietSanPhamController?id=${sanPham.id}">
+            <img src="${sanPham.hinhAnh}" alt="${sanPham.hinhAnh}">
+          </a>
+          <h2>${sanPham.tenSanPham}</h2>
+          <p>${sanPham.gia}đ</p>
+          <a href="../GioHang/index.html">
+            <div class="cart-icon">
+              <span class="fas fa-shopping-cart"></span>
+            </div>
+          </a>
         </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/grape_juice.jpg" alt="grape_juice">
-        <h2>Nước nho </h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/strawberry.jpg" alt="strawberry">
-        <h2>Nước dâu tây</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/kiwibanana.jpg" alt="kiwibanana">
-        <h2>Sinh tố kiwi Chuối</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/avocadosmoothie.jpg" alt="avocadosmoothie">
-        <h2>Sinh tố bơ</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/nuocchanhday.jpg" alt="nuocchanhday">
-        <h2>Nước chanh dây</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/cam.jpg" alt="cam">
-        <h2>Nước Cam</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/suatuoivietquattranchau.jpg" alt="suatuoivietquattranchau">
-        <h2>Sữa tươi việt quất</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/carrotjuice.jpg" alt="carrotjuice">
-        <h2>Nước cà rốt</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
+      </c:forEach>
     </div>
-    <h1>Trà Trái Cây</h1>
-    <div class="product-grid">
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/tradao.jpg" alt="tradao">
-        <h2>Trà đào</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
+    <h1>Các Loại Bánh</h1>
+    <div class="product-grid" data-price="35000" data-popular="2">
+      <c:forEach var="sanPham" items="${banhList}">
+        <div class="product-card">
+          <a href="ChiTietSanPhamController?id=${sanPham.id}">
+            <img src="${sanPham.hinhAnh}" alt="${sanPham.hinhAnh}">
+          </a>
+          <h2>${sanPham.tenSanPham}</h2>
+          <p>${sanPham.gia}đ</p>
+          <a href="../GioHang/index.html">
+            <div class="cart-icon">
+              <span class="fas fa-shopping-cart"></span>
+            </div>
+          </a>
         </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/tradaocamsa.jpg" alt="tradaocamsa">
-        <h2>Trà đào cam sả</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/travai.jpg" alt="travai">
-        <h2>Trà vải</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/Oolong.jpg" alt="Oolong">
-        <h2>Trà Ô long</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
+      </c:forEach>
     </div>
-    <h1> Trà Sữa</h1>
-    <div class="product-grid">
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/trasuatranchau.jpg" alt="trasuatranchau">
-        <h2>Trà sữa trân châu</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/trasuathaixanh.jpg" alt="trasuathaixanh">
-        <h2>Trà sữa thái xanh</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/trasuaphomai.jpg" alt="trasuaphomai">
-        <h2>Trà sữa phô mai</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/trasuasocola.jpg" alt="trasuasocola">
-        <h2>Trà Socola</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/trasuadautay.jpg" alt="trasuadautay">
-        <h2>Trà Dâu Tây</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-    </div>
-    <h1>Thức uống đá xay</h1>
-    <div class="product-grid">
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/Frappuccino-dâu-tây.jpg" alt="Frappuccino-dâu-tây">
-        <h2>Frappuccino dâu tây</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/milodambanhflan.jpg" alt="milodambanhflan">
-        <h2>Milo dầm bánh flan</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/mocha machiato.jpg" alt="mocha machiato">
-        <h2>Mocha Machiato</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/Mocha-Frappuccino.jpg" alt="Mocha-Frappuccino">
-        <h2>Mocha Frappuccino</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/trasuadautay.jpg" alt="trasuadautay">
-        <h2>Trà Dâu Tây</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-    </div>
-    <h1>Bánh mặn</h1>
-    <div class="product-grid">
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/banhmiphomaibotoi.jpg" alt="banhmiphomaibotoi">
-        <h2>Bánh mì phô mai bơ tỏi</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/Croissant-pho-mai.jpg" alt="Croissant-pho-mai">
-        <h2>Croissant phô mai</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/Croissant-salt-eggs.jpg" alt="Croissant-salt-eggs">
-        <h2>Croissant trứng muối</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
 
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/banhmique.jpg" alt="banhmique">
-        <h2>Bánh mì que</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-    </div>
-    <h1>Bánh ngọt</h1>
-    <div class="product-grid">
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/mochichocolate.jpg" alt="mochichocolate">
-        <h2>Mochi chocolate</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/mochidautaycheese.jpg" alt="mochidautaycheese">
-        <h2>Mochi dâu tây phô mai</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/mochitraxanh.jpg" alt="mochitraxanh">
-        <h2>Mochi Trà Xanh</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
 
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/mousseChocolate.jpg" alt="mousseChocolate">
-        <h2>Mousse Chocolate</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/mousseTiramisu.jpg" alt="mousseTiramisu">
-        <h2>Mousse Tiramisu</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-      <div class="product-card" data-price="45000" data-popular="2">
-        <img src="Images/tiramisu.jpg" alt="tiramisu">
-        <h2>Tiramisu</h2>
-        <p>45.000 đ</p>
-        <div class="cart-icon">
-          <span class="fas fa-shopping-cart"></span>
-        </div>
-      </div>
-    </div>
+
   </main>
 </div>
 <script src="${pageContext.request.contextPath}/js/Mat_hang.js"></script>
