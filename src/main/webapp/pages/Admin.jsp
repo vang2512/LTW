@@ -58,6 +58,12 @@
                     </span>
                 <h3>Quản lí đơn hàng</h3>
             </a>
+            <a href="#" data-target="reservationsContent">
+                    <span class="material-symbols-outlined">
+                        table_bar
+                    </span>
+                <h3>Quản lí đặt bàn</h3>
+            </a>
             <a href="#" data-target="settingsContent">
                 <span class="material-symbols-outlined">settings</span>
                 <h3>Cài đặt</h3>
@@ -390,6 +396,42 @@
             </main>
         </div>
         <!-- End OF Orders Content -->
+
+        <!-- Reservations Content -->
+        <div id="reservationsContent" class="content-section">
+            <main>
+                <div class="reservations">
+                    <div class="top-reservations-table">
+                        <div class="reservation-text">
+                            <h2>Quản lí đặt bàn</h2>
+                        </div>
+                        <div class="reservation-function">
+                            <div class="reservation-search">
+                                <input type="text" id="searchReservation" placeholder="Tìm kiếm đơn đặt bàn...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Reservations Table-->
+                    <div id="reservations-table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tên khách hàng</th>
+                                <th>Số điện thoại</th>
+                                <th>Thời gian đặt</th>
+                                <th>Trạng thái</th>
+                                <th>Hành động</th>
+                            </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <!-- End Of Reservations Table -->
+                </div>
+            </main>
+        </div>
+        <!-- End Of Reservations Content -->
 
         <!-- Analytics Content -->
         <div id="analyticsContent" class="content-section">
