@@ -35,7 +35,6 @@
     <servlet-name>ChiTietSanPhamController</servlet-name>
     <servlet-class>Controller.ChiTietSanPhamController</servlet-class>
   </servlet>
-
   <!-- Mapping servlet -->
   <servlet-mapping>
     <servlet-name>ChiTietSanPhamController</servlet-name>

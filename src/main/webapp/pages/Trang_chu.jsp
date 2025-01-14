@@ -3,7 +3,8 @@
 <head>
     <%@ page contentType="text/html;charset=UTF-8" language="java" %>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/Trang_chu.css">
-    <title>Your Page Title Here</title>
+        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+        <title>Your Page Title Here</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
@@ -28,47 +29,23 @@
 </div>
 <!-- New Product-->
 <div class="carousel">
-    <div class="sp_moi">
-        <div class="label">new</div>
-        <h3>Cappuccino</h3>
-        <a href="../ChiTietSP/ChiTietSP.html">
-            <img src="Images/campucio.jpg" alt="Sản phẩm 1">
-        </a>
-        <div class="container">
-            <div class="gia">50,000 VND</div>
-            <a href="../GioHang/index.html">
-                <div class="giohang">thêm giỏ hàng</div>
+    <c:forEach var="sanPham" items="${spMoiNhat}">
+        <div class="sp_moi">
+            <div class="label">new</div>
+            <h3>${sanPham.tenSanPham}</h3>
+            <a href="ChiTietSP?id=${sanPham.id}">
+                <img src="${sanPham.hinhAnh}" alt="${sanPham.tenSanPham}">
             </a>
+            <div class="container">
+                <div class="gia">${sanPham.gia} VND</div>
+                <a href="GioHang?id=${sanPham.id}">
+                    <div class="giohang">Thêm giỏ hàng</div>
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="sp_moi">
-        <div class="label">new</div>
-        <h3>Bánh Tiramisu</h3>
-        <img src="" alt="Sản phẩm 2">
-        <div class="container">
-            <div class="gia">60,000 VND</div>
-            <div class="giohang">thêm giỏ hàng</div>
-        </div>
-    </div>
-    <div class="sp_moi">
-        <div class="label">new</div>
-        <h3>Trà Chanh Dây</h3>
-        <img src="Images/tra.jpg" alt="Sản phẩm 3">
-        <div class="container">
-            <div class="gia">45,000 VND</div>
-            <div class="giohang">thêm giỏ hàng</div>
-        </div>
-    </div>
-    <div class="sp_moi">
-        <div class="label">new</div>
-        <h3>Nước Ép Ổi</h3>
-        <img src="Images/ep.jpg" alt="Sản phẩm 5">
-        <div class="container">
-            <div class="gia">55,000 VND</div>
-            <div class="giohang">thêm giỏ hàng</div>
-        </div>
-    </div>
+    </c:forEach>
 </div>
+
 <!--Bestseller Product-->
 <div class="best-sellers">
     <h2>Sản phẩm bán chạy</h2>

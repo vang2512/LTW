@@ -11,12 +11,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DatBanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DatBanController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LichSuDatBanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LichSuDatBanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/ChiTietDatBanDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/ChiTietDatBanDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/DatBanDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/DatBanDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Trang_chu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/Trang_chu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Lich_su_dat_ban.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/Lich_su_dat_ban.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/SanPhamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/SanPhamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/SanPhamDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/SanPhamDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Trang_chu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/Trang_chu.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -353,7 +352,7 @@
       <workItem from="1736709245347" duration="13000000" />
       <workItem from="1736818487932" duration="2597000" />
       <workItem from="1736833525683" duration="5328000" />
-      <workItem from="1736871715655" duration="4500000" />
+      <workItem from="1736871715655" duration="8658000" />
     </task>
     <servers />
   </component>

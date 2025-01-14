@@ -34,13 +34,10 @@ public class LichSuDatBanController extends HttpServlet {
                 String gioTra = request.getParameter("gioTra");
                 List<Ban> availableBans = banDao.getAllBan();
                 availableBans.sort(Comparator.comparingInt(Ban::getSoLuong)); // Sắp xếp theo số lượng ghế tăng dần
-
                 List<Ban> selectedBans = new ArrayList<>();
                 int remaining = soLuong;
-
                 Ban exactMatchBan = null;
                 Ban slightlyLargerBan = null;
-
                 // Tìm bàn phù hợp với yêu cầu
                 for (Ban ban : availableBans) {
                     boolean isBooked = datBanDao.isBanBooked(ban.getId(), ngayDat, gioDat, gioTra);
@@ -53,7 +50,6 @@ public class LichSuDatBanController extends HttpServlet {
                         }
                     }
                 }
-
                 if (exactMatchBan != null) {
                     selectedBans.add(exactMatchBan);
                     remaining = 0;
