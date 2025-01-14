@@ -136,7 +136,7 @@ public class DatBanDao {
     // Kiểm tra bàn đã được đặt chưa vào ngày và giờ yêu cầu
     public boolean isBanBooked(int banId, String ngayDat, String gioDat, String gioTra) {
         String sql = "SELECT * FROM datban d JOIN chitietdatban ctdb ON d.id = ctdb.datBanId " +
-                "WHERE ctdb.banId = ? AND d.ngayDat = ? AND (d.gioDat <= ? AND d.gioTra >= ?)";
+                "WHERE ctdb.banId = ? AND d.ngayDat = ? AND NOT (d.gioTra <= ? OR d.gioDat >= ?)";
         try (Connection conn = DbConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
             stmt.setInt(1, banId);
@@ -144,11 +144,11 @@ public class DatBanDao {
             stmt.setString(3, gioDat);
             stmt.setString(4, gioTra);
             try (ResultSet rs = stmt.executeQuery()) {
-                return rs.next(); // Nếu có kết quả, bàn đã được đặt
+                return rs.next();
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return false; // Nếu không có kết quả, bàn chưa được đặt
+        return false;
     }
 }

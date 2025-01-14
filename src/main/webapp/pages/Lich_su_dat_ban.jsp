@@ -30,7 +30,7 @@
       <th>Không Gian</th>
       <th>Số Lượng</th>
       <th>Trạng Thái</th>
-      <th>Hành Động</th>
+      <th></th>
     </tr>
     </thead>
     <tbody>
@@ -78,7 +78,7 @@
     <input type="time" id="edit-gioTra" name="gioTra" required />
     <label for="edit-khongGian">Không gian:</label>
     <select id="edit-khongGian" name="khongGian" required>
-      <option value="Trong nhà">Trong Nhà</option>
+      <option value="Trong Quán">Trong Quán</option>
       <option value="Ngoài trời">Ngoài Trời</option>
       <option value="Phòng Riêng">Phòng Riêng</option>
     </select>

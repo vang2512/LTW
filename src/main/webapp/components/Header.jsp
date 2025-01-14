@@ -122,7 +122,7 @@
     .dropdown-content {
         display: block;
         position: absolute;
-        background-image: url("${pageContext.request.contextPath}/Images/header.jpg");
+        background-image: url("${pageContext.request.contextPath}/assets/images/header/header.jpg");
         width: 200px;
         box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
         z-index: 1;
@@ -222,7 +222,7 @@
 <header class="header">
     <section class="flex">
         <a href="#home" class="logo">
-            <img src="${pageContext.request.contextPath}/assets/images/users/logo.png" alt="">
+            <img src="${pageContext.request.contextPath}/assets/images/logo.png" alt="">
         </a>
         <nav class="navbar">
             <div class="left">
@@ -257,7 +257,7 @@
                 </a>
                 <div class="dropdown">
                     <a href="#" class="icon user-avatar">
-                        <img src="${pageContext.request.contextPath}/Images/avatar_male.png" alt="User Avatar">
+                        <img src="${pageContext.request.contextPath}/assets/images/users/avatar_male.png" alt="User Avatar">
                     </a>
                     <div class="dropdown-content user-menu">
                         <a href="../CaiDat/thongtincanhan.html">Thông tin cá nhân</a>
