@@ -572,6 +572,28 @@
             modal.style.display = 'none';
         }
     });
+    //
+    const addProductBtn = document.getElementById('add-product-btn'); // Nút thêm sản phẩm
+    const productModal = document.getElementById('product-form-modal'); // Modal thêm sản phẩm
+    const closeProductBtn = document.querySelector('.close-product'); // Nút đóng modal
+
+    // Mở modal khi nhấn vào nút thêm sản phẩm
+    addProductBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        productModal.style.display = 'block'; // Hiển thị modal
+    });
+
+    // Đóng modal khi nhấn vào nút đóng (×)
+    closeProductBtn.addEventListener('click', function () {
+        productModal.style.display = 'none'; // Ẩn modal
+    });
+
+    // Đóng modal khi người dùng click ra ngoài modal
+    window.addEventListener('click', function (e) {
+        if (e.target === productModal) {
+            productModal.style.display = 'none'; // Ẩn modal nếu click ra ngoài
+        }
+    });
 </script>
 </body>
 </html>
