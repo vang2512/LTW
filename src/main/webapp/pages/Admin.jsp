@@ -250,6 +250,41 @@
                     <!-- End Of Products Table -->
                 </div>
             </main>
+            <!-- End Of Products Content -->
+
+            <!-- Add New Product -->
+            <div id="product-form-modal" class="modal">
+                <div class="modal-content">
+                    <form id="product-form" action="${pageContext.request.contextPath}/users" method="POST" novalidate>
+                        <input type="hidden" name="action" value="addProduct">
+                        <div class="header-form">
+                            <h2>Thêm sản phẩm mới</h2>
+                            <span class="close-product">&times;</span>
+                        </div>
+                        <div class="form-control">
+                            <label for="name">Tên sản phẩm</label>
+                            <input type="text" id="name1" name="tenSanPham" placeholder="Nhập tên sản phẩm" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="price">Giá</label>
+                            <input type="number" id="price" name="gia" placeholder="Nhập giá sản phẩm" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="description_product">Mô tả</label>
+                            <input type="text" id="description_product" name="moTa" placeholder="Nhập mô tả sản phẩm" autocomplete="off" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="type_product">Loại sản phẩm</label>
+                            <input type="text" id="type_product" name="loaiHang" placeholder="Nhập loại sản phẩm" autocomplete="off" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="image_product">Hình ảnh</label>
+                            <input type="text" id="image_product" name="hinhAnh" required>
+                        </div>
+                        <button type="submit">Lưu</button>
+                    </form>
+                </div>
+            </div>
         </div>
         <!-- End Of Products Content -->
 
