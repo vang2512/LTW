@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 activeSection.style.display = 'grid';
             } else if (JSON.stringify(contentId) === JSON.stringify('ordersContent')) {
                 activeSection.style.display = 'grid';
+            } else if (JSON.stringify(contentId) === JSON.stringify('reservationsContent')) {
+                activeSection.style.display = 'grid';
             } else if (JSON.stringify(contentId) === JSON.stringify('analyticsContent')) {
                 activeSection.style.display = 'grid';
             } else {
