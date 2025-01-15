@@ -105,12 +105,11 @@ button:hover {
     border: 1px solid #e0e0e0;
     font-family: 'Arial', sans-serif;
 }
-/* Hiển thị form khi thêm class show */
-.edit-form.show {
-    display: block;
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.02);
+.overlay {
+    overflow: auto; /* Kích hoạt cuộn khi nội dung lớn */
+    background-color: rgba(0, 0, 0, 0.5); /* Hiệu ứng làm mờ nền */
 }
+/* Hiển thị form khi thêm class show */
 
 /* Tiêu đề form */
 .edit-form h3 {
@@ -170,7 +169,6 @@ button:hover {
 .edit-form button[type="button"]:hover {
     background-color: #e53935;
 }
-
 /* Thông báo */
 .message-box {
     background-color: #ff9800;

@@ -49,5 +49,19 @@ public class BanDao {
             e.printStackTrace();
         }
     }
+    // Xóa đơn đặt bàn
+    public boolean deleteBan(int id) {
+        String sql = "DELETE FROM tables WHERE id = ?";
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+            stmt.setInt(1, id);
+            int rowsDeleted = stmt.executeUpdate();
+            return rowsDeleted > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 
 }

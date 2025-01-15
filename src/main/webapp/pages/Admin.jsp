@@ -362,7 +362,6 @@
                                     </td>
                                 </tr>
                             </c:forEach>
-
                             </tbody>
                         </table>
                         <div id="editFormModal" class="modal">

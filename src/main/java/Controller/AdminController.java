@@ -33,11 +33,13 @@ public class AdminController extends HttpServlet{
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String action = request.getParameter("action");
+
         // Xử lý thêm bàn
         if ("addDesk".equals(action)) {
             String tenBan = request.getParameter("tenBan");
             String soLuongStr = request.getParameter("soLuong");
             String khongGian = request.getParameter("khongGian");
+
             // Kiểm tra thông tin nhập vào
             if (tenBan == null || tenBan.trim().isEmpty() || soLuongStr == null || soLuongStr.trim().isEmpty() || khongGian == null || khongGian.trim().isEmpty()) {
                 request.setAttribute("message", "Vui lòng điền đầy đủ thông tin bàn!");
@@ -46,8 +48,10 @@ public class AdminController extends HttpServlet{
                 dispatcher.forward(request, response);
                 return;
             }
+
             int soLuong = Integer.parseInt(soLuongStr);
             Ban newBan = new Ban(0, tenBan, soLuong, khongGian);
+
             try {
                 BanDao banDao = new BanDao();
                 banDao.insertBan(newBan); // Thêm bàn vào cơ sở dữ liệu
@@ -60,6 +64,7 @@ public class AdminController extends HttpServlet{
             }
             doGet(request, response);
         }
+
         // Xử lý thêm người dùng
         else if ("addUser".equals(action)) {
             String hoten = request.getParameter("name");
@@ -75,6 +80,7 @@ public class AdminController extends HttpServlet{
                 dispatcher.forward(request, response);
                 return;
             }
+
             User newUser = new User(0, hoten, diachi, sodt, email, null);
             try {
                 UserDao userDao = new UserDao();
@@ -87,13 +93,18 @@ public class AdminController extends HttpServlet{
                 request.setAttribute("messageType", "error");
             }
 
+            RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Admin.jsp");
+            dispatcher.forward(request, response);
         }
+
+        // Xử lý thêm sản phẩm
         else if ("addProduct".equals(action)) {
             String tenSanPham = request.getParameter("tenSanPham");
             double gia = Double.parseDouble(request.getParameter("gia"));
             String moTa = request.getParameter("moTa");
             String loaiHangName = request.getParameter("loaiHang");
             String hinhAnh = request.getParameter("hinhAnh");
+
             // Kiểm tra thông tin nhập vào
             if (tenSanPham == null || tenSanPham.trim().isEmpty() || moTa == null || moTa.trim().isEmpty() || loaiHangName == null || loaiHangName.trim().isEmpty() || hinhAnh == null || hinhAnh.trim().isEmpty()) {
                 request.setAttribute("message", "Vui lòng điền đầy đủ thông tin sản phẩm!");
@@ -102,6 +113,7 @@ public class AdminController extends HttpServlet{
                 dispatcher.forward(request, response);
                 return;
             }
+
             // Lấy ID của loại hàng từ tên
             int loaiHangId = sanPhamDao.getLoaiHangIdByName(loaiHangName);
             if (loaiHangId == -1) {
@@ -111,6 +123,7 @@ public class AdminController extends HttpServlet{
                 dispatcher.forward(request, response);
                 return;
             }
+
             // Tạo đối tượng SanPham
             SanPham newProduct = new SanPham(0, tenSanPham, gia, moTa, loaiHangId, hinhAnh);
             try {
@@ -122,10 +135,12 @@ public class AdminController extends HttpServlet{
                 request.setAttribute("message", "Có lỗi xảy ra khi thêm sản phẩm: " + e.getMessage());
                 request.setAttribute("messageType", "error");
             }
-            // Quay lại trang Admin để thông báo
+
             RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Admin.jsp");
             dispatcher.forward(request, response);
         }
+
+        // Xử lý cập nhật bàn
         else if ("update".equals(action)) {
             int id = Integer.parseInt(request.getParameter("id"));
             String tenBan = request.getParameter("tenBan");
@@ -133,8 +148,41 @@ public class AdminController extends HttpServlet{
             String khongGian = request.getParameter("khongGian");
             Ban ban = new Ban(id, tenBan, soLuong, khongGian);
             BanDao banDao = new BanDao();
-            banDao.update(ban);
-            response.sendRedirect(request.getContextPath() + "/users");
+            try {
+                // Cập nhật bàn
+                banDao.update(ban);
+                request.setAttribute("message", "Cập nhật bàn thành công!");
+                request.setAttribute("messageType", "success");
+            } catch (Exception e) {
+                e.printStackTrace();
+                request.setAttribute("message", "Có lỗi xảy ra khi cập nhật bàn: " + e.getMessage());
+                request.setAttribute("messageType", "error");
+            }
+            RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Admin.jsp");
+            dispatcher.forward(request, response);
         }
+
+        // Xử lý xóa bàn
+        else if ("delete".equals(action)) {
+            try {
+                int id = Integer.parseInt(request.getParameter("id"));
+                BanDao banDao = new BanDao();
+                boolean isDeleted = banDao.deleteBan(id);
+                if (isDeleted) {
+                    request.setAttribute("message", "Xóa bàn thành công.");
+                    request.setAttribute("messageType", "success");
+                } else {
+                    request.setAttribute("message", "Không thể xóa bàn. Vui lòng thử lại.");
+                    request.setAttribute("messageType", "error");
+                }
+            } catch (Exception e) {
+                request.setAttribute("message", "Đã xảy ra lỗi khi xóa bàn: " + e.getMessage());
+                request.setAttribute("messageType", "error");
+            }
+            RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Admin.jsp");
+            dispatcher.forward(request, response);
+        }
+        doGet(request, response);
     }
+
 }
