@@ -10,15 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DatabaseConnection/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DatabaseConnection/UserConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/Admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/Admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/Admin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GK/components/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/GK/components/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/components/Footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/components/Footer.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +32,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+    &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Anh-Tu2912&quot;
+    }
+    }</component>
+  <component name="GithubPullRequestsUISettings">{
+    &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/vang2512/LTW.git&quot;,
+    &quot;accountId&quot;: &quot;e729962f-72c8-400d-b396-ec446bc60c84&quot;
+    }
+    }</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -55,47 +59,48 @@
     </option>
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
+    &quot;associatedIndex&quot;: 5
+    }</component>
   <component name="ProjectId" id="2rE5Bx2sxZMy1Xz4d1XSYOq1YPQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Tomcat Server.demo.executor&quot;: &quot;Run&quot;,
-    &quot;Tomcat Server.test.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Merging vang&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/LTW/LTW/src/main/webapp/js&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Tomcat Server.demo.executor": "Run",
+    "Tomcat Server.test.executor": "Run",
+    "git-widget-placeholder": "vang",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "S:/LT/Web Programming/Thuc_hanh/Subject/LTW/src/main/webapp/pages",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "com.poratu.idea.plugins.tomcat.setting.TomcatServersConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JShellLanguage&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JShellLanguage"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="S:\LT\Web Programming\Thuc_hanh\Subject\LTW\src\main\webapp\pages" />
+      <recent name="S:\LT\Web Programming\Thuc_hanh\Subject\LTW\src\main\webapp\css" />
+      <recent name="S:\LT\Web Programming\Thuc_hanh\Subject\LTW\src\main\webapp\js" />
       <recent name="D:\LTW\LTW\src\main\webapp\js" />
       <recent name="S:\LT\Web Programming\Thuc_hanh\Subject\LTW\src\main" />
-      <recent name="S:\LT\Web Programming\Thuc_hanh\Subject\LTW" />
-      <recent name="D:\LTW\LTW\src\main\webapp" />
-      <recent name="D:\LTW\LTW\src\main\webapp\DatBan\jsp" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\LTW\LTW\src\main\webapp\LichSuDatBan\js" />
@@ -105,7 +110,20 @@
       <recent name="D:\LTW\LTW\src\main\webapp" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DatabaseConnection.Test" />
+      <module name="LTW" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="DatabaseConnection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="test" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="test" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -116,7 +134,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="39bbf790-6f71-4b96-8e06-e945234b018a" />
+        <option name="BASE_DIRECTORY_NAME" value="801fa17b-8c2d-4fcb-8521-97986b7bf4e7" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -124,7 +142,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51967" />
+        <option name="DEBUG_PORT" value="52296" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -280,6 +298,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Tomcat Server.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -353,6 +380,10 @@
       <workItem from="1736699773602" duration="4219000" />
       <workItem from="1736704917050" duration="4238000" />
       <workItem from="1736709245347" duration="13000000" />
+      <workItem from="1736742592361" duration="303000" />
+      <workItem from="1736834804956" duration="6529000" />
+      <workItem from="1736855763178" duration="5414000" />
+      <workItem from="1736865576463" duration="1943000" />
     </task>
     <servers />
   </component>
