@@ -19,7 +19,7 @@ public class SanPhamDao {
                     SanPham sp = new SanPham();
                     sp.setId(rs.getInt("id"));
                     sp.setTenSanPham(rs.getString("tenSanPham"));
-                    sp.setGia(rs.getFloat("gia"));
+                    sp.setGia(rs.getDouble("gia"));
                     sp.setMoTa(rs.getString("moTa"));
                     sp.setHinhAnh(rs.getString("hinhAnh"));
                     sp.setLoaiHangId(rs.getInt("loaiHangId"));
@@ -43,7 +43,7 @@ public class SanPhamDao {
                     sanPham = new SanPham();
                     sanPham.setId(rs.getInt("id"));
                     sanPham.setTenSanPham(rs.getString("tenSanPham"));
-                    sanPham.setGia(rs.getFloat("gia"));
+                    sanPham.setGia(rs.getDouble("gia"));
                     sanPham.setMoTa(rs.getString("moTa"));
                     sanPham.setHinhAnh(rs.getString("hinhAnh"));
                     sanPham.setLoaiHangId(rs.getInt("loaiHangId"));
@@ -54,5 +54,43 @@ public class SanPhamDao {
         }
         return sanPham;
     }
+    public List<SanPham> getAllSanPhamWithLoaiHang() {
+        List<SanPham> sanPhams = new ArrayList<>();
+        String sql = "SELECT sp.*, lh.tenLoai AS tenLoai " +
+                "FROM sanpham sp " +
+                "JOIN loaihang lh ON sp.loaiHangId = lh.id";
 
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql);
+             ResultSet rs = stmt.executeQuery()) {
+
+            while (rs.next()) {
+                SanPham sp = new SanPham(
+                        rs.getInt("id"),
+                        rs.getString("tenSanPham"),
+                        rs.getDouble("gia"),
+                        rs.getString("hinhAnh"),
+                        rs.getString("tenLoai"),
+                        rs.getInt("loaiHangId")
+                );
+                sanPhams.add(sp);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return sanPhams;
+    }
+    public void insertSanPham(SanPham sanPham) throws SQLException {
+        String sql = "INSERT INTO sanpham (tenSanPham, gia, moTa, loaiHangId,hinhAnh) VALUES (?, ?, ?, ?, ?)";
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, sanPham.getTenSanPham());
+            stmt.setDouble(2, sanPham.getGia());
+            stmt.setString(3, sanPham.getMoTa());
+            stmt.setInt(4, sanPham.getLoaiHangId());
+            stmt.setString(5, sanPham.getHinhAnh());
+            stmt.executeUpdate();
+        }
+    }
 }
