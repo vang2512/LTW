@@ -35,8 +35,6 @@
     <servlet-name>ChiTietSanPhamController</servlet-name>
     <servlet-class>Controller.ChiTietSanPhamController</servlet-class>
   </servlet>
-
-  <!-- Mapping servlet -->
   <servlet-mapping>
     <servlet-name>ChiTietSanPhamController</servlet-name>
     <url-pattern>/ChiTietSanPhamController</url-pattern>
@@ -48,5 +46,13 @@
   <servlet-mapping>
     <servlet-name>AdminController</servlet-name>
     <url-pattern>/users</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>TrangChuController</servlet-name>
+    <servlet-class>Controller.TrangChuController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TrangChuController</servlet-name>
+    <url-pattern>/trangchu</url-pattern>
   </servlet-mapping>
 </web-app>

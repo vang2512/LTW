@@ -110,4 +110,27 @@ public class SanPhamDao {
         }
         return loaiHangId;
     }
+    public List<SanPham> getSanPhamMoiNhat(int limit) {
+        List<SanPham> sanPhams = new ArrayList<>();
+        String sql = "SELECT * FROM sanpham ORDER BY thoiGianThem DESC LIMIT ?";
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setInt(1, limit);
+            try (ResultSet rs = stmt.executeQuery()) {
+                while (rs.next()) {
+                    SanPham sp = new SanPham();
+                    sp.setId(rs.getInt("id"));
+                    sp.setTenSanPham(rs.getString("tenSanPham"));
+                    sp.setGia(rs.getDouble("gia"));
+                    sp.setMoTa(rs.getString("moTa"));
+                    sp.setHinhAnh(rs.getString("hinhAnh"));
+                    sp.setLoaiHangId(rs.getInt("loaiHangId"));
+                    sanPhams.add(sp);
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return sanPhams;
+    }
 }

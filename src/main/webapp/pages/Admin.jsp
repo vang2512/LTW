@@ -353,10 +353,10 @@
                                             Sửa
                                         </button>
                                         <!-- Nút xóa -->
-                                        <form action="${pageContext.request.contextPath}/lichsu" method="post"
+                                        <form action="${pageContext.request.contextPath}/users" method="post"
                                               style="display:inline;">
                                             <input type="hidden" name="action" value="delete"/>
-                                            <input type="hidden" name="id" value="${user.id}"/>
+                                            <input type="hidden" name="id" value="${bans.id}"/>
                                             <button type="submit" class="cancel-btn">Xóa</button>
                                         </form>
                                     </td>
