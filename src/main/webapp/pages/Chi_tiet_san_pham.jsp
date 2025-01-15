@@ -44,7 +44,7 @@
   <div class="carousel">
     <div class="sp_moi">
       <h3>Cafe đen</h3>
-      <img src="../ChiTietSP/Images/cafe_đen.jpg" alt="Sản phẩm 1">
+      <img src="assets/images/menu/coffee/caffeephinnong.jpg" alt="Sản phẩm 1">
       <div class="container_gg">
         <div class="gia">30,000 VND</div>
         <div class="giohang">thêm giỏ hàng</div>
@@ -52,7 +52,7 @@
     </div>
     <div class="sp_moi">
       <h3>Cafe sữa muối</h3>
-      <img src="../assets/images/menu/coffee/cafe_sua_muoi.jpg" alt="Sản phẩm 2">
+      <img src="assets/images/menu/coffee/cafe_sua_muoi.jpg" alt="Sản phẩm 2">
       <div class="container_gg">
         <div class="gia">50,000 VND</div>
         <div class="giohang">thêm giỏ hàng</div>
@@ -60,7 +60,7 @@
     </div>
     <div class="sp_moi">
       <h3>Bạc Xỉu</h3>
-      <img src="../ChiTietSP/Images/bacxiu.jpg" alt="Sản phẩm 3">
+      <img src="assets/images/menu/coffee/bacxiu.jpg" alt="Sản phẩm 3">
       <div class="container_gg">
         <div class="gia">45,000 VND</div>
         <div class="giohang">thêm giỏ hàng</div>
@@ -68,7 +68,7 @@
     </div>
     <div class="sp_moi">
       <h3>Cafe Phin</h3>
-      <img src="../assets/images/menu/coffee/caffeephinnong.jpg" alt="Sản phẩm 4">
+      <img src="assets/images/menu/coffee/coffe-flip.jpg" alt="Sản phẩm 4">
       <div class="container_gg">
         <div class="gia">30,000 VND</div>
         <div class="giohang">thêm giỏ hàng</div>

@@ -118,7 +118,6 @@
         position: relative;
         display: inline-block;
     }
-
     .dropdown-content {
         display: block;
         position: absolute;
@@ -132,11 +131,9 @@
         transition: opacity 0.55s ease, transform 0.55s ease;
         pointer-events: none;
     }
-
     .dropdown-content .datban {
         width: 200px;
     }
-
     .dropdown:hover .dropdown-content {
         opacity: 1;
         transform: translateY(0) translateX(-40%);
@@ -263,7 +260,7 @@
                         <a href="../CaiDat/thongtincanhan.html">Thông tin cá nhân</a>
                         <a href="../CaiDat/lichsuthanhtoan.html">Lịch sử mua hàng</a>
                         <a href="../CaiDat/thaydoimatkhau.html">Thay đổi mật khẩu</a>
-                        <a href="../Login/login.html">Đăng Xuất</a>
+                        <a href="${pageContext.request.contextPath}/pages/login.jsp">Đăng Xuất</a>
                     </div>
                 </div>
             </div>

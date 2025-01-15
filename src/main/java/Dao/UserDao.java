@@ -40,4 +40,22 @@ public class UserDao {
             stmt.executeUpdate();
         }
     }
+    public int checkLogin(String emailOrPhone, String password) {
+        int role = -1;
+        try (Connection connection = DbConnection.getConnection();
+             PreparedStatement ps = connection.prepareStatement(
+                     "SELECT role FROM users WHERE (email = ? OR sodt = ?) AND passWord = ?")) {
+            ps.setString(1, emailOrPhone);
+            ps.setString(2, emailOrPhone);
+            ps.setString(3, password);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                role = rs.getInt("role");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return role;
+    }
+
 }

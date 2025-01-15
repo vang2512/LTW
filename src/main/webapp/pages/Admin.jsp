@@ -18,7 +18,7 @@
     <aside>
         <div class="toggle">
             <div class="logo">
-                <img src="../assets/images/logo.png" alt="logo">
+                <img src="${pageContext.request.contextPath}/assets/images/logo.png" alt="">
                 <h2>Coffee 3Talents</h2>
             </div>
             <div class="close" id="close-btn">
@@ -37,13 +37,13 @@
                 <span>
                    <i class="bi bi-person-square"></i>
                 </span>
-                <h3>Quản lí người dùng</h3>
+                <h3>Quản lí khách hàng</h3>
             </a>
             <a href="#" data-target="productsContent">
                     <span class="material-symbols-outlined">
                         local_cafe
                     </span>
-                <h3>Quản lí sản phẩm</h3>
+                <h3>Quản lí thực đơn</h3>
             </a>
             <a href="#" data-target="desksContent">
                     <span class="material-symbols-outlined">
@@ -55,7 +55,13 @@
                     <span>
                         <i class="bi bi-basket2"></i>
                     </span>
-                <h3>Quản lí đơn hàng</h3>
+                <h3>Quản lí đặt đồ uống</h3>
+            </a>
+            <a href="#" data-target="reservationsContent">
+                    <span class="material-symbols-outlined">
+                        table_bar
+                    </span>
+                <h3>Quản lí đặt bàn</h3>
             </a>
             <a href="#" data-target="settingsContent">
                 <span class="material-symbols-outlined">settings</span>
@@ -93,7 +99,7 @@
                     <small class="text-muted">Quản trị viên</small>
                 </div>
                 <div class="profile-photo">
-                    <img src="../assets/images/managers/admin-1.jpg" alt="Anh Tú">
+                    <img src="${pageContext.request.contextPath}/assets/images/managers/admin-1.jpg" alt="Anh Tú">
                 </div>
             </div>
         </div>
@@ -112,7 +118,7 @@
                 <div class="users">
                     <div class="top-users-table">
                         <div class="user-text">
-                            <h2>Quản lí người dùng</h2>
+                            <h2>Quản lí khách hàng</h2>
                         </div>
                         <div class="user-btn">
                             <div id="delete-user-btn">
@@ -124,7 +130,7 @@
                             <div id="add-user-btn">
                                 <a href="#">
                                     <i class="bi bi-plus-circle-fill"></i>
-                                    <span>Thêm người dùng mới</span>
+                                    <span>Thêm khách hàng mới</span>
                                 </a>
                             </div>
                         </div>
@@ -181,24 +187,24 @@
                 <div class="modal-content">
                     <form id="user-form" action="${pageContext.request.contextPath}/users" method="POST" novalidate>
                         <div class="header-form">
-                            <h2>Thêm người dùng mới</h2>
+                            <h2>Thêm khách hàng mới</h2>
                             <span class="close-btn">&times;</span>
                         </div>
                         <div class="form-control">
                             <label for="name">Name</label>
-                            <input type="text" id="name" name="name" placeholder="Nhập tên người dùng" required>
+                            <input type="text" id="name" name="name" placeholder="Nhập tên khách hàng" required>
                         </div>
                         <div class="form-control">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder="Nhập email người dùng" required>
+                            <input type="email" id="email" name="email" placeholder="Nhập email khách hàng" required>
                         </div>
                         <div class="form-control">
                             <label for="address">Address</label>
-                            <input type="text" id="address" name="address" placeholder="Nhập địa chỉ người dùng" required>
+                            <input type="text" id="address" name="address" placeholder="Nhập địa chỉ khách hàng" required>
                         </div>
                         <div class="form-control">
                             <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại người dùng" required>
+                            <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại khách hàng" required>
                         </div>
                         <button type="submit">Lưu</button>
                     </form>
@@ -213,7 +219,7 @@
                 <div class="products">
                     <div class="top-products-table">
                         <div class="product-text">
-                            <h2>Quản lí sản phẩm</h2>
+                            <h2>Quản lí thực đơn</h2>
                         </div>
                         <div class="product-btn">
                             <div class="product-search">
@@ -296,7 +302,7 @@
                         </div>
                         <div class="form-control">
                             <label for="image_product">Hình ảnh</label>
-                            <input type="text" id="image_product" name="hinhAnh" required>
+                            <input type="text" id="image_product" name="hinhAnh" placeholder="Nhập đường dẫn hình ảnh" required>
                         </div>
                         <button type="submit">Lưu</button>
                     </form>
@@ -421,11 +427,11 @@
                 <div class="orders">
                     <div class="top-orders-table">
                         <div class="order-text">
-                            <h2>Quản lí đơn hàng</h2>
+                            <h2>Quản lí đặt đồ uống</h2>
                         </div>
                         <div class="order-function">
                             <div class="order-search">
-                                <input type="text" id="searchOrder" placeholder="Tìm kiếm đơn hàng...">
+                                <input type="text" id="searchOrder" placeholder="Tìm kiếm đơn đặt đồ uống...">
                             </div>
                         </div>
                     </div>
@@ -434,7 +440,7 @@
                         <table>
                             <thead>
                             <tr>
-                                <th>ID</th>
+                                <th>STT</th>
                                 <th>Tên khách hàng</th>
                                 <th>Tên sản phẩm</th>
                                 <th>Số lượng</th>
@@ -443,7 +449,10 @@
                                 <th></th>
                             </tr>
                             </thead>
-                            <tbody></tbody>
+                            <tbody>
+
+
+                            </tbody>
                         </table>
                     </div>
                     <!-- End Of Orders Table -->
@@ -451,6 +460,42 @@
             </main>
         </div>
         <!-- End OF Orders Content -->
+
+        <!-- Reservations Content -->
+        <div id="reservationsContent" class="content-section">
+            <main>
+                <div class="reservations">
+                    <div class="top-reservations-table">
+                        <div class="reservation-text">
+                            <h2>Quản lí đặt bàn</h2>
+                        </div>
+                        <div class="reservation-function">
+                            <div class="reservation-search">
+                                <input type="text" id="searchReservation" placeholder="Tìm kiếm đơn đặt bàn...">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Reservations Table-->
+                    <div id="reservations-table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tên khách hàng</th>
+                                <th>Số điện thoại</th>
+                                <th>Thời gian đặt</th>
+                                <th>Trạng thái</th>
+                                <th>Hành động</th>
+                            </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <!-- End Of Reservations Table -->
+                </div>
+            </main>
+        </div>
+        <!-- End Of Reservations Content -->
 
         <!-- Analytics Content -->
         <div id="analyticsContent" class="content-section">
@@ -515,22 +560,22 @@
                     <h2>Khách hàng mới</h2>
                     <div class="user-list">
                         <div class="user">
-                            <img src="../assets/images/users/son-tung-mtp.webp" alt="Sơn Tùng M-TP">
+                            <img src="${pageContext.request.contextPath}/assets/images/users/son-tung-mtp.webp" alt="Sơn Tùng M-TP">
                             <h2>Sơn Tùng M-TP</h2>
                             <p>54 phút trước</p>
                         </div>
                         <div class="user">
-                            <img src="../assets/images/users/bruno-mars.jpg" alt="Bruno Mars">
+                            <img src="${pageContext.request.contextPath}/assets/images/users/bruno-mars.jpg" alt="Bruno Mars">
                             <h2>Bruno Mars</h2>
                             <p>3 tiếng trước</p>
                         </div>
                         <div class="user">
-                            <img src="../assets/images/users/chris-grey.jpg" alt="Chris Grey">
+                            <img src="${pageContext.request.contextPath}/assets/images/users/chris-grey.jpg" alt="Chris Grey">
                             <h2>Chris Grey</h2>
                             <p>6 tiếng trước</p>
                         </div>
                         <div class="user">
-                            <img src="../assets/images/user/plus.jpg" alt="More Users">
+                            <img src="${pageContext.request.contextPath}/assets/images/users/plus.jpg" alt="More Users">
                             <h2>Thêm</h2>
                             <p>Khách hàng mới</p>
                         </div>
@@ -564,13 +609,12 @@
                 <!-- test.User Profile -->
                 <div class="user-profile">
                     <div class="logo">
-                        <img src="images/header/logo.png" alt="logo">
+                        <img src="${pageContext.request.contextPath}/assets/images/logo.png" alt="logo">
                         <h2>Coffee 3Talents</h2>
                         <p>The coffee house</p>
                     </div>
                 </div>
                 <!-- End Of test.User Profile -->
-
                 <!-- Reminders -->
                 <div class="reminders">
                     <div class="header">
@@ -642,6 +686,7 @@
             ${message}
     </div>
 </c:if>
+<script src="${pageContext.request.contextPath}/js/orders.js"></script>
 <script src="${pageContext.request.contextPath}/js/Admin.js"></script>
 <script>
     //
