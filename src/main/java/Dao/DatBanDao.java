@@ -19,12 +19,12 @@ public class DatBanDao {
             stmt.setTime(3, Time.valueOf(formatTime(datBan.getGioDat())));
             stmt.setTime(4, Time.valueOf(formatTime(datBan.getGioTra())));
             stmt.setString(5, datBan.getKhongGian());
-            stmt.setString(6, datBan.getTrangThai());  // Đang chờ
-            stmt.setTimestamp(7, Timestamp.valueOf(datBan.getThoiGianDat()));  // Thời gian đặt
+            stmt.setString(6, datBan.getTrangThai());
+            stmt.setTimestamp(7, Timestamp.valueOf(datBan.getThoiGianDat()));
             stmt.executeUpdate();
             try (ResultSet rs = stmt.getGeneratedKeys()) {
                 if (rs.next()) {
-                    datBan.setId(rs.getInt(1));  // Gán ID vừa được tạo
+                    datBan.setId(rs.getInt(1));
                 }
             }
         } catch (SQLException e) {
@@ -33,7 +33,7 @@ public class DatBanDao {
     }
     private String formatTime(String gioDat) {
         if (gioDat.matches("\\d{2}:\\d{2}")) {
-            gioDat += ":00";  // Nếu không có giây, thêm giây
+            gioDat += ":00";
         }
         return gioDat;
     }
@@ -132,7 +132,6 @@ public class DatBanDao {
             return false;
         }
     }
-
     // Kiểm tra bàn đã được đặt chưa vào ngày và giờ yêu cầu
     public boolean isBanBooked(int banId, String ngayDat, String gioDat, String gioTra) {
         String sql = "SELECT * FROM datban d JOIN chitietdatban ctdb ON d.id = ctdb.datBanId " +
@@ -149,6 +148,25 @@ public class DatBanDao {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return false; // Nếu không có kết quả, bàn chưa được đặt
+        return false;
+    }
+    public boolean isBanBookedUp(int banId, String ngayDat, String gioDat, String gioTra, int excludeDatBanId) {
+        String sql = "SELECT * FROM datban d JOIN chitietdatban ctdb ON d.id = ctdb.datBanId " +
+                "WHERE ctdb.banId = ? AND d.ngayDat = ? AND d.id != ? " +
+                "AND NOT (d.gioTra <= ? OR d.gioDat >= ?)";
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setInt(1, banId);
+            stmt.setString(2, ngayDat);
+            stmt.setInt(3, excludeDatBanId);
+            stmt.setString(4, gioDat);
+            stmt.setString(5, gioTra);
+            try (ResultSet rs = stmt.executeQuery()) {
+                return rs.next();
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 }

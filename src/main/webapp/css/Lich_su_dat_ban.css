@@ -105,11 +105,12 @@ button:hover {
     border: 1px solid #e0e0e0;
     font-family: 'Arial', sans-serif;
 }
-.overlay {
-    overflow: auto; /* Kích hoạt cuộn khi nội dung lớn */
-    background-color: rgba(0, 0, 0, 0.5); /* Hiệu ứng làm mờ nền */
-}
 /* Hiển thị form khi thêm class show */
+.edit-form.show {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.02);
+}
 
 /* Tiêu đề form */
 .edit-form h3 {
@@ -159,7 +160,6 @@ button:hover {
 .edit-form button[type="submit"]:hover {
     background-color: #45a049;
 }
-
 /* Nút "Hủy" */
 .edit-form button[type="button"] {
     background-color: #f44336;
@@ -169,6 +169,7 @@ button:hover {
 .edit-form button[type="button"]:hover {
     background-color: #e53935;
 }
+
 /* Thông báo */
 .message-box {
     background-color: #ff9800;
@@ -179,4 +180,8 @@ button:hover {
     font-size: 1.1rem;
     text-align: center;
 }
-
+.edit-form.show {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.02);
+}

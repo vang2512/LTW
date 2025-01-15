@@ -151,9 +151,8 @@
 }
 /**/
 .home-bg{
-    background: url("/assets/images/wallpaper3.png");
+    background: url("../assets/images/users/wallpaper3.png");
     background-size: cover;
-    background-position: center;
     height: 100%;
 }
 .home-bg .home{

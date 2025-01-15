@@ -630,13 +630,10 @@
                 <!-- End Of Reminders -->
             </div>
         </div>
-        <!-- End Of Analytics Content -->
-
         <!-- Settings Content -->
         <div id="settingsContent" class="content-section">
             <h1>Settings Content</h1>
         </div>
-        <!-- End Of Settings Content -->
     </div>
 </div>
 <%-- Phần hiển thị thông báo --%>

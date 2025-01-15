@@ -33,7 +33,7 @@
         <div class="sp_moi">
             <div class="label">new</div>
             <h3>${sanPham.tenSanPham}</h3>
-            <a href="ChiTietSP?id=${sanPham.id}">
+            <a href="ChiTietSanPhamController?id=${sanPham.id}">
                 <img src="${sanPham.hinhAnh}" alt="${sanPham.tenSanPham}">
             </a>
             <div class="container">

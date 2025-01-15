@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
 function showEditForm(id, soLuong, ngayDat, gioDat, gioTra, khongGian) {
     const form = document.getElementById('edit-form');
     const overlay = document.getElementById('overlay');
-    // Hiển thị form và overlay
-    form.classList.add('show'); // Thêm lớp show để hiển thị form
-    overlay.style.display = 'block'; // Hiển thị lớp overlay
+    console.log("Opening form with ID:", id);
+    form.classList.add('show');
+    overlay.style.display = 'block';
     document.getElementById('edit-id').value = id;
     document.getElementById('edit-soLuong').value = soLuong;
     document.getElementById('edit-ngayDat').value = ngayDat;
@@ -37,7 +37,6 @@ function showEditForm(id, soLuong, ngayDat, gioDat, gioTra, khongGian) {
     document.getElementById('edit-gioTra').value = gioTra;
     document.getElementById('edit-khongGian').value = khongGian;
 }
-
 function hideEditForm() {
     const form = document.getElementById('edit-form');
     const overlay = document.getElementById('overlay');
@@ -45,6 +44,3 @@ function hideEditForm() {
     form.classList.remove('show'); // Loại bỏ lớp show để ẩn form
     overlay.style.display = 'none'; // Ẩn lớp overlay
 }
-
-
-
