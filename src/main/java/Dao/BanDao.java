@@ -34,4 +34,20 @@ public class BanDao {
             throw e;
         }
     }
+    public void update(Ban ban) {
+        String sql = "UPDATE tables SET tenBan = ?, soLuong = ?, khongGian = ? WHERE id = ?";
+
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, ban.getTenBan());
+            ps.setInt(2, ban.getSoLuong());
+            ps.setString(3, ban.getKhongGian());
+            ps.setInt(4, ban.getId());
+
+            ps.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 }

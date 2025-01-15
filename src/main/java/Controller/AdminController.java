@@ -126,5 +126,15 @@ public class AdminController extends HttpServlet{
             RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Admin.jsp");
             dispatcher.forward(request, response);
         }
+        else if ("update".equals(action)) {
+            int id = Integer.parseInt(request.getParameter("id"));
+            String tenBan = request.getParameter("tenBan");
+            int soLuong = Integer.parseInt(request.getParameter("soLuong"));
+            String khongGian = request.getParameter("khongGian");
+            Ban ban = new Ban(id, tenBan, soLuong, khongGian);
+            BanDao banDao = new BanDao();
+            banDao.update(ban);
+            response.sendRedirect(request.getContextPath() + "/users");
+        }
     }
 }

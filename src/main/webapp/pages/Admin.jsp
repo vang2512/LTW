@@ -164,7 +164,7 @@
                                               style="display:inline;">
                                             <input type="hidden" name="action" value="delete"/>
                                             <input type="hidden" name="id" value="${user.id}"/>
-                                            <button type="submit" class="cancel-btn">Xóa</button>
+                                            <button type="submit" class="cancel-btn3">Xóa</button>
                                         </form>
                                     </td>
                                 </tr>
@@ -257,7 +257,7 @@
                                         <form action="${pageContext.request.contextPath}/lichsu" method="post" style="display:inline;">
                                             <input type="hidden" name="action" value="delete"/>
                                             <input type="hidden" name="id" value="${sanPham.id}"/>
-                                            <button type="submit" class="cancel-btn">Xóa</button>
+                                            <button type="submit" class="cancel-btn2">Xóa</button>
                                         </form>
                                     </td>
                                 </tr>
@@ -349,7 +349,7 @@
                                     <td>
                                         <!-- Nút sửa -->
                                         <button type="button" class="edit-btn"
-                                                onclick="showEditForm(${user.id}, '${user.hoten}', '${user.diachi}', '${user.sodt}', '${user.email}', '${user.ngaydk}')">
+                                                onclick="showEditForm(${bans.id}, '${bans.tenBan}', '${bans.soLuong}', '${bans.khongGian}')">
                                             Sửa
                                         </button>
                                         <!-- Nút xóa -->
@@ -357,7 +357,7 @@
                                               style="display:inline;">
                                             <input type="hidden" name="action" value="delete"/>
                                             <input type="hidden" name="id" value="${bans.id}"/>
-                                            <button type="submit" class="cancel-btn">Xóa</button>
+                                            <button type="submit" class="cancel-btn1">Xóa</button>
                                         </form>
                                     </td>
                                 </tr>
@@ -365,6 +365,25 @@
 
                             </tbody>
                         </table>
+                        <div id="editFormModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close-btn" onclick="closeEditForm()">&times;</span>
+                                <h3>Sửa Thông Tin</h3>
+                                <form id="editForm" action="${pageContext.request.contextPath}/users" method="post">
+                                    <input type="hidden" name="action" value="update">
+                                    <input type="hidden" id="edit-id" name="id">
+                                    <label for="edit-ten">Tên:</label>
+                                    <input type="text" id="edit-ten" name="tenBan" required><br><br>
+                                    <label for="edit-soluong">Số lượng:</label>
+                                    <input type="number" id="edit-soluong" name="soLuong" required><br><br>
+                                    <label for="edit-khonggian">Không gian:</label>
+                                    <input type="text" id="edit-khonggian" name="khongGian" required><br><br>
+                                    <button type="submit" class="save-btn">Cập nhật</button>
+                                    <button type="button" class="cancel-btn" onclick="closeEditForm()">Hủy</button>
+                                </form>
+                            </div>
+                        </div>
+
                     </div>
                     <!-- End Of Desks Table -->
                 </div>

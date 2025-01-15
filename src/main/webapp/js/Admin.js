@@ -311,3 +311,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+function showEditForm(id, tenBan, soLuong, khongGian) {
+    document.getElementById('editFormModal').style.display = 'block';
+    document.getElementById('edit-id').value = id;
+    document.getElementById('edit-ten').value = tenBan;
+    document.getElementById('edit-soluong').value = soLuong;
+    document.getElementById('edit-khonggian').value = khongGian;
+}
+
+function closeEditForm() {
+    document.getElementById('editFormModal').style.display = 'none';
+}
