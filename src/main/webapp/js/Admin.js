@@ -150,6 +150,11 @@ document.addEventListener('DOMContentLoaded', function () {
     /* ---------------- Trang quản lí sản phẩm ----------------*/
 
     // Hiển thị danh sách sản phẩm
+    const productsTable = document.getElementById('products-table').getElementsByTagName('tbody')[0];
+    const product_modal = document.getElementById('product-form-modal');
+    const addProductBtn = document.getElementById('add-product-btn');
+    const close_product = document.getElementsByClassName('close-product')[0];
+
     function handleProductsTableEvent() {
         const productsTable = document.getElementById('products-table').getElementsByTagName('tbody')[0];
         productsTable.innerHTML = '';
@@ -191,6 +196,38 @@ document.addEventListener('DOMContentLoaded', function () {
             handleProductsTableEvent();
         }
     };
+
+    // Hiển thị modal khi nhấp vào nút "Thêm sản phẩm"
+    addProductBtn.addEventListener('click', function () {
+        product_modal.style.display = 'block';
+    });
+    // Đóng modal khi nhấp vào nút "X"
+    close_product.addEventListener('click', function () {
+        product_modal.style.display = 'none';
+    });
+    // Đóng modal khi nhấp ra ngoài modal
+    window.addEventListener('click', function (event) {
+        if (event.target === modal) {
+            product_modal.style.display = 'none';
+        }
+    });
+    // Xử lý sự kiện submit form
+    const productForm = document.getElementById('product-form');
+    userForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        // Xử lý dữ liệu form ở đây
+        const newUser = {
+            number: users.length + 1,
+            id: document.getElementById('id').value,
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            address: document.getElementById('address').value,
+            phone: document.getElementById('phone').value
+        }
+        users.push(newUser);
+        handleUsersTableEvent();
+        product_modal.style.display = 'none';
+    });
 
     /* ------------------------------------------------------------------- */
     /* ---------------- Trang quản lí bàn ----------------*/
