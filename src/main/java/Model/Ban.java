@@ -2,10 +2,12 @@ package Model;
 
 public class Ban {
     private int id;
+    private String tenBan;
     private int soLuong;
     private String khongGian;
-    public Ban(int id, int soLuong, String khongGian) {
+    public Ban(int id,String tenBan, int soLuong, String khongGian) {
         this.id = id;
+        this.tenBan = tenBan;
         this.soLuong = soLuong;
         this.khongGian = khongGian;
     }
@@ -24,6 +26,14 @@ public class Ban {
 
     public void setSoLuong(int soLuong) {
         this.soLuong = soLuong;
+    }
+
+    public String getTenBan() {
+        return tenBan;
+    }
+
+    public void setTenBan(String tenBan) {
+        this.tenBan = tenBan;
     }
 
     public String getKhongGian() {
