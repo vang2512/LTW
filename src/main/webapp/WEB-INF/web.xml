@@ -41,4 +41,12 @@
     <servlet-name>ChiTietSanPhamController</servlet-name>
     <url-pattern>/ChiTietSanPhamController</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>AdminController</servlet-name>
+    <servlet-class>Controller.AdminController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminController</servlet-name>
+    <url-pattern>/users</url-pattern>
+  </servlet-mapping>
 </web-app>

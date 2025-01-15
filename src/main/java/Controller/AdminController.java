@@ -10,7 +10,7 @@ import Model.SanPham;
 import Model.User;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
-public class AdminController {
+public class AdminController extends HttpServlet{
     private SanPhamDao sanPhamDao = new SanPhamDao();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
