@@ -93,4 +93,21 @@ public class SanPhamDao {
             stmt.executeUpdate();
         }
     }
+    // Phương thức lấy ID của loại hàng từ tên
+    public int getLoaiHangIdByName(String loaiHangName) {
+        int loaiHangId = -1;
+        String sql = "SELECT id FROM loaiHang WHERE tenLoai = ?";
+
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, loaiHangName);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) {
+                loaiHangId = rs.getInt("id");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return loaiHangId;
+    }
 }

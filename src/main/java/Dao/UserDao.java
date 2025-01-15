@@ -27,5 +27,17 @@ public class UserDao {
         }
         return users;
     }
+    public void insertUser(User user) throws SQLException {
+        String sql = "INSERT INTO users (hoten, diachi, sodt, email, ngaydk) VALUES (?, ?, ?, ?, ?)";
 
+        try (Connection conn = DbConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, user.getHoten());
+            stmt.setString(2, user.getDiachi());
+            stmt.setString(3, user.getSodt());
+            stmt.setString(4, user.getEmail());
+            stmt.setTimestamp(5, new Timestamp(System.currentTimeMillis()));
+            stmt.executeUpdate();
+        }
+    }
 }

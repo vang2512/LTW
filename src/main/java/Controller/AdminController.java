@@ -31,4 +31,5 @@ public class AdminController {
             response.getWriter().write("Error fetching users: " + e.getMessage());
         }
     }
+
 }
