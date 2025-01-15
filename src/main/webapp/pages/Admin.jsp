@@ -12,14 +12,13 @@
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/Admin.css">
 </head>
-
 <body>
 <div class="container">
     <!-- Sidebar Section -->
     <aside>
         <div class="toggle">
             <div class="logo">
-                <img src="${pageContext.request.contextPath}/assets/images/logo.png" alt="logo">
+                <img src="../assets/images/logo.png" alt="logo">
                 <h2>Coffee 3Talents</h2>
             </div>
             <div class="close" id="close-btn">
@@ -34,11 +33,11 @@
                 </span>
                 <h3>Trang chủ</h3>
             </a>
-            <a href="#" data-target="usersContent">
+            <a href="" data-target="usersContent">
                 <span>
                    <i class="bi bi-person-square"></i>
                 </span>
-                <h3>Quản lí khách hàng</h3>
+                <h3>Quản lí người dùng</h3>
             </a>
             <a href="#" data-target="productsContent">
                     <span class="material-symbols-outlined">
@@ -94,7 +93,7 @@
                     <small class="text-muted">Quản trị viên</small>
                 </div>
                 <div class="profile-photo">
-                    <img src="${pageContext.request.contextPath}/assets/images/managers/admin-1.jpg" alt="Anh Tú">
+                    <img src="../assets/images/managers/admin-1.jpg" alt="Anh Tú">
                 </div>
             </div>
         </div>
@@ -113,7 +112,7 @@
                 <div class="users">
                     <div class="top-users-table">
                         <div class="user-text">
-                            <h2>Quản lí khách hàng</h2>
+                            <h2>Quản lí người dùng</h2>
                         </div>
                         <div class="user-btn">
                             <div id="delete-user-btn">
@@ -125,7 +124,7 @@
                             <div id="add-user-btn">
                                 <a href="#">
                                     <i class="bi bi-plus-circle-fill"></i>
-                                    <span>Thêm khách hàng mới</span>
+                                    <span>Thêm người dùng mới</span>
                                 </a>
                             </div>
                         </div>
@@ -177,41 +176,37 @@
                 </div>
             </main>
             <!-- End Of Main Content -->
-
-            <!-- Add New User -->
+            <!-- Add New test.User -->
             <div id="user-form-modal" class="modal">
                 <div class="modal-content">
                     <form id="user-form" action="${pageContext.request.contextPath}/users" method="POST" novalidate>
                         <div class="header-form">
-                            <h2>Thêm khách hàng mới</h2>
+                            <h2>Thêm người dùng mới</h2>
                             <span class="close-btn">&times;</span>
                         </div>
                         <div class="form-control">
                             <label for="name">Name</label>
-                            <input type="text" id="name" placeholder="Nhập tên khách hàng">
-                        </div>
-                        <div class="form-control">
-                            <label for="address">Address</label>
-                            <input type="text" id="address" placeholder="Nhập địa chỉ khách hàng"
-                                   autocomplete="off">
-                        </div>
-                        <div class="form-control">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" placeholder="Nhập số điện thoại khách hàng"
-                                   autocomplete="off">
+                            <input type="text" id="name" name="name" placeholder="Nhập tên người dùng" required>
                         </div>
                         <div class="form-control">
                             <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Nhập email khách hàng" autocomplete="off">
+                            <input type="email" id="email" name="email" placeholder="Nhập email người dùng" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" placeholder="Nhập địa chỉ người dùng" required>
+                        </div>
+                        <div class="form-control">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại người dùng" required>
                         </div>
                         <button type="submit">Lưu</button>
                     </form>
                 </div>
             </div>
-            <!--End Of Add New User -->
+            <!--End Of Add New test.User -->
         </div>
         <!-- End Of Users Content -->
-
         <!-- Products Content -->
         <div id="productsContent" class="content-section">
             <main>
@@ -237,21 +232,43 @@
                         <table>
                             <thead>
                             <tr>
-                                <th>ID</th>
+                                <th>STT</th>
                                 <th>Tên sản phẩm</th>
                                 <th>Loại sản phẩm</th>
                                 <th>Giá</th>
                                 <th>Hành động</th>
                             </tr>
                             </thead>
-                            <tbody></tbody>
+                            <tbody>
+                            <c:forEach var="sanPhams" items="${sanPhams}" varStatus="status">
+                                <tr>
+                                    <!-- Cột STT -->
+                                    <td>${status.index + 1}</td>
+                                    <td>${sanPhams.tenSanPham}</td>
+                                    <td>${sanPhams.tenLoai}</td>
+                                    <td>${sanPhams.gia}</td>
+                                    <td>
+                                        <!-- Nút sửa -->
+                                        <button type="button" class="edit-btn"
+                                                onclick="showEditForm(${sanPham.id}, '${sanPham.tenSanPham}', '${sanPham.moTa}', '${sanPham.gia}', '${sanPham.hinhAnh}')">
+                                            Sửa
+                                        </button>
+                                        <!-- Nút xóa -->
+                                        <form action="${pageContext.request.contextPath}/lichsu" method="post" style="display:inline;">
+                                            <input type="hidden" name="action" value="delete"/>
+                                            <input type="hidden" name="id" value="${sanPham.id}"/>
+                                            <button type="submit" class="cancel-btn">Xóa</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </c:forEach>
+                            </tbody>
                         </table>
                     </div>
+
                     <!-- End Of Products Table -->
                 </div>
             </main>
-            <!-- End Of Products Content -->
-
             <!-- Add New Product -->
             <div id="product-form-modal" class="modal">
                 <div class="modal-content">
@@ -275,7 +292,7 @@
                         </div>
                         <div class="form-control">
                             <label for="type_product">Loại sản phẩm</label>
-                            <input type="text" id="type_product" name="loaiHang" placeholder="Nhập loại sản phẩm" autocomplete="off" required>
+                            <input type="text" id="type_product" name="loaiHang" placeholder="Nhập tên loại sản phẩm" autocomplete="off" required>
                         </div>
                         <div class="form-control">
                             <label for="image_product">Hình ảnh</label>
@@ -285,6 +302,7 @@
                     </form>
                 </div>
             </div>
+
         </div>
         <!-- End Of Products Content -->
 
@@ -313,14 +331,39 @@
                         <table>
                             <thead>
                             <tr>
-                                <th>Loại sản phẩm</th>
-                                <th>Không gian</th>
-                                <th>Số lượng</th>
-                                <th>Giá đặt cọc</th>
+                                <th>STT</th>
+                                <th>Tên Bàn</th>
+                                <th>Số Lượng</th>
+                                <th>Không Gian</th>
                                 <th>Hành động</th>
                             </tr>
                             </thead>
-                            <tbody></tbody>
+                            <tbody>
+                            <c:forEach var="bans" items="${bans}" varStatus="status">
+                                <tr>
+                                    <!-- Cột STT -->
+                                    <td>${status.index + 1}</td>
+                                    <td>${bans.tenBan}</td>
+                                    <td>${bans.soLuong}</td>
+                                    <td>${bans.khongGian}</td>
+                                    <td>
+                                        <!-- Nút sửa -->
+                                        <button type="button" class="edit-btn"
+                                                onclick="showEditForm(${user.id}, '${user.hoten}', '${user.diachi}', '${user.sodt}', '${user.email}', '${user.ngaydk}')">
+                                            Sửa
+                                        </button>
+                                        <!-- Nút xóa -->
+                                        <form action="${pageContext.request.contextPath}/lichsu" method="post"
+                                              style="display:inline;">
+                                            <input type="hidden" name="action" value="delete"/>
+                                            <input type="hidden" name="id" value="${user.id}"/>
+                                            <button type="submit" class="cancel-btn">Xóa</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </c:forEach>
+
+                            </tbody>
                         </table>
                     </div>
                     <!-- End Of Desks Table -->
@@ -469,7 +512,7 @@
                             <p>6 tiếng trước</p>
                         </div>
                         <div class="user">
-                            <img src="../assets/images/users/plus.jpg" alt="More Users">
+                            <img src="../assets/images/user/plus.jpg" alt="More Users">
                             <h2>Thêm</h2>
                             <p>Khách hàng mới</p>
                         </div>
@@ -500,7 +543,7 @@
 
             <!-- Right Section -->
             <div class="right-section">
-                <!-- User Profile -->
+                <!-- test.User Profile -->
                 <div class="user-profile">
                     <div class="logo">
                         <img src="images/header/logo.png" alt="logo">
@@ -508,7 +551,7 @@
                         <p>The coffee house</p>
                     </div>
                 </div>
-                <!-- End Of User Profile -->
+                <!-- End Of test.User Profile -->
 
                 <!-- Reminders -->
                 <div class="reminders">
@@ -578,7 +621,12 @@
         <!-- End Of Settings Content -->
     </div>
 </div>
-
+<%-- Phần hiển thị thông báo --%>
+<c:if test="${not empty message}">
+    <div class="${messageType == 'success' ? 'alert alert-success' : 'alert alert-danger'}">
+            ${message}
+    </div>
+</c:if>
 <script src="${pageContext.request.contextPath}/js/Admin.js"></script>
 <script>
     //
@@ -595,28 +643,6 @@
     window.addEventListener('click', function (e) {
         if (e.target === modal) {
             modal.style.display = 'none';
-        }
-    });
-    //
-    const addProductBtn = document.getElementById('add-product-btn'); // Nút thêm sản phẩm
-    const productModal = document.getElementById('product-form-modal'); // Modal thêm sản phẩm
-    const closeProductBtn = document.querySelector('.close-product'); // Nút đóng modal
-
-    // Mở modal khi nhấn vào nút thêm sản phẩm
-    addProductBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        productModal.style.display = 'block'; // Hiển thị modal
-    });
-
-    // Đóng modal khi nhấn vào nút đóng (×)
-    closeProductBtn.addEventListener('click', function () {
-        productModal.style.display = 'none'; // Ẩn modal
-    });
-
-    // Đóng modal khi người dùng click ra ngoài modal
-    window.addEventListener('click', function (e) {
-        if (e.target === productModal) {
-            productModal.style.display = 'none'; // Ẩn modal nếu click ra ngoài
         }
     });
     // Lắng nghe sự kiện khi nhấn vào nút thêm bàn
@@ -637,6 +663,30 @@
             deskModal.style.display = 'none';
         }
     });
+    //
+    const addProductBtn = document.getElementById('add-product-btn');
+    const productModal = document.getElementById('product-form-modal');
+    const closeProductBtn = document.querySelector('.close-product');
+
+    // Mở modal khi nhấn vào nút thêm sản phẩm
+    addProductBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        productModal.style.display = 'block';
+    });
+
+    // Đóng modal khi nhấn vào nút đóng (×)
+    closeProductBtn.addEventListener('click', function () {
+        productModal.style.display = 'none';
+    });
+
+    // Đóng modal khi người dùng click ra ngoài modal
+    window.addEventListener('click', function (e) {
+        if (e.target === productModal) {
+            productModal.style.display = 'none';
+        }
+    });
+
+
 </script>
 </body>
 </html>
