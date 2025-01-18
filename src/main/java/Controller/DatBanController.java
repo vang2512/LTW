@@ -6,15 +6,19 @@ import Dao.DatBanDao;
 import Model.Ban;
 import Model.DatBan;
 import jakarta.servlet.*;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
 import java.util.*;
 import java.io.IOException;
 import java.util.concurrent.*;
 
+// Thêm @WebServlet để định nghĩa URL mapping
+@WebServlet(name = "DatBanController", urlPatterns = {"/DatBanServlet"})
 public class DatBanController extends HttpServlet {
     private BanDao banDao = new BanDao();
     private DatBanDao datBanDao = new DatBanDao();
     private ChiTietDatBanDao chiTietDatBanDao = new ChiTietDatBanDao();
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int soLuong = Integer.parseInt(request.getParameter("soLuong"));
@@ -87,5 +91,4 @@ public class DatBanController extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("pages/dat_ban_result.jsp");
         dispatcher.forward(request, response);
     }
-
 }
