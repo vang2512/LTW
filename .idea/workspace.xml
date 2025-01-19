@@ -11,30 +11,14 @@
   <component name="ChangeListManager">
     <list default="true" id="3e08b418-db9a-4f46-9cbf-7df90b0d7755" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ChiTietSanPhamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ChiTietSanPhamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DatBanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DatBanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LichSuDatBanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LichSuDatBanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/SanPhamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/SanPhamController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/TrangChuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/TrangChuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/components/Footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/components/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/components/Header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/components/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Chi_tiet_san_pham.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/chi_tiet_san_pham.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Dat_ban.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/dat_ban.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Lich_su_dat_ban.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/lich_su_dat_ban.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Mat_hang.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/mat_hang.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/Trang_chu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/trang_chu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/Chi_tiet_san_pham.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/chi_tiet_san_pham.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/Dat_ban.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/dat_ban.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/Lich_su_dat_ban.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/lich_su_dat_ban.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/Mat_hang.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/mat_hang.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/Trang_chu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/trang_chu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/components/Header_Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/components/header_footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Admin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Chi_tiet_san_pham.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/chi_tiet_san_pham.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Dat_ban.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/dat_ban.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Dat_ban_result.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/dat_ban_result.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Lich_su_dat_ban.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/lich_su_dat_ban.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Mat_hang.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/mat_hang.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/Trang_chu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/trang_chu.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +81,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "Tomcat Server.demo.executor": "Run",
     "Tomcat Server.test.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Vang",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/LTW/LTW",
     "list.type.of.created.stylesheet": "CSS",
@@ -413,7 +397,7 @@
       <workItem from="1736961152653" duration="9247000" />
       <workItem from="1736970630023" duration="773000" />
       <workItem from="1736972462459" duration="8431000" />
-      <workItem from="1737259362907" duration="1117000" />
+      <workItem from="1737259362907" duration="3062000" />
     </task>
     <servers />
   </component>

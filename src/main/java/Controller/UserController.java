@@ -5,7 +5,8 @@ import Dao.UserDao;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import java.io.IOException;
-
+import jakarta.servlet.annotation.WebServlet;
+@WebServlet(name = "UserController", urlPatterns = {"/login"})
 public class UserController extends HttpServlet {
 
     @Override

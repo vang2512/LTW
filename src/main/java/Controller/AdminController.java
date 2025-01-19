@@ -8,8 +8,10 @@ import Dao.UserDao;
 import Model.Ban;
 import Model.SanPham;
 import Model.User;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.*;
 import jakarta.servlet.http.*;
+@WebServlet(name = "AdminController", urlPatterns = {"/admin"})
 public class AdminController extends HttpServlet{
     private SanPhamDao sanPhamDao = new SanPhamDao();
 

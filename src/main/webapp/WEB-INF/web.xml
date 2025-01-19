@@ -4,63 +4,6 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          version="3.0">
   <welcome-file-list>
-    <welcome-file>pages/admin.jsp</welcome-file>
+    <welcome-file>pages/trang_chu.jsp</welcome-file>
   </welcome-file-list>
-  <servlet>
-    <servlet-name>DatBanController</servlet-name>
-    <servlet-class>Controller.DatBanController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>DatBanController</servlet-name>
-    <url-pattern>/DatBanServlet</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>LichSuDatBanController</servlet-name>
-    <servlet-class>Controller.LichSuDatBanController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>LichSuDatBanController</servlet-name>
-    <url-pattern>/lichsu</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>SanPhamController</servlet-name>
-    <servlet-class>Controller.SanPhamController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>SanPhamController</servlet-name>
-    <url-pattern>/sanpham</url-pattern>
-  </servlet-mapping>
-  <!-- Định nghĩa servlet -->
-  <servlet>
-    <servlet-name>ChiTietSanPhamController</servlet-name>
-    <servlet-class>Controller.ChiTietSanPhamController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ChiTietSanPhamController</servlet-name>
-    <url-pattern>/ChiTietSanPhamController</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>AdminController</servlet-name>
-    <servlet-class>Controller.AdminController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>AdminController</servlet-name>
-    <url-pattern>/users</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>TrangChuController</servlet-name>
-    <servlet-class>Controller.TrangChuController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>TrangChuController</servlet-name>
-    <url-pattern>/trangchu</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <servlet-name>UserController</servlet-name>
-    <servlet-class>Controller.UserController</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>UserController</servlet-name>
-    <url-pattern>/login</url-pattern>
-  </servlet-mapping>
 </web-app>

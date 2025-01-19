@@ -9,6 +9,8 @@ import jakarta.servlet.*;
 import jakarta.servlet.http.*;
 import java.util.*;
 import java.io.IOException;
+import jakarta.servlet.annotation.WebServlet;
+@WebServlet(name = "LichSuDatBanController", urlPatterns = {"/lichsu"})
 public class LichSuDatBanController extends HttpServlet {
     private DatBanDao datBanDao = new DatBanDao(); // Sử dụng đúng tên biến cho DatBanDao
     private BanDao banDao = new BanDao();
