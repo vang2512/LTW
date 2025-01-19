@@ -34,6 +34,6 @@ public class ChiTietSanPhamController extends HttpServlet {
                 request.setAttribute("errorMessage", "ID sản phẩm không hợp lệ");
             }
         }
-        request.getRequestDispatcher("pages/Chi_tiet_san_pham.jsp").forward(request, response);
+        request.getRequestDispatcher("pages/chi_tiet_san_pham.jsp").forward(request, response);
     }
 }

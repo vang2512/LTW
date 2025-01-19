@@ -10,7 +10,7 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/Admin.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/admin.css">
 </head>
 <body>
 <div class="container">
@@ -687,7 +687,7 @@
     </div>
 </c:if>
 <script src="${pageContext.request.contextPath}/js/orders.js"></script>
-<script src="${pageContext.request.contextPath}/js/Admin.js"></script>
+<script src="${pageContext.request.contextPath}/js/admin.js"></script>
 <script>
     //
     const addUserBtn = document.getElementById('add-user-btn');

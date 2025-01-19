@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/Trang_chu.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/trang_chu.css">
         <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
         <title>Your Page Title Here</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -14,8 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
 <!-- Header -->
-<jsp:include page="/components/Header.jsp" />
-<script src="${pageContext.request.contextPath}/js/Header_Footer.js" defer></script>
+<jsp:include page="/components/header.jsp" />
+<script src="${pageContext.request.contextPath}/js/header_footer.js" defer></script>
 <!-- Home-->
 <div class="home-bg">
     <section class="home" id="home">
@@ -237,8 +237,8 @@
     </div>
 </section>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="${pageContext.request.contextPath}/js/Trang_chu.js"></script>
+<script src="${pageContext.request.contextPath}/js/trang_chu.js"></script>
 <!-- Footer -->
-<jsp:include page="/components/Footer.jsp" />
+<jsp:include page="/components/footer.jsp" />
 </body>
 </html>

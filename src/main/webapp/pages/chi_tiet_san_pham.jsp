@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <%@ page contentType="text/html;charset=UTF-8" language="java" %>
   <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/Chi_tiet_san_pham.css">
+  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/chi_tiet_san_pham.css">
   <title>Title</title>
 </head>
 <body>
 <!-- Header-->
-<jsp:include page="/components/Header.jsp" />
-<script src="${pageContext.request.contextPath}/js/Header_Footer.js" defer></script>
+<jsp:include page="/components/header.jsp" />
+<script src="${pageContext.request.contextPath}/js/header_footer.js" defer></script>
 <!--Detail Product-->
 <div class="container">
   <div class="image-section">
@@ -76,8 +76,8 @@
     </div>
   </div>
 </div>
-<script src="${pageContext.request.contextPath}/js/Chi_tiet_san_pham.js"></script>
+<script src="${pageContext.request.contextPath}/js/chi_tiet_san_pham.js"></script>
 <!-- Footer -->
-<jsp:include page="/components/Footer.jsp" />
+<jsp:include page="/components/footer.jsp" />
 </body>
 </html>

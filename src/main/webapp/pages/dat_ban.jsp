@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/Dat_ban.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/dat_ban.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đặt bàn</title>
 </head>
 <body>
 <!-- Header -->
-<jsp:include page="/components/Header.jsp" />
-<script src="${pageContext.request.contextPath}/js/components/Header_Footer.js" defer></script>
+<jsp:include page="/components/header.jsp" />
+<script src="${pageContext.request.contextPath}/js/components/header_footer.js" defer></script>
 <!-- Container -->
 <div class="container">
     <div class="image">
@@ -67,7 +67,7 @@
     </div>
 </div>
 <!-- Footer -->
-<script src="${pageContext.request.contextPath}/js/Dat_ban.js"></script>
-<jsp:include page="/components/Footer.jsp" />
+<script src="${pageContext.request.contextPath}/js/dat_ban.js"></script>
+<jsp:include page="/components/footer.jsp" />
 </body>
 </html>

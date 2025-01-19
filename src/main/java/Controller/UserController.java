@@ -16,12 +16,12 @@ public class UserController extends HttpServlet {
         int role = userDao.checkLogin(email, password);
 
         if (role == 0) { // Role 0: User
-            response.sendRedirect("pages/Trang_chu.jsp");
+            response.sendRedirect("pages/trang_chu.jsp");
         } else if (role == 1) { // Role 1: Admin
-            response.sendRedirect("pages/Admin.jsp");
+            response.sendRedirect("pages/admin.jsp");
         } else { // Đăng nhập không hợp lệ
             request.setAttribute("errorMessage", "Email hoặc mật khẩu không đúng!");
-            request.getRequestDispatcher("pages/Login.jsp").forward(request, response);
+            request.getRequestDispatcher("pages/login.jsp").forward(request, response);
         }
     }
 

@@ -20,7 +20,7 @@ public class TrangChuController extends HttpServlet {
         request.setAttribute("spMoiNhat", spMoiNhat);
 
         // Chuyển tiếp sang JSP
-        RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Trang_chu.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("pages/trang_chu.jsp");
         dispatcher.forward(request, response);
     }
 

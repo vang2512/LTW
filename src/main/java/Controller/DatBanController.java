@@ -84,7 +84,7 @@ public class DatBanController extends HttpServlet {
         // Truyền dữ liệu cho JSP
         request.setAttribute("success", success);
         request.setAttribute("message", message);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Dat_ban_result.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("pages/dat_ban_result.jsp");
         dispatcher.forward(request, response);
     }
 

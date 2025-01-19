@@ -5,15 +5,15 @@
   <title>Your Page Title Here</title>
   <%@ page contentType="text/html;charset=UTF-8" language="java" %>
   <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/Mat_hang.css">
+  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/mat_hang.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
 <!-- Header -->
-<jsp:include page="/components/Header.jsp" />
-<script src="${pageContext.request.contextPath}/js/Header_Footer.js" defer></script>
+<jsp:include page="/components/header.jsp" />
+<script src="${pageContext.request.contextPath}/js/header_footer.js" defer></script>
 <div class="container">
   <!-- Sidebar -->
   <aside class="sidebar">
@@ -142,7 +142,7 @@
     </div>
   </main>
 </div>
-<script src="${pageContext.request.contextPath}/js/Mat_hang.js"></script>
+<script src="${pageContext.request.contextPath}/js/mat_hang.js"></script>
 <!-- Footer -->
-<jsp:include page="/components/Header.jsp" />
+<jsp:include page="/components/header.jsp" />
 </body>

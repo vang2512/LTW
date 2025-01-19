@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/Lich_su_dat_ban.css">
+  <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/lich_su_dat_ban.css">
   <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
   <title>Lịch Sử Đặt Bàn</title>
   <link rel="stylesheet" href="lichsudatban.css">
 </head>
 <body>
 <!-- Header -->
-<jsp:include page="/components/Header.jsp" />
-<script src="${pageContext.request.contextPath}/js/components/Header_Footer.js" defer></script>
+<jsp:include page="/components/header.jsp" />
+<script src="${pageContext.request.contextPath}/js/components/header_footer.js" defer></script>
 
 <!-- History -->
 <div class="booking-history">
@@ -88,6 +88,6 @@
 </div>
 <script src="js/Lich_su_dat_ban.js"></script>
 <!-- Footer -->
-<jsp:include page="/components/Footer.jsp" />
+<jsp:include page="/components/footer.jsp" />
 </body>
 </html>

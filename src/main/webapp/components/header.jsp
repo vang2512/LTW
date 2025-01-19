@@ -236,7 +236,7 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <a href="${pageContext.request.contextPath}/pages/Dat_ban.jsp">Đặt Bàn</a>
+                    <a href="${pageContext.request.contextPath}/pages/dat_ban.jsp">Đặt Bàn</a>
                     <div class="dropdown-content">
                         <a href="${pageContext.request.contextPath}/lichsu" class="datban">Lịch Sử Đặt Bàn</a>
                     </div>

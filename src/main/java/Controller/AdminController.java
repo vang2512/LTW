@@ -24,7 +24,7 @@ public class AdminController extends HttpServlet{
             request.setAttribute("users", users);
             request.setAttribute("bans", bans);
             request.setAttribute("sanPhams", sanPhams);
-            RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Admin.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("pages/admin.jsp");
             dispatcher.forward(request, response);
         } catch (SQLException e) {
             e.printStackTrace();
@@ -44,7 +44,7 @@ public class AdminController extends HttpServlet{
             if (tenBan == null || tenBan.trim().isEmpty() || soLuongStr == null || soLuongStr.trim().isEmpty() || khongGian == null || khongGian.trim().isEmpty()) {
                 request.setAttribute("message", "Vui lòng điền đầy đủ thông tin bàn!");
                 request.setAttribute("messageType", "error");
-                RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Admin.jsp");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("pages/admin.jsp");
                 dispatcher.forward(request, response);
                 return;
             }
@@ -76,7 +76,7 @@ public class AdminController extends HttpServlet{
             if (hoten == null || hoten.trim().isEmpty() || diachi == null || diachi.trim().isEmpty() || sodt == null || sodt.trim().isEmpty() || email == null || email.trim().isEmpty()) {
                 request.setAttribute("message", "Vui lòng điền đầy đủ thông tin!");
                 request.setAttribute("messageType", "error");
-                RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Admin.jsp");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("pages/admin.jsp");
                 dispatcher.forward(request, response);
                 return;
             }
@@ -93,7 +93,7 @@ public class AdminController extends HttpServlet{
                 request.setAttribute("messageType", "error");
             }
 
-            RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Admin.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("pages/admin.jsp");
             dispatcher.forward(request, response);
         }
 
@@ -109,7 +109,7 @@ public class AdminController extends HttpServlet{
             if (tenSanPham == null || tenSanPham.trim().isEmpty() || moTa == null || moTa.trim().isEmpty() || loaiHangName == null || loaiHangName.trim().isEmpty() || hinhAnh == null || hinhAnh.trim().isEmpty()) {
                 request.setAttribute("message", "Vui lòng điền đầy đủ thông tin sản phẩm!");
                 request.setAttribute("messageType", "error");
-                RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Admin.jsp");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("pages/admin.jsp");
                 dispatcher.forward(request, response);
                 return;
             }
@@ -119,7 +119,7 @@ public class AdminController extends HttpServlet{
             if (loaiHangId == -1) {
                 request.setAttribute("message", "Không tìm thấy loại hàng!");
                 request.setAttribute("messageType", "error");
-                RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Admin.jsp");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("pages/admin.jsp");
                 dispatcher.forward(request, response);
                 return;
             }
@@ -136,7 +136,7 @@ public class AdminController extends HttpServlet{
                 request.setAttribute("messageType", "error");
             }
 
-            RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Admin.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("pages/admin.jsp");
             dispatcher.forward(request, response);
         }
 
@@ -158,7 +158,7 @@ public class AdminController extends HttpServlet{
                 request.setAttribute("message", "Có lỗi xảy ra khi cập nhật bàn: " + e.getMessage());
                 request.setAttribute("messageType", "error");
             }
-            RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Admin.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("pages/admin.jsp");
             dispatcher.forward(request, response);
         }
 
@@ -179,7 +179,7 @@ public class AdminController extends HttpServlet{
                 request.setAttribute("message", "Đã xảy ra lỗi khi xóa bàn: " + e.getMessage());
                 request.setAttribute("messageType", "error");
             }
-            RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Admin.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("pages/admin.jsp");
             dispatcher.forward(request, response);
         }
         doGet(request, response);

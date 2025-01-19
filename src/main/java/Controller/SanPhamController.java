@@ -23,7 +23,7 @@ public class SanPhamController extends HttpServlet {
         request.setAttribute("nuocEpList", nuocEpList);
         request.setAttribute("traList", traList);
         request.setAttribute("banhList", banhList);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("pages/Mat_hang.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("pages/mat_hang.jsp");
         dispatcher.forward(request, response);
     }
 }
